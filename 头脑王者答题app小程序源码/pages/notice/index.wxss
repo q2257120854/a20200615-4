@@ -1,0 +1,20 @@
+/* pages/notice/index.wxss */
+page{
+    height: auto
+}
+
+.container {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.header-container {
+    padding-right: 20px;
+}
+
+.content {
+    color: #666;
+}

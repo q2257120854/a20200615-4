@@ -1,0 +1,516 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+dl,
+dd,
+ol {
+    margin: 0;
+}
+input,
+ul,
+ol {
+    padding: 0;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    background-color: transparent;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+b,
+strong {
+    font-weight: 700;
+}
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+::-webkit-input-placeholder {
+    color: #bbbbbb;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #202223;
+    background-color: #ffffff;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+small {
+    font-size: 80%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: 0;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #777777;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+    font-size: 65%;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+    font-size: 75%;
+}
+h1,
+.h1 {
+    font-size: 36px;
+}
+h2,
+.h2 {
+    font-size: 30px;
+}
+h3,
+.h3 {
+    font-size: 24px;
+}
+h4,
+.h4 {
+    font-size: 18px;
+}
+h5,
+.h5 {
+    font-size: 14px;
+}
+h6,
+.h6 {
+    font-size: 12px;
+}
+small,
+.small {
+    font-size: 85%;
+}
+table {
+    background-color: transparent;
+}
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777777;
+    text-align: left;
+}
+th {
+    text-align: left;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+input[type="file"] {
+    display: block;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled {
+    cursor: not-allowed;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.icon {
+    display: inline-block;
+    height: 1px;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+}
+.icon:after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background: url("index-bg.png") no-repeat center bottom;
+}
+.global-wrap {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo-title {
+    padding-top: 30px;
+    padding-left: 35px;
+}
+.logo-title .icon-logo {
+    width: 152px;
+    height: 47px;
+}
+.logo-title .icon-logo:after {
+    width: 152px;
+    height: 47px;
+    background-image: url(../images/logo.png);
+}
+.logo-title h1 {
+    display: inline-block;
+    font-size: 21px;
+    color: #e62019;
+    vertical-align: bottom;
+    padding-left: 12px;
+}
+@keyframes dap {
+    0%,
+    100% {
+        top: 10px;
+    }
+    50% {
+        top: -20px;
+    }
+}
+@-webkit-keyframes dap {
+    0%,
+    100% {
+        top: 10px;
+    }
+    50% {
+        top: -20px;
+    }
+}
+.theme {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    padding-left: 35px;
+    position: relative;
+    animation: dap 2.5s infinite linear;
+    -webkit-animation: dap 2.5s infinite linear;
+}
+.theme .icon-theme {
+    width: 100%;
+    height: 100%;
+}
+.theme .icon-theme:after {
+    width: 100%;
+    height: 100%;
+    background-image: url(theme.png);
+    background-position: top center;
+    background-size: 100%;
+}
+.login-box {
+    width: 300px;
+    display: inline-block;
+    background: #3f7abe;
+    text-align: center;
+    border-radius: 10px;
+    vertical-align: top;
+    position: relative;
+    top: 10%;
+}
+.login-box .login-title {
+    line-height: 52px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 0 0;
+}
+.login-box .login-cnt .line {
+    width: 220px;
+    padding-top: 11px;
+    position: relative;
+    margin: 0 auto;
+}
+.login-box .login-cnt .line input {
+    width: 220px;
+    height: 42px;
+    border: none;
+    font-size: 14px;
+    border-radius: 6px;
+    padding-left: 40px;
+}
+.login-box .login-cnt .line .icon-1 {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+.login-box .login-cnt .line .icon-1:after {
+    width: 42px;
+    height: 42px;
+    background-image: url(icon-1.png);
+    background-size: 12px;
+    background-position: center;
+}
+.login-box .login-cnt .line .icon-2 {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+.login-box .login-cnt .line .icon-2:after {
+    width: 42px;
+    height: 42px;
+    background-image: url(icon-2.png);
+    background-size: 12px;
+    background-position: center;
+}
+.login-box .login-cnt .line #slider {
+    margin: 0 auto;
+    width: 220px;
+    height: 40px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #dae2d0;
+    overflow: hidden;
+    text-align: center;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.login-box .login-cnt .line #slider_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #7AC23C;
+    z-index: 1;
+}
+.login-box .login-cnt .line #label {
+    width: 46px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    z-index: 3;
+    cursor: move;
+    color: #ff9e77;
+    font-size: 16px;
+    font-weight: 900;
+}
+.login-box .login-cnt .line #labelTip {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-family: 'Microsoft Yahei', serif;
+    color: #787878;
+    line-height: 38px;
+    text-align: center;
+    z-index: 2;
+}
+.login-box .login-cnt .forget-paw {
+    width: 220px;
+    line-height: 30px;
+    text-align: right;
+    margin: 0 auto;
+}
+.login-box .login-cnt .forget-paw a {
+    color: #ffffff;
+    font-size: 12px;
+}
+.login-box .login-ft {
+    padding-bottom: 22px;
+}
+.login-box .login-ft input {
+    width: 220px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    color: #ffffff;
+    background: #98b1d8;
+    border-radius: 6px;
+}

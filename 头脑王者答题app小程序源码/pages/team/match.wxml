@@ -1,0 +1,24 @@
+<view style="height:100%;">
+  <view class='fk-flex-v' style="height:100%">
+    <text style='padding:5px 0;color:#fff;font-size:16px;text-align:center'>匹配结果</text>
+    <view class='fk-flex-v' style='flex:1'>
+      <view class='fk-flex fk-flex-center' style='flex:1;flex-wrap:wrap;background-color:#73cffe;margin:10px;border-radius:10px;'>
+        <view class='fk-flex-v fk-flex-center animation' style='color:#ffffff;width:33.3333%;animation-delay:{{index * .2}}s' wx:for="{{yourTeamMembers}}" wx:key="{{index}}">
+          <image src='{{item.avatarUrl}}' style='width:50px;height:50px;border-radius:50px;border:3px solid #ffffff;'></image>
+          <text class='fk-font-12' style='margin:3px 0'>{{item.name}}</text>
+          <text class='fk-font-10 fk-ellipsis'>来自：{{item.department}}</text>
+        </view>
+      </view>
+      <view class='fk-flex fk-flex-center'>
+        <image src='/static/images/pk.png' style='width:64px;height:64px;'></image>
+      </view>
+      <view class='fk-flex fk-flex-center' style='flex:1;flex-wrap:wrap;background-color:#fa5577;margin:10px;border-radius:10px;'>
+        <view class='fk-flex-v fk-flex-center animation' style='color:#ffffff;width:33.3333%;animation-delay:{{index * .4}}s' wx:for="{{opponentTeamMembers}}" wx:key="{{index}}">
+          <image src='{{item.avatarUrl}}' style='width:50px;height:50px;border-radius:50px;border:3px solid #ffffff;'></image>
+          <text class='fk-font-12' style='margin:3px 0'>{{item.name}}</text>
+          <text class='fk-font-10 fk-ellipsis'>来自：{{item.department}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

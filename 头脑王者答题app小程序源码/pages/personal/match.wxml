@@ -1,0 +1,42 @@
+<view style="height:100%;">
+    <view style="height:100%;" hidden="{{showMatchResult}}">
+        <view style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;">
+            <view class="circle">
+                <image style="width:60px;height:60px;border-radius:60px;position:absolute;left:50%;top:50%;margin-left:-30px;margin-top:-30px;" src="{{yourAvatarUrl}}" />
+                <view class="circle-icon"></view>
+                <view class="circle-icon-square"></view>
+                <view class="circle-inner">
+                    <view class="circle-inner-icon"></view>
+                    <view class="circle-inner-icon-square"></view>
+                </view>
+            </view>
+            <view style="display:flex;flex-direction:column;align-items:center;padding:20px 0;color:#ffffff;">
+                <text style="font-size:20px;font-weight:bold;">{{yourName}}</text>
+                <text style="font-size:14px;margin:10px 0">来自：{{yourLocation}}</text>
+                <text style="font-size:12px;color:#d3d6d8">当前积分：{{integral}}</text>
+            </view>
+        </view>
+    </view>
+
+    <view hidden="{{!showMatchResult}}">
+        <view animation="{{animationData}}" style="position:absolute;left:-1000px;top:60px;display:flex;flex-direction:column;opacity:0">
+            <view style="background:#73cffe;border-radius:0 70px 70px 0;height:70px;width:240px;display:flex;justify-content:flex-end;align-items:center;padding-right:7px;box-shadow:0 2px 5px rgba(255,255,255,.1)">
+                <image animation="{{avatarAnimationData}}" src="{{yourAvatarUrl}}" style='width:56px;height:56px;border-radius:56px;' />
+            </view>
+            <view style="background:#73cffe;border-radius:0 70px 70px 0;height:70px;width:300px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;color:#ffffff;padding-right:15px;font-size:13px;box-shadow:0 2px 5px rgba(255,255,255,.1)">
+                <text>{{yourName}}</text>
+                <text>来自：{{yourLocation}}</text>
+            </view>
+        </view>
+
+        <view animation="{{otherAnimationData}}" style="position:absolute;right:-1000px;bottom:60px;display:flex;flex-direction:column;align-items:flex-end;opacity:0">
+            <view style="background:#fa5577;border-radius:70px 0 0 70px;height:70px;width:300px;display:flex;justify-content:flex-start;align-items:center;padding-left:7px;box-shadow:0 2px 2px -1px rgba(255,255,255,.1)">
+                <image animation="{{avatarAnimationData}}" src="{{opponentAvatarUrl}}" style='width:56px;height:56px;border-radius:56px;' />
+            </view>
+            <view style="background:#fa5577;border-radius:70px 0 0 70px;height:70px;width:240px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;color:#ffffff;padding-left:15px;font-size:13px;box-shadow:0 2px 2px -1px rgba(255,255,255,.1)">
+                <text>{{opponentName}}</text>
+                <text>来自：{{opponentLocation}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "排位赛",
+    "usingComponents": {
+        "ui-mask": "/components/ui-mask/index"
+    }
+}

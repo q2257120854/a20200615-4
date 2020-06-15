@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+body, html { height: 100%; font-family: "Microsoft Yahei", sans-serif; }
+
+a { font-family: "Microsoft Yahei"; font-size: 14px; line-height: 1.7; color: rgb(102, 102, 102); margin: 0px; transition: all 0.4s; }
+
+a:focus { outline: none !important; }
+
+a:hover { text-decoration: none; color: rgb(166, 75, 244); }
+
+h1, h2, h3, h4, h5, h6 { margin: 0px; }
+
+p { font-family: "Microsoft Yahei"; font-size: 14px; line-height: 1.7; color: rgb(102, 102, 102); margin: 0px; }
+
+ul, li { margin: 0px; list-style-type: none; }
+
+input { outline: none; border: none; }
+
+textarea { outline: none; border: none; }
+
+textarea:focus, input:focus { border-color: transparent !important; }
+
+input:focus::-webkit-input-placeholder { color: transparent; }
+
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+
+input::-webkit-input-placeholder { color: rgb(173, 173, 173); }
+
+textarea::-webkit-input-placeholder { color: rgb(173, 173, 173); }
+
+button { border: none; background: transparent; outline: none !important; }
+
+button:hover { cursor: pointer; }
+
+iframe { border: none !important; }
+
+.txt1 { font-family: "Microsoft Yahei"; font-size: 14px; line-height: 1.5; color: rgb(102, 102, 102); }
+
+.txt2 { font-family: "Microsoft Yahei"; font-size: 14px; line-height: 1.5; color: rgb(51, 51, 51); text-transform: uppercase; }
+
+.bg1 { background-color: rgb(59, 89, 152); }
+
+.bg2 { background-color: rgb(29, 161, 242); }
+
+.bg3 { background-color: rgb(234, 67, 53); }
+
+.limiter { width: 100%; margin: 0px auto; }
+
+.container-login100 { width: 100%; min-height: 100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 15px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.wrap-login100 { width: 500px; background: rgb(255, 255, 255); border-radius: 10px; overflow: hidden; }
+
+.login100-form { width: 100%; }
+
+.login100-form-title { display: block; font-family: "Microsoft Yahei"; font-size: 39px; color: rgb(51, 51, 51); line-height: 1.2; text-align: center; }
+
+.wrap-input100 { width: 100%; position: relative; border-bottom: 2px solid rgb(217, 217, 217); }
+
+.label-input100 { font-family: "Microsoft Yahei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 1.5; padding-left: 7px; }
+
+.input100 { font-family: "Microsoft Yahei"; font-size: 16px; color: rgb(51, 51, 51); line-height: 1.2; display: block; width: 100%; height: 55px; background: transparent; padding: 0px 7px 0px 43px; }
+
+.focus-input100 { position: absolute; display: block; width: 100%; height: 100%; top: 0px; left: 0px; pointer-events: none; }
+
+.focus-input100::after { content: attr(data-symbol); font-family: Material-Design-Iconic-Font; color: rgb(173, 173, 173); font-size: 22px; display: flex; align-items: center; justify-content: center; position: absolute; height: calc(100% - 20px); bottom: 0px; left: 0px; padding-left: 13px; padding-top: 3px; }
+
+.focus-input100::before { content: ""; display: block; position: absolute; bottom: -2px; left: 0px; width: 0px; height: 2px; background: rgb(127, 127, 127); transition: all 0.4s; }
+
+.input100:focus + .focus-input100::before { width: 100%; }
+
+.has-val.input100 + .focus-input100::before { width: 100%; }
+
+.input100:focus + .focus-input100::after { color: rgb(166, 75, 244); }
+
+.has-val.input100 + .focus-input100::after { color: rgb(166, 75, 244); }
+
+.container-login100-form-btn { display: flex; flex-wrap: wrap; justify-content: center; }
+
+.wrap-login100-form-btn { width: 100%; display: block; position: relative; z-index: 1; border-radius: 25px; overflow: hidden; margin: 0px auto; box-shadow: rgba(3, 216, 222, 0.2) 0px 5px 30px 0px; }
+
+.login100-form-bgbtn { position: absolute; z-index: -1; width: 300%; height: 100%; background: -webkit-linear-gradient(right, rgb(0, 219, 222), rgb(252, 0, 255), rgb(0, 219, 222), rgb(252, 0, 255)); top: 0px; left: -100%; transition: all 0.4s; }
+
+.login100-form-btn { font-family: "Microsoft Yahei"; font-size: 16px; color: rgb(255, 255, 255); line-height: 1.2; text-transform: uppercase; display: flex; justify-content: center; align-items: center; padding: 0px 20px; width: 100%; height: 50px; }
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn { left: 0px; }
+
+.validate-input { position: relative; }
+
+.alert-validate::before { content: attr(data-validate); position: absolute; max-width: 70%; background-color: rgb(255, 255, 255); border: 1px solid rgb(200, 0, 0); border-radius: 2px; padding: 4px 25px 4px 10px; bottom: calc((100% - 20px) / 2); transform: translateY(50%); right: 2px; pointer-events: none; font-family: "Microsoft Yahei"; color: rgb(200, 0, 0); font-size: 13px; line-height: 1.4; text-align: left; visibility: hidden; opacity: 0; transition: opacity 0.4s; }
+
+.alert-validate::after { content: ""; font-family: FontAwesome; display: block; position: absolute; color: rgb(200, 0, 0); font-size: 16px; bottom: calc((100% - 20px) / 2); transform: translateY(50%); right: 8px; }
+
+.alert-validate:hover::before { visibility: visible; opacity: 1; }
+
+@media (max-width: 992px) {
+  .alert-validate::before { visibility: visible; opacity: 1; }
+}
+
+.login100-social-item { font-size: 25px; color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border-radius: 50%; margin: 5px; }
+
+.login100-social-item:hover { color: rgb(255, 255, 255); background-color: rgb(51, 51, 51); }
+
+@media (max-width: 576px) {
+  .wrap-login100 { padding-left: 15px; padding-right: 15px; }
+}

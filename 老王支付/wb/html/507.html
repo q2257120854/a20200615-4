@@ -1,0 +1,140 @@
+<!doctype html>
+<html style="height:100%">
+<head>
+    <meta charset="gb2312">
+    <link rel="dns-prefetch" href="http://h5.sinaimg.cn">
+    <link rel="dns-prefetch" href="http://u1.sinaimg.cn">
+    <link rel="dns-prefetch" href="http://ww1.sinaimg.cn">
+    <link rel="dns-prefetch" href="http://ww2.sinaimg.cn">
+    <link rel="dns-prefetch" href="http://ww3.sinaimg.cn">
+    <link rel="dns-prefetch" href="http://ww4.sinaimg.cn">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="apple-touch-icon" href="http://u1.sinaimg.cn/upload/h5/img/apple-touch-icon.png">
+    <title>登录 - 新浪微博</title>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui">
+    <link rel="stylesheet" href="/css/weibo/signin/login.css?id=20141028160201">
+</head>
+<body style="height:100%">
+<div class="login-wrapper" id="loginWrapper" style="display:none">
+    <!-- 登陆成功跳转页 -->
+    <input type="hidden" name="url" value='http%3A%2F%2Fpay.sc.weibo.com%2Fpay%2Fwap%2Fcashier%3Fsign_type%3Dmd5%26sign%3D45d834ec1d2b0fd00c55724cbe578537%26seller_id%3D5136362277%26out_pay_id%3D6000059584798%26appkey%3D743219212%26notify_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwnotify%26return_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwreturn%253Fsinainternalbrowser%253Dtopnav%26subject%3D%25E5%25BE%25AE%25E5%258D%259A%25E7%25BA%25A2%25E5%258C%2585%26body%3D%26total_amount%3D100%26cfg_follow_uid%3D5136362277%26cfg_share_opt%3D0%26cfg_follow_opt%3D0' id="loginSuccessAddress"/>
+    <!-- 登陆rf标识 -->
+    <input type="hidden" name="rf"  id="loginRF"/>
+    <input type="hidden" name="rfcal"  id="loginRFCAL"/>
+    <input type="hidden"  id="oldUserName"/>
+    <input type="hidden" value="" id="loginfrom"/>
+    <input type="hidden" value="" id="featurecode"/>
+    <input type="hidden" value="" id="hff" name="hff"/>
+    <input type="hidden" value="" id="hfp" name="hfp"/>
+        <a href="javascript:history.go(-1);" class="close">关闭</a>
+        <section class="avatar-wrapper" id="avatarWrapper">
+        <!-- 头像 -->
+        <img src="" onerror="this.src='/images/weibo/signin/default-avatar_2x.png';"></img>
+    </section>
+    <form>
+        <section class="box">
+            <div class="input-wrapper">
+                <i class="icon forName"></i>
+                <!-- 用户名 -->
+                <p class="input-box">
+                    <input type="text" placeholder="邮箱/手机号" id="loginName" >
+                    <!-- 清除用户名小叉 -->
+                    <a href="javascript:;" class="input-clear" id="loginnameclear" style="display:none" ></a>
+                </p>
+            </div>
+            <div class="input-wrapper">
+                <i class="icon forPwd"></i>
+                <p class="input-box"><input type="password" placeholder="请输入密码" id="loginPassword"></p>
+            </div>
+        </section>
+
+        <!-- 要隐藏添加 hid -->
+        <div id="verifyCodeWrapper" style="display:none">
+            <p class="vcode">
+                <img src="" alt="" id="verifyCodeImage">
+                <a href="javascript:;" id="changeVerifyCode">换一张</a>
+            </p>
+
+
+            <!-- 要隐藏添加 hid -->
+            <div class="box">
+                <input type="text" placeholder="请输入验证码" id = "loginVCode">
+            </div>
+        </div>
+
+        <!-- 要隐藏添加 hid -->
+        <div id = "dVerifyCodeWrapper" style = "display:none" >
+            <p class="shield-tit">动态码</p>
+
+            <!-- 要隐藏添加 hid -->
+            <div class="box">
+                <input type="text" name="shieldCode" placeholder="请输入微盾动态码" id = "loginDVCode">
+            </div>
+        </div>
+        <div id="errorMsg" class="error-label" style = "display:none">手机号不能为空</div>
+
+        <a href="javascript:;" class="btn btnRed" id = "loginAction">登录</a>
+    </form>
+        <p class="label" >
+    <a href="https://passport.weibo.cn/signin/other?r=http%3A%2F%2Fpay.sc.weibo.com%2Fpay%2Fwap%2Fcashier%3Fsign_type%3Dmd5%26sign%3D45d834ec1d2b0fd00c55724cbe578537%26seller_id%3D5136362277%26out_pay_id%3D6000059584798%26appkey%3D743219212%26notify_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwnotify%26return_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwreturn%253Fsinainternalbrowser%253Dtopnav%26subject%3D%25E5%25BE%25AE%25E5%258D%259A%25E7%25BA%25A2%25E5%258C%2585%26body%3D%26total_amount%3D100%26cfg_follow_uid%3D5136362277%26cfg_share_opt%3D0%26cfg_follow_opt%3D0">第三方帐号</a>
+    </p>
+    <footer class="footer">
+        <a href="https://m.weibo.cn/reg/index?&vt=4&wm=3349&wentry=&backURL=http%3A%2F%2Fpay.sc.weibo.com%2Fpay%2Fwap%2Fcashier%3Fsign_type%3Dmd5%26sign%3D45d834ec1d2b0fd00c55724cbe578537%26seller_id%3D5136362277%26out_pay_id%3D6000059584798%26appkey%3D743219212%26notify_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwnotify%26return_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwreturn%253Fsinainternalbrowser%253Dtopnav%26subject%3D%25E5%25BE%25AE%25E5%258D%259A%25E7%25BA%25A2%25E5%258C%2585%26body%3D%26total_amount%3D100%26cfg_follow_uid%3D5136362277%26cfg_share_opt%3D0%26cfg_follow_opt%3D0">注册帐号</a><a href="https://passport.weibo.cn/forgot/forgot?entry=wapsso&from=0&r=https%3A%2F%2Fm.weibo.cn%2F">忘记密码</a>
+    </footer>
+        </div>
+
+<!-- 要隐藏添加 hid -->
+<div class="popup" style = "display:none" id = "errorDialog">
+    <article class="wrapper" style="top:180px;" id = "errorDialogPanel">
+        <header class="title"></header>
+        <span class="info" id = "errorDialogMsg">帐号或密码错误，你也可以选择短信验证码方式登录微博。</span>
+        <div class="action">
+            <a href="javascript:;" class="btn cancel" id = "errorDialogBtnF">取消</a>
+            <a href="javascript:;" class="btn confirm" id = "errorDialogBtnT">验证码登录</a>
+        </div>
+    </article>
+</div>
+
+<div class="account-wrapper" style = "display:none" id = "accountWrapper">
+    <a href="javascript:history.go(-1);" class="close">关闭</a>
+    <section class="avatar-wrapper">
+        <!-- 头像 -->
+        <img id = "ucavatar" src="/images/weibo/signin/default-avatar_2x.png" onerror="this.src='/images/weibo/signin/default-avatar_2x.png';" alt="">
+    </section>
+    <p class="label" id = "uctext">使用<span id = "ucname"></span>的身份登录网页版微博</p>
+    <p class="label" id = "weibotext">检测到您已在微博客户端登录<br>是否获取该登录状态？</p>
+    <a href="javascript:;" class="btn btnRed" id = "ucORweiboLogin">确认</a>
+    <a href="javascript:;" class="btn btnWhite" id = "changeLogin">使用其他帐号登录</a>
+</div>
+<form method="post" action="https://open.weibo.cn/oauth2/authorize" id="postform">
+        <button type='submit' style="display:none"></button>
+</form>
+<script type="text/javascript" >
+    var fEntry = '';
+    var fWentry = '';
+    var fBackUrl = '';
+
+        fEntry = 'mweibo';
+    
+    
+        fBackUrl = 'http%3A%2F%2Fpay.sc.weibo.com%2Fpay%2Fwap%2Fcashier%3Fsign_type%3Dmd5%26sign%3D45d834ec1d2b0fd00c55724cbe578537%26seller_id%3D5136362277%26out_pay_id%3D6000059584798%26appkey%3D743219212%26notify_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwnotify%26return_url%3Dhttps%253A%252F%252Fhb.e.weibo.com%252Fv2%252Fbonus%252Fpay%252Fwreturn%253Fsinainternalbrowser%253Dtopnav%26subject%3D%25E5%25BE%25AE%25E5%258D%259A%25E7%25BA%25A2%25E5%258C%2585%26body%3D%26total_amount%3D100%26cfg_follow_uid%3D5136362277%26cfg_share_opt%3D0%26cfg_follow_opt%3D0';
+        var fClientid = '';
+        var fCode = '';
+        var fQq = '';
+    </script>
+
+<!-- 登录wifi -->
+
+<script charset="gb2312" type="text/javascript" src="/js/signin/req.js?v=20181220"></script>
+<script charset="gb2312" type="text/javascript" src="/js/signin/weibologin.js?v=20181220"></script>
+<script type="text/javascript" >
+    //记住用户名的时候需要把mode设置为1
+    
+
+    
+    //这里是需要微盾
+    </script>
+</body>
+</html>

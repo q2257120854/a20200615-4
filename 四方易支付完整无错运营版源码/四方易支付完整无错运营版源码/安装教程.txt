@@ -1,0 +1,4 @@
+安装说明：
+上传空间访问 install 进行安装
+后台默认账户密码 admin 密码admin
+监控办法 用来监控订单   访问cron.php?do=settle生成结算列表cron.php?订单金额 可以不监控这个 结算可以每天手动访问一次

@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+html, body {
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start editing from here */
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+.txt-center {
+    text-align: center;
+    /*-- W3Layouts --*/
+}
+
+/* text align center */
+.float-rt {
+    float: right;
+}
+
+/* float right */
+.float-lt {
+    float: left;
+}
+
+/* float left */
+.clear {
+    clear: both;
+}
+
+/* clear float */
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+img {
+    max-width: 100%;
+}
+
+/*--- end reset code ---*/
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1.header-w3ls {
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0.5em 0 0.3em;
+}
+
+.agileits-content {
+    text-align: center;
+    float: left;
+    width: 56%;
+    background: url('../img/banner.png') center no-repeat;
+    background-size: 100% 100%;
+    min-height: 690px;
+}
+
+.agileits-content h2 {
+    font-family: 'Wallpoet', cursive;
+    color: #000;
+    font-size: 9.5em;
+    top: calc(50% - 108px);
+    position: absolute;
+    width: 56%;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.agileits-content h2 span {
+    color: #fff;
+}
+
+.w3layouts-right {
+    float: left;
+    width: 44%;
+    background: url(../img/cut.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.w3layouts-right h3 {
+    color: #3397af;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+
+.w3layouts-right h4 {
+    text-transform: capitalize;
+    margin: 1.5em 0 1em;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.w3ls-text {
+    margin-top: -50px;
+    padding-left: 5em;
+}
+
+.w3ls-text a {
+    color: #000;
+}
+
+.w3ls-text a:hover {
+    color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.agileits-content h4 {
+    font-size: 2em;
+    text-align: left;
+    margin: 3em 0 0 10em;
+    text-transform: capitalize;
+    color: #3397af;
+}
+
+p.copyright {
+    margin: 2em 0 0;
+}
+
+p.copyright a {
+    color: #000;
+}
+
+p.copyright a:hover {
+    color: #3397af;
+}
+
+/*-- background effects --*/
+/* Header */
+.w3layouts-bg {
+    background: #3398af;
+    height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .agileits-content, .w3layouts-right {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .agileits-content, .w3layouts-right {
+        min-height: 250px;
+        width: 100%;
+    }
+
+    .agileits-content h2 {
+        font-family: 'Wallpoet', cursive;
+        color: #000;
+        font-size: 4em;
+        top: 80px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    h1.header-w3ls {
+        font-size: 1.7em;
+    }
+
+    .w3layouts-right {
+        min-height: calc(100% - 250px);
+    }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        html { font-size: 42.6666667px; }
+        /* Android */
+        @media (min-width: 360px) { html { font-size: 48px; } }
+        /* iPhone6 */
+        @media (min-width: 375px) { html { font-size: 50px; } }
+        /* iPhone6 Plus */
+        @media (min-width: 414px) { html { font-size: 55.2px; } }
+        html { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+        a { color: #333; text-decoration: none; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+        img { -webkit-touch-callout: none; }
+        body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd, li, cite, fieldset, input, button, textarea { margin: 0; padding: 0; list-style: none; }
+        body { font-family: '微软雅黑',Helvetica,Consolas; width: 7.5rem; margin: 0 auto; color: #333; background: #efefed; font-size: .24rem; -webkit-overflow-scrolling: auto; }
+        .bg{position:absolute;top:0;left: 0;width:100%;height: 100%;background: url("/app/themes/jh_jh/imgs/bg.jpg") no-repeat center center;background-size:100% 100%;}
+        .box{margin-top: 3.56rem;position: relative;}
+        .box .nav{display: block;margin: 0 auto;width: 1.66rem;height:2.45rem;text-align: center;font-size: .5rem;color: #fff;text-decoration: none;padding-left:.46rem;}
+        .box .nav:nth-child(2){position: absolute;top:1.79rem;left: .59rem;}
+        .box .nav:nth-child(3){position: absolute;top:1.79rem;left: 4.82rem;}
+        .box .nav:nth-child(4){position: absolute;top:3.58rem;left:2.69rem;}
+        .middle { display: table-cell; vertical-align: middle; padding: 0; height: 2.45rem;width:1.2rem;text-align: center;white-space:pre-wrap;}
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="box">
+            {php $i = 1;}
+            {loop $navs $nav}
+                <a href="{$nav['url']}" class="nav" style="background:url({if strlen($nav['icon'])>0}{media $nav['icon']}{else}'/app/themes/jh_jh/imgs/bg.png'{/if}) no-repeat center center;background-size:2.12rem 2.45rem;" title="{$nav['name']}"><span class="middle">{$nav['name']}</span></a>
+            {php if($i>4) break;}
+            {php $i++;}
+            {/loop}
+        </div>
+    </div>
+</body>
+</html>

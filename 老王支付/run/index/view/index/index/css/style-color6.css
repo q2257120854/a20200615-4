@@ -1,0 +1,53 @@
+.page .content .subhead {
+	color: #fff;
+}
+.quick-link ul li.active::after {
+    background: #fff;
+}
+.quick-link ul li.active a {
+	color: #1D1D1D;
+}
+.quick-link ul li.active a:hover {
+	color: #fff;
+}
+.quick-link li::before {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.page .content .subhead a { 
+    color: #1d1d1d;
+    background: #fff;
+    display: inline-block;
+    padding: 0 8px;
+	padding-bottom: 1px;
+/*    line-height: ;*/
+}
+.page-cent .p-title h3 {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.page .form button {
+    background: #fff;
+	color: #1d1d1d;
+}
+.page .form button:hover {
+    background: #1d1d1d;
+	color: #ffffff;
+}
+.page .form button:after{
+	background: #1d1d1d;
+}
+.page .form .fields{
+    border-bottom-color: #ffffff;
+}
+.quick-link a:hover:after{
+	background: #1d1d1d;
+}
+
+/* Transparent sidebar*/
+.quick-link {
+    background: transparent;
+	box-shadow: none;
+}
+.page-footer {
+    left: 0;
+    margin-left: 9px;
+}

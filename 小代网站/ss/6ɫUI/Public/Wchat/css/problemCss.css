@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:'微软雅黑';
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.problemList{
+	width: 90%;
+	margin-left: 5%;
+	min-height:5rem;
+	background:#fff;
+}
+.problemList li{
+	float:left;
+	width: 100%;
+	min-height: 3.1rem;
+	border-bottom:1px solid #dddddd;
+}
+.problemList li span{
+	line-height: 3.1rem;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+.problemList li .thisspan{
+	color:#2e72cf;
+}
+.problemList li p{
+	font-size:0.9rem;
+	display: none;
+}
+.page{
+	text-align: center;
+}
+.page span{
+    font-size: 1.5rem;
+    display: inline-block;
+    background-color: #eee;
+    width: 1.5rem;
+    border: 1px solid #eee;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.page a,a:link,a:visited,a:active{
+	text-decoration:none;
+    font-size: 1.5rem;
+    border: 1px solid #0275d8;
+    width: 1.5rem;
+    display: inline-block;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    color: #0275d8;
+}

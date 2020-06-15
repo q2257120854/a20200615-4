@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>自由块列表</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>自由块列表</h5>
+			</div>
+			<div class="public-btnArea">
+	        	<a href="{:U('Block/add')}" class="btn btn-grayBg">
+	            	<i class="glyphicon glyphicon-plus public-ico"></i>
+	                <span class="public-label">添加自由块</span>
+	            </a>
+        	</div>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>调用方式</th>
+							<th>类型</th>
+							<th>备注</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<php>$type=array('文本','图片','HTML内容');</php>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.id}</td>
+							<td>
+								<php>echo htmlspecialchars('<block') . ' name="' . $vo['name'] . htmlspecialchars('" />');</php>
+							</td>
+							<td>{$type[$vo['type']-1]}</td>
+							<td>{$vo.remarks}</td>
+							<td class="text-left">
+								<a href="{:U('Block/edit',array('id'=>$vo['id']))}">编辑</a>
+								<a href="javascript:delBlock('{$vo.id}');">删除</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		function delBlock(id){
+			layer.confirm(
+				'数据删除后不可恢复,请确认模板中对应调用以修改？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Block/delBlock')}",
+						{
+							id:id
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								$("#list-"+id).remove();
+								layer.msg("操作成功");
+							}
+						}
+					);
+				}
+			);
+		}
+	</script>
+</html>

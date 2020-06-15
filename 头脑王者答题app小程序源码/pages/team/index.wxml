@@ -1,0 +1,11 @@
+<view class="fk-ccontainer">
+    <view class="fk-header-container">
+        <text class="fk-font-16 fk-margin-b20">联系wx：suncentwl选择对战模式</text>
+    </view>
+    <view class="fk-footer">
+        <view class="fk-footer-button" data-mode="" bindtap="">联系wx：suncentwl2v2</view>
+        <view class="fk-footer-button danger" data-mode="" bindtap="">联系wx：suncentwl3v3</view>
+        <view class="fk-footer-button success" data-mode="" bindtap="">联系wx：suncentwl5v5</view>
+        <text class="fk-footer-times">剩余挑战次数：{{availableTimes}}次</text>
+    </view>
+</view>

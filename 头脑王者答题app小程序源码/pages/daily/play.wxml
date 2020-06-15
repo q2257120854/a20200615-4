@@ -1,0 +1,70 @@
+<view class="fk-flex-v fk-padding-t10">
+  <view class='fk-flex fk-flex-center'>
+    <view class='fk-countdown animation'>
+      <canvas class="fk-countdown-bg" canvas-id="countdownBgCanvas"></canvas>
+      <canvas class="fk-countdown-canvas" canvas-id="countdownCircleCanvas"></canvas>
+    </view>
+  </view>
+  <view class="fk-subject">
+    <view animation="{{questionNoAnimData}}" class="fk-flex-v fk-flex-center fk-font-16" style="{{questionNoStyle}}" hidden="{{questionNoHidden}}">
+      <view class="fk-font-16">{{questionNo}}</view>
+      <!-- <view class="fk-font-20">{{questionType}}题</view> -->
+    </view>
+    <text class="title animation" style='animation-delay:.5s'>{{subject}}</text>
+    <image src="{{questionImageUrl}}" style="height:50px" mode="aspectFit" wx:if="{{questionImageUrl != ''}}" />
+  </view>
+  <view hidden="{{userAnswer != -1}}">
+    <view class="fk-answer-wrapper">
+      <view class="fk-answer animation" style="animation-delay:.{{index * 2}}s" wx:for="{{answerList}}" wx:key="{{index}}" bindtap="submitAnswer" data-id="{{index}}">
+        <text>{{item.answer}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--答题结果-->
+  <view hidden="{{userAnswer == -1}}">
+    <view class="fk-answer-wrapper">
+      <view class="fk-answer-result {{userAnswer == index ? userAnswerResultClass : (rightAnswer == index ? 'right' : 'hidden')}}" wx:for="{{answerList}}" wx:key="{{index}}">
+        <text>{{item.answer}}</text>
+        <image src="../../static/images/{{(userAnswer == rightAnswer || rightAnswer == index) ? 'circle' : 'wrong'}}.png" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 道具展示 -->
+  <!-- <view class="fk-props" bindtap='jumpThisQuestion' wx:if="{{isAnswerLoaded}}">
+        <image src="/static/images/props-jump.png"/>
+        <text style="font-weight:bold;">X {{propsJump}}</text>
+    </view> -->
+
+  <!-- 挑战结果 -->
+  <ui-mask show="{{showGameResult}}" bindclose="getReward">
+    <view class='fk-result-wrapper'>
+      <view class="fk-result">
+        <text class="fk-result-title fk-font-26">挑战结束</text>
+        <view class="fk-flex-v fk-flex-items-center">
+          <text class="fk-result-title fk-font-14">本次挑战获得</text>
+          <image src="../../static/images/money.png" />
+          <view class="fk-result-num-wrapper">
+            <view style="font-size:14px;color:#f5a623;margin-right:5px">x</view>
+            <view style="font-size:20px;color:#f5a623;font-weight:bold;">{{gainedIntegral}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="fk-result-button" bindtap="getReward">领取奖励</view>
+      <!-- <view class="fk-result-button" style="background-color:#FF5722" data-double="{{true}}" bindtap="getReward">使用翻倍卡（x{{propsDoubleIntegral}}）</view> -->
+    </view>
+  </ui-mask>
+
+  <!-- 纠错 -->
+  <view class="error-ops" hidden="{{correctionBtnHidden}}">
+    <view hidden='{{errorOpsHidden}}'>
+      <view class='ops animated {{opsClass}}'>
+        <button size='mini' data-content='答案错误' bindtap='submitError'>答案错误</button>
+        <button size='mini' data-content='题目内容描述错误' bindtap='submitError'>题目内容描述错误</button>
+      </view>
+    </view>
+    <button size='mini' type='warn' bindtap='showErrorOps'>纠错</button>
+  </view>
+
+</view>

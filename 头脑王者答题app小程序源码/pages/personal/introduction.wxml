@@ -1,0 +1,84 @@
+<view class="fk-container">
+    <view class="fk-header">
+        <text>段位</text>
+        <text></text>
+        <text>奖励</text>
+    </view>
+
+    <view class="fk-level-container" wx:for="{{gameLevelList}}" wx:key="{{index}}">
+        <text class="fk-level-name">{{item.name}}</text>
+        <view class="fk-level-image">
+            <image src="{{item.image}}" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>{{item.integral}}</text>
+        </view>
+    </view>
+
+    <!-- <view class="fk-level-container">
+        <text class="fk-level-name">最强王者</text>
+        <view class="fk-level-image">
+            <image src="/static/images/king.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>3000</text>
+        </view>
+    </view>
+
+    <view class="fk-level-container">
+        <text class="fk-level-name">璀璨钻石</text>
+        <view class="fk-level-image">
+            <image src="/static/images/diamond.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>2000</text>
+        </view>
+    </view>
+
+    <view class="fk-level-container">
+        <text class="fk-level-name">华贵白金</text>
+        <view class="fk-level-image">
+            <image src="/static/images/platinum.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>1500</text>
+        </view>
+    </view>
+
+    <view class="fk-level-container">
+        <text class="fk-level-name">荣耀黄金</text>
+        <view class="fk-level-image">
+            <image src="/static/images/gold.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>1000</text>
+        </view>
+    </view>
+
+    <view class="fk-level-container">
+        <text class="fk-level-name">不屈白银</text>
+        <view class="fk-level-image">
+            <image src="/static/images/silver.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>600</text>
+        </view>
+    </view>
+
+    <view class="fk-level-container">
+        <text class="fk-level-name">倔强青铜</text>
+        <view class="fk-level-image">
+            <image src="/static/images/bronze.png" />
+        </view>
+        <view class="fk-level-integral">
+            <image src="/static/images/money.png" />
+            <text>300</text>
+        </view>
+    </view> -->
+</view>

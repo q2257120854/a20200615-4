@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<script src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+		<title>编辑管理员</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>编辑管理员</h5>
+			</div>
+			<div class="public-selectArea public-selectArea1">
+				<form action="{:U('Admin/edit',array('id'=>$data['id']))}" method="post">
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>用户名：</dt>
+								<dd>
+									<input type="text" name="username" value="{$data.username}">
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>密码：</dt>
+								<dd>
+									<input type="password" name="password" placeholder="如不修改请留空">
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>确认密码：</dt>
+								<dd>
+									<input type="password" name="repassword">
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>状态：</dt>
+								<dd>
+		                          	<select class="select" name="status">
+		                                <option value="1" <if condition="$data['status'] eq 1"> selected="selected"</if> >启用</option>
+		                                <option value="0" <if condition="$data['status'] eq 0"> selected="selected"</if> >禁用</option>
+		                            </select>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href="javascript:;" class="btn btn-sereachBg" id="submitBtn">
+							<span class="public-label">提交</span>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+	        $("#submitBtn").on('click',function(){
+	        	cvphp.submit($("form"),function(data){
+	        		if(data.status!=1){
+	        			layer.msg(data.info);
+	        		}else{
+	        			layer.msg('编辑成功');
+	        			setTimeout(function(){
+	        				window.location.href="{:U('Admin/index')}";
+	        			},2000);
+	        		}
+	        	});
+	        });
+		});
+	</script>
+</html>

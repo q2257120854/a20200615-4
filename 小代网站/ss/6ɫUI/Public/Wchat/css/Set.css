@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background:#f1f8fe;
+}
+a:hover{
+	text-decoration:none;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.up{
+	width:100%;
+	min-height:1rem;
+	background:#fff;
+	float:left;
+	margin-top:0.5rem;
+}
+.up li{
+	line-height:3rem;
+	height:3rem;
+	background:url(../images/forward.png) no-repeat center right 5%;
+	background-size:2.5%;
+}
+.up a{
+	font-size:0.95rem;
+	color:#434343;
+}

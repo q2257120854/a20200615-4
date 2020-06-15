@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<title>站 HTML5手机网站模板 WAP手机网站 微网站 科蚁网 芳草地·雪岭仙山</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/zepto.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/tool.js"></script> 
+
+</head>
+
+<body style=" background:#adacaa;">
+<header class="ui-header">
+<h1>公司简介</h1>
+    <div class="ui-header-left"><a class="ui-header-ico-home" href="/web/800154/"></a></div>
+    <div class="ui-header-right">
+    	<a id="openMenu" class="ui-header-ico-menu" href="javascript:;#mp.weixin.qq.com"></a>    	
+    </div>
+</header>
+
+<ul id="menu">
+    <li class="icon"><a href="content.html">公司简介</a></li>
+    <li class="icon"><a href="list.html">项目介绍</a></li>
+    <li class="icon"><a href="#aid=2723#mp.weixin.qq.com">产品展示</a></li>
+    <li class="icon"><a href="">雪岭动态</a></li>
+    <li class="icon"><a href="">物业服务</a></li>
+    <li class="icon"><a href="">联系我们</a></li>
+</ul>
+
+<div class="catpic"><img src="images/201402251545531.jpg" width="100%"></div>
+<div class="amain">
+<div class="filter"></div>
+    <h2 class="catname">公司简介</h2>
+    <h3 class="tle">重庆芳草地房地产开发有限公司</h3>
+    <div class="cont"><p class="MsoNormal" style="text-align:center;" align="center">
+	<br />
+</p>
+<p class="MsoNormal" style="text-indent:26.15pt;">
+	重庆芳草地房地产开发有限公司成立于<span>2007</span>年，公司秉承诚信守法、创新发展的经营宗旨，坚持环保、生态、健康、可持续发展的开发理念，以“专业的、用心的对待每一项工作，努力向顾客提供不断改进的、物有所值的品牌物业”为公司质量目标，为顾客提供不断改进的物有所值的品牌产品和服务。<span></span> 
+</p>
+<p class="MsoNormal" style="text-indent:27pt;">
+	公司现开发项目“芳草地·雪岭仙山”位于武隆县仙女山新区，占地<span>1000</span>余亩，拟建集休闲、度假、旅游、商业配套、户外运动为一体的大型高端复合社区、西班牙风情的异域小镇，为都市精英阶层打造真正意义的养生休闲避暑第二居所。公司成立以来，先后获得了一系列殊荣：<span>2009</span>年获重庆市人民政府颁发的园林式小区称号；<span>2010</span>年获年度中国房博会重庆最佳旅游地产、最具投资价值旅游地产称号；<span>2011</span>年３月获年度最受市民喜爱旅游地产、“美丽重庆<span>.</span>宜居生活”最受电视观众喜欢旅游地产称号，同年<span>8</span>月获詹天佑<span>.</span>重庆优秀住宅小区奖和詹天佑<span>.</span>重庆优秀工程质量奖殊荣。<span></span> 
+</p>
+<p class="MsoNormal" style="text-indent:27pt;">
+	<br />
+</p>
+<p style="margin:0cm 0cm 0pt;line-height:150%;text-indent:24.1pt;">
+	芳草地按照现代企业制度实行规范化管理，通过对人才队伍的长期培养与建设，已拥有一支稳定、团结、专业、高素质的员工队伍。未来的发展中，芳草地将持续提供超越客户期望的产品和服务，让客户满意；将持续提供超越员工期望的发展空间和报酬，让员工自豪；将巩固现有行业优势，让企业更好更快地发展壮大，实现“重庆旅游地产领跑者”目标。
+</p>
+<p>
+	<br />
+</p>
+<img alt="" src="images/20140225154419_72364.jpg" width="260" height="127" /> 
+<p>
+	<br />
+</p>    </div>
+</div>
+
+<footer>
+<div class="copy tc">微网站地房地产开发有限公司</div>
+    <div class="tecl tc">科蚁网 www.ke01.com 提供技术支持</div>
+</footer>
+<script>
+$(function() {
+var obj = new Image();
+$(".cont").find("img").each(function(i, n) {
+var ImgObj = new Image(); //判断图片是否存在
+ImgObj.src = $(n).attr("src");  
+var width = $(".cont").width();
+   //没有图片，则返回-1  
+if (ImgObj.width > width) {  
+$(n).width(width);
+} 
+});
+});
+</script>
+<div style="display:none"></div><script>
+       var allA = document.getElementsByTagName('a');
+			for(var i=0;i<allA.length;i++){
+				if(allA[i].href.indexOf('tel')){
+				  allA[i].href = allA[i].href + '#mp.weixin.qq.com';
+				}
+			}
+       </script>
+	  </body>
+</html>

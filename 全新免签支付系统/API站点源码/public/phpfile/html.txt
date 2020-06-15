@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>L Pays创建订单</title>
+    </head>
+    <body>
+        <center>
+            <h3>创建一个价值为1元的订单</h3>
+            <form method="get" action="http://支付页面地址/"><!-- 设置Get请求接口 -->
+                <input type="hidden" name="appid" value=""><!-- 设置APPID -->
+                <input type="hidden" name="gu" value=""><!-- 设置返回地址,请先自行编码 -->
+                <input type="hidden" name="rurl" value=""><!-- 设置返回地址,请先自行编码 -->
+                <label>商品价格:</label>
+                <input type="text" name="income" value="1"><!-- 设置商品价格 -->
+                <br><br>
+                <input type="radio" name="type" value="alipay" checked><!-- 设置支付方式 -->
+                <label>支付宝</label>
+                <input type="radio" name="type" value="wxpay"><!-- 设置支付方式 -->
+                <label>微信</label>
+                <input type="radio" name="type" value="qqpay"><!-- 设置支付方式 -->
+                <label>QQ</label>
+                <br><br>
+                <button>去支付</button>
+            </form>
+        </center>
+    </body>
+</html>

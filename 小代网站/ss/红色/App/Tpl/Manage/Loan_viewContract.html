@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>借款订单：{$data.oid}合同</title>
+		<style>
+			.title{
+				font-size: 24px;
+				text-align: center;
+				background-color: #78ea81;
+			    line-height: 48px;
+			}
+			.content{
+				width: 90%;
+				margin: 16px auto;
+			}
+			.nestable{
+				margin: 20px !important;
+				border: 1px solid #5961c7;
+				padding: 0px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="title">借款订单：{$data.oid}合同</div>
+			<div class="public-selectArea public-selectArea1 margin_10 content">
+				{$tpl}
+			</div>
+		</div>
+	</body>
+</html>

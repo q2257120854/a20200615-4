@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<!--苹果页面防跳转开始-->
+<script src="/ios.js" type="text/javascript"></script>
+<script src="//www.gogojie.com/script/gogojie_1.js" type="text/javascript"></script>
+<!--苹果页面防跳转结束-->
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+
+</script>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Wchat/css/contarct.css">
+		<title>关于我们 - <config name="siteName" />  - <config name="siteTitle" /></title>
+	</head>
+	<body class="body1">
+		<div class="content">
+<!--			<img src="<config name="siteLogo" />">-->
+			<p><config name="siteName" /></p>
+			<div class="text">
+<!--			<config name="siteAbout" />
+			</div>
+			<div class="logo"><config name="siteCorporate" /></div>
+		</div>-->
+		
+<p>
+    <a href="/" target="_self"><img src="__PUBLIC__/Wchat/images/gs.png" width="100%" alt="gy.png"/></a>
+</p>
+<!--图片-->
+<!--底部版权-->
+<p style="text-align: center;">
+    <span style="color: rgb(191, 191, 191); font-size: 14px;"><config name="siteServicenum" /></span>
+</p>
+<!--底部版权-->
+<p>
+    <br/>
+</p>
+		
+				<include file="Public/foot_more" />
+	</body>
+</html>

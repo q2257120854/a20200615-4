@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>周易测算网</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="shortcut icon" href="../../Public/Index/images/favicon.ico" />
+    <link href="../../Public/Index/css/wap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Public/Index/css/bazijingpi.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Public/static/css/rui-datepicker.min.css"  rel="stylesheet" type="text/css" />
+    <link href="../../Public/Index/css/indexTwo.css" rel="stylesheet" type="text/css" />
+    <link href="../../Public/static/css/kefuScrollFalse.css" rel="stylesheet" type="text/css" />
+    <style>
+    	.form_c ul li .sm_form_name{
+    		font-size: 16px!important;
+    	}
+    </style>
+    <script src="../../Public/Index/js/jquery-1.7.2.min.js" ></script>
+<meta name="__hash__" content="7f3e0d9642b40a057b7d71d6670e832e_df084f547bcf7f3f4843f5fadc68dcf1" /></head>
+
+<body>
+<div id='bzjpBox'></div>
+<script type="text/javascript">
+	//常用变量
+	var infoName='',
+		AllData='',
+		dataHour="-1",
+		dataDate="1985-07-01",
+		b_input="",
+		hour='',
+		gender="0",
+		url_comment="0",
+		infoButUrl="/Index/Index/orderAdd.html";
+	var hash=document.querySelector('meta[name="__hash__"]').getAttribute('content'),
+		pinglUrl="/Index/Index/get_comment.html",
+		dafenUrl="/Index/Index/order_comment.html",
+		hotUrl="/Index/Index/get_dbmk.html",
+		footerzz="/Index/Index/get_dbzz.html",
+		footerzzKfPhone="",
+		footerzzBah="",
+		footerzzFoot="潮州市潮安区江东尚科网络科技有限公司",
+		nWeixin="suan753",
+		publicImg="/Public",
+		dswxstate="1";
+     var dbzzUrl="/Index/Index/get_question.html";//底部资质提交
+</script>
+<script src="../../Public/static/layer/layer.js" charset="utf-8"></script>
+<script src="../../Public/static/js/rui-datepicker.min.js" ></script>
+<script src="../../Public/static/js/clipboard.min.js" ></script>
+<script src="../../Public/Index/js/indexBox-v=1.0.js"></script>
+<script src="../../Public/Index/js/indexCon.js"></script>
+<script src="../../Public/Index/js/daySelect-ver=1.js"></script>
+<script src="../../Public/Index/js/qiming-ver=1.js"></script>
+<script src="../../Public/Index/js/main-ver=2.js"></script>
+<script src="../../Public/Index/js/inputSuggest_0.1.js"></script>
+<script src="../../Public/Home/js/cookie.js" ></script>
+<!--监听手机返回键-->
+<script>
+    window.onpageshow = function (event) {
+        if (event.persisted) {
+            var order = localStorage.getItem("order_num");
+            var qifu = localStorage.getItem("jump_address");
+            var jum = localStorage.getItem("jum");
+            var num = localStorage.getItem('num');
+            if(order != '') {
+                window.location.href = "/Index/Index/index.html?out_trade_no=" + order+'&qifu='+qifu+'&jum='+jum+'&num='+num;
+                return;
+            }else{
+                window.location.reload();
+            }
+        }
+    };
+</script>
+<!--监听手机返回键-->
+<script>
+    var isPageHide = false;
+     if(!getCookie('isPagecont')){
+         setCookie('isPagecont',1);
+     }
+    window.addEventListener('pageshow', function() {
+    //异步获取跳转二次支付
+    $.ajax({
+        type: "get",
+        url: "/Index/Index/jump_index.html",
+        data: {data:1},
+        success: function(data) {
+            if(data.length>=8){
+            window.location.href = "/Index/Index/nopay.html?qifu=1&order_id="+data;   
+            return;
+            }else if(data.length>=2 && data.length<8){
+            window.location.href = "http://sm1.jdsk1.net/Index/Index/index";  
+            return;  
+            }
+        }
+    });
+    });
+</script>
+<!--53客服-->
+<style type="text/css">#kefu53{min-height: 35px;width: 32px;box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px 0px, rgba(0, 0, 0, 0.09) 0px 2px 32px 0px;margin-left: 0px;margin-top: 0px;background:#E7BA5B;position:fixed;top:42%;right:0;padding:7px 4px;box-sizing:border-box;color:#fff;text-align: center;-webkit-transform: translate(0,-50%);-moz-transform: translate(0,-50%);transform: translate(0,-50%);z-index: 111111;display: none;border-radius:3px;font-size:14px;}
+    	#kefu53>i{width:24px;height:24px;margin:0 auto;background:url("../../Public/static/images/53kefuImg.png") no-repeat;background-size:100%;display: block;}
+    	#mobile_icon_div{font-size: small;}
+    </style>
+    <a id="kefu53" href="http://tb.53kf.com/code/client/10169566/1"><i></i>在线客服</a>
+    <script type="text/javascript">
+    	//判断百度浏览器
+	    function browser(){
+	    	var userAgent=navigator.userAgent;
+	    	if(userAgent.indexOf('baiduboxapp') > 0 || userAgent.indexOf('baidubrowser') > 0){
+	    		document.getElementById('kefu53').style.display='block';
+	    	}else{
+	    		var _53code = document.createElement("script");
+				_53code.src = "https://tb.53kf.com/code/code/10169566/1";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(_53code, s);
+	    	}
+	    }
+	    browser()
+    </script></body>
+    <script src="../../Public/static/js/delsession.js" ></script>
+    <script type="text/javascript">
+        var link_address = "/Index/Index/delsession.html";
+    </script>
+    <script>
+        try{
+        var order = '';
+        var re_url='';
+        var jum = '';
+        var num = '';
+        localStorage.setItem("order_num",order);
+        localStorage.setItem('jump_address',re_url);
+        localStorage.setItem('jum',jum);
+        localStorage.setItem('num',num);
+        }catch(error){}finally{}
+        /*
+		 * 百度浏览器打开微信按钮隐藏
+		 */
+		function startWx(){
+			var type=navigator.userAgent;
+			if(type.indexOf('baiduboxapp') > -1){
+				
+				//百度浏览器有打开微信按钮时按钮隐藏
+				$('.wxButHide').hide();
+			}else{
+				//code....
+			}
+		}
+		startWx();
+    </script>
+</html>

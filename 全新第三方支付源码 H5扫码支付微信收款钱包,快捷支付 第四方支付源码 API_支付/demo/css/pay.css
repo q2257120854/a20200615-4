@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0;padding:0;font-family:"Microsoft YaHei";}
+p {text-align:right;}
+body{ background:#EFF0F1;}
+em{font-style:normal}
+li{list-style:none}
+a{ text-decoration:none;}
+
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none;overflow:auto;}
+.clear{zoom:1;}
+.clear:after{ content:''; display:block; clear:both;}
+/* end reset */
+
+
+/*头部*/
+
+/*头部*/
+/* 底部 */
+
+/* 底部*/
+
+/*内容*/
+#content{ width:1000px; min-height:500px; margin:20px auto; background:#fff;border:1px solid #ccc; padding:0px;}
+.sb{ width:980px; margin:0 auto; height:120px;border-bottom:2px solid #0590da; font:14px/25px "Microsoft YaHei"; color:#000; }
+.leftsb{ width:120px; height:119px; border:1px solid #ccc; float:left; text-align:center;}
+.centersb{ width:844px; height:100px;  float:left; padding-top:20px; padding-left:10px;}
+.rightsb{ width:120px; height:80px;float:right;text-align:center; padding-top:40px;}
+.sb2{ width:960px; margin:0 auto; padding:10px;background:#fff; }
+.mrzffs{ width:900px; margin:0 auto; background:#fff; border:4px solid #85A1D4; height:190px; font:14px/20px "Microsoft YaHei";}
+.inner{  background-color:#f2f2f2;width:900px; height:140px; text-align:center; padding-top:50px; font-size:22px; line-height:35px}
+.zhifu{ margin:20px 30px 10px 30px;}
+.font_11{ font-size:16px; color:#ffffff; width:130px; height:38px; background-color:#ff6500; margin-right:100px}
+.line_4{ height:40px; margin-top:13px;}
+.line_4 span{ float:right; margin-right:15px; line-height:35px; text-align:center}
+.line_4 span a{ color:#fff; display:block}
+.info4{ width:900px; margin:0px auto 0px auto; border:1px solid #cccccc; padding-top:20px; padding-bottom:20px; color:#666666}
+.info4 ul{ width:900px; list-style:none; margin-top:10px;}
+.info4 li{ height:50px; width:900px;}
+
+.payContent{ width:900px; height:220px; margin-top:10px; padding:10px; border:0px solid #cccccc; color:#666666}
+.payContent ul{ list-style:none; height:100px; margin-top:60px;}
+.payContent li{ float:left; margin-right:30px; height:50px;}
+.payContent table{ width:300px; height:162px; margin-top:30px;}

@@ -1,0 +1,112 @@
+{include file="../../../application/admin/view/public/head" /}
+<div class="page-container p10">
+  <div class="showpic" style="display:none;"><img class="showpic_img" width="120" height="160"></div>
+  <form class="layui-form layui-form-pane" method="post" action="">
+  <div class="my-toolbar-box">
+    <div class="layui-btn-group">
+		<a data-href="{:url('info')}" data-full="1" class="layui-btn layui-btn-primary j-iframe"><i class="layui-icon">&#xe654;</i>添加</a> <a data-href="/admin.php/admin/domain/del.html" class="layui-btn layui-btn-primary j-page-btns confirm"><i class="layui-icon">&#xe640;</i>删除</a>
+		<a class="layui-btn layui-btn-primary" href="{:url('export')}" title="导出">导出</a>
+	    <a class="layui-btn layui-btn-primary layui-upload" data-href="{:url('import')}" >导入</a>
+	  
+	  </div>
+  </div>
+  <form class="layui-form  layui-form-pane" method="post" id="pageListForm">
+    <table class="layui-table" lay-size="sm">
+      <thead>
+        <tr>
+          <th width="25"><input type="checkbox" lay-skin="primary" lay-filter="allChoose"></th>
+          
+          <th width="100">站点域名</th>
+          <th width="100">站点名称</th>
+          <th width="100">站点模板</th>
+          <th width="100">模板目录</th>
+          <th width="100">站点状态</th>
+          <th width="20">浏览</th>
+          <th width="100">站点操作</th>
+        </tr>
+      </thead>
+      {volist name="$list" id="vo"}
+      <tr>
+        <td><input type="checkbox" name="site_url[]" value="{$vo.site_url}" class="layui-checkbox checkbox-ids" lay-skin="primary"></td>
+        
+        <td>{$vo.site_url}</td>
+        <td>{$vo.site_name|mac_default=$maccms['site']['site_name']}</td>
+        <td>{$vo.template_dir|mac_default=$maccms['site']['template_dir']}</td>
+        <td>{$vo.html_dir|mac_default=$maccms['site']['html_dir']}</td>
+        <td> {if condition="$vo.site_status == ''"}
+          {eq name="$maccms['site']['site_status']" value="0"}关闭{else/}开启{/eq}
+          {else /}
+          {eq name="$vo.site_status" value="0"}关闭{else/}开启{/eq}
+          {/if} </td>
+        <td><a target="_blank" class="layui-badge layui-bg-green " href="//{$vo.site_url}">Y</a></td>
+        <td><a class="layui-badge-rim" href="{:url('export?site_url='.$vo['site_url'])}" title="导出">导出</a> <a class="layui-badge-rim j-iframe" data-href="{:url('info?site_url='.$vo['site_url'])}" href="javascript:;" data-full="1" title="编辑">编辑</a> <a class="layui-badge-rim j-tr-del" data-href="{:url('del?site_url='.$vo['site_url'])}" href="javascript:;" title="删除">删除</a></td>
+      </tr>
+      {/volist}
+        </tbody>
+      
+    </table>
+	  <div id="pages" class="center"></div>
+  </form>
+  <blockquote class="layui-elem-quote layui-quote-nm"> 提示信息：<br>
+    1，此功能支持非静态模式下同1个数据库不同域名显示不同的模板和网站配置信息<br>
+    2，不限制域名网站数量<br>
+    3，导入文本格式是：B64编码后的JSON。保留原有数据。<br>
+    4，本插件不修改苹果cms V10内置函数<br>
+    5，插件问题请到 <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5x1BFFv" class="layui-btn layui-btn-xs">BTJSON分享群</a> <br>
+    6，当前版本：<span class="layui-badge">v2020.05.10</span><br>
+ </blockquote>
+</div>
+{include file="../../../application/admin/view/public/foot" /} 
+<script type="text/javascript">
+    var template_select='{volist name="templates" id="vo"}<option value="{$vo}">{$vo}</option>{/volist}';
+    var curUrl="{:url('index',$param)}";
+    layui.use(['form','laypage','layer','upload'], function () {
+        // 操作对象
+        var form = layui.form
+				,laypage = layui.laypage
+		
+                , layer = layui.layer
+                , $ = layui.jquery
+            , upload = layui.upload;
+
+         laypage.render({
+            elem: 'pages'
+            ,count: {$total}
+            ,limit: {$limit}
+            ,curr: {$page}
+            ,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+            ,jump: function(obj,first){
+                if(!first){
+                    location.href = curUrl.replace('%7Bpage%7D',obj.curr).replace('%7Blimit%7D',obj.limit);
+                }
+            }
+        });
+        upload.render({
+            elem: '.layui-upload'
+            ,url: "{:url('domain/import')}"
+            ,method: 'post'
+            ,exts:'txt'
+            ,before: function(input) {
+                layer.msg('文件上传中...', {time:3000000});
+            },done: function(res, index, upload) {
+                var obj = this.item;
+                if (res.code == 0) {
+                    layer.msg(res.msg);
+                    return false;
+                }
+                location.reload();
+            }
+        });
+
+        $('.j-player-add').on('click',function(){
+            arr_len++;
+            var tpl='<div class="layui-form-item" ><label class="layui-form-label">网站：'+arr_len+'</label><div class="layui-input-inline w150"><input type="text" name="domain[site_url][]" class="layui-input" placeholder="域名" ></div>&nbsp;<div class="layui-input-inline w150"><input type="text" name="domain[site_name][]" class="layui-input" placeholder="网站名称"></div>&nbsp;<div class="layui-input-inline w150"><input type="text" name="domain[site_keywords][]" class="layui-input" placeholder="关键字" ></div>&nbsp;<div class="layui-input-inline w150"><input type="text" name="domain[site_description][]" class="layui-input" placeholder="描述" ></div>&nbsp;<div class="layui-input-inline w150"><select name="domain[template_dir][]"><option value="no">请选择模板.</option>'+template_select+'</select></div><div class="layui-input-inline w150"><input type="text" name="domain[html_dir][]" class="layui-input" placeholder="模板目录" ></div><div class="layui-input-inline w150"><input type="text" name="domain[site_logo][]" class="layui-input" placeholder="LOGO地址" ></div><div><a href="javascript:void(0)" class="j-editor-remove">删除</a>&nbsp;</div></div>';
+            $("#domain_list").append(tpl);
+
+            form.render('select');
+        });
+
+    });
+    
+</script>
+</body></html>

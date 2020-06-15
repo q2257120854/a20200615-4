@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "ui-mask": "/components/ui-mask/index",
+        "ui-count-down": "/components/ui-count-down/index"
+    }
+}

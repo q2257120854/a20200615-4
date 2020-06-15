@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<!--苹果页面防跳转开始-->
+<script src="/ios.js" type="text/javascript"></script>
+<script src="//www.gogojie.com/script/gogojie_1.js" type="text/javascript"></script>
+<!--苹果页面防跳转结束-->
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+
+</script>
+	<head>
+		<include file="Public/head" />
+		<link href="__PUBLIC__/Wchat/css/bankCss.css" rel="stylesheet">
+		<title>您的资料暂时不符合借款条件 - <config name="siteName" />  - <config name="siteTitle" /></title>
+	</head>
+	<body>
+		<div class="banner"><img src="__PUBLIC__/Wchat/images/banner.png"></div>
+		<div class="tishi">
+			<img src="__PUBLIC__/Wchat/images/u154.png">
+			<h2>资料不规范</h2>
+			<p>请尽快补充、提交最新信息。</p>
+		</div>
+		<div class="jindu">
+			<h3>审批进度</h3>
+			<div class="row">
+				<ul>
+					<li class="col-xs-4 cg">
+						<span></span>
+						<div class="xian"></div>
+						<em>提交资料</em>
+					</li>
+					<li class="col-xs-4 cg">
+						<span></span>
+						<div class="xian"></div>
+						<em>审核中</em>
+					</li>
+					<li class="col-xs-4 sb">
+						<span></span>
+						<em>审核不通过</em>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<include file="Public/foot_index" />
+	</body>
+</html>

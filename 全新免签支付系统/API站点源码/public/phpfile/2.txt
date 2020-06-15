@@ -1,0 +1,28 @@
+<?php
+	@header("Content-type:text/html;charset=utf-8");//设置页面编码
+	require_once('edlm.php');//载入运行所需文件
+	$appid = '';//设置你的APPID
+	$apppwd = '';//设置你的APPPWD
+	$dh = $_GET['dh'];//dh和ltype由订单接口自动返回
+	$ltype = $_GET['ltype'];//dh和ltype由订单接口自动返回
+	$lppwd = $_GET['lppwd'];//apppwd由订单接口自动返回
+	//也可不请求API，直接判断apppwd是否正确即可
+	//以上设置不变
+	$row = '{"error":"0","tradeNo":"2018081321001004020589602223","tradeAmount":"1.00","tradeTime":"2018-08-13 08:08:04","goodsTitle":"\u5546\u54c1","token":"55d5366a518503e8674868da91b168f0"}';//查询返回的数据
+	$row = json_decode($row);//JSON解析
+	//判断是否存在错误
+	if($row->{'error'}==0){
+		$token = md5($row->{'tradeNo'}.$apppwd.$dh);//生成此订单的唯一密钥
+		//判断密钥是否正确
+		if($row->{'token'}!=$token){
+			exit('L Pays:此数据来自外宇宙,并不是有效的数据');
+		}
+		$tradeNo = $row->{'tradeNo'};//服务器返回的支付宝交易号
+		$tradeAmount = $row->{'tradeAmount'};//金额
+		$tradeTime = $row->{'tradeTime'};//交易时间
+		$goodsTitle = $row->{'goodsTitle'};//备注信息
+		exit('商品的订单详细<br>支付宝订单号:'.$tradeNo.'<br>实收金额:'.$tradeAmount.'<br>收款时间:'.$tradeTime.'<br>订单备注:'.$goodsTitle);
+	}else{
+		exit($row->{'msg'});//有错误则提示错误信息
+	}
+?>

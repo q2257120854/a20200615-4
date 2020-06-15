@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0066)https://video.qq.com/getcookie/getcookie.html.html?t=1530967948579 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		document.domain="qq.com";
+
+		function getCookie(name) 
+		{ 
+			var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");		 
+			if(arr = document.cookie.match(reg))		 
+				return unescape(arr[2]); 
+			else 
+				return null; 
+		}
+		
+		if (self != top){
+			//在iframe中
+			try{
+                parent.txvGetLoginCookiesCallback({
+                    "main_login":getCookie("main_login"),
+					"access_token":getCookie("access_token"),
+					"appid":getCookie("appid"),
+					"openid":getCookie("openid"),
+					"vuserid":getCookie("vuserid"),
+					"vusession":getCookie("vusession"),
+					"refresh_token":getCookie("refresh_token")
+				});
+			}
+			catch(e){
+				//无法跨域
+			}			
+		}
+		</script>
+	
+
+</body><style type="text/css" id="15891542978"></style></html>

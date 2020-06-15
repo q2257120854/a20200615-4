@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+<link rel="stylesheet" href="__PUBLIC__/Manage/css/bootstrap.css">
+<link rel="stylesheet" href="__PUBLIC__/Manage/fonts/web-icons/web-icons.css">
+<link rel="stylesheet" href="__PUBLIC__/Manage/fonts/font-awesome/font-awesome.css">
+<script src="__PUBLIC__/Manage/js/jquery.js"></script>
+<script src="__PUBLIC__/Manage/js/jquery.form.js"></script>
+<script src="__PUBLIC__/Manage/js/bootstrap.js"></script>
+<script src="__PUBLIC__/Manage/layer/layer.js"></script>
+<script src="__PUBLIC__/Manage/js/cvphp.js"></script>
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/qb.css" />
+		<title>钱包明细ID{$uid}-{$username}</title>
+		<style>
+			.nestable{
+				background: #fff;
+				margin: 0 auto;
+				
+				width: 800px !important;
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title clearfix">
+				<h5>钱包-ID{$uid}-{$username}</h5>
+			</div>
+			<div class="cssjine">
+			<label class="jo">钱包余额:{$qbmoney}元</label>
+			<input type="text"class="form-control" name="czmoney">
+				<div class="abt"><a href="javascript:void(0)"  onclick="maddbalance('{$uid}');" class="but1">加减余额</a></div>
+			</div>
+			<div class="cssjine qbmark">
+				<label class="tit">备注</label>
+				<input type="text"class="form-control" name="qbmark" id="mqbmark" value="{$qbmark}" >
+				<div class="abt"><a href="javascript:void(0)"  onclick="qbmark('{$uid}');" class="but1">修改备注</a></div>
+			</div>			
+			<div class="cssjine yse">
+				<div class="btse">
+				<a href="javascript:;" onclick="qbmys('1');"><p class="yss">预设1</p></a>
+				<a href="javascript:;" onclick="qbmys('2');"><p class="yss">预设2</p></a>
+				<a href="javascript:;" onclick="qbmys('3');"><p class="yss">预设3</p></a>
+				<a href="javascript:;" onclick="qbmys('4');"><p class="yss">预设4</p></a>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div class="olist">
+				<div class="otitle">充值记录</div>
+					
+					<ul>
+					<php>$qblogczlist = $qblogczlist;</php>
+					<volist name="qblogczlist" id="vcz">
+						<if condition="$vcz['status'] eq 0">
+						<li class="col-xs-12">
+						<else/>
+						<li class="col-xs-12 huanqing">
+						</if>
+							<div class="xiao">
+								<span>{$vcz.add_time|date="Y-m-d H:i:s",###}</span>
+								
+							</div>
+							<div class="xiao">
+								<span>￥{$vcz.money}</span>
+							</div>
+							<div class="xiao">
+								<if condition="$vcz['isadmin'] eq 1"><a href="javacript:void(0);">人工充值</a><else/><a target="_blank" href="{$vcz.pzimg}">凭证</a></if>
+							</div>
+							<div class="xiao btu">
+								<if condition="$vcz['status'] eq 0">
+								<a href="javascript:czqxs('{$vcz.id}','1','1','{$vcz.money}');">待确定</a>
+								<else/>
+								<a href="javacript:void(0);">已确认</a>
+								</if>
+								<a href="javascript:dellog('{$vcz.id}','1','{$vcz.money}');" class="del">删除</a>
+							</div>
+						</li>
+					</volist>
+					</ul>
+			</div>
+<div style="clear:both"></div>
+			<div class="olist">
+				<div class="otitle">取现记录</div>
+					
+					<ul>
+					<php>$qblogqxlist = $qblogqxlist;</php>
+					<volist name="qblogqxlist" id="vqx">
+					<if condition="$vqx['status'] eq 0">
+						<li class="col-xs-12">
+						<else/>
+						<li class="col-xs-12 huanqing">
+						</if>
+							<div class="xiao">
+								<span>{$vqx.add_time|date="Y-m-d H:i:s",###}</span>
+								
+							</div>
+							<div class="xiao">
+								<span>￥{$vqx.money}</span>
+							</div>
+							<div class="xiao">
+								
+							</div>
+							<div class="xiao btu">
+								<if condition="$vqx['status'] eq 0">
+								<a href="javascript:czqxs('{$vqx.id}','2','1','{$vqx.money}');">待划款</a>
+								<else/>
+								<a href="javacript:void(0);">已划款成功</a>
+								</if>
+								<a href="javascript:dellog('{$vqx.id}','2','{$vcz.money}');" class="del">删除</a>
+							</div>
+						</li>
+					</volist>
+					</ul>
+			</div>	
+<div style="clear:both"></div>
+			<div class="olist">
+				<div class="otitle center">还款记录</div>
+					
+					<ul>
+					<php>$hklist = $hklist;</php>
+					<volist name="hklist" id="vo">
+						<if condition="$vo['status'] eq 0">
+						<li class="col-xs-12">
+		<elseif condition="$vo['status'] eq 1"/>
+						<li class="col-xs-12 yuqi">
+		<else/>
+						<li class="col-xs-12 huanqing">
+					</if>
+							<div class="xiao">
+								<span>第{$vo.billnum}期</span>
+								
+							</div>
+							<div class="xiao">
+								<span>{$vo.repayment_time|date="Y/m/d",###}</span>
+							</div>
+							<div class="xiao">
+								￥{$vo.allmoney}
+							</div>
+							<div class="xiao">
+							<if condition="$vo['status'] eq 0">
+						<span>待还款</span>
+	</if>
+	<if condition="$vo['status'] eq 1">
+						<span>已逾期</span>
+	</if>
+	<if condition="$vo['status'] eq 2">
+						<span>已还清</span>
+	</if>
+	<if condition="$vo['status'] eq 3">
+						<span>逾期还清</span>
+	</if>
+	<if condition="$vo['status'] eq 4">
+						<span>账单失效</span>
+	</if>
+							</div>
+						</li>
+					</volist>
+					</ul>
+			</div>				
+
+</div>
+<div style="clear:both"></div>
+	<script>
+	function qbmys(tz){
+		if(tz  == '1'){
+			$('#mqbmark').prop('value','预设1设计中，有需要联系本人');			
+		}else if(tz  == '2'){
+			$('#mqbmark').prop('value','预设2设计中，有需要联系本人');				
+		}else if(tz  == '3'){
+			$('#mqbmark').prop('value','预设3设计中，有需要联系本人');		
+		}else if(tz  == '4'){
+			$('#mqbmark').prop('value','预设4设计中，有需要联系本人');			
+		}
+	
+	}
+	function qbmark(uid){
+		var qbmark = $("input[name='qbmark']").val();
+			if(uid.length == 0){
+					layer.msg("参数错误");
+					return false;
+			}else{
+						cvphp.post(
+						"{:U('Loan/mqbmark')}",
+						{
+							uid:uid,qbmark:qbmark
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+								
+							}else{						
+								layer.msg('修改成功');
+								layer.load(1);
+								setTimeout(function(){
+									layer.closeAll('loading');
+									indow.location.href = window.location.href;
+								}, 500);
+							}
+						}
+					);
+			
+			}
+	}
+	function maddbalance(uid){
+		var czmoney = $("input[name='czmoney']").val();
+			if(czmoney.length == 0){
+					layer.msg("请输入充值金额");
+					return false;
+			}
+			layer.confirm(
+				'本次人工充值金额为￥'+czmoney+',请确认？',
+				{
+					btn: ['确认充值','取消'],
+					skin: 'layui-layer-molv'
+				},function(){
+					cvphp.post(
+						"{:U('Loan/maddbalance')}",
+						{
+							uid:uid,czmoney:czmoney
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("充值成功");
+								setTimeout(function(){
+									window.location.href = window.location.href;
+								},900);
+							}
+						}
+					);
+				}
+			);	
+	}
+	function czqxs(id,bz,sts,money){
+			var bzt ='';
+			if(bz == 1){
+				bzt ='充值';
+			}else if(bz == 2){
+				bzt ='取现';
+			}
+			layer.confirm(
+				'￥'+money+bzt+'记录操作后不可改变,请确认？',
+				{
+					btn: ['确认'+bzt,'取消'],
+					skin: 'layui-layer-molv'
+				},function(){
+					cvphp.post(
+						"{:U('Loan/czqxs')}",
+						{
+							id:id,bz:bz,sts:sts
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg(bzt+"确认成功");
+								setTimeout(function(){
+									window.location.href = window.location.href;
+								},800);
+							}
+						}
+					);
+				}
+			);		
+	
+	};
+		function dellog(id,bz,money){
+			var bzt ='';
+			if(bz == 1){
+				bzt ='充值';
+			}else if(bz == 2){
+				bzt ='取现';
+			}
+			layer.confirm(
+				'￥'+money+bzt+'记录删除后不可恢复,请确认？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Loan/dellog')}",
+						{
+							id:id,bz:bz
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg(bzt+"操作成功");
+								setTimeout(function(){
+									window.location.href = window.location.href;
+								},800);
+							}
+						}
+					);
+				}
+			);
+		};
+	</script>
+	</body>
+
+</html>

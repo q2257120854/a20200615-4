@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/ranking/index",
+    "pages/friends/index",
+    "pages/friends/play",
+    "pages/daily/index",
+    "pages/daily/play",
+    "pages/backpack/index",
+    "pages/notice/index",
+    "pages/signin/index",
+    "pages/userinfo/index",
+    "pages/personal/index",
+    "pages/personal/introduction",
+    "pages/personal/match",
+    "pages/personal/play",
+    "pages/team/index",
+    "pages/team/create",
+    "pages/team/match",
+    "pages/team/play"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#4F83E8",
+    "navigationBarBackgroundColor": "#4F83E8",
+    "navigationBarTitleText": "答题wx:suncentwl",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 5000
+  },
+  "sitemapLocation": "sitemap.json"
+}

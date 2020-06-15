@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.topfloat{ width:100%; height:45px; padding:5px 0; background:#333; position:fixed; left:0; top:0; z-index:5; overflow:hidden}
+.replyBtn{ height:35px; line-height:35px; padding:0 10px; text-align:center; color:#fff; background:#f16161; border-radius:3px; float:right; margin:5px 10px 0 0; }
+.leftimg{ overflow:hidden}
+.leftimg a{ float:left; overflow:hidden; display:block}
+.headimg{ width:45px; height:45px; border-radius:50%; float:left; margin:0 10px; overflow:hidden}
+.headimg span{ width:45px; height:45px; border-radius:50%; display:block; overflow:hidden}
+.headimg span img{ width:45px; vertical-align:bottom}
+.hname{ height:45px; line-height:45px; float:left; color:#fff; font-size:12px; overflow:hidden}
+.hname span{ font-size:14px; padding-right:4px; font-weight:bold;}
+
+.bottfloat{ width:100%; height:35px; padding:5px 0; background:#ebecee; position:fixed; left:0; bottom:0; z-index:5; overflow:hidden}
+.sendbtnbg{ width:60px; height:33px; position:absolute; right:10px; bottom:5px; border:1px solid #d8d8d8; border-radius:4px; overflow:hidden}
+.sendBtn{ width:60px; height:35px; background:url(../images/v_img40.jpg) repeat-x; color:#fff; font-family:microsoft yahei; font-size:14px; -webkit-appearance:none;}
+.sendbtnbg2{ width:60px; height:33px; position:absolute; right:10px; bottom:5px; border:1px solid #bfbfbf; border-radius:4px; overflow:hidden}
+.sendBtn2{ width:60px; height:35px; background:#bfbfbf; color:#fff; font-family:microsoft yahei; font-size:14px; -webkit-appearance:none;}
+.enterbg{ height:29px; margin:0 80px 0 10px; padding:3px; background:#fff; border-radius:5px; overflow:hidden}
+.Entertxt{ width:100%; height:18px; line-height:18px; padding-top:6px; color:#333; font-family:microsoft yahei; font-size:14px; }
+.Entertxt:valid + .sendbtnbg{ border:1px solid #79cd2b}
+.Entertxt:valid + .sendbtnbg input{ background:url(../images/v_img43.jpg) repeat-x; }
+.Entertxt:valid + .sendbtnbg2{ border:1px solid #f65857}
+.Entertxt:valid + .sendbtnbg2 input{ background:#f65857; }
+
+.chatBox{ width:100%; overflow:hidden}
+.chatLists{ margin:65px 0 70px; overflow:hidden}
+.chatLists2{ margin:10px 0 70px; overflow:hidden}
+.chatTime{ text-align:center; padding:10px 0 15px 0; overflow:hidden}
+.chatTime time{ line-height:18px; background:#dadada; border-radius:4px; padding:0 5px; color:#fff; }
+
+.replyLeft, .replyRight{ width:94%; margin:0 3% 20px; overflow:hidden}
+.replyLeft .head1{ float:left; margin-right:10px;}
+.replyLeft .text1{ padding-left:9px; margin-right:54px;}
+.replyLeft .text1 p{ float:left; background:#f5f5f5; border:1px solid #ddd;}
+
+.replyRight .head1{ float:right; margin-left:10px;}
+.replyRight .text1{ padding-right:9px; margin-left:54px;}
+.replyRight .text1 p{ float:right; background:#a3d840; border:1px solid #71b34f;}
+
+.head1{ width:34px; height:34px; border:1px solid #d9d9d9; overflow:hidden; display:block}
+.head1 img{ width:100%; vertical-align:bottom}
+.text1{ position:relative; overflow:hidden}
+.text1 p{ min-height:18px; line-height:20px; padding:7px 10px; border-radius:4px; }
+.sanjiao1{ width:10px; height:34px; position:absolute; right:0; top:0; background:url(../images/v_img41.png) no-repeat 0 center; background-size:10px; display:block}
+.sanjiao2{ width:10px; height:34px; position:absolute; left:0; top:0; background:url(../images/v_img42.png) no-repeat 0 center; background-size:10px; display:block}
+
+.blackbg{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.8); z-index:89; display:none; overflow:hidden}
+.floatBox{ width:300px; height:230px; background:#fff; border-radius:6px; position:fixed; top:50%; left:50%; margin:-115px 0 0 -150px; z-index:90; display:none; overflow:hidden}
+
+.biaoti{ font-size:16px; font-weight:bold; line-height:30px; text-align:center; margin:20px 20px 0;}
+.FormList{ margin:0 20px; background:#fff; position:relative; z-index:5; overflow:hidden}
+.FormList li{ height:45px; line-height:45px; position:relative; border-top:1px solid #dddddd; padding-left:30px; background:url(../images/v_img44.png) no-repeat 0 12px; background-size:28px; overflow:hidden}
+.FormList li:first-child{ border-top:none; }
+.FormList li.liphone{ background:url(../images/v_img44.png) no-repeat 1px -40px; background-size:30px;}
+.FormList li p{ overflow:hidden}
+.tbox1{ width:100%; height:19px; line-height:19px; padding:13px 0; font-size:14px; font-family:microsoft yahei;}
+
+.Error{ height:42px; line-height:42px; position:absolute; right:0; top:2px; color:#d11f1b; font-size:14px; display:block; }
+.PushButton{ margin:15px 5% 0; position:relative; z-index:5; overflow:hidden}
+/*.Submit{ width:150px; height:48px; margin:0 auto; border-radius:5px; color:#fff; font-size:18px; background:#f16161; font-family:microsoft yahei; -webkit-appearance:none; cursor:pointer; display:block}*/
+
+.yindao{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.9); z-index:20; overflow:hidden}
+.yindao p{ margin:50px 15px 0 10%; text-align:right;}
+.yindao a.replyBtn{ margin-top:10px;}
+
+.chatLists3{ width:100%; overflow:hidden}
+.chatLists3 a{ padding:10px 3%; border-bottom:1px solid #e8e8ea; display:block}
+.chatLists3 a>span{ height:20px; line-height:20px; margin-top:10px; margin-left:20px; float:right; padding-right:20px; background:url(../images/v_img46.png) no-repeat right center; color:#7c7c7c; background-size:12px;}
+.chatLists3 a>div{ overflow:hidden}
+.chatLists3 a>div>span{ width:44px; height:44px; float:left; border-radius:3px; margin-right:8px; display:block; overflow:hidden}
+.chatLists3 a>div>div{ overflow:hidden}
+.chatLists3 a>div>div p{ height:22px; line-height:22px; font-size:16px; font-weight:bold; overflow:hidden;}
+.chatLists3 a>div>div span{ height:20px; line-height:20px; color:#7c7c7c; font-size:14px; margin-top:3px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; display:block}
+
+.success{ width:60px; height:60px; position:fixed; top:50%; left:50%; margin:-30px 0 0 -30px; z-index:19; display:none }
+
+/********** 2015-06-10 ************/
+.weichatBox{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.9); z-index:9999; overflow:hidden; display:none }
+.weichat{ width:280px; height:430px; position:absolute; left:50%; top:50%; margin:-215px 0 0 -140px; background:#fff; border-radius:5px; overflow:hidden}
+.people2{ margin:15px 20px 8px; overflow:hidden; color:#000000;}
+.people2>p{ width:60px; height:60px; border-radius:50%; border:2px solid #27a5e6; float:left; margin-right:10px; overflow:hidden}
+.people2>p span{ width:58px; height:58px; border:1px solid #fff; border-radius:50%; overflow:hidden; display:block}
+.people2>p span img{ width:100%; vertical-align:bottom}
+.people2>div{ overflow:hidden}
+.people2>div span{ color:#000000;height:20px; line-height:20px; font-weight:bold; font-size:16px; margin:10px 0 5px 0; overflow:hidden; display:block}
+.people2>div p{ color:#000000;height:22px; line-height:22px;}
+
+.erweima{ margin:0 35px 10px; padding:10px; background:#e5e5e5; overflow:hidden}
+.erweima img{ vertical-align:bottom; max-width:100%;}
+.wtxt{ color:#000000;margin:0 20px; font-size:14px; line-height:20px; text-align:center; overflow:hidden}
+.wtxt strong{ color:#e50000}
+.wtxt2{ font-size:14px; font-weight:bold; color:#333; padding-bottom:5px; text-align:center; overflow:hidden}
+.jiant{ width:35px; position:absolute; right:20px; top:153px;}
+.wcloseBtn{ width:20px; height:20px; position:absolute; top:7px; right:7px; display:block}
+
+.information2{ height:30px;line-height:30px;color:#000000; background:#f3f3f3; margin-bottom:8px; padding:0 10px; overflow:hidden; text-align:center;}
+.information2 li{ width:50%; height:50px; float:left; border-left:1px solid #d8d8d8; overflow:hidden; box-sizing:border-box}
+.information2 li:first-child{ border-left:0}
+.information2 li span{ color:#000000;height:22px; line-height:22px; text-indent:10px; margin-top:4px; display:block; overflow:hidden}
+.information2 li p{ height:22px; line-height:22px; text-indent:10px; color:#e80000; overflow:hidden}
+.information2 li p a{ color:#FF0000;white-space:normal}
+
+@media screen and (max-height:480px){
+.weichat{ width:280px; height:380px; position:absolute; left:50%; top:50%; margin:-190px 0 0 -140px; }
+.erweima{ margin:0 53px 10px; padding:10px; }
+}
+
+
+/********** end ************/
+.namelist{ margin:10px 3%; overflow:hidden}
+.namelist li{ border:1px solid #e6e6e6; border-radius:5px; position:relative; margin-bottom:10px; overflow:hidden;}
+.lximg{ width:40px; position:absolute; top:0; right:0;}
+.contacts{ height:53px; margin:8px 8px 0 8px; overflow:hidden}
+.contacts>span{ width:45px; height:45px; float:left; margin-right:10px; display:block; overflow:hidden}
+.contacts>span img{ width:50px; vertical-align:bottom}
+.contacts>div{ overflow:hidden}
+.contacts>div p{ height:24px; line-height:24px; font-weight:bold; font-size:16px; color:#555; overflow:hidden}
+.contacts>div span{ height:24px; line-height:24px; color:#a5a5a5; padding-left:20px; background:url(../images/v_img51.jpg) no-repeat 0 center; background-size:16px; overflow:hidden; display:block}
+
+.lianxi{ height:36px; padding:0 8px; border-top:1px solid #e6e6e6; overflow:hidden}
+.lianxi a{ width:50%; height:22px; line-height:22px; margin:7px 0; float:left; text-align:center; color:#f65857; box-sizing:border-box; border-left:1px solid #e6e6e6; display:block; overflow:hidden}
+.lianxi a:first-child{ border-left:none}
+.lianxi a img{ width:22px; vertical-align:bottom; padding-right:4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

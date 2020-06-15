@@ -1,0 +1,154 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<script type="text/javascript" src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+		<title>借款设置</title>
+		<style type="text/css">
+			.layer-anim{
+				top:180px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>借款设置</h5>
+			</div>
+			<div class="public-selectArea public-selectArea1 margin_10">
+				<form action="{:U('Setting/loan')}" method="post">
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>放款类型：</dt>
+								<dd>
+									<label><input type="radio" name="Loan_TYPE" value="0" <if condition="$Think.config.Loan_TYPE eq 0">checked</if> >单期（期限单位：天）</label>
+									<label><input type="radio" name="Loan_TYPE" value="1" <if condition="$Think.config.Loan_TYPE eq 1">checked</if> >分期（期限单位：月）</label>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>日息：</dt>
+								<dd>
+									<input type="text" name="Interest_D" value="{$Think.config.Interest_D|default=''}" />
+								</dd>
+								<em class="tishi">放款类型为单期时生效</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>月息：</dt>
+								<dd>
+									<input type="text" name="Interest_M" value="{$Think.config.Interest_M|default=''}" />
+								</dd>
+								<em class="tishi">放款类型为分期时生效</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>逾期费率：</dt>
+								<dd>
+									<input type="text" name="Overdue" value="{$Think.config.Overdue|default=''}" />
+								</dd>
+								<em class="tishi">逾期日开始按日计算</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>期限范围（单期）：</dt>
+								<php>if(C('Deadline_D')) $str = implode(',',C('Deadline_D'));</php>
+								<dd>
+									<input type="text" name="Deadline_D" value="{$str|default=''}" />
+								</dd>
+								<em class="tishi">放款类型为单期时生效，以逗号隔开</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>期限范围（分期）：</dt>
+								<php>if(C('Deadline_D')) $str = implode(',',C('Deadline_M'));</php>
+								<dd>
+									<input type="text" name="Deadline_M" value="{$str|default=''}" />
+								</dd>
+								<em class="tishi">放款类型为分期时生效，以逗号隔开</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>单次借款最低金额：</dt>
+								<dd>
+									<input type="text" name="Money_MIN" value="{$Think.config.Money_MIN|default='100'}" />
+								</dd>
+								<em class="tishi">单位：元</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>单次借款最高金额：</dt>
+								<dd>
+									<input type="text" name="Money_MAX" value="{$Think.config.Money_MAX|default='1000'}" />
+								</dd>
+								<em class="tishi">单位：元</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>借款金额选择跨度：</dt>
+								<dd>
+									<input type="text" name="Money_STEP" value="{$Think.config.Money_STEP|default='100'}" />
+								</dd>
+								<em class="tishi">单位：元</em>
+							</dl>
+						</div>
+					</div>
+					
+				</form>
+				<div class="btnArea margin_20">
+					<a href="javascript:;" class="btn btn-grayBg">
+						<span class="public-label">提交</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".btnArea a").on('click',function(){
+				cvphp.submit($("form"),function(data){
+					if(data.status!=1){
+						layer.msg(data.info);
+					}else{
+						layer.alert('保存成功');
+					}
+				});
+			});
+		});
+	</script>
+</html>

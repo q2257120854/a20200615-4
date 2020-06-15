@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+
+</script>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Wchat/css/QuotaCss.css">
+		<title>借款管理 - <config name="siteName" />  - <config name="siteTitle" /></title>
+	</head>
+	<body>
+		<div class="banner"><img src="__PUBLIC__/Wchat/images/banner.png"></div>
+			<div class="rin">
+				<div class="rin_tx rinbg">
+					<div class="rinmy">
+						<span>我的借款</span>
+						<h3>￥{$quota}</h3>
+					</div>
+					<div class="rinbo">
+						<span style="color:#00D5FF;">剩余提现额度</br><font style="font-size: 0.9rem;">￥{$doquota}</font></span>	
+					</div>
+				</div>
+				<div class="rin_mm rinbg">
+						<div class="rinmy">
+						<span>还款钱包</span>
+						<h3>￥{$qbmoney}</h3>
+					</div>
+					<div class="rinbo">
+						<span style="color:#00D5FF;"><if condition="$qberror eq 1 "><font style="font-size: 0.9rem;color:#00D5FF;">最新充值￥{$qbshmoney}(审核中)</font></br></if><if condition="$qbtxerror eq 1 "><font style="font-size: 0.9rem;color:#00D5FF;">最新取现￥{$qbtxmoney}(审核中)</font></br></if><if condition="$qberror eq 1 || $qbtxerror eq 1"><else/>{$qbmark|default="请将资金存入个人钱包进行还款"}</if></span>	
+					</div>
+				</div>
+		</div>
+		<div class="sbtn">
+			<div class="sbtn_left">
+				<a href="{:U('Index/index')}">立即提现</a>
+			</div>
+			<div class="sbtn_right">
+				<a href="javascript:void(0)"  id="addbalance" class="but1">充值</a>
+				<a href="javascript:void(0)"  id="outbalance" class="but2" style="display:none;">取出</a>
+			</div>
+		</div>
+		<div class="smark">
+			<div  style="background: #f1f8fe;width: 90%;margin-left: 5%;padding-bottom: 1rem;padding-top: 1rem;text-align: center;">{$xbzmark}</br>{$mark}<if condition="$markmm eq 1 "></br><a href="{:U('Repay/viewmm')}">查看详情</a></if></div>
+		</div>
+		<div class="content">
+			<ul>
+				<li class="col-xs-12">
+					<label>借款合同</label>
+					<a href="{:U('Repay/viewt')}" >点击查看</a>
+				</li>
+			<li class="col-xs-12">
+					<label>资金账号</label>
+					<span>{$csn}</span>
+				</li>
+				<li class="col-xs-12" style="display:none;">
+					<label>联系电话</label>
+					<span>{$tel}</span>
+				</li>
+				<li class="col-xs-12" style="display:none;">
+					<label>专属客服QQ</label>
+					<span>{$mark}</span>
+				</li>
+			</ul>
+			<div class="but">
+				<a href="{:U('Repay/order')}" class="but1">提现管理</a>
+				<a href="{:U('Repay/viewbill',array('oid'=>$toid))}" class="but2">还款管理</a>
+
+			</div>
+			
+		</div>
+		<include file="Public/foot_repay" />
+		<section class="f_mask" style="display: none;"></section>
+		<section class="f_block" id="c_addbalance" style="height:0; overflow:hidden;">
+		<div class="f_b_add">
+			<a class="c_close_add" href="javascript:void(0)" onclick="close_choose_add();"></a>
+			<div style="height:0px; line-height:0px; clear:both;"></div>
+		</div>
+			<div class="f_c_add">
+				<ul class="navcontent" style="display:block;">
+				<div class="title1">暂无借款，无需充值！</div>
+					<li style="display:none;">
+					<div class="title1">选择充值方式</div>
+						<select class="selecta" name="paytype" id="paytype" >
+						<option value="1">微信支付</option>
+						<option value="2">支付宝支付</option>
+						<option value="3">网银支付</option>
+						</select>
+							<div class="add-btn">
+					<a href="javascript:void(0)" onclick="ok_add();" class="but111">充值</a>
+					
+							</div>
+						<div class="up-btn">
+						<a href="javascript:void(0)" onclick="ok_up();" class="but3">已充值上传凭证</a>
+							</div>
+					</li>  		
+				</ul>						
+			</div>
+
+		</section>
+		
+			<script>
+			$("#outbalance").click(function(){
+  layer.open({
+	type:0,
+    title: [
+      '钱包取现',
+      'background-color: #34a262; color:#fff;'
+    ],shadeClose: false
+    ,content: "<div class='upqx'><div class='upqxjine' id='upqxjo'><label class='jo'>取现金额</label><input type='text' placeholder='请输入取现金额' class='form-control' name='upqxmon'><label class='yuan'>元</label></div><div class='upqxjine' id='qxpass'><label class='jo'>取现密码</label><input type='text' placeholder='请输入提现密码' class='form-control' name='upqxpass'></div><div class='fooqx'><a href='javascript:void(0)' onclick='ok_tj_qxup();' class='but333'>提交</a><a href='javascript:void(0)' onclick='layer.closeAll();' class='but555'>取消</a></div>"
+  });
+			});
+			$("#addbalance").click(function(){
+				document.body.style.overflow='hidden';
+				$("#c_addbalance").animate({height:'80%'},[10000]);
+				var total=0,h=$(window).height(),
+				top =$('.f_b_add').height()||0,
+				con = $('.f_c_add');
+				total = 0.8*h;
+				con.height(total-top+'px');
+				$(".f_mask").show();
+			});
+			function close_choose_add(){	
+				document.body.style.overflow='';
+				setTimeout('$(".f_mask").hide()',500);
+				$('#c_addbalance').animate({height:'0'},[10000]);
+			};
+
+				function ok_add(){	
+					var checkValue=$("#paytype").val();
+					if (checkValue == 1){
+						  layer.open({
+								type: 2
+								,content: '加载中'
+						  });
+					setTimeout(function(){
+						layer.open({
+						type: 1
+						,content: "<div class='addcz'><h5 class='addcz-mod-title'>微信充值</h1><div class='addczimg'><img alt='加载中...' src='{$wxcodes}'></div><div class='czsm'><p>手机用户可保存上方二维码到手机中</br>在微信扫一扫中选择 相册 即可</p></div><div class='backt'><a href='javascript:;' class='butback' onclick='layer.closeAll();'>返回</a></div></div>"
+						,anim: 'up'
+						,style: 'position:fixed; left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+						});
+								//window.location.href = "{:U('Repay/addbalance')}";
+					},100); 
+								
+					}else if(checkValue == 2){
+							 layer.open({
+								type: 2
+								,content: '加载中'
+						  });
+					setTimeout(function(){
+						layer.open({
+						type: 1
+						,content: "<div class='addcz'><h5 class='addcz-mod-title'>支付宝充值</h1><div class='addczimg'><img alt='加载中...' src='{$zfbcodes}'></div><div class='czsm'><p>手机用户可保存上方二维码到手机中</br>在支付宝扫一扫中选择 相册 即可</p></div><div class='backt'><a href='javascript:;' class='butback' onclick='layer.closeAll();'>返回</a></div></div>"
+						,anim: 'up'
+						,style: 'position:fixed; left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+						});
+								//window.location.href = "{:U('Repay/addbalance')}";
+					},100); 
+					
+					}else if(checkValue == 3){
+						layer.open({
+								type: 2
+								,content: '加载中'
+						  });
+					setTimeout(function(){
+						layer.open({
+						type: 1
+						,content: "<div class='addcz'><h5 class='addcz-mod-title'>网银充值</h1><div class='wyczsm'><p>收款银行：{$paybank}</br>收款户名：{$payname}</br>收款卡号：{$paysn}</p><p class='paysm'>说明：{$paysm}</p></div><div class='backt'><a href='javascript:;' class='butback' onclick='layer.closeAll();'>返回</a></div></div>"
+						,anim: 'up'
+						,style: 'position:fixed; left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+						});
+								//window.location.href = "{:U('Repay/addbalance')}";
+					},100); 
+					}else{
+					layer.open({
+						style: 'border:none; background-color:#000; color:#fff;',
+						content: '清选择充值方式'
+						,skin: 'msg'
+						,time: 3
+					   });
+					}				
+				};
+				function ok_up(){
+						layer.open({
+								type: 2
+							,content: '加载中'
+						});
+					setTimeout(function(){
+						layer.open({
+						type: 1
+						,content: "<div class='upcz'><h5 class='upcz-mod-title'>上传充值凭证</h1><div class='cssjine' id='addjo'><label class='jo'>充值金额</label><input type='hidden' name='uppz' /><input type='text' placeholder='请输入充值金额' class='form-control' name='jine'><label class='yuan'>元</label></div><div class='upimg' ><img src='__PUBLIC__/Wchat/images/ic_add.png'><form action='{:U('Info/uploadImg')}' method='post' enctype='multipart/form-data'><a href='javascript:;'>点击上传</a><input type='file' name='uppz' id='filepz' onchange='uploadImg(this);'/><input type='hidden' name='fileName' value='uppz' /></form></div><div class='foo'><a href='javascript:void(0)' onclick='ok_tj_up();' class='but333'>提交</a></div><div class='backt'><a href='javascript:;' class='butback' onclick='layer.closeAll();'>返回</a></div></div>"
+						,anim: 'up'
+						,style: 'position:fixed; left:0;background: #f7f7f7; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+						});
+					},100);
+
+				};
+				function uploadImg(obs){
+					var filename = $(obs).val();
+					if(filename != '' && filename != null){
+					
+						var obj = $(obs).parent();
+						//console.log(obj);
+						
+						cvphp.submitup($(obj),function(data){
+							if(data.status != 1){
+						
+						layer.open({
+						style: 'border:none; background-color:#000; color:#fff;',
+						content: data.info
+						,skin: 'msg'
+						,time: 3
+					   });
+							return false;
+							}else{
+							var imgUrl = "__PUBLIC__/Upload/" + data.info;
+								$("#addjo").find("input[name='"+$(obs).attr('name')+"']").val(imgUrl);
+								$($($(obj).parent()).parent()).find("img").attr('src',imgUrl);
+							}
+						});
+				
+					}else{
+						layer.open({
+						style: 'border:none; background-color:#000; color:#fff;',
+						content: '请选择文件'
+						,skin: 'msg'
+						,time: 3
+					   });
+					}
+
+				};
+				function ok_tj_up(){
+					var upimg = $("#addjo input[name='uppz']").val();
+					var jine = $("#addjo input[name='jine']").val();
+					if(jine.length == 0){
+					cvphp.msg({
+	    				content: '请输入充值金额'
+	    			});
+					return false;
+					}
+					if(upimg.length == 0){
+						cvphp.msg({
+	    				content: '请上传转账记录截屏'
+						});
+					return false;
+					}else{	
+						cvphp.postaddu("{:U('Repay/getaddbalance')}",{money: jine,upimg: upimg},
+							function(data){
+								if(data.status != 1){
+									cvphp.msg({
+										content: data.info
+									});
+								}else{
+									cvphp.msg({
+										content: '提交成功，正在跳转，请稍后...'
+									});
+									setTimeout(function(){			
+									  window.location.href = "{:U('Repay/index')}";
+									},500); 
+								}
+					
+							}
+						);
+					}
+				};
+	
+				function ok_tj_qxup(){
+					var qxmon = $("#upqxjo input[name='upqxmon']").val();
+					var qxpass = $("#qxpass input[name='upqxpass']").val();
+					
+					//layer.close(91);
+					if(qxmon.length == 0){				
+						layer.open({
+								type:1,
+								content: '请输入取现金额'
+								,skin: 'msg'
+								,time: 2
+						});
+							return false;
+					}
+		 
+					if(qxpass.length != 6){
+					layer.open({
+								type:1,
+								content: '请输入6位数取现密码'
+								,skin: 'msg'
+								,time: 2
+						});
+						return false;
+					}else{	
+						$.post("{:U('Repay/getoutbalance')}",{qxmon: qxmon,qxpass: qxpass},
+							function(data){
+								if(data.status != 1){
+									layer.open({
+									type:1,
+									content: data.info
+									,skin: 'msg'
+									,time: 3
+									});
+								}else{
+									layer.open({
+									type:2,
+									content: '提交成功，正在跳转，请稍后...'
+									,skin: 'msg'
+									,time: 3
+									});
+									setTimeout(function(){
+									  layer.closeAll();							
+									  window.location.href = "{:U('Repay/index')}";
+									},3000); 
+								}
+					
+							}
+						);
+					}
+				};
+			</script>
+	</body>
+</html>

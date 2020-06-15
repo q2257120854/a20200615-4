@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:'微软雅黑';
+	background:#ecf0f5;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.wrapper-content {
+    padding: 20px;
+    margin-left: 20px;
+}
+.tj_title{
+	width:100%;
+	line-height:40px;
+	height:40px;
+	font-size:16px;
+	background:url(../images/tj_ioc.png) no-repeat center left;
+	background-size: 18px;
+	text-indent: 24px;
+}
+.tj_list{
+	width:100%;
+	min-height:10px;
+	float:left;
+	margin-top:10px;
+}
+.tj_list li{
+	text-align:center;
+	width: 22%;
+	margin-right: 3.6%;
+	padding-top:8px;
+	border-radius:8px;
+}
+.tj_list li:nth-child(4){
+	margin-right:0;
+}
+.tj_list li span{
+	display:block;
+	width:100%;
+	line-height:35px;
+	color:#fff;
+}
+.tj_list li:nth-child(odd){
+	background:#5e6eb7;
+}
+.tj_list li:nth-child(even){
+	background:#f57c67;
+}
+.tj_list li .em{
+	width:100%;
+	margin:10px 0px;
+	padding-bottom:10px;
+}
+.tj_list li .em em{
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	width:40px;
+	background:url(../images/em.png) no-repeat;
+	background-size:cover;
+	font-style:normal;
+	color:#5e6eb7;
+	font-size:28px;
+}
+
+
+/*统计图样式*/
+.row1{
+	padding:0;
+	margin-top:20px;
+}
+.row2{
+	margin-top:20px;
+	padding-right: 2rem;
+    padding-left: 2rem;
+}
+.mapcon{
+	background-color: #fff !important;
+	color: inherit;
+	padding: 15px 20px 20px;
+	border-color: #e7eaec;
+	margin-bottom: 20px;
+}
+.leiji{
+	width:100%;
+	height:530px;
+	background:#fff;
+}
+.credit{
+	width: 74%;
+	margin-left:5%;
+	background:#eAF4FE;
+	height: 110px;
+	float:left;
+	margin-top:50px;
+	margin-bottom:15px;
+}
+.credit_shape{
+	background:url(../images/lji02.png) no-repeat;
+	height: 110px;
+	width: 46.3%;
+	background-size: 100% 100%;
+	float: right;
+	margin-right: -5%;
+}
+.credit_shape h3{
+	color:#fff;
+	line-height: 110px;
+	text-align:center;
+	background: url(../images/lco2.png) no-repeat center left 17%;
+	background-size: 16%;
+	margin: 0;
+	font-size: 1.7rem;
+}
+.credit .credit_left{
+	float:left;
+	padding-top:20px;
+	padding-left:30px;
+}
+.credit_left h2{
+	font-size:20px;
+	margin:0;
+	margin-bottom:8px;
+}
+.credit_left span{
+	color:#858687;
+	font-size:16px;
+}
+
+
+.reimbursement{
+	width: 70%;
+	margin-left:5%;
+	background:#edf9e1;
+	height: 120px;
+	float:left;
+	margin-bottom:15px;
+}
+.reimbursement .reimbursement_shape{
+	background:url(../images/lji04.png) no-repeat;
+	height: 120px;
+	width: 36.3%;
+	background-size: 100% 100%;
+	float: right;
+	margin-right: -5%;
+}
+.reimbursement_shape h3{
+	color:#fff;
+	line-height: 120px;
+	text-align:center;
+	background: url(../images/lco4.png) no-repeat center left 17%;
+	background-size: 17.3%;
+	margin: 0;
+	font-size: 1.3rem;
+	text-indent: 10%;
+}
+.reimbursement_left{
+	float:left;
+	padding-top: 36px;
+	padding-left: 16px;
+	width: 68%;
+}
+.reimbursement_left li{
+	width: 50%;
+	float:left;
+}
+.reimbursement_left li strong{
+	display:block;
+	font-size: 17px;
+	margin: 0;
+	margin-bottom: 8px;
+	font-weight:100;
+	color:#434343;
+}
+.reimbursement_left li em{
+	font-style:normal;
+	color:#858687;
+	font-size:16px;
+}
+
+.overdue{
+	width: 65.5%;
+	margin-left:5%;
+	background:#fbebeb;
+	height: 120px;
+	float:left;
+	margin-bottom:15px;
+}
+.overdue .overdue_shape{
+	background:url(../images/lji06.png) no-repeat;
+	height: 120px;
+	width: 26.3%;
+	background-size: 100% 100%;
+	float: right;
+	margin-right: -6%;
+}
+.overdue_shape h3{
+	color:#fff;
+	text-align:center;
+	color:#fff;
+	line-height: 120px;
+	text-align:center;
+	background: url(../images/lco8.png) no-repeat center left 17%;
+	background-size: 25.7%;
+	margin: 0;
+	font-size: 1rem;
+	text-indent: 10%;
+}
+.overdue_left{
+	float:left;
+	padding-top: 22px;
+	padding-left: 16px;
+	width: 79%;
+	position: relative;
+}
+.overdue_left li{
+	width: 35%;
+	float: left;
+	margin-right: 6%;
+}
+.overdue_left li strong{
+	display:block;
+	font-size: 14px;
+	margin: 0;
+	/* margin-bottom: 8px; */
+	font-weight:100;
+	color:#434343;
+}
+.overdue_left li em{
+	font-style:normal;
+	color:#858687;
+	font-size: 12px;
+	color:#647495;
+}
+.overdue_left h2{
+	font-size: 1.1rem;
+}

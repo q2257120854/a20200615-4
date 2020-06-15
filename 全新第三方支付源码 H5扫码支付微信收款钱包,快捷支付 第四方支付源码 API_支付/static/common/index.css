@@ -1,0 +1,66 @@
+/*
+ * =========================================================================
+ * 自定义类  首页
+ * =========================================================================
+ */
+ /*初始化类*/
+@charset "UTF-8";
+
+
+
+.header {
+            padding: 2.5rem 0.5rem 2rem 0.5rem;
+			background-color: #9171ee;
+        }
+
+.zise{background-color: #9171ee;}
+
+
+.ziset{background-color: #9171ee;padding-top:1rem; }
+
+
+.yu h1{text-align:center}
+
+
+.aui-badge {
+
+	display: inline-block;
+    width: auto;
+    text-align: center;
+    min-width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.3rem;
+    font-size: 0.6rem;
+    color: #ffffff;
+    background-color: #9171ee;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 60%;
+    z-index: 99;
+	text-align:left
+}
+.fangge{
+	border: 1px solid #EAEAEA;
+	border-left: 0px;
+	border-bottom: 0px;
+	background-color: #fff;
+	min-height: 5.00rem;
+}
+
+.ad1{
+	
+	padding-top:3rem;
+	min-height: 7.30rem;
+	text-align:center;
+	background-color: #ffc32c;
+｝
+
+
+.aui-icon-dingdan{
+	background:url(../tubiao/dingdan.png) no-repeat;
+	widht:5.00rem;
+	height:5.00rem;
+}
+

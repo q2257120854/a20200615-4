@@ -1,0 +1,111 @@
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+	margin: 0; 
+	position: relative;
+	zoom: 1;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.flexslider .slides {
+	zoom: 1;
+}
+.flexslider .slides img {
+	height: auto;
+	-moz-user-select: none;
+}
+.flex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.loading .flex-viewport {
+	max-height: 300px;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+ 
+@media screen and (max-width: 1280px) { 
+	.flex-direction-nav a { 
+		top: 33%; 
+	}
+}
+@media screen and (max-width: 991px) {
+	.flex-direction-nav a { 
+		left: 3%; 
+	}
+	.flex-direction-nav .flex-next {
+		right: 3%; 
+	} 
+}
+@media screen and (max-width: 800px) {
+.flex-direction-nav a {
+    top: 43%;
+}
+}
+@media screen and (max-width: 768px) {
+.flex-direction-nav a {
+    top: 34%;
+} 
+} 
+@media screen and (max-width: 480px) {
+ 
+}
+@media screen and (max-width: 414px) {
+.flex-direction-nav a:before ,.flex-direction-nav a.flex-next:before{
+    font-size: 28px; 
+	line-height: 38px;
+} 
+.flex-control-nav {
+    bottom: -32%;
+}
+}

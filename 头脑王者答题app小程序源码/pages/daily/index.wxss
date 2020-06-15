@@ -1,0 +1,13 @@
+/* pages/daily/index.wxss */
+page{background: #4F83E8;}
+.fk-ccontainer{display:flex;flex-direction:column;height:100%}
+.fk-header-container{height:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#ffffff}
+.fk-reward-intro{height:33%;display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.fk-reward-placeholder{width:36px;text-align:center;}
+.fk-reward-integral{width:36px;text-align:center;display:flex;flex-direction:column;align-items:center;color:#ffffff;font-size:12px;}
+.fk-reward-dot{width:16px;height:16px;margin:3px 10px;box-shadow:0 2px 4px rgba(0,0,0,.2);border-radius:20px;}
+.fk-reward-num{font-size:12px;color:#00e2bd;width:36px;text-align:center;}
+.fk-reward-num.bold{font-size:16px;font-weight:bold;color:#ffffff;}
+.fk-footer{height:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;}
+.fk-footer-times{margin-bottom:10px;color:#ffffff;font-size:14px;}
+.fk-footer-button{width:90%;box-shadow:0 3px 6px rgba(0,0,0,.2);background-color:#00e2bd;padding:12px 0;color:#ffffff;font-size:20px;font-weight:bold;text-align:center;border-radius:40px;}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="//img.t.sinajs.cn/t4/appstyle/red_envelope/css/mobile/red_envelope/get.css?version=37c970c43c816123" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="//js.t.sinajs.cn/t6/apps/enp_bee/js/seer.min.js"></script>
+  <script type="text/javascript">
+  $CONFIG = {};
+  $CONFIG['jsPath'] = '//js.t.sinajs.cn/t6/';
+  $CONFIG['cssPath'] = '//img.t.sinajs.cn/t4/';
+  $CONFIG['imgPath'] = '//img.t.sinajs.cn/t4/';
+  $CONFIG['set_id'] = "6000059583543";
+  $CONFIG['uid'] = "7347716644";
+  </script>
+  </script>
+  <title>用户7347716644的群组红包</title>
+</head>
+<body>
+  <div class="receive_list" id="pl_redEnvelope_detail">
+  <!-- 主人态红包详情 -->
+   <!-- 主人态红包详情 -->
+ <div class="user_head">
+  <em class="time_tip"></em>
+  <div class="user_img">
+  <img src="https://tvax1.sinaimg.cn/default/images/default_avatar_female_180.gif?KID=imgbed,tva&Expires=1575493539&ssig=FNElD0mRPw" alt="">
+ </div>
+ <p class="red_user"><span class="username">用户7347716644</span>的红包</p>
+ <p class="blessing">恭喜发财,今晚吃鸡</p>
+  <a href="https://mall.e.weibo.com/h5/redenvelope/redlist?sinainternalbrowser=topnav" class="wallet_href arr_r" suda-uatrack="key=qunzu_zhadan_hongbao&value=zhadan_hongbao_lqxq_wdhb">查看我收到的红包</a>
+ </div>
+   <div class="list_area">
+ <div class="list_amount">
+ <p class="amount">1个红包，<em class="fc_red">1.00</em>元</p>
+  </div>
+   <ul class="list_wrap" node-type="detailList">
+  <li bonus_id="415815947">
+ <div class="left_info">
+ <img src="https://tvax1.sinaimg.cn/default/images/default_avatar_male_180.gif?KID=imgbed,tva&Expires=1575493594&ssig=yrP1xI%2BhSP" />
+ </div>
+ <div class="right_info">
+ <div class="top_info">
+ <span class="username">用户7347334473</span>
+ <span class="red_money fr">1.00元</span>
+  </div>
+ <div class="bottom_info" style="display:block;">
+ <p class="pub_data" node-type="time">2019-12-05 01:41:15</p>
+ </div>
+ </div>
+ </li>
+  </ul>
+ <div node-type="loader" style="padding:30px;margin: -4rem 0 3rem;text-align:center;display:none;">加载中...</div>
+  <div class="send_btn_area flex">
+  <a href="sinaweibo://browser/close" class="send_btns flex_item">关闭</a>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="//js.t.sinajs.cn/t6/apps/enp_redenvelope_m/js/base.js"></script>
+<script type="text/javascript" src="//js.t.sinajs.cn/t6/apps/enp_redenvelope_m/js/pl/redEnvelope/detail/index.js?version=37c970c43c816123"></script>
+<script type="text/javascript" src="//js.t.sinajs.cn/t6/apps/enp_bee/js/bee-0.1.1.min.js"></script>
+<script type="text/javascript" src="//js.t.sinajs.cn/open/analytics/js/suda.js"></script>
+</html>

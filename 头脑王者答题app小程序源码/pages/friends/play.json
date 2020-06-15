@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "好友对战",
+    "usingComponents": {
+        "ui-mask": "/components/ui-mask/index"
+    }
+}

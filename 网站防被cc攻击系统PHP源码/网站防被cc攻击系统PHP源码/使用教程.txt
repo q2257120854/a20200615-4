@@ -1,0 +1,21 @@
+<?php 
+	require('anti_ddos/start.php');
+?>
+
+
+
+anti_ddos和css文件夹上传到网站根目录
+将上面的代码放在网站首页文件index.php里的最顶端 或者核心文件
+本源码仅支持php程序
+
+
+，类似于度云等的防CC访问机制。
+用户访问网站时先经过我们这个防CC页面，这样就可以拦截一般的CC攻击了。
+
+
+牛码屋www.niumawu.com
+
+
+
+
+

@@ -1,0 +1,945 @@
+.pic_bazi,.pic_bazi img {
+	display: block
+}
+
+.form_bottom_txt,.pic_bazi {
+	margin: 0 10px 10px
+}
+
+.obp_info_txt .words,.obp_title {
+	font-size: 18px
+}
+
+.bottom_text_num,.form_bottom_txt,.obp_info_words,.obp_num,.obp_num span,.obp_pirce,.obp_title {
+	text-align: center
+}
+
+.obp_info_pic,.obp_info_txt,.obp_num span,.public_op_info .pic,.public_op_info .txt,.public_op_num span {
+	vertical-align: middle
+}
+
+.ba_as,.ba_table .dayun,.ba_table .dayun div,.ba_table .gz,.ba_txt,.caiyun_num,.caiyun_top,.caiyun_top dd,.lc_box,.lc_box_wrap,.obp_info,.obp_info_in,.obp_info_words,.obp_user,.order_box_pay,.pic_bazi,.public_op_info,.public_op_info .con,.public_order_pay,.public_rl_content,.public_rl_title:after {
+	overflow: hidden
+}
+
+.ba_table .dayun div,.ba_table .gz div,.love_con_ui li,.love_ui li span,.obp_info_txt,.public_op_info .txt {
+	box-sizing: border-box
+}
+
+body {
+	background-color: #ffd8aa
+}
+
+.public_form_wrap ul {
+	border-color: #dbc6aa;
+	border-radius: 0
+}
+
+.public_form_wrap li {
+	border-color: #cbcbcb
+}
+
+.public_form_wrap .left {
+	color: #666
+}
+
+.public_form_wrap .sex i {
+	border-color: #a61222
+}
+
+.public_form_wrap .sex span.cur i {
+	background-color: #c30;
+	border-color: #c30
+}
+
+.public_form_wrap .auto input {
+	background: url("../img/icon_date.png") 98% center no-repeat;
+	background-size: 17px auto
+}
+
+.public_btn_s a {
+	background: url("../img/img_btn.png") no-repeat;
+	height: 46px;
+	line-height: 45px;
+	background-size: 100% 46px
+}
+
+.public_agreement a {
+	color: #957e71
+}
+
+.pic_bazi img {
+	width: 100%
+}
+
+.obp_info_pic,.obp_num em,.obp_num span {
+	display: inline-block
+}
+
+.form_bottom_txt b {
+	color: #d23037;
+	padding: 0 5px
+}
+
+.bottom_text_num {
+	margin: 0 auto;
+	line-height: 25px;
+	color: #535353;
+	width: 80%
+}
+
+.bottom_text_num span {
+	color: #d23037
+}
+
+.obp_title,.public_ht_title {
+	height: 36px;
+	line-height: 36px;
+	color: #fff
+}
+
+.public_hot_test {
+	border-radius: 0;
+	border: 0
+}
+
+.public_ht_title {
+	border: 0;
+	font-weight: 400;
+	padding: 0;
+	background: url("../img/bg_title_ji.png") no-repeat;
+	background-size: 100% 36px
+}
+
+.public_ht_ul {
+	border: 1px solid #dbc6aa;
+	border-top: 0
+}
+
+.order_box_pay {
+	background-color: #fffbec;
+	margin: 5px;
+	border: 1px solid #dbc6aa;
+	border-top: 0
+}
+
+.obp_title {
+	background: url("../img/bg_title_ji.png") no-repeat;
+	background-size: 100% 36px
+}
+
+.obp_num {
+	padding: 10px 0;
+	color: #752d17
+}
+
+.obp_num em {
+	color: #3f3f3f
+}
+
+.obp_num span {
+	height: 25px;
+	line-height: 25px
+}
+
+.obp_num span.dian {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #752d17;
+	margin: 0 5px
+}
+
+.obp_info {
+	margin: 10px;
+	background-color: #fffbee;
+	border: 1px solid #e0caab;
+	border-radius: 3px;
+	padding: 10px
+}
+
+.obp_info_words {
+	padding-bottom: 10px
+}
+
+.obp_info_words span {
+	color: #a61222
+}
+
+.obp_info_pic {
+	width: 30%
+}
+
+.obp_info_pic img {
+	display: block;
+	width: 100%
+}
+
+.obp_info_txt {
+	display: inline-block;
+	width: 68%;
+	padding-left: 10px;
+	line-height: 30px
+}
+
+.obp_info_txt span {
+	display: inline-block;
+	padding-left: 5px;
+	color: #df2e2e
+}
+
+.obp_tip {
+	background-color: #f8f0d4;
+	padding: 10px;
+	margin: 0 10px 10px;
+	border: 1px solid #e0caab;
+	border-radius: 5px
+}
+
+.obp_tip span {
+	color: #d23037
+}
+
+.obp_pirce {
+	color: #2b2b2b;
+	font-size: 16px;
+	margin: 10px 10px 0
+}
+
+.obp_pirce del {
+	color: #999
+}
+
+.obp_pirce strong {
+	color: #d23037
+}
+
+.obp_pirce p {
+	color: #ababab;
+	font-size: 14px;
+	margin-top: 10px
+}
+
+.lc_tip,.lc_tit {
+	font-size: 16px;
+	color: #fff;
+	text-align: center
+}
+
+.lock_content {
+	position: relative;
+	background-color: #fffbec;
+	padding: 10px;
+	margin: 0 5px
+}
+
+.lc_tip {
+	background: url("../img/bg_title_ji.png") no-repeat;
+	height: 36px;
+	line-height: 36px;
+	background-size: 100% 36px
+}
+
+.lc_box_wrap {
+	border: 1px solid #ddd;
+	padding-top: 10px
+}
+
+.lc_box {
+	margin: 0 10px
+}
+
+.lc_tit {
+	height: 30px;
+	line-height: 30px;
+	background-color: #c30;
+	position: relative
+}
+
+.lc_tit:after,.lc_tit:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 10px;
+	height: 30px;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/icon_lock_title.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.lc_tit:before {
+	left: 0
+}
+
+.lc_tit:after {
+	right: 0;
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1)
+}
+
+.lc_list {
+	padding: 10px;
+	position: relative;
+	border: 1px solid #dacbbd;
+	border-top: 0;
+	background-color: #f8f0d4;
+	margin-bottom: 10px
+}
+
+.lc_list p {
+	line-height: 24px;
+	height: 24px;
+	position: relative;
+	padding: 0 0 0 20px
+}
+
+.lc_list p:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 14px;
+	height: 16px;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/css/images/icon_p.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.lc_list .icon_suo {
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/1_icon_lock.png") no-repeat;
+	background-size: 100%auto;
+	right: 10px;
+	top: 50%;
+	margin-top: -20px
+}
+
+.public_order_pay {
+	background-color: #fffbec;
+	margin: 5px;
+	border: 1px solid #dbc6aa;
+	border-top: 0
+}
+
+.public_op_title {
+	background: url("../img/bg_title_ji.png") no-repeat;
+	height: 36px;
+	line-height: 36px;
+	background-size: 100% 36px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px
+}
+
+.public_op_num {
+	text-align: center;
+	padding: 10px 0;
+	color: #752d17
+}
+
+.public_op_num em {
+	color: #3f3f3f;
+	display: inline-block
+}
+
+.public_op_num span {
+	display: inline-block;
+	text-align: center;
+	height: 25px;
+	line-height: 25px
+}
+
+.public_op_num span.dian {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #752d17;
+	margin: 0 5px
+}
+
+.public_op_info {
+	margin: 10px;
+	background-color: #fffbee;
+	border: 1px solid #e0caab;
+	border-radius: 3px;
+	padding: 10px
+}
+
+.public_op_info .tit {
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 10px
+}
+
+.public_op_info .pic {
+	display: inline-block;
+	width: 30%
+}
+
+.public_op_info .pic img {
+	display: block;
+	width: 100%
+}
+
+.public_op_info .txt {
+	display: inline-block;
+	width: 68%;
+	padding-left: 10px;
+	line-height: 30px
+}
+
+.public_op_info .txt .words {
+	font-size: 18px
+}
+
+.public_op_info .txt span {
+	display: inline-block;
+	padding-left: 5px;
+	color: #df2e2e
+}
+
+.public_rl_title {
+	background: url("../img/bg_title_ji.png") no-repeat;
+	height: 36px;
+	line-height: 36px;
+	background-size: 100% 36px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 10px 10px 0;
+	position: relative
+}
+
+.public_rl_title:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	display: block;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/arrow_b.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%
+}
+
+.public_rl_content {
+	opacity: 0;
+	height: 0;
+	background-color: #fffbee;
+	margin: 0 10px;
+	border: 1px solid #dbc6aa;
+	border-top: 0;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px
+}
+
+.current_rotate .public_rl_title:after {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: all .3s;
+	-webkit-transition: all .3s
+}
+
+.current_rotate .public_rl_content {
+	opacity: 1;
+	height: auto
+}
+
+.ba_table {
+	position: relative;
+	padding-top: 5px
+}
+
+.ba_table table {
+	position: relative;
+	width: 100%;
+	border-top: 1px solid #e8ddbf;
+	border-left: 1px solid #e8ddbf;
+	border-collapse: collapse
+}
+
+.ba_table td,.ba_table th {
+	border-right: 1px solid #e8ddbf;
+	border-bottom: 1px solid #e8ddbf;
+	line-height: 24px;
+	color: #3f3f3f;
+	text-align: center;
+	padding: 4px 0;
+	position: relative
+}
+
+.ba_as,.ba_as .words,.ba_txt {
+	line-height: 25px
+}
+
+.ba_table th {
+	font-weight: 400;
+	background-color: #f8d6b4;
+	background-color: transparent\9;
+	color: #de2c2c
+}
+
+.ba_table th:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid #e1ccb8;
+	border-bottom: 1px solid #e1ccb8;
+	top: 0;
+	left: 0;
+	display: none\9
+}
+
+.ba_table .bz td {
+	font-size: 18px;
+	color: #1c1c1c
+}
+
+.ba_table .gz div span,.public_title {
+	font-size: 16px
+}
+
+.ba_table .br0 {
+	border-right: none
+}
+
+.ba_table .tr_list td,.ba_table .tr_list th {
+	padding: 0
+}
+
+.ba_table .gz {
+	color: #5f5333
+}
+
+.ba_table .gz div {
+	width: 12.5%;
+	padding: 12px 0;
+	border-right: 1px solid #e8ddbf;
+	float: left;
+	text-align: center
+}
+
+.ba_table .gz div:last-child {
+	border-right: none
+}
+
+.ba_table .dayun {
+	padding: 0
+}
+
+.ba_table .dayun div {
+	float: left;
+	width: 50%;
+	border-right: 1px solid #e8ddbf;
+	padding: 5px
+}
+
+.ba_table .dayun div:last-child {
+	border: none
+}
+
+.pink_color {
+	background-color: #ffbeac;
+	border-color: #eaae9a
+}
+
+.red_color {
+	background-color: #a61222;
+	color: #fff4d6
+}
+
+.public_red_words {
+	color: #a61222
+}
+
+.ba_txt {
+	padding: 10px
+}
+
+.ba_txt span {
+	color: #e71f19;
+	display: inline-block;
+	float: left
+}
+
+.ba_as {
+	padding: 0 10px 10px
+}
+
+.ba_as .words {
+	display: inline-block;
+	color: #fff;
+	height: 25px;
+	padding: 0 5px;
+	background-color: #e71f19;
+	margin-right: 10px
+}
+
+.public_title {
+	height: 30px;
+	line-height: 30px;
+	background-color: #c30;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	margin: 10px 10px 0
+}
+
+.public_title:after,.public_title:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 10px;
+	height: 30px;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/icon_lock_title.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.public_title:before {
+	left: 0
+}
+
+.public_title:after {
+	right: 0;
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1)
+}
+
+.public_con_word {
+	padding: 10px;
+	line-height: 22px
+}
+
+.public_con_word a {
+	color: #8c0000
+}
+
+.caiyun_top dl {
+	position: relative;
+	margin-top: 50px
+}
+
+.caiyun_top dt {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: #f8d6b4;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+	top: -40px
+}
+
+.love_tc_t,.love_ui li {
+	border-bottom: 1px solid #eed4b8
+}
+
+.love_tc_t .l,.love_ui li .l {
+	border-right: 1px solid #eed4b8
+}
+
+.caiyun_top dt img {
+	display: block;
+	width: 100%
+}
+
+.caiyun_top dd {
+	background-color: #f8d6b4;
+	margin: 0 5px 10px;
+	padding: 30px 10px 15px
+}
+
+.caiyun_num {
+	padding: 10px 10px 0;
+	color: #b75436
+}
+
+.caiyun_proposal,.caiyun_txt {
+	padding: 10px;
+	line-height: 25px;
+	overflow: hidden
+}
+
+.caiyun_proposal .txt {
+	color: #b75436;
+	padding-top: 10px
+}
+
+.caiyun_canvas {
+	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 5px
+}
+
+.star {
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/start.png") no-repeat;
+	width: 100px;
+	height: 20px;
+	background-size: 100px auto;
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	top: 5px
+}
+
+.star5 {
+	background-position: 0 0
+}
+
+.star10 {
+	background-position: 0 -20px
+}
+
+.star15 {
+	background-position: 0 -40px
+}
+
+.star20 {
+	background-position: 0 -60px
+}
+
+.star25 {
+	background-position: 0 -80px
+}
+
+.star30 {
+	background-position: 0 -100px
+}
+
+.star35 {
+	background-position: 0 -120px
+}
+
+.star40 {
+	background-position: 0 -140px
+}
+
+.star45 {
+	background-position: 0 -160px
+}
+
+.star50 {
+	background-position: 0 -180px
+}
+
+.love_txt {
+	overflow: hidden;
+	line-height: 25px;
+	padding: 10px 10px 0
+}
+
+.love_con_ui li,.love_ui li {
+	line-height: 35px;
+	height: 35px
+}
+
+.love_con {
+	overflow: hidden;
+	padding: 0 10px 10px
+}
+
+.love_con .words {
+	color: #b75436;
+	padding-top: 10px
+}
+
+.love_con_ui {
+	overflow: hidden;
+	margin-top: 10px
+}
+
+.love_con_ui li {
+	float: left;
+	width: 33.33%;
+	padding: 0 5px;
+	text-align: center;
+	margin-bottom: 10px
+}
+
+.love_con_ui li span {
+	display: block;
+	background-color: #b75436;
+	border-radius: 5px;
+	color: #fff
+}
+
+.love_taohua_con,.love_ui {
+	border: 1px solid #eed4b8;
+	overflow: hidden
+}
+
+.love_con_txt {
+	overflow: hidden;
+	background-color: #f7e1c5;
+	padding: 5px;
+	color: #3e3e3e;
+	margin-top: 10px
+}
+
+.love_taohua_top p,.love_tc_t .l,.love_ui li .l {
+	color: #b75436;
+	text-align: center
+}
+
+.love_ui {
+	margin-top: 10px;
+	background-color: #fffbec
+}
+
+.love_ui li {
+	overflow: hidden
+}
+
+.love_ui li span {
+	display: inline-block
+}
+
+.love_ui li .l {
+	width: 20%
+}
+
+.love_ui li .r {
+	width: 80%;
+	padding-left: 10px
+}
+
+.love_taohua_top {
+	overflow: hidden;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/bg_tao.jpg") no-repeat;
+	background-size: 100%
+}
+
+.love_taohua_top p {
+	padding: 10px;
+	line-height: 25px
+}
+
+.love_taohua_con {
+	background-color: #fbf4db;
+	margin: 0 5px 5px
+}
+
+.love_tc_t {
+	height: 35px;
+	line-height: 35px
+}
+
+.love_tc_t span {
+	display: inline-block;
+	box-sizing: border-box
+}
+
+.bazi_pic li a,.zodiac_pic li a {
+	display: block;
+	box-sizing: border-box
+}
+
+.love_tc_t .l {
+	width: 25%
+}
+
+.love_tc_t .r {
+	width: 75%;
+	padding-left: 10px
+}
+
+.love_tc_c {
+	line-height: 25px;
+	padding: 10px 5px;
+	color: #3f3f3f
+}
+
+.bazi_pic {
+	height: 100%;
+	overflow: hidden
+}
+
+.bazi_pic li {
+	width: 20%;
+	text-align: center;
+	height: 115px;
+	float: left
+}
+
+.bazi_pic li a {
+	position: relative;
+	height: 82px;
+	margin: 5px;
+	overflow: hidden
+}
+
+.bazi_pic li p {
+	height: 24px;
+	overflow: hidden
+}
+
+.bazi_pic li img {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%)
+}
+
+.zodiac_pic {
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px
+}
+
+.zodiac_pic li {
+	width: 25%;
+	height: auto;
+	float: left;
+	overflow: hidden
+}
+
+.zodiac_pic li a {
+	margin: 0 5px;
+	position: relative;
+	height: auto
+}
+
+.zodiac_pic li img {
+	height: auto;
+	max-height: 100%;
+	max-width: 100%
+}
+
+.zodiac_pic li a p {
+	text-align: center;
+	color: #333
+}
+
+.zodiac_pic_center {
+	text-align: center;
+	background: url("http://cdn.12ystar.com/website/Content/hlybz/img/jt.png") center 36px no-repeat;
+	line-height: 48px
+}
+
+.zodiac_img_fs img {
+	float: right
+}
+
+.base_info {
+	line-height: 30px;
+	padding: 10px 0;
+	border-bottom: 1px dashed #000;
+	margin: 0 10px
+}
+
+.base_info span {
+	color: #8c0000
+}

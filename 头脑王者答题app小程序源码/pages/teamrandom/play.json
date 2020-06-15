@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "团队赛",
+  "usingComponents": {
+    "ui-mask": "/components/ui-mask/index",
+    "ui-toast": "/components/ui-toast/index"
+  }
+}

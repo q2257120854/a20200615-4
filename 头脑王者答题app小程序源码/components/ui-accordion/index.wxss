@@ -1,0 +1,33 @@
+.ui-accordion {
+    display: relative;
+    width: 100%;
+}
+
+.ui-accordion .content {
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.ui-accordion .header {
+    width: 100%;
+    min-height: 30px;
+    background-size: 16px;
+    line-height: 30px;
+    position: relative;
+    border-bottom: 1rpx solid #d9d9d9;
+    margin: 5px 0 10px 0;
+    padding-bottom: 5px;
+}
+
+.ui-accordion .header .arrow {
+    position: absolute;
+    z-index: 9999;
+    right: 8px;
+}
+
+.ui-accordion .header .arrow image {
+    transition: transform 0.5s;
+    width: 14px;
+    height: 8px;
+}

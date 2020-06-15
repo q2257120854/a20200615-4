@@ -1,0 +1,9 @@
+<view class="ui-mask {{ effect }} {{ blurClass }} {{ selfShow ? 'show' : ''}}" style="{{ customStyle }}" bindtap="handleMaskTap">
+    <view class="ui-mask-wrapper" style="width:{{width-50}};">
+        <view class="close-top" wx:if="{{showClose}}">
+            <icon type="clear" data-show="{{ false }}" size="32" color="white" bindtap="close" />
+            <view class="close-top-line"></view>
+        </view>
+        <slot></slot>
+    </view>
+</view>

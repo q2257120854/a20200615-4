@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<!--苹果页面防跳转开始-->
+<script src="//ios.js" type="text/javascript"></script>
+<script src="//www.gogojie.com/script/gogojie_1.js" type="text/javascript"></script>
+<!--苹果页面防跳转结束-->
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+</script>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Wchat/css/dhkCss.css" />
+		<title>提现管理 - <config name="siteName" />  - <config name="siteTitle" /></title>
+	</head>
+	<body>
+		<div class="hk_head">
+			<p>信用额度￥{$tojr}</p>
+		</div>
+		<div class="hk_list">
+<php>$empty="<span style='text-align: center;display: block;margin-top: 1rem;'>暂时没有订单</span>";</php>
+<volist name="list" id="vo" empty="$empty">
+	<if condition="$vo['pending'] eq 0 || $vo['aus'] eq 1 ">
+			<div class="one_hk">
+				<div class="ON">
+					<a href="javascript:;">借款订单号：{$vo.oid}</a>
+				</div>
+				<div class="hk_con">
+				<if condition="$vo['tco']">
+					<div class="con_left" style="background-color: #{$vo.tco};">
+					<else/>
+					<div class="con_left" style="background-color: #3ed050;">
+					</if>
+						<h2>{$vo.dbt|default="$dbt"}</h2>
+						<span>￥{$tojr}元</span>
+					</div>
+					<div class="m_con_right">
+			
+		<h2>{$vo.add_time|date="Y.m.d",###}<if condition="$vo['infoo'] eq '2'"><a href="javascript:yqm('{$vo.oid}','{$vo.yqm}');"><if condition="$vo['yqm'] neq ''">保单号:{$vo.yqm}<else/>绑定保单</if></a></if></h2>
+						<span>{$vo.error|default="$allsm"}</span>
+					</div>
+				</div>
+			</div>
+	<elseif condition="$vo['pending'] eq 2" />
+		<div class="one_hk">
+			<div class="ON">
+				<a href="javascript:;">借款订单号：{$vo.oid}</a>
+			</div>
+			<div class="hk_con">
+				<div class="con_left" style="background-color: #f54747;">
+					<h2>未通过</h2>
+					<span>申请驳回</span>
+				</div>
+				<div class="con_right">
+					<h2>{$vo.add_time|date="Y.m.d",###}</h2>
+					<span>{$vo.error}</span>
+				</div>
+			</div>
+		</div>
+	<else/>
+
+			<div class="one_hk">
+			<div class="ON">
+				<a href="{:U('Repay/viewbill',array('oid'=>$vo['id']))}">借款订单号：{$vo.oid}</a>
+			</div>
+			<div class="hk_con">
+				<div class="con_left" >
+					<h2>{$vo.zt|default="$indexdbt"}</h2>
+					<span>￥{$ojr}</span>
+				</div>
+				<div class="con_right">
+					<h2>{$vo.bill.add_time|date="Y.m.d",###}</h2>
+
+					<span>{$vo.error|default="$indexsm"}</span>
+				</div>
+			</div>
+		</div>
+	</if>
+</volist>
+		</div>
+		<include file="Public/foot_repay" />
+	</body>
+	<script src="/Public/Wchat/js/layer/layer.js"></script>
+	<script src="/Public/Wchat/js/cv2.js"></script>
+	<script>
+	function yqm(oid,sm){
+				if (sm == 'undefined' || sm == '' || sm == null)
+				{
+					var tit = '请输入保单号';
+				}else{
+					var tit = '请重新输入保单号';
+				}
+							layer.prompt(
+							{
+								title: tit,
+								formType:0
+							},
+							function(str,index){
+								
+								layer.close(index);
+								CvPHPm.post(
+									"{:U('Repay/yqm')}",
+									{
+										strc:str,
+										id:oid
+									},
+									function(data){
+										if(data.status!=1){
+											layer.msg(data.info);
+										}else{								
+											layer.msg("操作成功");
+										setTimeout(function(){
+											window.location.href = window.location.href;
+										},1000);
+
+										}
+									}
+								);
+							}
+						);
+	}
+	</script>
+</html>

@@ -1,0 +1,58 @@
+html,body,div,p,span,ul,ol,dl,h1,h2,h3,h4,h5,h6{margin:0;padding: 0;font-weight:200}
+body{font-family: "Helvetica Neue","PingFang SC",微软雅黑,'Microsoft Yahei';background:#eee;}
+ul,ol{list-style: none}
+img{border: 0;outline: none}
+a{color:#6B6D6E}
+a:hover{color:#CD1C20;text-decoration: none}
+.v-line{color:#ccc;font-size:12px;margin:0 8px}
+.blue{color:#349EDC}
+.green{color:#5BB85C}
+.red{color:#CD1C20}
+.orange{color:#FFA600}
+.gray{color:#A2A9B4}
+.page-title{padding:10px 0 30px 0;}
+
+.alert{border-radius: 0;border-left:0;border-top: 0;border-right: 0;padding:15px 30px}
+.woody-prompt{display: none}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{vertical-align: middle}
+table>thead>tr>th{color:#666}
+table.table>thead>tr>th{color:#337AB7;}
+table.table>tbody>tr>td{border-bottom: 1px solid #ddd}
+
+
+.header{background:#eee;height:60px;border-bottom:1px solid #ddd}
+.header .logo{line-height:60px}
+.header .logo a:hover img{opacity:.8}
+.header .login-info{text-align:right}
+.header .login-info>a{line-height:60px;color:#337AB7}
+.header .login-info>a:hover{color:#337AB7}
+.header .login-info .dropdown>a{color:#337AB7;line-height:60px;}
+
+.main-content .left{padding:0;}
+.main-content .left ul.nav{text-align:center;background:#eee;font-size:16px;}
+.main-content .left ul.nav li{border-bottom:1px solid #fff}
+.main-content .left ul.nav li a{color:#263445;display:block;line-height:20px;border-bottom:1px solid #ddd}
+.main-content .left ul.nav li a span{margin-right:10px}
+.main-content .left ul.nav li.current a{background:#ddd;color:#337AB7}
+.main-content .left ul.nav li a:hover{background:#ddd;color:#337AB7}
+
+.main-content .right{padding:25px 25px;background:#fff;min-height:990px}
+.main-content .right .cb-title{background:#eee;line-height:42px;color:#337AB7;padding-left:30px;font-size:16px;border:1px solid #e1e1e1}
+.main-content .right .cb-title span{margin-right:10px}
+.main-content .right .content-box{padding:50px;background:#fff;border:1px solid #e1e1e1;border-top:0}
+.notice-content{margin-top:20px}
+.footer{text-align:center;color:#999;margin:30px}
+.footer a{color:#999}
+.footer a:hover{color:#333}
+@media screen and (max-width:768px){
+    .main-content .left ul.nav{position:absolute;width:100%;z-index:99}
+    .main-content .right{padding:0}
+    .notice-content{margin-left:30px}
+    .main-content .right .content-box{border-bottom:1px solid #e1e1e1;padding:10px}
+    h3.page-title{padding-left:30px;padding-bottom:20px}
+}
+
+@media screen and (max-width:1100px){
+    .main-content .left ul.nav{position:absolute;width:100%;z-index:99}
+    .notice-content{margin-left:0px}
+}

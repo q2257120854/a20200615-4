@@ -1,0 +1,7 @@
+location / { 
+  if (!-e $request_filename) {
+    rewrite ^/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ /index.php?$1.$2.$3 last; 
+ rewrite ^/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).do$ /index.php?$1.$2.$3 last; 	
+    break;
+  }
+}

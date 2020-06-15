@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>老王支付V1.0-支付测试</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
+</head>
+<body>
+<div style="padding:30px;">
+<fieldset class="layui-elem-field layui-field-title">
+  <legend>支付调试</legend>
+</fieldset>
+<form class="layui-form layui-form-pane" action="gateway.php" method="post">
+
+
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">交易金额</label>
+    <div class="layui-input-block">
+      <input type="text" name="amount" autocomplete="off" class="layui-input" value="1">
+    </div>
+  </div>
+
+ 
+ <div class="layui-form-item">
+    <label class="layui-form-label">支付类型</label>
+    <div class="layui-input-block">
+      <select name="type">
+         <option value="1">微博红包</option>
+      
+      </select>
+    </div>
+  </div>
+
+
+  <div class="layui-form-item">
+    <button class="layui-btn" lay-submit="">提交</button>
+  </div>
+</form>
+</div>      
+<script src="/static/layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+  
+});
+</script>
+
+</body>
+</html>

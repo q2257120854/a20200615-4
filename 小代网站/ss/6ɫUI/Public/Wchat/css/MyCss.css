@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body{
+
+	margin:0;
+
+	padding:0;
+
+	background:#f1f8fe;
+	font-family:'微软雅黑';
+}
+
+a:hover{
+
+	text-decoration:none;
+
+}
+
+ul{
+
+	margin:0;
+
+	padding:0;
+
+	list-style:none;
+
+}
+
+.head_portrait{
+
+	width:100%;
+
+	min-height: 11.5rem;
+
+	float: left;
+
+	background:#1776d4;
+
+	position: relative;
+
+	padding-bottom: 0.4rem;
+
+}
+
+.header{
+
+	width:30%;
+
+	height: 8rem;
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	right: 0;
+
+	bottom: 0;
+
+	margin: auto;
+
+	text-align: center;
+
+}
+
+.header img{width: 88%;height: 26vw;border-radius: 100%;}
+
+.header span{
+
+	font-size: 1rem;
+
+	display:inline-block;
+
+	color: #fff;
+
+	margin-top: 0.8rem;
+
+}
+.header a{
+
+	font-size: 1rem;
+
+	display:inline-block;
+
+	color: #fff;
+
+	margin-top: 0.8rem;
+
+}
+
+.nav{
+
+	float:left;
+
+	width:100%;
+
+	min-height:2rem;
+
+	background:#fff;
+
+	margin-bottom:0.5rem;
+
+}
+
+.nav li{
+
+	line-height:3rem;
+
+	height:3rem;
+
+	border-bottom: 1px solid #e1e1e1;
+
+	font-size:0.9rem;
+
+}
+
+.nav .guanyu{
+
+	background:url(../images/guanyu.png) no-repeat;
+
+	background-size: 6%;
+
+	background-position: center left 4%;
+
+}
+
+.nav .one{
+
+	background:url(../images/fenxiang.png) no-repeat;
+
+	background-size: 6.7%;
+
+	background-position: center left 3%;
+
+}
+
+.nav .three{
+
+	background:url(../images/qq.png) no-repeat;
+
+	background-size: 6%;
+
+	background-position: center left 4%;
+
+}
+
+.nav .four{
+
+	background:url(../images/rexian.png) no-repeat;
+
+	background-size: 6%;
+
+	background-position: center left 4%;
+
+}
+.nav .fourqq{
+
+	background:url(../images/qq.png) no-repeat;
+
+	background-size: 6%;
+
+	background-position: center left 4%;
+
+}
+.nav .system{
+
+	background:url(../images/system.png) no-repeat;
+
+	background-size: 6%;
+
+	background-position: center left 4%;
+
+}
+
+.nav li a{
+
+	width:100%;
+
+	display:inline-block;
+
+	height:3rem;
+
+	background:url(../images/forward.png) no-repeat center right;
+
+	text-indent: 9%;
+
+	color:#434343;
+
+}
+
+.nav li span{
+
+	margin-left: 9%;
+
+}
+
+.nav .four a{
+
+	background:none;
+
+	width:50%;
+
+	float:right;
+
+	text-align: right;
+
+	color: #1176d4;
+
+}
+.nav .fourqq a{
+
+	background:none;
+
+	width:50%;
+
+	float:right;
+
+	text-align: right;
+
+	color: #1176d4;
+
+}
+
+.nav li a:hover{
+
+	text-decoration:none;
+
+}
+
+.anniu{
+
+	float:left;
+
+	width:100%;
+
+	min-height:2rem;
+
+	margin-bottom: 3.8rem;
+
+}
+
+.anniu a{
+
+	width:90%;
+
+	margin-left:5%;
+
+	height:3rem;
+
+	text-align:center;
+
+	margin-top: 2rem;
+
+	display:block;
+
+	margin-bottom: 2.5rem;
+
+	line-height:3rem;
+
+	text-decoration:none;
+
+	border-radius:50px;
+
+	font-size:1rem;
+
+	background: -webkit-linear-gradient(right,#3ea3f5,#1461b9) no-repeat;
+
+	box-shadow: 0rem 11px 51px #3da1f4;
+
+	color:#fff;
+
+}
+
+.alert{
+
+	width:100%;
+
+	height:100%;
+
+	position:fixed;
+
+	top:0;
+
+	left:0;
+
+	background: rgba(0, 0, 0, 0.5);
+
+	padding:0;
+
+}
+
+.win{
+
+	background:#fff;
+
+	min-height:2rem;
+
+	position:absolute;
+
+	bottom:0;
+
+	left:0;
+
+	width:100%;
+
+}
+
+.win p{
+
+	line-height:2.5rem;
+
+	text-indent: 3%;
+
+	font-size: 0.9rem;
+
+	color: #434343;
+
+	margin: 0;
+
+}
+
+.win li{
+
+	width:20%;
+
+	height: 5.3rem;
+
+	padding: 0;
+
+	text-align: center;
+
+	position:relative;
+
+}
+
+.win li span{
+
+	display:inline-block;
+
+	width:100%;
+
+	position:absolute;
+
+	bottom: 0.3rem;
+
+	left: 0;
+
+	color: #434343;
+
+	font-size:0.9rem;
+
+}
+
+.win .weibo{
+
+	background: url(../images/weibo.png) no-repeat center top;
+
+	background-size: 70%;
+
+}
+
+.win .weixin{
+
+	background: url(../images/weixin.png) no-repeat center top 0.2rem;
+
+	background-size: 61%;
+
+}
+
+.win .QQ{
+
+	background: url(../images/QQ.png) no-repeat center top 0.2rem;
+
+	background-size: 63%;
+
+}
+
+.win .QQkj{
+
+	background: url(../images/QQkj.png) no-repeat center top;
+
+	background-size: 70%;
+
+}
+
+.win .friend{
+
+	background: url(../images/friend.png) no-repeat center top 0.2rem;
+
+	background-size: 61%;
+
+}
+
+.win .quxiao{
+
+	width:100%;
+
+	height:2.5rem;
+
+	text-align:center;
+
+	display:inline-block;
+
+	line-height:2.5rem;
+
+	color:#434343;
+
+	border-top: 1px solid #ccc;
+
+	font-size:1rem;
+
+}

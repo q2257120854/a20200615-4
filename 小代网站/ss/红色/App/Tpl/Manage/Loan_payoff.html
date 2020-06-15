@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>已还清订单</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>回款借款</h5>
+			</div>
+			<form method="get" id="seachForm">
+				<input type="hidden" name="m" value="Loan" />
+				<input type="hidden" name="a" value="payoff" />
+				<div class="public-selectArea">
+					<div class="clearfix">
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>订单号：</dt>
+								<dd>
+									<input type="text" name="s-oid" value="{$Think.get.s-oid}">
+								</dd>
+							</dl>
+						</div>
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>申请时间：</dt>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeStart" value="{$Think.get.s-timeStart}" />
+								</dd>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeEnd" value="{$Think.get.s-timeEnd}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href='javascript:$("#seachForm").submit();' class="btn btn-sereachBg">
+							<i class="glyphicon glyphicon-search public-ico"></i>
+							<span class="public-label">查询</span>
+						</a>
+					</div>
+				</div>
+			</form>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>订单号</th>
+							<th>用户名</th>
+							<th>借款金额</th>
+							<th>借款期限</th>
+							<th>预期收益</th>
+							<th>申请时间</th>
+							<th>逾期次数</th>
+							<th>合同</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.oid}</td>
+							<td>{$vo.user.telnum}</td>
+							<td>{$vo.money}元</td>
+							<td>
+								{$vo.time}<if condition="$vo['timetype'] eq 1">个月<else/>天</if>
+							</td>
+							<td>{$vo.interest_money}元</td>
+							<td>{$vo.add_time|date="Y/m/d H:i:s",###}</td>
+							<td>{$vo.BillNum} 期共逾期 {$vo.overdueBillNum} 次</td>
+							<td>
+								<a href="{:U('Loan/viewContract',array('id'=>$vo['id']))}" title="点击查看合同" target="_blank">查看合同</a>
+							</td>
+							<td class="text-left">
+								<a href="">查看账单</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	</script>
+</html>

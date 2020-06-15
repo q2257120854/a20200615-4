@@ -1,0 +1,201 @@
+.signin_user{
+    width: 935px;
+    margin: 0 auto;
+}
+
+.signin_user label span{
+    color: #4e566a;
+    position: relative;
+    top: -70px;
+    left: 20px;
+}
+
+
+.img_box {
+    width: 800px;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+/* 上传图片 */
+.img_box img{
+    width: 230px;
+}
+.img_box input[type=file]{
+    opacity: 0;
+    position: absolute;
+    margin: 10px;
+    width: 230px;
+    height: 140px;
+}
+.hfdform .signin_user .img_box label{
+    padding-left: 12px;
+}
+.certificate{
+    position: relative;
+    left: -470px;
+    top: 155px;
+    z-index: 1;
+}
+.file_cate{
+    top: 150px;
+    left: 80px;
+    z-index: 2;
+}
+.img_box p{
+    background-color: #f8faff;
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+    width: 600px;
+    text-align: left;
+    margin-left: 12%;
+    margin-top: 160px;
+    margin-bottom: 15px;
+}
+.img_box .front{
+    margin-left: 20px;
+}
+.img_box p span{
+    background-image: url(../Images/home.png);
+    background-repeat: no-repeat;
+    background-position: -242px -333px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+    left: 0;
+}
+.text_box{
+    width: 550px;
+    text-align: right;
+    margin-left: 55px;
+}
+.text_box label span{
+    color: #4e566a;
+}
+.text_box label{
+    display: inline-block;
+}
+.btn_box{
+    width: 300px;
+    margin-left: 295px;
+    margin-top: 40px;
+}
+.btn_box span{
+    color: #4e566a;
+    font-size: 12px;
+}
+.btn_box span a{
+    color: #587ffd;
+    font-size: 12px;
+}
+.btn_box .ckbox input{
+    position: relative;
+    top: 2px;
+}
+.btn_box .btn{
+    background-color: #587ffd;
+}
+.btn_box .btn:hover{
+    background-color: #1540ee;
+}
+
+.label5{
+    position: relative;
+}
+.text_box .label5 .text{
+    color: red;
+    font-size: 12px;
+    white-space:nowrap;
+    position: absolute;
+    left: 108px;
+}
+
+.layui-form-item .layui-input{
+    width: 300px;
+    height: 40px;
+}
+.layui-form-label{
+    width: 357px;
+}
+.layui-form-mid{
+    margin-left: 105px;
+}
+.layui-input-block {
+    margin-left: 388px;
+}
+.layui-form-item .layui-btn{
+    width: 300px;
+    height: 40px;
+}
+.layui-input-inline .mailBox_code{
+    width: 165px;
+}
+.layui-input-inline .e_btn{
+    display: inline-block;
+    width: 123px;
+    height: 37px;
+    border: 1px solid #5780fe;
+    color: #5780fe;
+    cursor: pointer;
+    text-align: center;
+    line-height: 37px;
+    font-size: 14px;
+    border-radius: 3px;
+    position: absolute;
+    top: 1px;
+    left: 175px;
+}
+.layui-btn{
+    background-color: #587ffd;
+}
+.layui-form-item .btn_sbm{
+    background-color: #1540ee;
+}
+.signin_enterprise{
+    width: 780px;
+    margin: 0 auto;
+}
+.signin_enterprise td { padding:10px; }
+.hfdform>.signin_enterprise>label>label{
+    padding-left: 0;
+}
+.enterprise_box .layui-form-label{
+    width: 262px;
+}
+            
+.layui-form-checkbox{
+    position: relative;
+    height: 16px;
+    line-height: 14px;
+    margin-right: 2px;
+    padding-right: 35px;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+    box-sizing: border-box;
+    left: 0px;
+}
+.layui-form-checkbox i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d2d2d2;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.layui-form-checked i{
+    color: #5FB878;
+}
+.enterprise_box .layui-input-block{
+    margin-left: -17px;
+}

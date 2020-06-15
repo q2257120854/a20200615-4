@@ -1,0 +1,9 @@
+<view class="fk-tab">
+    <view class="fk-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">总榜</view>
+    <view class="fk-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">每日答题</view>
+    <view class="fk-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">排位赛</view>
+    <view class="fk-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">好友对战</view>
+    <view class="fk-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">团队赛</view>
+</view>
+
+联系wx：suncentwl

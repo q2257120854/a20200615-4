@@ -1,0 +1,189 @@
+/*--------------------------
+ 模块：背景音乐
+---------------------------*/
+.btn_music.on {
+    background-image: url("../images/stop.png");
+}
+.btn_music {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url('../images/play.png') no-repeat center center;
+    background-size: 100% auto;
+    position: fixed;
+    z-index: 100;
+    left: 15px;
+    top: 20px;
+}
+/*--------------------------
+ 模块：名片二维码
+---------------------------*/
+.qrcode_icon{ width:32px; height:32px; display:block; position:fixed; top:20px; right:20px; z-index:1002}
+.qrcode_icon img{ width:32px; border-radius:5px;}
+.showqrcode{ display:none; height:100%; width:100%; background:rgba(0,0,0,.8); position:fixed; top:0; left:0; z-index:1003; text-align:center; color:#fff;}
+.showqrcode .qrimg li{ display:none;color:#fff;}
+.showqrcode .qrimg{ margin:35px 0; text-align:center;}
+.showqrcode .qrimg p{ line-height:30px; font-size:20px; margin-bottom:20px; }
+.showqrcode .qrtab {margin-top:35px;overflow:hidden;}
+.showqrcode .qrtab li{ width:50%; float:left; height:30px; text-align:center; line-height:30px; color:#fff; font-size:16px}
+.showqrcode .qrtab li.cur{ color:#05c19b}
+.showqrcode .closeqr{ margin:30px 10% 0; background:#05c19b; border-radius:5px; height:30px; line-height:30px;}
+#qrcode{ height:200px; text-align:center; width:200px; background:#fff; padding:5px; margin:0 auto 10px;}
+
+.aboutme{
+    position: absolute;
+    font-size: 16px;
+    right: 10px;
+    top: -5px;
+    width: 110px;
+    height: 35px;
+    background: #5D2A6D;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 -1px 15px rgba(0,0,0,.8);
+}
+/*--------------------------
+模块：显示二维码
+---------------------------*/
+.ewmform {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.ewmform .ewmform-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -150px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0 27px 27px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ewmform-close {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    display: block;
+    background: url(../images/ewmform-close.png) no-repeat;
+    background-size: 38px;
+}
+.ewmform .ewmform-title {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    padding: 16px 0;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    background: #fff;
+}
+.ewmform .ewmform-des{
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 45px;
+    color: #2B3890;
+    font-size:14px;
+    text-align: center;
+    background: #fff;
+    line-height: 19px;
+}
+.ewmform .ewmform-summary {
+    position: relative;
+    width: 246px;
+    height: 246px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top: 56px;
+    background: #fff url(../images/loading.gif) no-repeat center center;
+}
+.ewmform .ewmform-summary .ewm-thumbnail {
+    width: 100%;
+    display: block;
+}
+.ewmform .ewmform-summary .avatar-thumbnail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    padding: 2px;
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.ewm-download{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width:232px;
+    opacity: 0;
+}
+.ewmform .ewmtab {position: absolute;bottom: 10px;left: 0;z-index: 9;width:100%;}
+.ewmform .ewmtab li{ width:50%; float:left; height:30px; text-align:center; line-height:30px; color:#000; font-size:16px}
+.ewmform .ewmtab li.cur{ color:#05c19b}
+/*--------------------------
+ 模块：关注我们
+---------------------------*/
+.subscribe{
+    position: fixed;
+    top: 0px;
+    z-index: 1003;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 46px;
+    width:100%;
+    margin:0px auto;
+}
+.s_avatar{
+    position: fixed;
+    width: 38px;
+    height: 38px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.s_avatar img {
+    width: 38px;
+    height: 38px;
+    border-radius: 70px;
+}
+.s_content{
+    margin-left: 45px;
+    margin-right: 70px;
+    line-height: 22px;
+}
+.s_btn{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    background-color: #FF0000;
+    height: 26px;
+    line-height: 26px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}

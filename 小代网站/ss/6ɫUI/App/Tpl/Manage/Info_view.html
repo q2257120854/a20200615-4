@@ -1,0 +1,1207 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/user.css" />
+		<title>用户资料详情</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>用户资料详情</h5>
+			</div>
+			<div class="console-table-wapper margin-top">
+				<div class="flash-wrap">
+					<ul class="nav nav-tabs margin-t-20">
+						<li class="active">
+							<a href="javascript:void(0)">基本信息</a>
+						</li>
+						<li style="display:none;">
+							<a href="javascript:void(0)">运营商认证</a>
+						</li>
+						<li style="display:none;">
+							<a href="javascript:void(0)">淘宝认证</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content margin-t-20 clearfix" id="tab">
+					<!--基本信息-->
+					<div class="tab-pane active">
+						<div class="public-infoTab public-tabBox margin-b-20">
+							<div class="title">
+								<span class="font-s-16" style="width:100px">身份信息</span>
+							</div>
+							<php>$identity = json_decode($data['identity'],true);</php>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>真实姓名：</dt>
+										<dd>{$identity.name|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>性别：</dt>
+										<dd>
+											<php>
+												if(!$identity['idcard']){
+													echo "-";
+												}else{
+													if(strlen($identity['idcard']) == 15){
+														$num = substr($identity['idcard'],-1,1);
+													}else{
+														$num = substr($identity['idcard'],-2,1);
+													}
+													if($num % 2==0)
+														echo "女";
+													else
+														echo "男";
+												}
+											</php>
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>出生日期：</dt>
+										<dd>
+											<php>
+												if(!$identity['idcard']){
+													echo "-";
+												}else{
+													if(strlen($identity['idcard']) == 15){
+														$num = '19'.substr($identity['idcard'],6,6);
+													}else{
+														$num = substr($identity['idcard'],6,8);
+													}
+													$num = substr($num,0,4).'-'.substr($num,4,2).'-'.substr($num,-2,2);
+													echo $num;
+												}
+											</php>
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>年龄：</dt>
+										<dd>
+											<php>
+												if($num)
+													echo countage($num);
+												else
+													echo "-";
+											</php>
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>身份证号：</dt>
+										<dd>{$identity.idcard|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>账户注册手机号：</dt>
+										<dd>
+											{$data.user.telnum|default="获取失败"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>身份证正面照：</dt>
+										<dd>
+											<empty name="identity.frontimg">
+												未上传
+												<else />
+												<a href="{$identity.frontimg}" target="_blank">
+													<img src="{$identity.frontimg}" alt="点击查看大图" height="28px" />
+												</a>
+											</empty>
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>身份证反面照：</dt>
+										<dd>
+											<empty name="identity.backimg">
+												未上传
+												<else />
+												<a href="{$identity.backimg}" target="_blank">
+													<img src="{$identity.backimg}" alt="点击查看大图" height="28px" />
+												</a>
+											</empty>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+		
+						<!--银行卡信息-->
+						<div class="public-infoTab public-tabBox margin-b-20">
+							<div class="title">
+								<span class="font-s-16" style="width:100px">银行卡信息</span>
+							</div>
+							<php>$qrtx = json_decode($data['qrtx'],true);</php>
+							<php>$tpass = json_decode($data['tpass'],true);</php>
+							<php>$bank = json_decode($data['bank'],true);</php>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>开户银行：</dt>
+										<dd>{$bank.bankName|default="未输入"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>提现密码：</dt>
+										<dd style="color:#f30213;font-weight:700">{$bank.txpass|default="******"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>银行卡号：</dt>
+										<dd>{$bank.bankNum|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>紧急联系电话</dt>
+										<dd>{$bank.bankPhone|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>联系QQ：</dt>
+										<dd>{$bank.bankmmqq|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>联系微信：</dt>
+										<dd>{$bank.bankmmwx|default="未填写"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6" style="display:none;">
+									<dl>
+										<dt>信用卡正面照：</dt>
+										<dd>
+											<empty name="bank.icbankImg">
+												未上传
+												<else />
+												<a href="{$bank.icbankImg}" target="_blank">
+													<img src="{$bank.icbankImg}" alt="点击查看大图" height="28px" />
+												</a>
+											</empty>
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6" style="display:none;">
+									<dl>
+										<dt>信用卡反面照：</dt>
+										<dd>
+											<empty name="bank.icpbankImg">
+												未上传
+												<else />
+												<a href="{$bank.icpbankImg}" target="_blank">
+													<img src="{$bank.icpbankImg}" alt="点击查看大图" height="28px" />
+												</a>
+											</empty>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<!--银行卡信息-->
+						<div class="public-infoTab public-tabBox margin-b-20">
+							<div class="title">
+								<span class="font-s-16" style="width:100px">其他信息</span>
+							</div>
+							<php>$addess = json_decode($data['addess'],true);</php>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6" style="display:none;">
+									<dl>
+										<dt>婚姻状况：</dt>
+										<dd>
+											{$addess.marriage|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6" style="display:none;">
+									<dl>
+										<dt>最高学历：</dt>
+										<dd>
+											{$addess.education|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>预期金额：</dt>
+										<dd>
+											{$addess.industry|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>芝麻信用分：</dt>
+										<dd>
+											{$addess.mzmf|default="未填写"}
+										</dd>
+									</dl>
+								</div>	
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>单位名称：</dt>
+										<dd>
+											{$addess.mqq|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>职务：</dt>
+										<dd>
+											{$addess.mwx|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>工作年龄：</dt>
+										<dd>
+											{$addess.mzfb|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>月收入：</dt>
+										<dd>
+											{$addess.madd1|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>单位电话：</dt>
+										<dd>
+											{$addess.madd2|default="未填写"}
+										</dd>
+									</dl>
+								</div>									
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>单位地址：</dt>
+										<dd>
+											{$addess.madd3|default="未填写"}
+										</dd>
+									</dl>
+								</div>									
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>居住地址：</dt>
+										<dd>
+											{$addess.addessMore|default="未填写"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>预留：</dt>
+										<dd>
+											预留
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<!--联系人信息-->
+						<div class="public-infoTab public-tabBox">
+							<div class="title">
+								<span class="font-s-16" style="width:100px">联系人信息</span>
+							</div>
+						</div>
+						<php>$contacts = json_decode($data['contacts'],true);</php>
+						<div>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">姓名</th>
+										<th width="25%">与借款人关系</th>
+										<th width="25%">联系电话</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>{$contacts.zhishuName|default="未填写"}</td>
+										<td>{$contacts.zhishuRelation|default="未填写"}</td>
+										<td>{$contacts.zhishuPhone|default="未填写"}</td>
+									</tr>
+									<tr>
+										<td>{$contacts.jinjiName|default="未填写"}</td>
+										<td>{$contacts.jinjiRelation|default="未填写"}</td>
+										<td>{$contacts.jinjiPhone|default="未填写"}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--联系人信息-->					
+					
+					</div>
+					<!--基本信息-->
+
+
+					<div class="tab-pane">
+
+						<div class="public-infoTab public-tabBox margin-b-20">
+							<php>$mobile = json_decode($data['mobile'],true);if($mobile['result']) $mobile = $mobile['result'];</php>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">报告情况</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>数据来源：</dt>
+										<dd>{$mobile.report.dataSource|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>报告时间：</dt>
+										<dd>{$mobile.report.reportTime|default="未知"}</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">基本信息</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>姓名：</dt>
+										<dd>{$mobile.basicInfo.name|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>身份证号：</dt>
+										<dd>{$mobile.basicInfo.identityNo|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>性别：</dt>
+										<dd>{$mobile.basicInfo.gender|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>年龄：</dt>
+										<dd>{$mobile.basicInfo.age|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>手机号：</dt>
+										<dd>{$mobile.basicInfo.mobile|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>入网时间：</dt>
+										<dd>{$mobile.basicInfo.regTime|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>出生地：</dt>
+										<dd>{$mobile.basicInfo.nativeAddress|default="未知"}</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">风险概况</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>风险清单：</dt>
+										<dd>{$mobile.personas.riskProfile.riskListCnt}条</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>信贷逾期：</dt>
+										<dd>{$mobile.personas.riskProfile.overdueLoanCnt}条   (数据仅参考)</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>多头借贷：</dt>
+										<dd>{$mobile.personas.riskProfile.multiLendCnt|default="未知"}条</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>风险通话：</dt>
+										<dd>{$mobile.personas.riskProfile.riskCallCnt|default="未知"}条</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">社交概况</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>最常联系人区域：</dt>
+										<dd>{$mobile.personas.socialContactProfile.freContactArea|default="未知"}</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>联系人号码总数：</dt>
+										<dd>{$mobile.personas.socialContactProfile.contactNumCnt|default="未知"}条</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>互通号码数：</dt>
+										<dd>{$mobile.personas.socialContactProfile.interflowContactCnt|default="未知"}条</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>风险通话次数：</dt>
+										<dd>{$mobile.personas.socialContactProfile.contactRishCnt|default="未知"}条</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">通话情况</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均通话次数：</dt>
+										<dd>{$mobile.personas.callProfile.avgCallCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>手机静默次数：</dt>
+										<dd>{$mobile.personas.callProfile.silenceCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>夜间通话次数：</dt>
+										<dd>{$mobile.personas.callProfile.nightCallCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">消费情况</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>月均消费：</dt>
+										<dd>{$mobile.personas.consumptionProfile.avgFeeMonth|default="未知"}元</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">基本信息检测</span>
+							</div>
+							<php>$basicInfoCheck = $mobile['basicInfoCheck'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">项目</th>
+										<th width="25%">检测结果</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="basicInfoCheck" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知项目"}</td>
+										<td>{$vo.resultDesc|default="未知结果"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">风险清单检测</span>
+							</div>
+							<php>$riskListCheck = $mobile['riskListCheck'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">项目</th>
+										<th width="25%">风险金额</th>
+										<th width="25%">风险时间</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="riskListCheck" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知项目"}</td>
+										<td>{$vo.details.riskAmt|default="未知"}</td>
+										<td>{$vo.details.riskDate|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">风险通话检测</span>
+							</div>
+							<php>$riskCallCheck = $mobile['riskCallCheck'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">检查项目</th>
+										<th width="25%">命中描述</th>
+										<th width="25%">命中次数</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="riskCallCheck" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知"}</td>
+										<td>{$vo.hitDesc|default="未知"}</td>
+										<td>{$vo.cnt|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">多头借贷检测</span>
+							</div>
+							<php>$multiLendCheck = $mobile['multiLendCheck'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">检查项目</th>
+										<th width="25%">内容</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="multiLendCheck" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知"}</td>
+										<td>
+	<volist name="vo.details" id="v">
+											{$v.lendType|default="未知"}：{$v.lendCnt|default="未知"}次 | 
+	</volist>
+										</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">通话行为</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均通话次数：</dt>
+										<dd>{$mobile.callAnalysis.avgCallCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均通话时长：</dt>
+										<dd>{$mobile.callAnalysis.avgCallTime|default="未知"}秒</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均主叫次数：</dt>
+										<dd>{$mobile.callAnalysis.avgCallingCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均主叫时长：</dt>
+										<dd>{$mobile.callAnalysis.avgCallingTime|default="未知"}秒</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均被叫次数：</dt>
+										<dd>{$mobile.callAnalysis.avgCalledCnt|default="未知"}次</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>日均被叫时长：</dt>
+										<dd>{$mobile.callAnalysis.avgCalledTime|default="未知"}秒</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>本地通话占比：</dt>
+										<dd>{$mobile.callAnalysis.locCallPct|default="未知"}</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">活跃情况检测</span>
+							</div>
+							<php>$activeCallAnalysis = $mobile['activeCallAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">项目</th>
+										<th width="25%">近一个月</th>
+										<th width="25%">近三个月</th>
+										<th width="25%">近六个月</th>
+										<th width="25%">月均</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="activeCallAnalysis" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知"}</td>
+										<td>{$vo.lately1m|default="未知"}</td>
+										<td>{$vo.lately3m|default="未知"}</td>
+										<td>{$vo.lately6m|default="未知"}</td>
+										<td>{$vo.avgMonth|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:180px">静默检测（近六个月）</span>
+							</div>
+							<php>$activeCallAnalysis = $mobile['activeCallAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="10%">总静默次数</th>
+										<th width="10%">总静默时长(秒)</th>
+										<th width="15%">最长一次静默开始时间</th>
+										<th width="15%">最长一次静默时长(秒)</th>
+										<th width="25%">最近一次静默开始时间</th>
+										<th width="25%">最近一次静默时长(秒)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>{$mobile.silenceAnalysis.silenceCnt|default="未知"}</td>
+										<td>{$mobile.silenceAnalysis.silenceTime|default="未知"}</td>
+										<td>{$mobile.silenceAnalysis.longestSilenceStart|default="未知"}</td>
+										<td>{$mobile.silenceAnalysis.longestSilenceTime|default="未知"}</td>
+										<td>{$mobile.silenceAnalysis.lastSilenceStart|default="未知"}</td>
+										<td>{$mobile.silenceAnalysis.lastSilenceTime|default="未知"}</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:220px">通话时间段分析（近六个月）</span>
+							</div>
+							<php>$callDurationAnalysis = $mobile['callDurationAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="8%">时间段</th>
+										<th width="6%">通话次数</th>
+										<th width="6%">通话号码数</th>
+										<th width="15%">最常联系号码及联系次数</th>
+										<th width="10%">平均通话时长(秒)</th>
+										<th width="8%">主叫次数</th>
+										<th width="15%">主叫时长(秒)</th>
+										<th width="8%">被叫次数</th>
+										<th width="15%">被叫时长(秒)</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="callDurationAnalysis" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知"}</td>
+										<td>{$vo.callCnt|default="未知"}</td>
+										<td>{$vo.callNumCnt|default="未知"}</td>
+										<td>{$vo.freqContactNum|default="未知"}：{$vo.freqContactNumCnt|default="未知"}次</td>
+										<td>{$vo.avgCallTime|default="未知"}</td>
+										<td>{$vo.callingCnt|default="未知"}</td>
+										<td>{$vo.callingTime|default="未知"}</td>
+										<td>{$vo.calledCnt|default="未知"}</td>
+										<td>{$vo.calledTime|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">消费能力</span>
+							</div>
+							<php>$consumptionAnalysis = $mobile['consumptionAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="20%">项目</th>
+										<th width="20%">近一个月</th>
+										<th width="20%">近三个月</th>
+										<th width="20%">近六个月</th>
+										<th width="20%">平均</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="consumptionAnalysis" id="vo">
+									<tr>
+										<td>{$vo.desc|default="未知"}</td>
+										<td>{$vo.lately1m|default="未知"}</td>
+										<td>{$vo.lately3m|default="未知"}</td>
+										<td>{$vo.lately6m|default="未知"}</td>
+										<td>{$vo.avgMonth|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">出行信息</span>
+							</div>
+							<php>$tripAnalysis = $mobile['tripAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="25%">出发时间</th>
+										<th width="25%">回程时间</th>
+										<th width="25%">出发地</th>
+										<th width="25%">目的地</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="tripAnalysis" id="vo">
+									<tr>
+										<td>{$vo.departureDate|default="未知"}</td>
+										<td>{$vo.returnDate|default="未知"}</td>
+										<td>{$vo.departurePlace|default="未知"}</td>
+										<td>{$vo.destinationPlace|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">社交关系概况</span>
+							</div>
+							<div class="clearfix">
+<volist name="mobile.socialContactAnalysis" id="vo">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>{$vo.desc|default="未知"}：</dt>
+										<dd>
+											{$vo.content|default="未知"}
+											<span>（{$vo.contentDesc|default="未知"}）</span>
+										</dd>
+									</dl>
+								</div>
+</volist>
+							</div>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">通话区域分析</span>
+							</div>
+							<php>$callAreaAnalysis = $mobile['callAreaAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="20%">通话地</th>
+										<th width="10%">通话次数</th>
+										<th width="10%">通话号码数</th>
+										<th width="10%">通话时长（秒）</th>
+										<th width="10%">主叫次数</th>
+										<th width="15%">主叫时长（秒）</th>
+										<th width="10%">被叫次数</th>
+										<th width="15%">被叫时长（秒）</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="callAreaAnalysis" id="vo">
+									<tr>
+										<td>{$vo.attribution|default="未知"}</td>
+										<td>{$vo.callCnt|default="未知"}</td>
+										<td>{$vo.callNumCnt|default="未知"}</td>
+										<td>{$vo.callTime|default="未知"}</td>
+										<td>{$vo.callingCnt|default="未知"}</td>
+										<td>{$vo.callingTime|default="未知"}</td>
+										<td>{$vo.calledCnt|default="未知"}</td>
+										<td>{$vo.calledTime|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16" style="width:300px">通话联系人分析（按近6月通话次数排名）</span>
+							</div>
+							<php>$contactAnalysis = $mobile['contactAnalysis'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="10%">号码</th>
+										<th width="10%">互联网标示</th>
+										<th width="8%">风险名单</th>
+										<th width="10%">归属地</th>
+										<th width="8%">通话次数</th>
+										<th width="10%">通话时长（秒）</th>
+										<th width="8%">主叫次数</th>
+										<th width="10%">主叫时长（秒）</th>
+										<th width="15%">最近一次通话时间</th>
+										<th width="10%">最近一次通话时长</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="contactAnalysis" id="vo">
+									<tr>
+										<td>{$vo.callNum|default="未知"}</td>
+										<td>{$vo.callTag|default="未知"}</td>
+										<td>{$vo.isHitRiskList}</td>
+										<td>{$vo.attribution|default="未知"}</td>
+										<td>{$vo.callCnt|default="未知"}</td>
+										<td>{$vo.callTime|default="未知"}</td>
+										<td>{$vo.callingCnt|default="未知"}</td>
+										<td>{$vo.callingTime|default="未知"}</td>
+										<td>{$vo.lastStart|default="未知"}</td>
+										<td>{$vo.lastTime|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="tab-pane">
+						<div class="public-infoTab public-tabBox margin-b-20">
+							<php>$taobao = json_decode($data['taobao'],true);if($taobao) $taobao = $taobao['result'];</php>
+							<div class="title">
+								<span class="font-s-16" style="width:100px">基本信息</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>真实姓名</dt>
+										<dd>
+											{$taobao.basicInfo.realName|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>登录邮箱</dt>
+										<dd>
+											{$taobao.basicInfo.email|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>身份证号</dt>
+										<dd>
+											{$taobao.basicInfo.identityNo|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>绑定手机</dt>
+										<dd>
+											{$taobao.basicInfo.mobile|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>用户号</dt>
+										<dd>
+											{$taobao.basicInfo.username|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>会员等级</dt>
+										<dd>
+											{$taobao.basicInfo.vipLevel|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>昵称</dt>
+										<dd>
+											{$taobao.basicInfo.nickName|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>成长值</dt>
+										<dd>
+											{$taobao.basicInfo.growthValue|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>性别</dt>
+										<dd>
+											{$taobao.basicInfo.gender|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>信用积分</dt>
+										<dd>
+											{$taobao.basicInfo.creditScore|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>出生日期</dt>
+										<dd>
+											{$taobao.basicInfo.birthday|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>好评率</dt>
+										<dd>
+											{$taobao.basicInfo.favorableRate|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>认证渠道</dt>
+										<dd>
+											{$taobao.basicInfo.identityChannel|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>安全等级</dt>
+										<dd>
+											{$taobao.basicInfo.securityLevel|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>是否实名认证</dt>
+										<dd>
+											{$taobao.basicInfo.identityStatus|default="未知"}
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16">绑定支付宝信息</span>
+							</div>
+							<div class="clearfix">
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>支付宝账号</dt>
+										<dd>
+											{$taobao.alipayInfo.username|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>真实认证姓名</dt>
+										<dd>
+											{$taobao.alipayInfo.realName|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>邮箱</dt>
+										<dd>
+											{$taobao.alipayInfo.email|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>实名认证身份证号</dt>
+										<dd>
+											{$taobao.alipayInfo.identityNo|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>绑定手机</dt>
+										<dd>
+											{$taobao.alipayInfo.mobile|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>实名认证状态</dt>
+										<dd>
+											{$taobao.alipayInfo.identityStatus|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>账户余额</dt>
+										<dd>
+											{$taobao.alipayInfo.accBal|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>花呗可用额度</dt>
+										<dd>
+											{$taobao.alipayInfo.huabeiAvailableLimit|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>余额宝</dt>
+										<dd>
+											{$taobao.alipayInfo.yuebaoBal|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>花呗消费额度</dt>
+										<dd>
+											{$taobao.alipayInfo.huabeiLimit|default="未知"}
+										</dd>
+									</dl>
+								</div>
+								<div class="wp_box col-lg-4 col-xs-6">
+									<dl>
+										<dt>历史累计收益</dt>
+										<dd>
+											{$taobao.alipayInfo.yuebaoHisIncome|default="未知"}
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="title">
+								<span class="font-s-16">收货地址</span>
+							</div>
+							<php>$addresses = $taobao['addresses'];</php>
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th width="10%">姓名</th>
+										<th width="70%">地址</th>
+										<th width="10%">邮编</th>
+										<th width="10%">手机号</th>
+									</tr>
+								</thead>
+								<tbody>
+<volist name="addresses" id="vo">
+									<tr>
+										<td>{$vo.name|default="未知"}</td>
+										<td>{$vo.address|default="未知"}</td>
+										<td>{$vo.zipCode}</td>
+										<td>{$vo.mobile|default="未知"}</td>
+									</tr>
+</volist>
+								</tbody>
+							</table>
+							<div class="title">
+								<span class="font-s-16">订单详情</span>
+							</div>
+							<php>$orderDetails = $taobao['orderDetails'];</php>
+							<div class="orderDetails">
+<volist name="orderDetails" id="vo">
+								<div class="orderHead">
+									<div class="orderNum">订单号 ： {$vo.orderId|default="未知"}</div>
+									<div class="cont">
+										<p>
+											<span>订单金额 ： {$vo.orderAmt|default="未知"}</span>
+											<span>订单时间 ： {$vo.orderTime|default="未知"}</span>
+										</p>
+										<p>
+											<span>订单状态 ： {$vo.orderStatus|default="未知"}</span>
+											<span>收货人 ： {$vo.logisticsInfo.receivePersonName|default="未知收货人"}</span>
+										</p>
+										<p>
+											<span>收货地址 ： {$vo.logisticsInfo.receiveAddress|default="未知收货地址"}</span>
+											<span>收货电话 ： {$vo.logisticsInfo.receivePersonMobile|default="未知电话"}</span>
+										</p>
+										<p>
+											<span>运送方式 ： {$vo.logisticsInfo.deliverType|default="未知"}</span>
+											<span>物流公司 ： {$vo.logisticsInfo.deliverCompany|default="未知"}</span>
+											<span>送货单号 ： {$vo.logisticsInfo.deliverId|default="未知"}</span>
+										</p>
+									</div>
+								</div>
+								<div class="orderBody">
+									<div class="orderTitle">购买商品信息</div>
+									<table>
+										<thead>
+											<tr>
+												<th>商品ID</th>
+												<th>商品名称</th>
+												<th>商品单价</th>
+												<th>商品数量</th>
+											</tr>
+										</thead>
+										<tbody>
+	<volist name="vo.items" id="v">
+											<tr>
+												<td>{$v.itemId|default="未知"}</td>
+												<td>
+													<a href="{$v.itemUrl|default='#'}" title="点击查看商品" target="_blank">{$v.itemName|default="未知"}</a>
+												</td>
+												<td>{$v.itemPrice|default="未知"}</td>
+												<td>{$v.itemQuantity|default="未知"}</td>
+											</tr>
+	</volist>
+										</tbody>
+									</table>
+								</div>
+</volist>
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(".nav-tabs li").click(function() {
+			$(this).addClass("active")
+			$(this).siblings().removeClass("active")
+			var index = $(this).index();
+			$("#tab .tab-pane:eq(" + index + ")").siblings().removeClass("active");
+			$("#tab .tab-pane:eq(" + index + ")").addClass('active');
+		})
+	</script>
+
+</html>

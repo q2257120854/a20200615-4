@@ -1,0 +1,65 @@
+<view class="fk-flex-v" style='height:100%;'>
+    <!--用户信息-->
+    <view style="height:40%;padding-top:15px;">
+        <view class='fk-userinfo'>
+            <view class='source-user'>
+                <view class='source-user-avatar'>
+                    <image src="{{userAvatarUrl}}"></image>
+                </view>
+            </view>
+            <view class="fk-color-white">{{statusText}}</view>
+            <view class='target-user'>
+                <view class='target-user-avatar'>
+                    <image src="{{friendAvatarUrl}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class='username'>
+            <text class='fk-ellipsis'>{{userName}}</text>
+            <view class="fk-flex fk-flex-center" style='color:#ffffff;'>
+                <image src='/static/images/clock.png' style='width:13px;height:13px;margin-right:5px;' wx:if="{{roomActiveTimeText}}" />联系wx：suncentwl
+            </view>
+            <text class='fk-ellipsis' style='text-align:right;'>{{friendName}}</text>
+        </view>
+        <view class='owner'>
+            <view>
+                <image src="/static/images/owner.png" hidden='{{userOwnedRoom}}'></image>
+            </view>
+            <view>
+                <image src="/static/images/owner.png" hidden='{{friendOwnedRoom}}'></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="fk-flex-v" style='height:60%;justify-content:space-around;align-items:center;'>
+        <view class="buttons-container">
+            <view class='button-wrapper' bindtap='giveUp'>
+                <view class='button'>
+                    <image src='/static/images/quit.svg'></image>
+                    <text>放弃</text>
+                </view>
+            </view>
+            <view class='button-wrapper' hidden='{{shareButtonHidden}}'>
+                <button class='share-button' open-type='share'></button>
+                <view class="circle1"></view>
+                <view class="circle2"></view>
+                <view class='button'>
+                    <image src='/static/images/share.svg'></image>
+                    <text>邀请</text>
+                </view>
+            </view>
+        </view>
+
+        <view class='footer-buttons'>
+            <view hidden='{{footerButtonHidden}}'>
+                <button type="primary" bindtap="startNewGame" hidden='{{createRoomHidden}}'>新开一场</button>
+                <button type="primary" bindtap="startGame" hidden='{{startPKHidden}}'>开始对战</button>
+            </view>
+        </view>
+
+        <view class="fk-footer">
+            <text class="fk-footer-times">联系wx：suncentwl剩余挑战次数：{{availableTimes}}次</text>
+            <text class="fk-footer-times">共 {{questionCount}} 回合，每题 {{answerTime}} 秒回答时间</text>
+        </view>
+    </view>
+</view>

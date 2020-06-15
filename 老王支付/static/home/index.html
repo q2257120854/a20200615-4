@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>老王支付</title>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/Login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/layui.css">
+    <script src="js/jquery-1.11.1.js?v=1551096089"></script>
+    <script src="js/layui.js?v=1551096089"></script>
+    <script src="js/jquery.cookie.js?v=1551096089"></script>
+    <script src="js/Login.js?v=1551096089"></script>
+    <style>
+        .login_box input[type=text],.login_box input[type=password]{
+            margin: 10px 0;
+        }
+        .loginHead .signin_btn:hover{
+            border: 1px solid #587ffd; 
+        }
+    </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?v=1551096089?10c2a698c7889de68b50dca06b6d5031";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<meta name="__hash__" content="6666cd76f96956469e7be39d750cc7d9_643790c6eb8f060026b479eb2a6e4d64" /></head>
+<body>
+    <div class="head loginHead">
+        <div class="head_c_w">
+            <div class="logo"></div>
+            <ul class="clear-a">
+                <li class="a_btn signin_btn">
+                    <a href="/Index_reg.html"><span>注册</span></a>
+                </li>
+                <li class="login_btn">
+                    <a href="/"><span>登录</span></a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <div class="login_warp clear-a">
+        <div class="loginBanner clear-a">
+            <!-- <div class="loginBanner_mask"></div> -->
+            <div class="loginBanner_content clear-a">
+                <div class="loginBanner_text fl">
+                    <p class="loginBanner_text_p1"><strong>老王支付</strong><span></span>您的支付助手</p>
+                    <p class="loginBanner_text_p2">优质的服务 &nbsp 账单一目了然 &nbsp 安全和高效</p>
+                    <a href="/Index_reg.html" class="sbm">我要注册</a>
+                </div>
+                <div class="login_box fr">
+                    <h4>登录</h4>
+                    <div>
+                  <form class="form-horizontal" id="formlogin" method="post" role="form" action="/Index_login.html">
+                    <label>
+                        <input type="text" class="input_box" name="username" id="username" placeholder="请你输入用户名或邮箱"/>
+                    </label>
+                    <label>
+                        <input type="password" name="password" id="TxtPassword" placeholder="请你输入密码"/>
+                    </label>
+                    <label class="ckbox">
+                        <input type="checkbox" class="ck" />
+                        <span class="ck_font">记住密码</span>
+                    </label>
+                    <label>
+                        <button id="BtnLogin" class="sbm_btn login_btn_sbm">登录</button>
+                    </label>
+                    <div>
+                        <div class="hr"></div>
+                        <a href="/index_forget.html" class="login_a">忘记密码？</a>
+                    </div>
+                  <input type="hidden" name="__hash__" value="6666cd76f96956469e7be39d750cc7d9_643790c6eb8f060026b479eb2a6e4d64" /></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login_content">
+            <div class="introduce_box">
+                <div class="introduce1 clear-a">
+                    <div class="introduce_width">
+                        <ul class="clear-a">
+                            <li class="efficient_box">
+                                <div></div>
+                                <h6>更高效</h6>
+                                <p>金额快速到账</p>
+                                <p>一键快速支付</p>
+                            </li>
+                            <li class="safety_box">
+                                <div></div>
+                                <h6>更安全</h6>
+                                <p>用户支付账单</p>
+                                <p>实时一目了然</p>
+                            </li>
+                            <li class="intimate_box">
+                                <div></div>
+                                <h6>更贴心</h6>
+                                <p>资深大客户经理</p>
+                                <p>一对一服务</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="introduce2 clear-a">
+                    <div class="introduce_width">
+                        <ul class="clear-a">
+                            <li class="introduce2_left">
+                                <h5>老王支付为您保驾护航</h5>
+                                <p>一款专为个人和企业服务的产品，让在线交易更快，更简单！一次对接，全渠道聚合，多场景支持。</p>
+                            </li>
+                            <li class="introduce2_right">
+                                <div>
+                                    <p>提现报表：</p>
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="introduce3">
+                    <div class="introduce_width clear-a">
+                        <ul>
+                            <li><h5>选择老王支付的理由</h5></li>
+                            <li>
+                                <span><strong>15+</strong>万</span><span><strong>30+</strong>万</span>
+                            </li>
+                            <li><span>新用户</span><span>日成交额</span></li>
+                            <li><p>一个账号，即可拥有无上限资金,无论是企业或个人将为你带来更强大、更安全可靠的储备金。</p></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="introduce4">
+                    <div class="introduce_width">
+                        <h5>丰富的交易通道</h5>
+                        <ul class="clear-a">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="introduce5">
+                    <div class="introduce_width">
+                        <ul>
+                            <li><p><strong>携手共赢</strong></p></li>
+                            <li><p>方便您的生活，为您提供优质的服务</p></li>
+                            <li><p>是老王支付支付的初衷</p></li>
+                            <li><a href="/Index_reg.html">立即注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="login_foot">
+        <div>
+            <ul class="clear-a">
+                <li>关于</li>
+                <li>|</li>
+                <li>帮助</li>
+                <li>400-888-8888</li>
+            </ul>
+            <div class="foot_lineae"></div>
+            <p>老王支付 Copyright 2010-2018 Tenpay All Rights Reserved</p>  
+        </div>
+    </div>
+
+</body>
+</html>

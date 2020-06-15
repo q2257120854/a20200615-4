@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>老王支付</title>
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link href="css/Login.css?v=1551096721" rel="stylesheet" />
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="css/signin_user.css">
+    <style>
+        .loginHead .signin_btn:hover{
+            border: 1px solid #587ffd; 
+        }
+    </style>
+
+<meta name="__hash__" content="8969fb468721d5d241f3eead260e68b2_7aeb7007f3c57de3b4e1eb64d34e40ba" /></head>
+<body>
+    <div class="head js_loginHead" style="top:0px;">
+        <div class="head_c_w">
+            <div class="logo"></div>
+            <ul class="clear-a">
+                <li class="a_btn signin_btn">
+                    <a href="/Index_reg.html"><span>注册</span></a>
+                </li>
+                <li class="login_btn">
+                    <a href="/"><span>登录</span></a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="warp signin_warp clear-a" style="margin-top:100px;">
+        <h5 style="padding:0px 30px;">注册老王支付认证</h5>
+        <div class="signin_content">
+            <div>
+                <ul class="step clear-a">
+                    <li class="signin_step">
+                        <span class="active">1</span>
+                        <p>账户信息</p>
+                    </li>
+                    <li class="signin_lineae"></li>
+                    <li class="signin_step">
+                        <span>2</span>
+                        <p>身份认证</p>
+                    </li>
+                    <li class="signin_lineae"></li>
+                    <li class="signin_step">
+                        <span>3</span>
+                        <p>注册成功</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="signin_from ">
+                <label>
+                    <span>用户类型*：</span>
+                    <a href="javascript:" class="btn_active Registration_type" onclick="geren()">个人</a>
+                    <a href="javascript:" class="Registration_type" onclick="qiye()">企业</a>
+                </label>
+            </div>
+            <form class="layui-form" action="" method="POST">
+                <input type="hidden" name="xz" id="xz" value="1">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">注册用户名*：</label>
+                    <div class="layui-input-block">
+                        <input name="username" id="username" class="layui-input" type="text" placeholder="请输入用户名" autocomplete="off" lay-verify="title">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">注册密码*：</label>
+                    <div class="layui-input-inline">
+                        <input name="password" id="password" class="layui-input" id="pwd" type="password" placeholder="请输入密码" autocomplete="off" lay-verify="pass">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">确认注册密码*：</label>
+                    <div class="layui-input-inline">
+                        <input name="confirm_pwd" class="layui-input" id="confirm_pwd" type="password" placeholder="请重复输入注册密码" autocomplete="off" lay-verify="confirm_pwd">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请确保两次输入的注册密码一致</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">支付密码*：</label>
+                    <div class="layui-input-inline">
+                        <input name="paypwd" class="layui-input" id="paypwd" type="password" placeholder="请输入密码" autocomplete="off" lay-verify="paypwd">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请填写8到12位密码</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">确认支付密码*：</label>
+                    <div class="layui-input-inline">
+                        <input name="confirm_paypwd" class="layui-input" id="confirmpay" type="password" placeholder="请重复输入支付密码" autocomplete="off" lay-verify="confirm_paypwd">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请确保两次输入的支付密码一致</div>
+                </div>
+                <div style="border-top:solid 1px #f2f2f2;padding-bottom:30px;margin-top:30px;"></div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">注册邮箱*：</label>
+                        <div class="layui-input-inline">
+                            <input name="email" id="email" class="layui-input E-mail" type="text" placeholder="请输入有效邮箱" autocomplete="off" lay-verify="email">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">邮箱验证码*：</label>
+                        <div class="layui-input-inline">
+                            <input name="email" id="code" class="layui-input mailBox_code" type="text" placeholder="请查看邮箱填写验证码" autocomplete="off" lay-verify="number">
+                            <a href="javascript:" class="e_btn" id="btnSendCode" onclick="sendMessage()">获取验证码</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn btn_sbm" type="button" onclick="reg()" lay-filter="btn_sbm" lay-submit="">下一步</button>
+                    </div>
+                </div>
+            <input type="hidden" name="__hash__" value="8969fb468721d5d241f3eead260e68b2_7aeb7007f3c57de3b4e1eb64d34e40ba" /></form>
+
+
+
+    </div>
+</div>
+</div>
+<!-- 全局js -->
+<script src="http://qq.nut123.com/Public/Front/js/jquery.min.js?v=1551096721?v=2.1.4"></script>
+<script src="http://qq.nut123.com/Public/Front/js/plugins/layer/layer.min.js?v=1551096721"></script>
+<style>
+    .password-progress {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+</style>
+<script type="text/javascript">
+/*-------------------------------------------*/
+var InterValObj; //timer变量，控制时间
+var count = 120; //间隔函数，1秒执行
+var curCount;//当前剩余秒数
+function sendMessage() {
+    curCount = count;
+    var phone = $("#email").val();//手机号码
+    if(phone != ""){
+    //向后台发送处理数据
+        $.ajax({
+            type: "POST", //用POST方式传输
+            dataType: "json", //数据格式:JSON
+            url: '/index_send.html', //目标地址
+            data: {"email":phone},
+            success: function(json){
+                if(json.status==1){
+                    //设置button效果，开始计时
+                    $("#btnSendCode").attr("disabled", "true");
+                    $("#btnSendCode").text(curCount + "秒后获取");
+                    InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+                    layer.msg('请注意查收');
+                }else{
+                    layer.msg(json.info);
+                }
+            }
+        });
+    }else{
+        layer.msg("邮箱不能为空！");
+    }
+}
+//timer处理函数
+function SetRemainTime() {
+    if (curCount == 0) {
+        window.clearInterval(InterValObj);//停止计时器
+        $("#btnSendCode").removeAttr("disabled");//启用按钮
+        $("#btnSendCode").text("重新发送验证码");
+        code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
+    }
+    else {
+        curCount--;
+        $("#btnSendCode").text(curCount + "秒后获取");
+    }
+}
+</script>
+<script>
+function reg(){
+    var xz = $('#xz').val();
+    var username = $('#username').val();
+    var password = $('#password').val();
+    var confirmpassword = $('#confirm_pwd').val();
+    var email = $('#email').val();
+    var pay = $('#paypwd').val();
+    var code = $('#code').val();
+    var confirmpay = $('#confirmpay').val();
+
+    if (!xz) {
+        layer.alert('用户性质必须选一个');
+        return false;
+    }
+    if (!username) {
+        layer.alert('用户名不能为空');
+        return false;
+    }
+    if (!password) {
+        layer.alert('密码不能为空');
+        return false;
+    }
+    if (password != confirmpassword) {
+        layer.alert('两次输入的密码不一样');
+        return false;
+    }
+    if (!email) {
+        layer.alert('邮箱不能为空');
+        return false;
+    }
+    if (!code) {
+        layer.alert('邮箱验证码不能为空');
+        return false;
+    }
+    if (!pay) {
+        layer.alert('支付密码不能为空');
+        return false;
+    }
+    if (pay != confirmpay) {
+        layer.alert('两次输入的支付密码不一致');
+        return false;
+    }
+    
+    $.ajax({
+      type: 'POST',
+      url: '/Index_register.html',
+      data: {
+        xz:xz,
+        username:username,
+        password:password,
+        email:email,
+        pay:pay,
+        code:code
+      },
+      success: function(json){
+            if(json.errorno==1){
+                window.location.href='/index_verifyinfo.html';
+            }else{
+                layer.alert(json.msg)
+            }
+        }
+    });
+}
+function geren(){
+    $('#xz').val('1');
+}
+function qiye(){
+    $('#xz').val('2');
+}
+$('.Registration_type').click(function(event){
+    $(this).addClass('btn_active');
+    $(this).siblings('.Registration_type').removeClass('btn_active')
+})
+</script>
+<!--统计代码，可删除-->
+</body>
+</html>

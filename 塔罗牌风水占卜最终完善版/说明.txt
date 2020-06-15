@@ -1,0 +1,25 @@
+
+1.上传源码到网站目录
+
+2.修改config/inc_config.php 
+
+	22行为你的域名 
+
+	'user'    => 'root',
+               数据库用户名
+	'pass'    => 'demo',
+          数据库密码
+	'name'    => 'demo',     数据库名
+
+	33-36行为你的微信信息
+	40-43行为你的支付宝信息
+
+
+3.导入目录demo.sql到数据库
+
+4.后台http://域名/admin   
+
+  帐号:admin 密码:123456
+
+
+5G云源码分享网  www.yunziyuan.com.cn

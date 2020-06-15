@@ -1,0 +1,13 @@
+html, body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.darkorange {
+    color: #a94442;
+}
+
+.pagination {
+    margin: 0;
+}

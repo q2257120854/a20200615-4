@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>还款中订单</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>借款列表</h5>
+				<a href="javascript:indexdbt('{$indexdbt}');" style="margin-left:35px;"><strong>预设订单状态（默认值）</strong></a>
+				<a href="javascript:indexsm('{$indexsm}');" style="margin-left:35px;"><strong>预设订单说明（默认值）</strong></a>				
+			</div>
+			<form method="get" id="seachForm">
+				<input type="hidden" name="m" value="Loan" />
+				<input type="hidden" name="a" value="index" />
+				<div class="public-selectArea">
+					<div class="clearfix">
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>订单号：</dt>
+								<dd>
+									<input type="text" name="s-oid" value="{$Think.get.s-oid}">
+								</dd>
+							</dl>
+						</div>
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>申请时间：</dt>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeStart" value="{$Think.get.s-timeStart}" />
+								</dd>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeEnd" value="{$Think.get.s-timeEnd}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href='javascript:$("#seachForm").submit();' class="btn btn-sereachBg">
+							<i class="glyphicon glyphicon-search public-ico"></i>
+							<span class="public-label">查询</span>
+						</a>
+					</div>
+				</div>
+			</form>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>订单号</th>
+							<th>用户名</th>
+							<th>名称</th>
+							<th>借款金额</th>
+							<th>借款期限</th>
+							<th>申请时间</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.oid}</td>
+							<td>{$vo.user.telnum}</td>
+							<td>{$vo.name}</td>
+							<td>{$vo.money}元</td>
+							<td>
+								{$vo.time}<if condition="$vo['timetype'] eq 1">个月<else/>天</if>
+							</td>
+							<td>{$vo.add_time|date="Y/m/d H:i:s",###}</td>
+							<td style="display:none;"><a href="javascript:xzt('{$vo.oid}','{$vo.zt}');">{$vo.zt|default="默认值"}</a></td>							
+							<td style="display:none;"><a href="javascript:xsm('{$vo.oid}','{$vo.error}');">{$vo.error}</a></td>		
+							<td class="text-left">
+								<a href="javascript:smssend('{$vo.user.telnum}','{$vo.oid}','{$vo.money}','{$vo.name}');">短信 </a>｜
+								<a target="_blank" href="index.php?m=Info&a=view&uid={$vo.user.id}">资料</a>｜
+								<a href="javascript:delLoanOrder('{$vo.id}');">删除</a>
+							</td>
+			
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+<div style="display: none;" id="smssend_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+	  <tr>
+			<td width="80" align="right"></td>
+            <td><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">名字：<span id="iname"></span></span><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">订单编号：<span id="ioid"></span></span><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">借款金额：<span id="imoney"></span></span></td>
+       </tr>
+
+		<tr>
+            <td width="80" align="right">自定义内容</td>
+            <td>
+               <textarea rows="5" cols="50" id="iconten" value="" style="border:#CCCCCC 1px solid;"></textarea>
+
+            </td>
+        </tr>       
+	<tr style="display: none;" >
+	<td width="50" align="right" >phone</td>
+	<td>
+		<input type="text" id="iphone" value=""/></td>
+	</tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="savesmssend();" class="btn" value="发送" />
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+
+<div style="display: none;" id="indexsm_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+              
+                <input type="text" id="strs" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+		
+                <input type="submit" onclick="saveindexstrs();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="indexdbt_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+              
+                <input type="text" id="dbtstrs" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+		
+                <input type="submit" onclick="saveindexdbtstrs();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+	</body>
+	<script>
+		function indexsm(strs){
+    	
+		$("#strs").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '预设订单说明',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#indexsm_div").html()
+		});
+		}
+		
+	function saveindexstrs(){
+		var sconten = $(".layui-layer-content #strs").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("内容不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/saveindexstrs')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+		function indexdbt(strs){
+    	
+		$("#dbtstrs").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '预设订单状态',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#indexdbt_div").html()
+		});
+		}
+	function saveindexdbtstrs(){
+		var sconten = $(".layui-layer-content #dbtstrs").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("内容不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/saveindexdbtstrs')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}	
+		function xzt(oid,sm){
+							layer.prompt(
+							{
+								title:'订单状态修改',
+								formType:0
+							},
+							function(str,index){
+								
+								layer.close(index);
+								cvphp.post(
+									"{:U('Loan/xzt')}",
+									{
+										strc:str,
+										id:oid
+									},
+									function(data){
+										if(data.status!=1){
+											layer.msg(data.info);
+										}else{								
+											layer.msg("操作成功");
+										setTimeout(function(){
+											window.location.href = window.location.href;
+										},1000);
+
+										}
+									}
+								);
+							}
+						);
+	}
+	function xsm(oid,sm){
+							layer.prompt(
+							{
+								title:'订单说明修改',
+								formType:0
+							},
+							function(str,index){
+								
+								layer.close(index);
+								cvphp.post(
+									"{:U('Loan/xsm')}",
+									{
+										strc:str,
+										id:oid
+									},
+									function(data){
+										if(data.status!=1){
+											layer.msg(data.info);
+										}else{								
+											layer.msg("操作成功");
+										setTimeout(function(){
+											window.location.href = window.location.href;
+										},1000);
+
+										}
+									}
+								);
+							}
+						);
+	}
+	
+				function delLoanOrder(id){
+			layer.confirm(
+				'订单删除后不可恢复,请确认？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Loan/delLoanOrder')}",
+						{
+							id:id
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								$("#list-"+id).remove();
+								layer.msg("操作成功");
+							}
+						}
+					);
+				}
+			);
+		}
+	function smssend(mphone,oid,money,name){
+		$("#iphone").attr('value',mphone);
+    	$("#ioid").html(oid);
+		$("#imoney").html(money);
+		$("#iname").html(name);
+		layer.open({
+		  	type: 1,
+			title: ' 号码：'+mphone,
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['689px', '389px'], //宽高
+		  	content: $("#smssend_div").html()
+		});
+    }
+	function savesmssend(){
+		var sconten = $(".layui-layer-content #iconten").val();
+		var sphone = $(".layui-layer-content #iphone").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("发送内容不能为空!");
+		return false;
+		}
+		if (sphone == 'undefined' || sphone == '' || sphone == null)
+		{
+		layer.msg("手机号不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/smszdy')}",
+    			{pconten:sconten,pphone:sphone},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("发送成功");
+							}
+    			}
+    		);
+	
+	}
+	</script>
+</html>

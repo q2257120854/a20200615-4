@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/style.css">
+		<script src="__PUBLIC__/Manage/js/index.js"></script>
+		<title>【<config name="siteName" />】管理系统</title>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head_right">
+				<ul>
+					<li>
+						<span>欢迎你：<em>{$adminInfo.username}</em></span>
+					</li>
+					<li>
+						<a href="javascript:if(confirm('您确定要退出登录吗？'))window.location.href='{:U('Index/logout')}';" class="zhuxi">注销</a>
+					</li>
+					<li>
+						<a href="{:U('Index/changepass')}" target="iframe" class="xiugai">修改密码</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="nav">
+				<div class="logo">
+					<a href="{:U('Index/index')}"><img src="__PUBLIC__/Manage/images/logo2.png"><img src="__PUBLIC__/Manage/images/logo1.png"></a>
+				</div>
+				<ul class="nav_list">
+					<li class="yiji" data-title="工作台">
+						<a href="javascript:;" data-url="{:U('Index/main')}" class="one">工作台</a>
+					</li>
+
+					
+					<li class="yiji" data-title="用户列表">
+						<a href="javascript:;" data-url="{:U('User/index')}" class="three">用户列表</a>
+					</li>
+					<li class="yiji" data-title="资料审核" style="display:none;">
+						<a href="javascript:;" data-url="{:U('Info/index')}" class="">资料审核</a>
+					</li>
+					<li class="yiji" data-title="资料审核" style="display:none;">
+						<a href="javascript:;" data-url="{:U('Loan/pending')}"" class="">借款管理</a>
+					</li>
+
+					<li class="yiji" data-title="借款管理">
+						<a href="javascript:void(0)" class="two action">借款管理</a>
+						<ul class="erji" style="display: block;">
+							<li data-title="资料审核">
+								<a href="javascript:;" data-url="{:U('Info/index')}">资料审核</a>
+							</li>
+							<li data-title="借款管理">
+								<a href="javascript:;" data-url="{:U('Loan/pending')}">借款管理</a>
+							</li>
+							<li data-title="驳回借款" style="display:none;">
+								<a href="javascript:;" data-url="{:U('Loan/refuse')}">已拒绝</a>
+							</li>
+							<li data-title="逾期借款" style="display:none;">
+								<a href="javascript:;" data-url="{:U('Loan/overdue')}">已逾期</a>
+							</li>
+							<li data-title="通过" style="display:none;">
+								<a href="javascript:;" data-url="{:U('Loan/index')}">通过</a>
+							</li>
+							<li data-title="回款借款" style="display:none;">
+								<a href="javascript:;" data-url="{:U('Loan/payoff')}">已还清</a>
+							</li>
+							<li data-title="账单列表" style="display:none;">
+								<a href="javascript:;" data-url="{:U('Loan/bill')}">账单表</a>
+							</li>
+						</ul>
+					</li>
+					<li class="yiji" data-title="系统设置">
+						<a href="javascript:void(0)" class="seven action">系统设置</a>
+						<ul class="erji">
+                          <!--  <li data-title="基本设置">
+								<a href="javascript:;" data-url="{:U('Setting/banner')}">轮播图设置</a>
+							</li>-->					
+							<li data-title="基本设置">
+								<a href="javascript:;" data-url="{:U('Setting/index')}">基本设置</a>
+							</li>
+						<!--	<li data-title="API设置">
+								<a href="javascript:;" data-url="{:U('Setting/api')}">API设置</a>
+							</li>-->
+							<li data-title="借款设置">
+								<a href="javascript:;" data-url="{:U('Setting/loan')}">借款设置</a>
+							</li>
+							<li data-title="合同设置">
+								<a href="javascript:;" data-url="{:U('Setting/contract')}">合同设置</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+			<div class="con">
+				<iframe src="{:U('Index/main')}" id="iframe" onload="changeFrameHeight();" name="iframe"></iframe>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<script src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+		<title>添加自由块</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>添加自由块</h5>
+			</div>
+			<div class="public-selectArea public-selectArea1">
+				<form action="{:U('Block/add')}" method="post">
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>调用名称：</dt>
+								<dd>
+									<input type="text" name="name">
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>备注：</dt>
+								<dd>
+									<input type="text" name="remarks">
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>类型：</dt>
+								<dd>
+		                          	<select class="select" name="type">
+		                                <option value="1" selected="selected">纯文本</option>
+		                                <option value="2">图片</option>
+		                                <option value="3">富文本</option>
+		                            </select>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div id="content">
+						<div id="content-text"><textarea name="content" rows="8" style="width: 60%;margin-left: 130px;"></textarea></div>
+					</div>
+					<div class="btnArea">
+						<a href="javascript:;" class="btn btn-sereachBg" id="submitBtn">
+							<span class="public-label">提交</span>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			var E = window.wangEditor;
+			var editor;
+			$("select[name='type']").on('change',function(){
+				var type = $(this).val();
+				if(type == 1){
+					$("#content-html").remove();
+					$("#content-img").remove();
+					$("#content-text").remove();
+					$("#content").html('<div id="content-text"><textarea name="content" rows="8" style="width: 60%;margin-left: 130px;"></textarea></div>');
+				}else if(type == 2){
+					$("#content-html").remove();
+					$("#content-img").remove();
+					$("#content-text").remove();
+					$("#content").html('<div class="clearfix" id="content-img"><div class="wp_box  col-xs-8"><dl><dt>图片地址：</dt><dd><input type="text" name="content"></dd></dl></div></div>');
+				}else{
+					$("#content-html").remove();
+					$("#content-img").remove();
+					$("#content-text").remove();
+					$("#content").html('<div id="content-html"><div id="edit" style="width: 60%;margin-left: 130px;"></div><input type="hidden" name="content" value="" /></div>');
+					editor = new E('#edit');
+					editor.create();
+				}
+			});
+	        $("#submitBtn").on('click',function(){
+	        	var type = $("select[name='type']").val();
+	        	if(type == 3) $("input[name='content']").val(editor.txt.html());
+	        	
+	        	var name = $("input[name='name']").val();
+	        	if(name.length == 0){
+	        		layer.msg("请输入调用名称");
+	        		return ;
+	        	}
+	        	cvphp.submit($("form"),function(data){
+	        		if(data.status!=1){
+	        			layer.msg(data.info);
+	        		}else{
+	        			layer.msg('添加成功');
+	        			setTimeout(function(){
+	        				window.location.href="{:U('Block/index')}";
+	        			},2000);
+	        		}
+	        	});
+	        });
+	        
+	        
+		});
+	</script>
+</html>

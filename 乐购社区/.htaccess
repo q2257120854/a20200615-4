@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^index.html$ index.asp
+RewriteRule ^index/home/logout.html$ member/logout.php
+RewriteRule ^login/([0-9]*)$ login.php?id=$1
+RewriteRule ^notice.html$ notice.php
+RewriteRule ^index/home/order/id/([0-9]*).html$ member/index.php?id=$1
+RewriteRule ^index/home/rmb_record/id/([0-9]*).html$ member/rmbjl.php?id=$1
+RewriteRule ^index/home/pay/id/([0-9]*).html$ member/pay.php?id=$1
+RewriteRule ^index/home/ktfz/id/([0-9]*).html$ member/ktfz.php?id=$1
+RewriteRule ^index/home/ktcg/id/([0-9]*).html$ member/ktcg.php?id=$1
+RewriteRule ^index/home/login_record/id/([0-9]*).html$ member/log.php?id=$1
+RewriteRule ^index/home/password/id/([0-9]*).html$ member/password.php?id=$1
+RewriteRule ^api/web/getGoodsList.html$ api/getGoodsList.php
+RewriteRule ^api/web/order.html$ api/order.php
+RewriteRule ^Order/ApiGoods.html$ api/jmsp.php
+RewriteRule ^Order/ApiOrderAdd.html$ api/jmxd.php
+RewriteRule ^index/home/dj/id/([0-9]*).html$ member/dj.php?id=$1
+RewriteRule ^index/home/duijie/id/([0-9]*).html$ member/duijie.php?id=$1
+RewriteRule ^index/home/gongdan/id/([0-9]*).html$ member/gongdan.php?id=$1
+RewriteRule ^index/home/turntable/id/([0-9]*).html$ member/turntable.php?id=$1
+RewriteRule ^index/home/collect/id/([0-9]*).html$ member/collect.php?id=$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>

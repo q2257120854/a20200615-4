@@ -1,0 +1,39 @@
+/* pages/home/index.wxss */
+
+.fk-shadow{box-shadow: 0 2px 4px 0 rgba(100, 100, 100, .2)}
+.fk-container{padding: 5px 10px 0;}
+.fk-userinfo-container{padding: 15px 20px; margin-bottom: 10px; position: relative; border-radius: 5px;box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .2)}
+.fk-userinfo-container .fk-avatar{width: 52px; height: 52px; border-radius: 52px; border: 2px solid #fff; margin-bottom: 5px;}
+.fk-userinfo-container .fk-username{color: #fdffff; font-weight: bold;font-size: 15px;}
+.fk-userinfo-container .fk-userdetail-icon{width: 24px; height: 24px; padding: 20px; position: absolute; right: 0; top: 0;}
+.fk-userinfo-container .fk-grade-image{width:20px;height:20px;margin-right:5px;}
+.fk-userinfo-container .fk-grade-text{font-size: 15px; font-weight: bold; color: #fdffff;}
+.fk-userinfo-container .fk-grade-container{height: 10px; width: 100px; border-radius: 10px; background-color: #0c6fd4; padding: 1px; border: 2px solid #5cb9ff;}
+.fk-userinfo-container .fk-grade-container .fk-grade{background-color: #7bf9ff; width: 10px; height: 10px; border-radius: 10px;}
+.fk-userinfo-container .fk-integral{font-size: 15px; font-weight: bold; margin-left: 3px; color: #fdffff;}
+.fk-userinfo-container .fk-integral-icon{width: 20px; height: 20px;}
+.fk-activity-container{display: flex; flex-direction: column; padding: 10px; background-color: #01CBC7; border-radius: 5px; margin-bottom: 10px;}
+.fk-activity-container .fk-activity-title{font-size: 18px; font-weight: bold; color: #fff; margin-bottom: 20px;text-align: center;}
+.fk-activity-container .fk-activity{display: flex; justify-content: space-between; align-items: center; color: #f5f5f5; font-size: 12px;}
+.fk-activity-container .fk-activity-subtitle{font-size: 15px; font-weight: bold;}
+.fk-grid{display: flex; flex-direction: column; flex: 1; color: #fff;}
+.fk-grid .fk-grid-item{height: 80px; border-radius: 5px; padding: 10px; margin-bottom: 10px;}
+.fk-grid .fk-grid-item.disabled{opacity:.4}
+.fk-grid .fk-grid-item .fk-grid-item-title{font-size: 16px; font-weight: bold;}
+
+.get-userinfo-button{border-radius:40px;height:40px;line-height:40px;font-size:16px;flex:1;padding:0;margin-right:10px;margin-bottom:10px;color:#fff;box-shadow:1px 4px 10px rgba(0,0,0,.2)}
+.get-userinfo-button.plain{background-color:#ffffff;border:1px solid #00e2bd;color:#00e2bd}
+.get-userinfo-button:last-child{margin-right:0}
+.get-userinfo-button::after{display:none;}
+
+@keyframes gridTwinkle {
+    from {
+        -webkit-box-shadow: 0 0 5px #bbb;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 10px red;
+    }
+    to {
+        -webkit-box-shadow: 0 0 5px #bbb;
+    }
+}

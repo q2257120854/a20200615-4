@@ -1,0 +1,2050 @@
+[ 2020-04-03T01:06:26+08:00 ] 192.241.237.227 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001606s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.003963s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043171s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000336s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000275s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003927s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003968s ]
+
+[ 2020-04-03T07:07:29+08:00 ] 169.197.108.42 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000739s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015313s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000359s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000284s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000396s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2020-04-03T07:22:13+08:00 ] 111.206.80.10 /index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+
+[ 2020-04-03T07:22:13+08:00 ] 111.206.80.10 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007670s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000310s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000206s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-04-03T07:25:02+08:00 ] 1.192.192.8 /index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+
+[ 2020-04-03T07:25:02+08:00 ] 1.192.192.8 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008122s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000259s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000194s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001153s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2020-04-03T08:49:19+08:00 ] 111.206.79.57 /index.php/Index/login.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000460s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014445s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000840s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000363s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000275s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001876s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002246s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002290s ]
+
+[ 2020-04-03T08:51:11+08:00 ] 180.163.220.47 /index.php/Index/login.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010032s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000350s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000197s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001370s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2020-04-03T11:05:26+08:00 ] 14.204.0.59 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000809s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009937s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000343s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000267s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000197s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2020-04-03T11:05:33+08:00 ] 14.204.0.59 /index.php/Repay/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000581s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+
+[ 2020-04-03T11:05:33+08:00 ] 14.204.0.59 /index.php/Index/login.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000676s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000767s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000268s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000250s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2020-04-03T11:05:33+08:00 ] 14.204.0.59 /index.php/Index/verify.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000639s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+
+[ 2020-04-03T11:07:20+08:00 ] 14.204.0.59 /index.php/Index/login.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000448s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000272s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000297s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001106s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2020-04-03T11:07:20+08:00 ] 14.204.0.59 /index.php/Index/verify.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+
+[ 2020-04-03T11:21:04+08:00 ] 121.56.181.28 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+
+[ 2020-04-03T11:21:04+08:00 ] 121.56.181.28 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006252s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000261s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000272s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000415s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2020-04-03T11:21:05+08:00 ] 121.56.181.28 /index.php?m=Index&a=captcha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+
+[ 2020-04-03T11:21:06+08:00 ] 121.56.181.28 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007236s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000253s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001287s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000476s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2020-04-03T11:21:07+08:00 ] 121.56.181.28 /index.php?m=Index&a=captcha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+
+[ 2020-04-03T11:21:23+08:00 ] 121.56.181.28 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `cv_admin` [ RunTime:0.001450s ]
+SQL: SELECT * FROM `cv_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '94731a3de37b155ca25e68918f649276435cf59c' ) LIMIT 1   [ RunTime:0.001590s ]
+
+[ 2020-04-03T11:21:32+08:00 ] 121.56.181.28 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `cv_admin` [ RunTime:0.001492s ]
+SQL: SELECT * FROM `cv_admin` WHERE ( `username` = 'admin' ) AND ( `password` = 'ddc3d9ac469ea4c10a4667d1412653cb10be0046' ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: UPDATE `cv_admin` SET `last_ip`='121.56.181.28',`last_time`=1585884092 WHERE ( `id` = 1 ) [ RunTime:0.001014s ]
+
+[ 2020-04-03T11:21:32+08:00 ] 121.56.181.28 /index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007729s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000264s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000201s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2020-04-03T11:21:32+08:00 ] 121.56.181.28 /index.php?m=Index&a=main
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.001398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_user` WHERE ( `reg_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `add_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `add_time` >= 1585843200 ) GROUP BY oid  [ RunTime:0.000324s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `add_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000786s ]
+SQL: SELECT * FROM `cv_loanbill` GROUP BY oid  [ RunTime:0.000273s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) GROUP BY oid  [ RunTime:0.000512s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` = 1 ) GROUP BY oid  [ RunTime:0.000279s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011241s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000359s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000241s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000201s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2020-04-03T11:21:35+08:00 ] 121.56.181.28 /index.php?m=User&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.002547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_user` LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `cv_user` ORDER BY id Desc LIMIT 0,25   [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.002955s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000517s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 1 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 2 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1','3') ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000800s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 1 ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT SUM(interest) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT SUM(overdue) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000843s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000741s ]
+SQL: SELECT SUM(interest) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: SELECT SUM(overdue) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.001017s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-username /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 36 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 44 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006660s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000334s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2020-04-03T11:21:37+08:00 ] 121.56.181.28 /index.php?m=Info&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.001226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_info` LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000794s ]
+SQL: SELECT * FROM `cv_info` ORDER BY id Desc LIMIT 0,25   [ RunTime:0.000284s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = '1' ) LIMIT 1   [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-username /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/a1fb3a78380cb1d1bae0726e62e1cea9.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000296s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000199s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2020-04-03T11:21:38+08:00 ] 121.56.181.28 /index.php?m=Loan&a=pending
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000850s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `aus` = 1 ) LIMIT 1   [ RunTime:0.000232s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `aus` = 1 ) ORDER BY add_time Desc LIMIT 0,25   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `cv_qblog` [ RunTime:0.000540s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) AND ( `toid` = 1 ) ORDER BY repayment_time ASC LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000593s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 2 ) ORDER BY id desc LIMIT 1   [ RunTime:0.001587s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-pho /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 83 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 91 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 94 行.
+NOTIC: [8] Undefined index: qbzx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+NOTIC: [8] Undefined index: qbtx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000378s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000318s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000410s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2020-04-03T11:21:41+08:00 ] 121.56.181.28 /index.php?m=Loan&a=viewhd&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.001738s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000650s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000211s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007176s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001454s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000344s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003096s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000396s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2020-04-03T11:22:05+08:00 ] 121.56.181.28 /index.php?m=Info&a=view&uid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000787s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000862s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: qrtx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d04df1a52a4e40eb100adb6101f98f15.php 第 121 行.
+NOTIC: [8] Undefined index: tpass /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d04df1a52a4e40eb100adb6101f98f15.php 第 122 行.
+NOTIC: [8] Undefined index: txpass /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d04df1a52a4e40eb100adb6101f98f15.php 第 134 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028302s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000326s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001143s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2020-04-03T11:27:41+08:00 ] 121.56.181.28 /index.php?m=Setting&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 128 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 128 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013782s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000288s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000461s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000198s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2020-04-03T11:28:05+08:00 ] 121.56.181.28 /index.php?m=Index&a=main
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.000575s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_user` WHERE ( `reg_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `add_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `add_time` >= 1585843200 ) GROUP BY oid  [ RunTime:0.000442s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `add_time` >= 1585843200 ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT * FROM `cv_loanbill` GROUP BY oid  [ RunTime:0.000311s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) GROUP BY oid  [ RunTime:0.000272s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` = 1 ) GROUP BY oid  [ RunTime:0.004522s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014015s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000349s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000269s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2020-04-03T11:28:06+08:00 ] 121.56.181.28 /index.php?m=User&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000706s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_user` LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `cv_user` ORDER BY id Desc LIMIT 0,25   [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.000655s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 1 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 2 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1','3') ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanorder` WHERE ( `uid` = 1 ) AND ( `pending` = 1 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT SUM(interest) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT SUM(overdue) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('1') ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT SUM(interest) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT SUM(overdue) AS tp_sum FROM `cv_loanbill` WHERE ( `uid` = 1 ) AND ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-username /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 36 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 44 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/b101656940b7b71587255baad7566c75.php 第 47 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007230s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000308s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000251s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000204s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2020-04-03T11:28:09+08:00 ] 121.56.181.28 /index.php?m=Info&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000639s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_info` LIMIT 1   [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000966s ]
+SQL: SELECT * FROM `cv_info` ORDER BY id Desc LIMIT 0,25   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `uid` = '1' ) LIMIT 1   [ RunTime:0.001620s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-username /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/a1fb3a78380cb1d1bae0726e62e1cea9.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014053s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000833s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000379s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002013s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000464s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2020-04-03T11:28:13+08:00 ] 121.56.181.28 /index.php?m=Loan&a=pending
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.004711s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000984s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `aus` = 1 ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `aus` = 1 ) ORDER BY add_time Desc LIMIT 0,25   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `cv_qblog` [ RunTime:0.000482s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) AND ( `toid` = 1 ) ORDER BY repayment_time ASC LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 2 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000149s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-pho /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 83 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 91 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 94 行.
+NOTIC: [8] Undefined index: qbzx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+NOTIC: [8] Undefined index: qbtx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017624s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000370s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000283s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000195s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001231s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000472s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2020-04-03T11:28:15+08:00 ] 121.56.181.28 /index.php?m=Loan&a=viewhd&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000792s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000562s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006480s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000320s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000193s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001165s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000770s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2020-04-03T11:28:30+08:00 ] 121.56.181.28 /index.php?m=Loan&a=savevic
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000799s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `oid` = '202004021223330121' ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: UPDATE `cv_loanorder` SET `vicsv`='借款人账户资金流水不足，根据国家《借款人资金安全法》暂停放款转账。' WHERE ( `oid` = '202004021223330121' ) [ RunTime:0.000242s ]
+
+[ 2020-04-03T11:28:33+08:00 ] 121.56.181.28 /index.php?m=Loan&a=pending
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.001752s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.001172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `aus` = 1 ) LIMIT 1   [ RunTime:0.001720s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `aus` = 1 ) ORDER BY add_time Desc LIMIT 0,25   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `cv_qblog` [ RunTime:0.001331s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) AND ( `toid` = 1 ) ORDER BY repayment_time ASC LIMIT 1   [ RunTime:0.000638s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 2 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000176s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-pho /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 83 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 91 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 94 行.
+NOTIC: [8] Undefined index: qbzx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+NOTIC: [8] Undefined index: qbtx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014501s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000346s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000286s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2020-04-03T11:28:33+08:00 ] 121.56.181.28 /index.php?m=Loan&a=viewhd&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.001017s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.001028s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006177s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000354s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000279s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000196s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000446s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2020-04-03T11:28:54+08:00 ] 121.56.181.28 /index.php?m=Loan&a=savevic
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000874s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `oid` = '202004021223330121' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: UPDATE `cv_loanorder` SET `vicsv`='因借款人账户信息不符，根据国家法规《借款人资金安全法》临时冻结转账。' WHERE ( `oid` = '202004021223330121' ) [ RunTime:0.000251s ]
+
+[ 2020-04-03T11:28:56+08:00 ] 121.56.181.28 /index.php?m=Loan&a=pending
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.001585s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `aus` = 1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `aus` = 1 ) ORDER BY add_time Desc LIMIT 0,25   [ RunTime:0.002997s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.002209s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `cv_qblog` [ RunTime:0.001011s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) AND ( `toid` = 1 ) ORDER BY repayment_time ASC LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `cv_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `cv_qblog` WHERE ( `uid` = '1' ) AND ( `bz` = 2 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: s-pho /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 83 行.
+NOTIC: [8] Undefined index: s-timeStart /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 91 行.
+NOTIC: [8] Undefined index: s-timeEnd /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 94 行.
+NOTIC: [8] Undefined index: qbzx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+NOTIC: [8] Undefined index: qbtx /www/wwwroot/pcyqha.sytlkt.cn/App/Runtime/Cache/Manage/d5ad1618993db1e6392447041a039319.php 第 136 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020239s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000377s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000306s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000427s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2020-04-03T11:28:58+08:00 ] 121.56.181.28 /index.php?m=Loan&a=viewhd&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.000816s ]
+SQL: SELECT * FROM `cv_loanorder` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.000658s ]
+SQL: SELECT * FROM `cv_user` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005704s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000295s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000242s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001247s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2020-04-03T12:36:08+08:00 ] 184.105.247.196 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001024s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015398s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000333s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000277s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2020-04-03T13:13:59+08:00 ] 196.52.43.94 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001281s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000656s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000267s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000193s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000376s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2020-04-03T13:27:20+08:00 ] 42.236.10.75 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+
+[ 2020-04-03T13:27:20+08:00 ] 42.236.10.75 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000254s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001059s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2020-04-03T13:27:20+08:00 ] 42.236.10.75 /index.php?m=Index&a=captcha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+
+[ 2020-04-03T13:27:26+08:00 ] 42.236.10.84 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000677s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000219s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009905s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000322s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000305s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000195s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000359s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2020-04-03T13:27:43+08:00 ] 42.236.10.78 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000717s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000295s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013811s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001210s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2020-04-03T13:27:46+08:00 ] 42.236.10.78 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+
+[ 2020-04-03T13:27:51+08:00 ] 42.236.10.78 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005695s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000272s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000239s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001063s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2020-04-03T13:27:55+08:00 ] 42.236.10.78 /index.php?m=Index&a=captcha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+
+[ 2020-04-03T13:28:36+08:00 ] 42.236.10.78 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000842s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000212s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010490s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000425s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000277s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000196s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000397s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2020-04-03T13:41:18+08:00 ] 116.62.39.231 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000682s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010753s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000317s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2020-04-03T17:48:58+08:00 ] 169.197.108.42 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000672s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010590s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000309s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000245s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000359s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2020-04-03T18:11:19+08:00 ] 38.145.112.175 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001059s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010140s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000328s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000314s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000193s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2020-04-03T18:13:17+08:00 ] 67.227.97.237 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.001481s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013732s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000387s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000253s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000278s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002012s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2020-04-03T18:15:27+08:00 ] 38.145.82.235 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000809s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.001575s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014688s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000321s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000294s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2020-04-03T18:37:16+08:00 ] 181.214.180.160 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000743s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011064s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000315s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2020-04-03T18:38:40+08:00 ] 38.145.99.101 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000684s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000226s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011373s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000338s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000279s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000206s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2020-04-03T18:39:31+08:00 ] 181.215.79.240 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+
+[ 2020-04-03T18:39:34+08:00 ] 181.215.79.240 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+
+[ 2020-04-03T18:39:34+08:00 ] 181.215.79.240 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005253s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000249s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000269s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000196s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2020-04-03T18:39:36+08:00 ] 38.145.89.218 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000703s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010246s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000269s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000194s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001190s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2020-04-03T18:46:40+08:00 ] 45.40.122.222 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000675s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000215s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010433s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000321s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2020-04-03T20:43:42+08:00 ] 162.243.133.178 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000729s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000344s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000265s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2020-04-03T21:40:38+08:00 ] 47.245.26.26 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000674s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010712s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000321s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2020-04-03T23:32:29+08:00 ] 5.101.0.209 /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000487s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+ERR: 非法操作:\think\app
+
+[ 2020-04-03T23:40:19+08:00 ] 5.101.0.209 /?XDEBUG_SESSION_START=phpstorm
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000868s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017052s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000332s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000292s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000214s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000394s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2020-04-03T23:53:33+08:00 ] 111.206.79.57 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.000927s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000225s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010578s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000409s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000262s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2020-04-03T23:53:50+08:00 ] 180.163.220.101 /index.php/Repay/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+
+[ 2020-04-03T23:53:50+08:00 ] 180.163.220.101 /index.php/Index/login.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000439s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /www/wwwroot/pcyqha.sytlkt.cn/App/Lib/TagLib/TagLibCvphp.class.php on line 26 and defined /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /www/wwwroot/pcyqha.sytlkt.cn/Base/Lib/Template/TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006664s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000289s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000368s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000393s ]
+

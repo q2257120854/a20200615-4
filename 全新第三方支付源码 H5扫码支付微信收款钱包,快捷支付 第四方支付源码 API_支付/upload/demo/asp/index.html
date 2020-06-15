@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>信达支付接口测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    html,body,div,p,span,ul,dl,ol,h1,h2,h3,h4,h5,h6,table,td,tr{padding:0;margin:0}
+    .content{width:400px;margin:100px auto;border:1px solid #ddd}
+    h1{margin-bottom:30px;background-color:#eee;;border-bottom:1px solid #ddd;padding:10px;text-align: center}
+    table{border-collapse:collapse;width:90%;margin:20px auto}
+    table tr td{height:40px;font-size:14px}
+    input,select{width:100%;line-height:25px}
+    button{font-size:16px}
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>信达支付接口测试</h1>
+    <form action="pay.php" method="post" target="_blank">
+        <table>
+            <tr>
+                <td width="120">版本号：</td>
+                <td>
+                    <select name="version">
+                        <option value="1.0">1.0</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>商户编号：</td>
+                <td><input type="text" name="customerid" value="10000"></td>
+            </tr>
+
+            <!--<tr>
+                <td>商户订单号：</td>
+                <td><input type="text" name="sdorderno" value="test001"></td>
+            </tr>-->
+
+            <tr>
+                <td>订单金额：</td>
+                <td><input type="text" name="total_fee" value="1.00"></td>
+            </tr>
+
+            <tr>
+                <td>支付编号：</td>
+                <td>
+                    <select name="paytype" onChange="changePay(this.options[this.selectedIndex].value)">
+						<option value="bank">在线网银</option>
+						<option value="alipay">支付宝扫码</option>
+                        <option value="weixin">微信扫码</option>
+						<option value="qqrcode">QQ钱包扫码</option>
+                       <option value="quickbank">快捷支付</option>
+                        <option value="aliwap">支付宝WAP</option>
+                        <option value="wxh5">微信WAP</option>
+						<option value="qqwallet">QQ钱包WAP</option>
+						 <option value="quickwap">快捷支付WAP</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr id="bankcode">
+                <td>银行编号：</td>
+                <td>
+                    <select name="bankcode">
+				
+                      <option value="ICBC">中国工商银行</option>
+                        <option value="ABC">中国农业银行</option>
+                        <option value="BOCSH">中国银行</option>
+                        <option value="CCB">建设银行</option>
+                        <option value="CMB">招商银行</option>
+                        <option value="SPDB">浦发银行</option>
+                        <option value="GDB">广发银行</option>
+                        <option value="BOCOM">交通银行</option>
+                        <option value="PSBC">邮政储蓄银行</option>
+                        <option value="CNCB">中信银行</option>
+                        <option value="CMBC">民生银行</option>
+                        <option value="CEB">光大银行</option>
+                        <option value="HXB">华夏银行</option>
+                        <option value="CIB">兴业银行</option>
+                        <option value="BOS">上海银行</option>
+                        <option value="SRCB">上海农商</option>
+                        <option value="PAB">平安银行</option>
+                        <option value="BCCB">北京银行</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr id="weixin" style="display:none">
+                <td>微信选项：</td>
+                <td><select name="get_code">
+                    <option value="0">默认</option>
+                    <option value="1">仅获取二维码</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>异步通知URL：</td>
+                <td><input type="text" name="notifyurl" value="notify.php"></td>
+            </tr>
+
+            <tr>
+                <td>同步跳转URL：</td>
+                <td><input type="text" name="returnurl" value="return.php"></td>
+            </tr>
+
+            <tr>
+                <td>订单备注：</td>
+                <td><input type="text" name="remark" value=""></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit">提交测试</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+function changePay(pname){
+    document.getElementById('bankcode').style.display='none';
+    document.getElementById('1004').style.display='none';
+    if(pname=='Bank'){
+        document.getElementById('bankcode').style.display='';
+    }
+    if(pname=='1004'){
+        document.getElementById('1004').style.display='';
+    }
+}
+</script>
+</body>
+</html>

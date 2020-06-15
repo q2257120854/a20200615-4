@@ -1,0 +1,1050 @@
+﻿body {    
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei','\5FAE\8F6F\96C5\9ED1','Hiragino Sans GB', tahoma,arial,sans-serif;
+}
+.pullLeft {
+    float: left !important;
+}
+.pullRight {
+    float: right !important;
+}
+.pullClear {
+    clear: both !important;
+}
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fullC {
+    width: 100%;
+    background-color: RGB(50,52,54);
+    position:fixed;
+    top:0;
+    z-index: 100;
+}
+.fullC .CHeader {
+    width: 1100px;
+    height: 50px;
+    background-color: RGB(50,52,54);
+    margin-left: auto;
+    margin-right: auto;
+}
+.CHeader .logo {
+    background-image: url("../images/logo@2x.png");
+    width: 175px;
+    height: 50px;
+    margin: 8px 0px;
+}
+.CHeader .Tel400 {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-right: 45px;
+    width: 135px;
+}
+.CHeader .Tel400 div:nth-child(1) {
+    margin: 10px 0px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/电话icon@2x.png");
+    margin-right: 10px;
+}
+.CHeader .Tel400 div:first-child {
+    margin: 10px 0px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/电话icon@2x.png");
+    margin-right: 10px;
+}
+.CHeader .Tel400 div:nth-child(2) {
+    font-size: 16px;
+    color: white;
+}
+.CHeader .Tel400 div:first-child + div {
+    font-size: 16px;
+    color: white;
+}
+
+.CHeader .menu {
+    font-size: 14px;
+    padding: 17px 0px;
+}
+.CHeader .menu a {
+    margin-left: 25px;
+    color: RGBA(255,255,255, 0.5);
+    *color: RGB(255,255,255);/*IE6,7*/
+    color: RGB(255,255,255)\0;/*IE8*/
+    color: RGBA(255,255,255, 0.5)\9\0;/*IE9*/
+    text-decoration: none;
+}
+.CHeader .menu a:nth-child(1) {
+    border: 1px solid RGBA(255,255,255, 0.5);
+    *border: 1px solid RGB(255,255,255);/*IE6,7*/
+    border: 1px solid RGB(255,255,255)\0;/*IE8*/
+    border: 1px solid RGBA(255,255,255, 0.5)\9\0;/*IE9*/
+    padding: 7px 10px;
+    border-radius: 14px;
+}
+.CHeader .menu a:first-child {
+    border: 1px solid RGBA(255,255,255, 0.5);
+    *border: 1px solid RGB(255,255,255);/*IE6,7*/
+    border: 1px solid RGB(255,255,255)\0;/*IE8*/
+    border: 1px solid RGBA(255,255,255, 0.5)\9\0;/*IE9*/
+    padding: 7px 10px;
+    border-radius: 14px;
+}
+.CHeader .menu a:nth-child(2) {
+}
+
+.page1 {
+    background-image: url("../images/banner@2x.png");
+    width: 100%;
+    height: 900px;
+}
+
+.page2 {
+    background-color: RGB(250,251,252);
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+
+.page2 .container {
+    height: 100%;
+}
+.page2 .container .title {
+    color: RGB(51,51,51);
+    font-size: 38px;
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+
+.page2 .subTitle {
+    color: RGB(140,140,140);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.page2 .images {
+    background-image: url("../images/整图@2x.png");
+    width: 940px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page3 {
+    background-color: RGB(240,241,242);
+    width: 100%;
+    height: 900px;
+}
+.page3 .container {
+    height: 100%;
+}
+.page3 .container .content{
+    width: 500px;
+}
+.page3 .container .title {
+    color: RGB(38,38,38);
+    font-size: 38px;
+    padding-top: 300px;
+    margin-bottom: 30px;
+}
+.page3 .subTitle {
+    color: RGB(140,140,140);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.page3 .subTitle font {
+    color: RGB(140,140,140);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.page3 .images {
+    margin-top: 160px;
+    background-image: url("../images/整图page3.png");
+    width: 522px;
+    height: 570px;
+}
+
+.page4 {
+    background-color: RGB(250,251,252);
+    width: 100%;
+    height: 900px;
+}
+.page4 .container {
+    height: 100%;
+    text-align: center;
+}
+.page4 .container .title {
+    color: RGB(38,38,38);
+    font-size: 38px;
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+.page4 .subTitle {
+    color: RGB(140,140,140);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin-bottom: 35px;
+}
+.page4 .list>div{
+    width: 25%;
+    height: 205px;
+    float: left !important;
+    padding-top: 35px;
+}
+.page4 .list>div ul, 
+.page4 .list>div:hover ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page4 .list>div ul li{
+    color: RGB(102,102,102);
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.page4 .list>div:hover {
+    border-radius: 12px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(RGB(25,217,242)), to(RGB(23,155,232)));
+    background: -moz-linear-gradient(top, RGB(25,217,242),RGB(23,155,232) );
+    background: -webkit-gradient(linear,top, left, color-stop(0, RGB(25,217,242)), color-stop(1, RGB(23,155,232)));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffff', endColorstr='#33CCff', GradientType='0');
+}
+.page4 .list>div:hover ul li{
+    color: white;
+}
+.page4 .list>div ul li:nth-child(1){
+    color: RGB(77,77,77);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+.page4 .list>div ul li:first-child{
+    color: RGB(77,77,77);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.page4 .list>div:hover ul li:nth-child(1){
+    color: white;
+}
+.page4 .list>div ul li:first-child{
+    color: RGB(77,77,77);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.page4 .list > div ul li:nth-child(1) font {
+    position: absolute;
+}
+.page4 .list > div ul li:first-child font {
+    position: absolute;
+}
+
+.page4 .list>div:nth-child(1) ul li:nth-child(1) span{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/全天服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+.page4 .list>div:first-child ul li:first-child span{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/全天服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+
+.page4 .list>div:nth-child(1):hover ul li:nth-child(1) span{
+    background-image: url("../images/全天服务icon（效果）@2x.png");
+}
+.page4 .list>div:first-child:hover ul li:first-child span{
+    background-image: url("../images/全天服务icon（效果）@2x.png");
+}
+
+.page4 .list>div:nth-child(2) ul li:nth-child(1) span{
+    width: 26px;
+    height: 23px;
+    background-image: url("../images/BD服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+.page4 .list>div:first-child + div ul li:first-child span{
+    width: 26px;
+    height: 23px;
+    background-image: url("../images/BD服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+.page4 .list>div:nth-child(2):hover ul li:nth-child(1) span{
+    background-image: url("../images/BD服务icon（效果）@2x.png");
+}
+.page4 .list>div:first-child + div:hover ul li:first-child span{
+    background-image: url("../images/BD服务icon（效果）@2x.png");
+}
+
+.page4 .list>div:nth-child(3) ul li:nth-child(1) span{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/技术支持icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+.page4 .list>div:first-child + div + div ul li:first-child span{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/技术支持icon@2x.png");
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: -100px;
+}
+.page4 .list>div:nth-child(3):hover ul li:nth-child(1) span{
+    background-image: url("../images/技术支持icon（效果）@2x.png");
+}
+.page4 .list>div:first-child + div + div:hover ul li:first-child span{
+    background-image: url("../images/技术支持icon（效果）@2x.png");
+}
+
+.page4 .list>div:nth-child(4) ul li:nth-child(1) span{
+    width: 21px;
+    height: 24px;
+    background-image: url("../images/结算服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px;    
+    margin-left: -100px;
+}
+.page4 .list>div:first-child + div + div + div ul li:first-child span{
+    width: 21px;
+    height: 24px;
+    background-image: url("../images/结算服务icon@2x.png");
+    display: inline-block;
+    margin-right: 10px;    
+    margin-left: -100px;
+}
+.page4 .list>div:nth-child(4):hover ul li:nth-child(1) span{
+    background-image: url("../images/结算服务icon（效果）@2x.png");
+}
+.page4 .list>div:first-child + div + div + div:hover ul li:first-child span{
+    background-image: url("../images/结算服务icon（效果）@2x.png");
+}
+
+.page4 .list{
+    margin-bottom: 80px;
+}
+.page4 .lcTitle {
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    color: RGB(77,77,77);
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+.page4 .lcTitle img {
+    margin-right: 10px;    
+    margin-left: -130px;
+}
+.page4 .lcTitle span {
+    position: absolute;
+}
+.page4 .lcImage {
+    text-align: center;
+}
+.page4 .lcImage ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 280px;
+}
+.page4 .lcImage li {
+    float: left !important;
+}
+.page4 .lcImage div {
+    background-image: url("../images/圆点分割@2x.png");
+    width: 36px;
+    height: 4px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 30px;
+}
+.page4 .lcImage li:nth-child(1) a {
+    background-image: url(../images/注册@2x.png);
+    width: 63px;
+    height: 83px;
+    display:block;
+}
+.page4 .lcImage li:first-child a {
+    background-image: url(../images/注册@2x.png);
+    width: 63px;
+    height: 83px;
+    display:block;
+}
+.page4 .lcImage li:nth-child(1) a:hover {
+    background-image: url(../images/注册@2x1.png);
+    width: 78px;
+    height: 104px;
+    display:block;
+}
+.page4 .lcImage li:first-child a:hover {
+    background-image: url(../images/注册@2x1.png);
+    width: 78px;
+    height: 104px;
+    display:block;
+}
+
+.page4 .lcImage li:nth-child(3) a {
+    background-image: url(../images/商户签约@2x.png);
+    width: 64px;
+    height: 84px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li a {
+    background-image: url(../images/商户签约@2x.png);
+    width: 64px;
+    height: 84px;
+    display:block;
+}
+.page4 .lcImage li:nth-child(3) a:hover  {
+    background-image: url(../images/商户签约@2x1.png);
+    width: 68px;
+    height: 103px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li a:hover  {
+    background-image: url(../images/商户签约@2x1.png);
+    width: 68px;
+    height: 103px;
+    display:block;
+}
+
+.page4 .lcImage li:nth-child(5) a {
+    background-image: url(../images/获取接入包@2x.png);
+    width: 80px;
+    height: 85px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li a {
+    background-image: url(../images/获取接入包@2x.png);
+    width: 80px;
+    height: 85px;
+    display:block;
+}
+.page4 .lcImage li:nth-child(5) a:hover {
+    background-image: url(../images/获取接入包@2x1.png);
+    width: 90px;
+    height: 104px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li a:hover {
+    background-image: url(../images/获取接入包@2x1.png);
+    width: 90px;
+    height: 104px;
+    display:block;
+}
+
+.page4 .lcImage li:nth-child(7) a {
+    background-image: url(../images/技术联调@2x.png);
+    width: 63px;
+    height: 84px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li + li + li a {
+    background-image: url(../images/技术联调@2x.png);
+    width: 63px;
+    height: 84px;
+    display:block;
+}
+.page4 .lcImage li:nth-child(7) a:hover {
+    background-image: url(../images/技术联调@2x1.png);
+    width: 78px;
+    height: 103px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li + li + li a:hover {
+    background-image: url(../images/技术联调@2x1.png);
+    width: 78px;
+    height: 103px;
+    display:block;
+}
+
+.page4 .lcImage li:nth-child(9) a {
+    background-image: url(../images/上线运营@2x.png);
+    width: 66px;
+    height: 83px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li + li + li + li + li a {
+    background-image: url(../images/上线运营@2x.png);
+    width: 66px;
+    height: 83px;
+    display:block;
+}
+.page4 .lcImage li:nth-child(9) a:hover {
+    background-image: url(../images/上线运营@2x1.png);
+    width: 89px;
+    height: 102px;
+    display:block;
+}
+.page4 .lcImage li:first-child + li + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/上线运营@2x1.png);
+    width: 89px;
+    height: 102px;
+    display:block;
+}
+
+.page5 {
+    background-color: RGB(240,241,242);
+    width: 100%;
+    height: 900px;
+}
+.page5 .container {
+    height: 100%;
+    text-align: center;
+}
+.page5 .container .title {
+    color: RGB(38,38,38);
+    font-size: 38px;
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+.page5 ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 180px;
+}
+.page5 ul li{
+    float: left !important;
+    margin-right: 55px;
+    margin-bottom: 50px;
+}
+.page5 li:nth-child(1) a {
+    background-image: url(../images/微信@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child a {
+    background-image: url(../images/微信@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(1) a:hover {
+    background-image: url(../images/微信（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child a:hover {
+    background-image: url(../images/微信（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(2) a {
+    background-image: url(../images/支付宝@2x1.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li a {
+    background-image: url(../images/支付宝@2x1.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(2) a:hover {
+    background-image: url(../images/支付宝（交互）@2x1.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li a:hover {
+    background-image: url(../images/支付宝（交互）@2x1.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(3) a {
+    background-image: url(../images/工商@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li a {
+    background-image: url(../images/工商@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(3) a:hover {
+    background-image: url(../images/工商（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li a:hover {
+    background-image: url(../images/工商（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(4) a {
+    background-image: url(../images/建设@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li a {
+    background-image: url(../images/建设@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(4) a:hover {
+    background-image: url(../images/建设（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li a:hover {
+    background-image: url(../images/建设（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(5) a {
+    background-image: url(../images/招商@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li a {
+    background-image: url(../images/招商@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(5) a:hover {
+    background-image: url(../images/招商（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li a:hover {
+    background-image: url(../images/招商（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(6) a {
+    background-image: url(../images/兴业@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li a {
+    background-image: url(../images/兴业@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(6) a:hover {
+    background-image: url(../images/兴业（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li a:hover {
+    background-image: url(../images/兴业（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(7) a {
+    background-image: url(../images/移动@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li a {
+    background-image: url(../images/移动@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(7) a:hover {
+    background-image: url(../images/移动（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li a:hover {
+    background-image: url(../images/移动（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(8) a {
+    background-image: url(../images/联通@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li a {
+    background-image: url(../images/联通@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(8) a:hover {
+    background-image: url(../images/联通（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/联通（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(9) a {
+    background-image: url(../images/电信@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li a {
+    background-image: url(../images/电信@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(9) a:hover {
+    background-image: url(../images/电信（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/电信（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(10) a {
+    background-image: url(../images/易宝@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li a {
+    background-image: url(../images/易宝@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(10) a:hover {
+    background-image: url(../images/易宝（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/易宝（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(11) a {
+    background-image: url(../images/盛付通@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li + li a {
+    background-image: url(../images/盛付通@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(11) a:hover {
+    background-image: url(../images/盛付通（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/盛付通（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 li:nth-child(12) a {
+    background-image: url(../images/汇付宝@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li + li + li a {
+    background-image: url(../images/汇付宝@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:nth-child(12) a:hover {
+    background-image: url(../images/汇付宝（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+.page5 li:first-child + li + li + li + li + li + li + li + li + li + li + li a:hover {
+    background-image: url(../images/汇付宝（交互）@2x.png);
+    width: 80px;
+    height: 80px;
+    display:block;
+}
+
+.page5 .image {
+    background-image: url("../images/地图@2x.png");
+    width: 1100px;
+    height: 300px;
+}
+.page5 .image .info {
+    width: 525px;
+    height: 245px;
+    background-color: RGBA(41,44,46, 0.9);
+    *background-color: RGB(41,44,46);/*IE6,7*/
+    background-color: RGB(41,44,46)\0;/*IE8*/
+    background-color: RGBA(41,44,46, 0.9)\9\0;/*IE9*/
+    padding-top: 55px;
+    padding-left: 40px;
+}
+.page5 .image .info .infoLogo{
+    background-image: url("../images/logo部分@2x.png");
+    width: 150px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+.page5 .image .info ul {
+    margin: 0px;
+    padding: 0px;
+}
+.page5 .image .info ul li {
+    color: RGB(255,255,255);
+    clear:both;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.page5 .image .info .infoMsg {
+    background-image: url("../images/联系方式@2x.png");
+    width: 459px;
+    height: 100px;
+}
+.page5 .footer {
+    padding-top: 60px;
+    color: #999999;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.upMenu, .downMenu {
+    width: 50px;
+    height: 50px;    
+    position: fixed;
+    left: 0;
+    right: 0;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upMenu {
+    top: 40px;
+}
+
+.downMenu {
+    bottom: 40px;
+}
+
+.upMenu a, .downMenu a {
+    width: 50px;
+    height: 50px;
+    background-color: RGB(66,184,241);
+    color: white;
+    border: 1px solid RGB(66,184,241);
+    border-radius: 50px;
+    font-size: 32px;
+    padding: 10px;
+    text-decoration: none;  
+}
+
+.zz {
+    background-color: RGBA(0,0,0, 0.5);
+    *background-color: RGB(0,0,0);/*IE6,7*/
+    background-color: RGB(0,0,0)\0;/*IE8*/
+    background-color: RGBA(0,0,0, 0.5)\9\0;/*IE9*/
+    filter: Alpha(opacity=50);
+    z-index: 1050;
+    width: 100%;
+    height: 1080px;
+    position: fixed;
+    top: 0;
+}
+
+.modal {
+    width: 380px;
+    background-color: RGBA(255,255,255, 0.98);
+    *background-color: RGB(255,255,255);/*IE6,7*/
+    background-color: RGB(255,255,255)\0;/*IE8*/
+    background-color: RGBA(255,255,255, 0.98)\9\0;/*IE9*/
+    border-radius: 6px;
+    z-index: 1150;
+    position: fixed;
+    top: 26%;
+    left: 40%;
+    padding-bottom: 20px;
+    -webkit-box-shadow:0 0 10px 5px RGBA(0,0,0, 0.3);  
+    -moz-box-shadow:0 0 10px 5px RGBA(0,0,0, 0.3);  
+    box-shadow:0 0 10px 5px RGBA(0,0,0, 0.3);  
+}
+
+.modal .mheader {
+    margin-top: 45px;
+    background-image: url("../images/login_logo@2x.png");
+    width: 62px;
+    height: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+.modal .menus {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid RGB(66,184,241);
+    height: 25px;
+    margin-bottom: 20px;
+}
+.modal .menus a {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    float: left !important;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 3px;
+    color: black;
+}
+.modal .menus a.active {
+    color: RGB(66,184,241);
+    border-bottom: 2px solid RGB(66,184,241);
+}
+.modal form {
+    width: 300px;
+    /*height: 300px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal form .controller {
+    margin-bottom: 17px;
+    height: 48px;
+}
+.modal form .controller input {
+    width: 230px;
+    height: 46px;
+    height: 36px\0;/*IE8*/
+    font-size: 20px\0;/*IE8*/
+    padding-top: 10px\0;/*IE8*/
+    border: 0px;
+    background-color: RGB(235,235,235);
+    border-radius: 0 6px 6px 0;
+    margin-left: -1px;
+    padding-left: 20px;
+}
+.modal form .controller .btnIco {
+    width: 50px;
+    height: 47px;
+    background-color: RGB(66,184,241);
+    border-radius: 6px 0 0 6px;
+    float: left !important;
+    /*margin-top: 1px\0;/*IE8*/
+}
+input::-ms-input-placeholder{
+    margin-left: 20px;
+}
+input::-webkit-input-placeholder{
+    margin-left: 20px;
+
+}
+.modal form .controller .btn {
+    width: 300px;
+    height: 47px;
+    border-radius: 6px;
+    background-color: RGB(66,184,241);
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 47px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.modal form .controller .tips {
+    font-size: 12px;
+}
+.modal form .controller .reg {
+    color: RGB(66,184,241);
+    font-size: 12px;
+}
+
+form input {
+}

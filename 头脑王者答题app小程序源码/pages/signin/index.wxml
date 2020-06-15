@@ -1,0 +1,137 @@
+<view>
+    <view class="fk-signin-header">
+        <text>每日登陆奖励</text>
+    </view>
+    <view class="fk-signin-container">
+        <view class="fk-signin">
+            <view class="fk-flex fk-flex-center fk-reward-title">
+                已连续签到<text class="fk-signin-days">{{signInDays}}</text>天
+            </view>
+            <view class='fk-signin-row'>
+                <view class="fk-signin-wrapper" wx:for="{{weekSignIn}}" wx:key="{{index}}" data-disable="{{item == 1 || index != currWeekDay}}" data-integral="{{actualEverydayIntegral[index]}}" bindtap='doSignIn'>
+                    <view class="fk-signin-cell {{item == 1 || index < currWeekDay ? 'disabled' : (index == currWeekDay ? 'active' : '')}}">
+                        <image src="/static/images/money.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" wx:if="{{item == 1}}"/>
+                        <view class="fk-signin-text" hidden='{{true}}'>
+                            <text>X{{actualEverydayIntegral[index]}}</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>{{item == 1 ? (index == currWeekDay ? '今天' : '已签到') : (index > currWeekDay ? ('第' + (index + 1) + '天') : '未签到')}}</text>
+                    </view>
+                </view>
+
+                <!-- <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell disabled">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X50</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>已领</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell active">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X100</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第2天</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X200</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第3天</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X300</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第4天</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X400</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第5天</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X500</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第6天</text>
+                    </view>
+                </view>
+                <view class="fk-signin-wrapper">
+                    <view class="fk-signin-cell">
+                        <image src="/static/images/coins.png" class="fk-signin-icon" />
+                        <image src="/static/images/ok.png" class="fk-signin-status-icon" />
+                        <view class="fk-signin-text">
+                            <text>X1000</text>
+                        </view>
+                    </view>
+                    <view class="fk-signin-day">
+                        <text>第7天</text>
+                    </view>
+                </view> -->
+            </view>
+
+            <view class="fk-reward-container" hidden='{{true}}'>
+                <view class="fk-flex fk-flex-center fk-reward-title">
+                    已连续签到<text style="font-weight:bold;font-size:24px;color:#ff0000;margin:0 10px;">{{signInDays}}</text>天
+                </view>
+                <text class="fk-reward-title">连续签到奖励</text>
+                <view class="fk-reward">
+                    <view class="fk-reward-bg"></view>
+                    <view class="fk-reward-icon reward-1">
+                        <image src="/static/images/starfill.png"/>
+                        <text>已领</text>
+                    </view>
+                    <view class="fk-reward-icon reward-2">
+                        <image src="/static/images/star.png" class="active"/>
+                        <text>3天</text>
+                    </view>
+                    <view class="fk-reward-icon reward-3">
+                        <image src="/static/images/star.png" />
+                        <text>5天</text>
+                    </view>
+                    <view class="fk-reward-icon reward-4">
+                        <image src="/static/images/star.png" />
+                        <text>7天</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

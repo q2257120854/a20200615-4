@@ -1,0 +1,608 @@
+body {
+    background-color: #FFFFFF;
+}
+section.page {
+    background: linear-gradient(to right, #662995 , #60298d);
+}
+
+section.main-wrap {
+    position: relative;
+    width: 100%;
+}
+
+div.banner-wrap {
+    width: 100%;
+    margin-bottom: -3rem;
+}
+
+div.banner-wrap img.banner {
+    width: 100%;
+    height: auto;
+}
+div.content-wrap{
+    padding-bottom: 2rem;
+}
+div.content-wrap div.content-box {
+    margin-bottom: 0.6rem;
+}
+div.content-wrap div.content-box img.title{
+    width: 12rem;
+    margin: 0 0 0.6rem 0;
+}
+div.top-wrap{
+    width: 100%;
+}
+div.top-wrap div.guide-wrap {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+div.guide-wrap div.guide{
+    width: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    /*background-image: url('../image/common/frame_mid.png?v=1.0');*/
+    /*background-repeat: repeat-y;*/
+    /*background-size: 100% 100%;*/
+    /*padding: 0 0.3rem;*/
+}
+img.frame{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.guide-wrap img.frame-top {
+    margin-bottom: -2px;
+}
+
+div.guide-wrap img.frame-bot {
+    margin-top: -2px;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.guide-wrap {
+        font-size: 14px;
+    }
+}
+div.top-wrap div.guide-wrap p.guide-text {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+div.top-wrap div.guide-wrap p.guide-text em {
+    color: #f36431;
+}
+
+
+div.top-wrap div.card-group{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+div.top-wrap div.card-group img.card-wall{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card{
+    position: absolute;
+    margin-left: -1rem;
+}
+div.top-wrap div.card-group div.tarot-card img{
+    display: block;
+    width: 2rem;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card p.card-name{
+    font-size: 14px;
+    color: #783bb0;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.card-group div.tarot-card p.card-name{
+        font-size: 12px;
+    }
+}
+div.top-wrap div.card-group div.tarot-card span{
+    font-size: 10px;
+}
+div.tarot-card-1{
+    top: 12%;
+    left: 50%;
+}
+div.tarot-card-2{
+    top: 50%;
+    left: 15%;
+}
+div.tarot-card-3{
+    top: 50%;
+    right: 5.3%;
+}
+
+
+div.top-wrap div.price-wrap{
+    width: 100%;
+    margin-top: 1.4rem;
+}
+div.top-wrap div.price-wrap p.project-name{
+    width: 100%;
+    padding: 0.2rem 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #c06be4;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap div.price-content{
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #725b49;
+
+}
+div.top-wrap div.price-wrap div.price-box, div.price-wrap div.time-box{
+    font-size: 16px;
+    height: 2.2rem;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+div.top-wrap div.price-wrap div.price-box{
+    width: 5rem;
+}
+div.top-wrap div.price-wrap span.true-price{
+    width: 100%;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.top-wrap div.price-wrap span.true-price label{
+    background-color: #f26c6d;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 0.05rem 0.2rem;
+    white-space:nowrap;
+    margin-right: 0.1rem;
+}
+div.top-wrap div.price-wrap span.true-price em{
+    font-weight: bold;
+    white-space:nowrap;
+    font-size: 20px;
+}
+div.top-wrap div.price-wrap span.false-price{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    color: #a4a39f;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.false-price em{
+    text-decoration: line-through;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.time-title{
+    width: 3rem;
+    text-align: center;
+}
+div.top-wrap div.price-wrap span.time-discount{
+    width: 3rem;
+    color: #f26c66;
+    white-space: nowrap;
+    text-align: center;
+}
+
+div.price-box-2{
+    width: 100%;
+    font-size: 16px;
+    color: #232323;
+    padding: 0.2rem;
+}
+div.price-box-2 div.line-group{
+    width: 100%;
+    height: 1rem;
+}
+div.user-count{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 0.1rem;
+    padding: 0.1rem 0.1rem;
+}
+div.user-count span em{
+    color: #f26c66;
+}
+div.top-wrap img.start-btn{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    z-index: 99;
+}
+div.top-wrap span.start-span{
+    width: 100%;
+    height: 42px;
+    border-radius: 6px;
+    background-color: #45b850;
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    z-index: 99;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+@media screen and (min-width: 640px) {
+    div.top-wrap div.price-wrap p.project-name{
+        font-size: 22px;
+        white-space:nowrap;
+    }
+    div.top-wrap div.price-wrap div.price-box, div.price-wrap div.time-box{
+        font-size: 20px;
+    }
+    div.user-count{
+        font-size: 16px;
+    }
+    div.top-wrap div.price-wrap span.true-price em{
+        font-size: 24px;
+    }
+    div.top-wrap span.start-span{
+        height: 54px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.price-wrap p.project-name{
+        font-size: 16px;
+        white-space:nowrap;
+    }
+    div.top-wrap div.price-wrap div.price-box, div.price-wrap div.time-box{
+        font-size: 14px;
+    }
+    div.user-count{
+        font-size: 12px;
+    }
+    div.top-wrap div.price-wrap span.true-price em{
+        font-size: 18px;
+    }
+    div.top-wrap span.start-span{
+        width: 100%;
+        height: 38px;
+        font-size: 16px;
+    }
+}
+
+img.desc-subtitle{
+    display: block;
+    width: auto;
+    height: 2rem;
+    margin-bottom: 0.6rem;
+    margin-top: -0.1rem;
+}
+div.tarot-box{
+    width: 100%;
+}
+div.tarot-box img.card-image{
+    display: block;
+    width: 2.8rem;
+    height: auto;
+    margin-bottom: 0.3rem;
+}
+div.tarot-box div.card-intro{
+    width: 100%;
+
+}
+div.tarot-box div.card-intro img{
+    display: block;
+    width: 0.6rem;
+    height: auto;
+    margin-right: 0.2rem;
+}
+div.tarot-box div.card-intro span{
+    font-size: 16px;
+    color: #af50d0;
+}
+div.tarot-box div.card-intro span em{
+    font-size: 14px;
+    color: #af50d0;
+}
+
+div.tarot-box div.explan-box{
+    width: 100%;
+    margin-top: 0.4rem;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+div.love div.explan-box p.explan-title{
+    font-size: 18px;
+    color: #e44b5f;
+    line-height: 1.6;
+}
+div.cash div.explan-box p.explan-title{
+    font-size: 18px;
+    color: #d56d06;
+    line-height: 1.6;
+}
+div.cause div.explan-box p.explan-title{
+    font-size: 18px;
+    color: #9278f7;
+    line-height: 1.6;
+}
+div.tarot-box div.explan-box p.explan-text{
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+@media screen and (max-width: 340px) {
+    div.tarot-box div.explan-box p.explan-title{
+        font-size: 16px;
+    }
+    div.tarot-box div.explan-box p.explan-text{
+        font-size: 14px;
+    }
+    div.tarot-box div.card-intro span{
+        font-size: 14px;
+    }
+    div.tarot-box div.card-intro span em{
+        font-size: 12px;
+    }
+}
+div.card-desc{
+    width: 100%;
+    position: relative;
+}
+div.card-desc img.blur-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.card-desc div.parse-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div.card-desc div.parse-box img.item-img{
+    display: block;
+    width: 104%;
+    height: auto;
+}
+div.card-desc div.parse-box ul.parse-list{
+    width: 100%;
+    padding: 0.3rem 0.2rem;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #a432d0;
+    border-radius: 6px;
+}
+div.card-desc div.parse-box ul.parse-list li{
+    width: 100%;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.card-desc div.parse-box ul.parse-list li img{
+    display: block;
+    width: 0.3rem;
+    height: auto;
+    margin-right: 0.2rem;
+}
+div.card-desc div.parse-box ul.parse-list li span{
+    font-size: 16px;
+    white-space:nowrap;
+    line-height: 1.6;
+}
+div.card-desc div.parse-box ul.parse-list li em{
+    font-style: normal;
+    color: #7544e9;
+}
+@media screen and (max-width: 340px) {
+    div.card-desc div.parse-box ul.parse-list li span{
+        font-size: 12px;
+        white-space:nowrap;
+    }
+}
+div.card-desc div.parse-box img.start-btn-mid{
+    margin-top: 1rem;
+    display: block;
+    width: 9.5rem;
+    height: auto;
+}
+img.end-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+div.float-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+div.float-wrap div.float-btn {
+    width: 100%;
+    max-width: 640px;
+    height: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.float-wrap img.start-btn {
+    display: block;
+    width: 11rem;
+    height: auto;
+}
+
+div.unlock-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999999;
+    margin: 0 auto;
+}
+div.unlock-box{
+    width: 11rem;
+    padding: 0.5rem;
+    position: relative;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+div.unlock-box img.close-icon{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.4rem;
+    display: block;
+    width: 0.6rem;
+    height: auto;
+}
+div.unlock-box h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+div.unlock-box p{
+    margin-top: 0.3rem;
+}
+div.unlock-box img.lock-content{
+    display: block;
+    width: 9.6rem;
+    height: auto;
+    margin: 0.6rem 0 0.2rem 0;
+}
+div.unlock-box div.price-box-3{
+    width: 9rem;
+    font-size: 16px;
+    color: #232323;
+    padding: 0.2rem;
+}
+div.unlock-box div.price-box-3 div.line-group{
+    width: 100%;
+    height: 1.2rem;
+}
+img.pay-btn-mid{
+    display: block;
+    width: 9.6rem;
+    height: auto;
+    margin: 0.6rem 0 0.4rem 0;
+}
+
+div.comment-box{
+    width: 100%;
+    padding: 0.8rem 0.6rem 0 0.6rem;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+div.comment-box p.comment-title{
+    width: 100%;
+    color: #9647d3;
+    font-weight: bold;
+    font-size: 22px;
+    white-space:nowrap;
+}
+div.comment-box p.comment-title em{
+    font-weight: bold;
+    color: #e35f61;
+}
+div.comment-box div.detail-data{
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 0.6rem 0;
+}
+div.comment-box div.detail-data span{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    background-color: #a160d6;
+    border-radius: 6px;
+    padding: 0.1rem 0.2rem;
+}
+div.comment-box div.detail-data span img{
+    display: block;
+    width: 18px;
+    height: auto;
+    margin-right: 0.1rem;
+}
+div.comment-box div.detail-data span em{
+    color: #fce558;
+}
+div.comment-box div.labels{
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 0.3rem;
+    color: #a160d6;
+    border-bottom: 1px solid #B9B9B9;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.comment-box div.labels span{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0.1rem 0.15rem;
+    border-radius: 1rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid #a160d6;
+}
+div.comment-box div.labels span:last-child{
+    margin-right: 0;
+}
+@media screen and (max-width: 340px) {
+    div.comment-box p.comment-title{
+        font-size: 18px;
+    }
+    div.comment-box div.detail-data{
+        font-size: 14px;
+    }
+    div.comment-box div.labels{
+        font-size: 12px;
+    }
+    div.comment-box div.upto-wrap {
+        font-size: 14px;
+    }
+}
+div.comment-box {
+    position: relative;
+    overflow: hidden;
+}
+div.comment-box div.upto-wrap{
+    width: 100%;
+    position: relative;
+    height:350px;
+    overflow:hidden;
+    font-size: 16px;
+}
+div.comment-box ul.comment-list{
+    width: 100%;
+    list-style-type: none;
+}
+div.comment-box ul.comment-list li{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #B9B9B9;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    height: 106px !important;
+}
+div.comment-box ul.comment-list li p.user{
+    color: #893cc0;
+    margin-bottom: 0.1rem;
+
+}
+div.comment-box ul.comment-list li P.detail{
+    color: #54524e;
+}
+

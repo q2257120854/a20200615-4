@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-family:'微软雅黑';
+}
+.body1{
+	background:#f1f8fe;
+}
+a:hover{
+	text-decoration:none;
+}
+.con{
+	width:100%;
+	text-align:center;
+}
+.con img{
+	width: 35%;
+	margin-top:5rem;
+}
+.con p{
+	width:100%;
+	line-height:2rem;
+	font-family:'黑体';
+	font-size:1.3rem;
+	margin-bottom: 7rem;
+}
+.con a{
+	width:90%;
+	margin-left:5%;
+	height:3rem;
+	display:block;
+	margin-bottom: 2.5rem;
+	line-height:3rem;
+	text-decoration:none;
+	border-radius:50px;
+	font-size:1rem;
+}
+.con .but1{
+	background: -webkit-linear-gradient(right,#3ea3f5,#1461b9) no-repeat;
+	box-shadow: 0rem 12px 51px #3da1f4;
+	color:#fff;
+}
+.con .but2{
+	color:#1296d8;
+	border:1px solid #1296d8;
+}
+.content{
+	width:100%;
+	text-align:center;
+}
+.content img{
+	margin-top: 2rem;
+}
+.content p{
+	font-size: 1.3rem;
+	color:#434343;
+	margin: 0;
+	margin-top: 0.5rem;
+}
+.text{
+	width:90%;
+	min-height:2rem;
+	background:#fff;
+	margin-top:1rem;
+	font-size: 0.9rem;
+	color:#434343;
+	line-height: 1.7;
+	padding: 1rem 5%;
+	text-align:left;
+	width: 100%;
+}
+.logo{
+	text-align:center;
+	font-size: 0.9rem;
+	color: #666;
+	position: fixed;
+	bottom: 1rem;
+	left: 20%;
+}
+.logo img{
+	width:15%;
+	margin: 0;
+	vertical-align: bottom;
+	margin-right: 3%;
+}
+
+
+/*还款申请提交*/
+.con1{
+	width:100%;
+	text-align:center;
+}
+.con1 img{
+	width: 35%;
+	margin-top:5rem;
+}
+.con1 p{
+	width:100%;
+	line-height:2rem;
+	font-family:'微软雅黑';
+	color:#434343;
+	font-size:1.15rem;
+	margin:0;
+}
+.con1 span{
+	font-size:0.9rem;
+	color:#434343;
+	display:inline-block;
+	width:100%;
+}
+.con1 a{
+	display:inline-block;
+	background:#1176d4;
+	width:40%;
+	font-size:1rem;
+	height:2.5rem;
+	border-radius:40px;
+	color:#fff;
+	line-height:2.5rem;
+	text-align:center;
+	text-decoration:none;
+	margin-top:5rem;
+}

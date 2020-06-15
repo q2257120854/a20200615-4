@@ -1,0 +1,8 @@
+.ui-ruler {position:relative;}
+.ui-ruler .value {z-index:9999;}
+.ui-ruler .ui-ruler-scale-line {position:absolute;width:1px;background-color:gray;height:4px;}
+.ui-ruler .ui-ruler-key-scale-line {position:absolute;width:1px;background-color:gray;height:8px;}
+.ui-ruler .ui-ruler-key-scale-line-number {position:absolute;width:100px;text-align:center;height:8px;line-height:100%;}
+.ui-ruler-padding {position:absolute;}
+.ui-ruler-borderline {position:absolute;width:300px;height:1px;}
+.ui-ruler-pointer {position:absolute;}

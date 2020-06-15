@@ -1,0 +1,574 @@
+body {
+    background-color: #FFFFFF;
+}
+section.page{
+    background-color: #2c1946;
+}
+section.main-wrap {
+    position: relative;
+    width: 100%;
+}
+
+div.banner-wrap {
+    width: 100%;
+    margin-bottom: -6.6rem;
+    position: relative;
+    z-index: 1;
+}
+
+div.banner-wrap img.banner {
+    width: 100%;
+    height: auto;
+}
+div.content-wrap{
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+div.content-wrap div.content-box {
+    margin-bottom: 1rem;
+}
+div.content-wrap div.content-box img.title{
+    margin: 0 0 0.6rem 0 !important;
+}
+div.top-wrap{
+    width: 100%;
+    margin-top: -0.2rem;
+}
+div.top-wrap div.guide-wrap {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+div.guide-wrap div.guide{
+    width: 100%;
+    -webkit-align-items: flex-start;
+    background-image: url('../img/unpay_3/frame_mid.png?v=1.1');
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    padding: 0 0.3rem;
+}
+img.frame{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.guide-wrap img.frame-top {
+    margin-bottom: -2px;
+}
+
+div.guide-wrap img.frame-bot {
+    margin-top: -2px;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.guide-wrap {
+        font-size: 14px;
+    }
+}
+div.top-wrap div.guide-wrap p.guide-text {
+    line-height: 1.6 !important;
+    text-align: justify;
+}
+
+div.top-wrap div.guide-wrap p.guide-text em {
+    color: #f36431;
+}
+
+
+div.top-wrap div.card-group{
+    width: 100%;
+    position: relative;
+}
+div.top-wrap div.card-group img.card-wall{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card{
+    position: absolute;
+}
+div.top-wrap div.card-group div.tarot-card img{
+    display: block;
+    width: 1.6rem;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card p.card-name{
+    font-size: 14px;
+    color: #783bb0;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.card-group div.tarot-card p.card-name{
+        font-size: 12px;
+    }
+}
+div.top-wrap div.card-group div.tarot-card span{
+    font-size: 10px;
+}
+div.tarot-card-1{
+    top: 13.2%;
+    left: 3rem;
+}
+div.tarot-card-2{
+    top: 13.2%;
+    left: 6.5rem;
+}
+div.tarot-card-3{
+    top: 38.2%;
+    left: 0.7rem;
+}
+div.tarot-card-4{
+    top: 38.2%;
+    left: 8.8rem;
+}
+div.tarot-card-5{
+    top: 63.2%;
+    left: 3rem;
+}
+div.tarot-card-6{
+    top: 63.2%;
+    left: 6.5rem;
+}
+
+
+
+div.top-wrap div.price-wrap{
+    width: 100%;
+    margin-top: 0.4rem;
+}
+div.top-wrap div.price-wrap p.project-name{
+    width: 100%;
+    color: #7f57a5;
+    font-weight: bold;
+    font-size: 20px;
+    white-space:nowrap;
+    margin-bottom: -0.1rem;
+}
+div.top-wrap div.price-wrap div.price-content{
+    position: relative;
+    margin-left: 0.5rem;
+}
+div.top-wrap div.price-wrap div.price-content img.wall{
+    display: block;
+    width: 11rem;
+    height: auto;
+}
+div.top-wrap div.price-wrap div.wall-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.1rem 0.4rem 0.5rem;
+}
+div.price-wrap div.price-box, div.price-wrap div.time-box{
+    font-size: 16px;
+    height: 100%;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    position: relative;
+}
+div.top-wrap div.price-wrap div.price-box{
+    width: 5rem;
+}
+div.top-wrap div.price-wrap span.true-price{
+    width: 100%;
+}
+div.top-wrap div.price-wrap span.true-price label{
+    background-color: #f2753d;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 0 0.2rem;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.true-price em{
+    font-weight: bold;
+    white-space:nowrap;
+    font-size: 18px;
+}
+div.top-wrap div.price-wrap span.false-price{
+    width: 100%;
+    color: #7c7c7f;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.false-price em{
+    text-decoration: line-through;
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.time-title{
+    white-space:nowrap;
+}
+div.top-wrap div.price-wrap span.time-discount{
+    color: #f38f5b;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.6rem;
+    z-index: 999;
+    white-space:nowrap;
+}
+
+div.top-wrap div.price-box-2{
+    width: 100%;
+    font-size: 16px;
+    color: #232323;
+    padding: 0.2rem;
+}
+div.top-wrap div.price-box-2 div.line-group{
+    width: 100%;
+    height: 1rem;
+}
+div.user-count{
+    width: 100%;
+    font-size: 14px;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+}
+div.user-count span em{
+    color: #eb5e2c;
+}
+
+@media screen and (max-width: 340px) {
+    div.top-wrap div.price-wrap p.project-name{
+        font-size: 16px;
+        white-space:nowrap;
+    }
+    div.top-wrap div.price-wrap div.price-box, div.price-wrap div.time-box{
+        font-size: 14px;
+    }
+    div.top-wrap div.price-wrap span.true-price em{
+        font-size: 14px;
+    }
+    div.user-count{
+        font-size: 12px;
+    }
+}
+
+
+
+
+div.top-wrap img.start-btn{
+    position: relative;
+    display: block;
+    width: 10.4rem;
+    height: auto;
+    margin-top: 0.5rem;
+    z-index: 99;
+}
+
+
+
+img.desc-subtitle{
+    display: block;
+    width: 10rem;
+    height: auto;
+    margin-bottom: 0.4rem;
+    margin-top: -0.2rem;
+}
+div.tarot-box{
+    width: 100%;
+}
+div.tarot-box img.card-image{
+    display: block;
+    width: 3rem;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+div.tarot-box div.card-intro{
+    width: 100%;
+
+}
+div.tarot-box div.card-intro img{
+    display: block;
+    width: 0.6rem;
+    height: auto;
+    margin-right: 0.2rem;
+}
+div.tarot-box div.card-intro span{
+    font-size: 16px;
+    color: #a654f7;
+}
+
+div.tarot-box div.explan-box{
+    width: 100%;
+    margin-top: 0.4rem;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+div.tarot-box div.explan-box p.explan-title{
+    font-size: 18px;
+    color: #d75016;
+    line-height: 1rem;
+}
+div.tarot-box div.explan-box p.explan-text{
+    font-size: 16px;
+    color: #000000;
+    line-height: 0.8rem;
+}
+@media screen and (max-width: 340px) {
+    div.tarot-box div.explan-box p.explan-title{
+        font-size: 16px;
+    }
+    div.tarot-box div.explan-box p.explan-text{
+        font-size: 14px;
+    }
+}
+div.tarot-box img.rate{
+    display: block;
+    width: 10rem;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: -0.2rem;
+}
+div.card-desc{
+    width: 100%;
+    position: relative;
+    margin-top: 0.4rem;
+}
+div.card-desc img.blur-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.card-desc div.parse-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div.card-desc div.parse-box ul.parse-list{
+    width: 90%;
+    padding: 0.3rem 0.2rem;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #e7c08f;
+    border-radius: 4px;
+    margin-top: 1.2rem;
+    background-color: #fffcf1;
+}
+div.card-desc div.parse-box ul.parse-list li{
+    width: 100%;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    height: 1rem;
+}
+div.card-desc div.parse-box ul.parse-list li img{
+    display: block;
+    width: 0.3rem;
+    height: auto;
+    margin-right: 0.2rem;
+}
+div.card-desc div.parse-box ul.parse-list li span{
+    font-size: 16px;
+    white-space:nowrap;
+}
+div.card-desc div.parse-box ul.parse-list li em{
+    font-style: normal;
+    color: #7544e9;
+}
+@media screen and (max-width: 340px) {
+    div.card-desc div.parse-box ul.parse-list li span{
+        font-size: 12px;
+        white-space:nowrap;
+    }
+}
+div.card-desc div.parse-box img.start-btn-mid{
+    margin-top: 1.2rem;
+    display: block;
+    width: 8rem;
+    height: auto;
+}
+img.end-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+div.float-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+div.float-wrap div.float-btn {
+    width: 100%;
+    max-width: 640px;
+    height: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+div.float-wrap div.float-btn img.start-btn{
+    display: block;
+    width: 10rem;
+    height: auto;
+}
+
+div.unlock-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999999;
+    margin: 0 auto;
+}
+div.unlock-box{
+    width: 11rem;
+    padding: 0.5rem;
+    position: relative;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+div.unlock-box img.close-icon{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.4rem;
+    display: block;
+    width: 0.6rem;
+    height: auto;
+}
+div.unlock-box h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+div.unlock-box p{
+    margin-top: 0.3rem;
+}
+div.unlock-box img.lock-content{
+    display: block;
+    width: 9.6rem;
+    height: auto;
+    margin: 0.6rem 0 0.2rem 0;
+}
+div.unlock-box div.price-box-3{
+    width: 9rem;
+    font-size: 16px;
+    color: #232323;
+    padding: 0.2rem;
+}
+div.unlock-box div.price-box-3 div.line-group{
+    width: 100%;
+    height: 1.2rem;
+}
+img.pay-btn-mid{
+    display: block;
+    width: 9.6rem;
+    height: auto;
+    margin: 0.6rem 0 0.4rem 0;
+}
+
+div.comment-box{
+    width: 100%;
+    padding: 0.8rem 0.6rem 0rem 0.6rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+}
+
+div.comment-box p.comment-title{
+    width: 100%;
+    color: #9b66e8;
+    font-weight: bold;
+    font-size: 22px;
+    white-space:nowrap;
+}
+div.comment-box p.comment-title em{
+    font-weight: bold;
+    color: #e0783e;
+}
+div.comment-box div.detail-data{
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+div.comment-box div.detail-data span{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    background-color: #9b66e8;
+    border-radius: 6px;
+    padding: 0.1rem 0.2rem;
+}
+div.comment-box div.detail-data span img{
+    display: block;
+    width: 0.6rem;
+    height: auto;
+    margin-right: 0.1rem;
+}
+div.comment-box div.detail-data span em{
+    color: #ffff00;
+}
+div.comment-box div.labels{
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #cecece;;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.comment-box div.labels span{
+    padding: 0.14rem 0.16rem;
+    background-color: #fcd0b9;
+    border-radius: 1rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+div.comment-box div.labels span:last-child{
+    margin-right: 0;
+}
+@media screen and (max-width: 340px) {
+    div.comment-box p.comment-title{
+        font-size: 18px;
+    }
+    div.comment-box div.detail-data{
+        font-size: 14px;
+    }
+    div.comment-box div.labels{
+        font-size: 12px;
+    }
+    div.comment-box div.upto-wrap {
+        font-size: 14px;
+    }
+}
+div.comment-box {
+    position: relative;
+    overflow: hidden;
+}
+div.comment-box div.upto-wrap{
+    width: 100%;
+    position: relative;
+    height:440px;
+    overflow:hidden;
+    font-size: 16px;
+}
+div.comment-box ul.comment-list{
+    width: 100%;
+    list-style-type: none;
+}
+div.comment-box ul.comment-list li{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #7c7972;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    height: 100px !important;
+}
+div.comment-box ul.comment-list li p.user{
+    color: #8749E3;
+    margin-bottom: 0.2rem;
+
+}
+div.comment-box ul.comment-list li P.detail{
+    color: #54524e;
+}
+

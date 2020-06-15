@@ -1,0 +1,10 @@
+<view class="fk-ccontainer">
+    <view class="fk-header-container">
+        <text class="fk-font-20">完成每日答题即可获得高额奖励</text>
+        <text class="fk-font-16">全部答对可奖励 {{maxIntegral}} 积分！</text>
+    </view>
+    <view class="fk-footer">
+        <text class="fk-footer-times">剩余挑战次数：联系wx：suncentwl</text>
+        <view class="fk-footer-button" bindtap="startGame">联系wx：suncentwl</view>
+    </view>
+</view>

@@ -1,0 +1,287 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<script type="text/javascript" src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+		<title>API设置</title>
+		<style type="text/css">
+			.layer-anim{
+				top:180px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>API设置</h5>
+			</div>
+			<div class="public-selectArea public-selectArea1 margin_10">
+				<form action="{:U('Setting/api')}" method="post">
+					<div class="clearfix clearfix1"  style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>数据Key：</dt>
+								<dd>
+									<input type="text" name="ugappkey" value="{$Think.config.ugappkey|default=''}" />
+								</dd>
+								<em class="tishi">调用接口数据账户分配的appkey，若无请至<a href="http://www.xauguo.cn" target="_blank">优果数据</a>注册申请</em>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>短信类型：</dt>
+								<dd>
+									<label><input type="radio" name="sms_types" value="0" <if condition="$Think.config.sms_types eq 0">checked</if> >云信使</label>
+									<label><input type="radio" name="sms_types" value="1" <if condition="$Think.config.sms_types eq 1">checked</if> >华信</label>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>短信签名：</dt>
+								<dd>
+									<input type="text" name="sms_name" value="{$Think.config.sms_name|default=''}" />
+								</dd>
+								<em class="tishi">签名以汉字组成，常常代表网站名称或机构名称</em>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>云信短信账号：</dt>
+								<dd>
+									<input type="text" name="sms_muser" value="{$Think.config.sms_muser|default=''}" />
+								</dd>
+								
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>云信短信密码：</dt>
+								<dd>
+									<input type="text" name="sms_mpass" value="{$Think.config.sms_mpass|default=''}" />
+								</dd>
+							
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>云信短信剩余条数：</dt>
+								<dd>
+								
+									<span style="color: #ff0000;line-height: 28px;">{$nums|default="未获取"}</span>（欠费请自行充值，网址http://sms.sms.cn/login.php?cgh）
+								</dd>
+							
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>飞鸽账号：</dt>
+								<dd>
+									<input type="text" name="sms_cymuser" value="{$Think.config.sms_cymuser|default=''}" />
+								</dd>
+								
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>飞鸽秘钥：</dt>
+								<dd>
+									<input type="text" name="sms_cympass" value="{$Think.config.sms_cympass|default=''}" />
+								</dd>
+							
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>飞鸽短信剩余条数：</dt>
+								<dd>
+								
+									<span style="color: #ff0000;line-height: 28px;">{$cynums|default="未获取"}</span>（）
+								</dd>
+							
+							</dl>
+						</div>
+					</div>						
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>支付宝商户号：</dt>
+								<dd>
+									<input type="text" name="alipayPartner" value="{$Think.config.alipayPartner|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>支付宝密钥：</dt>
+								<dd>
+									<input type="text" name="alipayKey" value="{$Think.config.alipayKey|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>用户注册短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="reg_code_tpl">{$Think.config.reg_code_tpl|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">使用（<@>）代替验证码</em>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>找回密码短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="find_code_tpl">{$Think.config.find_code_tpl|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">使用（<@>）代替验证码</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>资料通过短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="info_adopt">{$Think.config.info_adopt|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">网站名称使用（<@sitename@>）代替</br>信用额度使用（<@quota@>）代替</br>提现密码使用（<@tpss@>）代替</em>
+							</dl>
+						</div>
+					</div>
+
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>资料驳回短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="info_refuse">{$Think.config.info_refuse|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">网站名称使用（<@sitename@>）代替</em>
+							</dl>
+						</div>
+					</div>
+
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>资料重置短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="info_reset">{$Think.config.info_reset|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">网站名称使用（<@sitename@>）代替</em>
+							</dl>
+						</div>
+					</div>
+
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>提现短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="loan_submit">{$Think.config.loan_submit|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">借款订单号使用（<@>）代替</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>退款维护：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="loan_adopt">{$Think.config.loan_adopt|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">借款订单号使用（<@>）代替</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>借款驳回短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="loan_refuse">{$Think.config.loan_refuse|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">借款订单号使用（<@>）代替，网站名称使用（<@sitename@>）代替</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>账单提醒短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="bill_remind">{$Think.config.bill_remind|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">借款订单号使用（<@>）代替，账单期数使用（<@num@>）代替，设置后短信将在用户账单到期前三天内发送一次</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>账单逾期短信模板：</dt>
+								<dd>
+									<textarea rows="3" style="height: 60px;width: 325px;" name="bill_overdue">{$Think.config.bill_overdue|htmlspecialchars_decode|default=''}</textarea>
+								</dd>
+								<em class="tishi">借款订单号使用（<@>）代替，账单期数使用（<@num@>）代替，设置后短信将在用户账单到期后发送一次</em>
+							</dl>
+						</div>
+					</div>
+					
+				</form>
+				<div class="btnArea margin_20">
+					<a href="javascript:;" class="btn btn-grayBg">
+						<span class="public-label">提交</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".btnArea a").on('click',function(){
+				cvphp.submit($("form"),function(data){
+					if(data.status!=1){
+						layer.msg(data.info);
+					}else{
+						layer.alert('保存成功');
+					}
+				});
+			});
+		});
+	</script>
+</html>

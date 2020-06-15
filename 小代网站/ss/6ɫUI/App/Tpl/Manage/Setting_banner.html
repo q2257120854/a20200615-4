@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>轮播图管理</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>轮播图列表</h5>
+			</div>
+			<div class="public-btnArea">
+	        	<a href="{:U('Setting/add')}" class="btn btn-grayBg">
+	            	<i class="glyphicon glyphicon-plus public-ico"></i>
+	                <span class="public-label">添加轮播图</span>
+	            </a>
+	            演示站此功能以禁
+        	</div>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>轮播图</th>
+                          	<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<php>$status = array('禁用','启用');</php>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.id}</td>						
+							<td><img src="{$vo.siteLogo}" style="width:40px;height:40px;"></td>
+							<td>{$status[$vo['status']]}</td>
+							<td class="text-left">
+								
+								<a href="{:U('Setting/edit',array('id'=>$vo['id']))}">编辑</a>
+								<a href="javascript:delAdmin('{$vo.id}');">删除</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		function delAdmin(id){
+			layer.confirm(
+				'确定要删除该轮播图吗？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Setting/del')}",
+						{
+							id:id
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								$("#list-"+id).remove();
+								layer.msg("操作成功");
+							}
+						}
+					);
+				}
+			);
+		}
+	</script>
+</html>

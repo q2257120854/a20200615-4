@@ -1,0 +1,137 @@
+.dialog-content { padding: 30px; } #content-drawer { background: white;  color:grey; } #content-main { padding: 20px; width: 100%; background: white; font-size: 50px; color:#fff; } #content-footer { padding: 30px; }
+
+
+
+a:link {color: skyblue} /* 未访问的链接 */
+a:visited {color: skyblue} /* 已访问的链接 */
+a:hover {color: skyblue} /* 鼠标移动到链接上 */
+a:active {color: skyblue} /* 选定的链接 */
+/* Generics */
+.DlHighlight .keyword{color:#00f;}
+
+.DlHighlight .builtin{color:#22c;}
+
+.DlHighlight .string{color:#282;}
+.DlHighlight .string .before, .DlHighlight .string .after{color:#040;}
+
+.DlHighlight .regexp{color:#b2c;}
+.DlHighlight .regexp .before, .DlHighlight .regexp .after{color:#509;}
+
+.DlHighlight .comment{color:#c22;}
+.DlHighlight .comment-line{color:#999;}
+.css .comment-line{color:#22c;}
+.DlHighlight .comment .before, .DlHighlight .comment .after{color:#baa;}
+.DlHighlight .comment-multiline{color:#999;}
+.DlHighlight .comment-multiline .before, .DlHighlight .comment-multiline .after{color:#999;}
+
+
+
+.DlHighlight .hashkey{color:#a51;}
+
+.DlHighlight .hasharrow{color:#f00;}
+
+.DlHighlight .paren{color:#000099;}
+
+.DlHighlight .operator{color:#077;}
+
+.DlHighlight .error{background-color:#c00; color:#fff;}
+
+.DlHighlight .defun{}
+
+.DlHighlight .line-numbers {
+  float:left;
+  margin-left:-4.5em;
+  width:3em;
+  text-align:right;
+  color:#999;
+  font:0.9em tahoma,verdana,sans-serif;
+  padding-top:0.05em;
+}
+.DlHighlight .line-numbers:after{content:"." }
+
+/* XML */
+
+.DlHighlight .xml-tag-close .before{color:#52a;}
+
+.DlHighlight .xml-entity{color:#b2a;}
+.DlHighlight .xml-entity .before, .DlHighlight .xml-entity .after{color:#607;}
+.DlHighlight .xml-tag{font-weight:normal;}
+/* CSS */
+.DlHighlight .css-block-open,.DlHighlight .css-block-close{color:#f0f;}
+.DlHighlight .css-class{color:#f0f;}
+.DlHighlight .css-pseudo-class{color:#f0f;}
+.DlHighlight .css-id{color:#ff00ff;}
+.DlHighlight .css-color-spec{color:#0000ff;}
+.DlHighlight .css-length{color:#0000ff;}
+.DlHighlight .css-length .after{}
+.DlHighlight .css-declaration-kw{color:#000099;}
+.DlHighlight .css-comma{color:red;}
+
+.works-wrap {
+    max-width: 1500px;
+    margin: auto;
+}
+.works-con {
+    padding: 0;
+    margin: 0 -.5em;
+    list-style: none;
+    overflow: hidden;
+}
+.works-item {
+    display: inline-block;
+    min-width: 150px;
+    width: calc(20% - 1em);
+    margin: 20px .5em 0;
+    background: AppWorkspace;
+	vertical-align: top;
+}
+.works-item-t {
+    padding-bottom: 133%;
+    position: relative;
+}
+.works-item-t > img {
+    position: absolute;
+    width: 100%; height: 100%;
+}
+.works-item-b {
+    margin: .5em .5em 1em;
+}
+.works-item-h {
+    margin: 10px 0 0;
+    color: CaptionText;
+    font-size: 100%;
+}
+.works-btn-box {
+    padding-top: 10px;
+}
+.works-btn {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 87.5%;
+    line-height: 25px;
+    text-decoration: none;
+    background: DarkGoldenrod;
+    color: White;
+}
+
+@media screen and (max-width: 1000px) {
+    .works-item {
+        width: calc(25% - 1em);
+    }
+}
+@media screen and (max-width: 768px) {
+    .works-item {
+        width: calc(33.3% - 1em);
+    }
+}
+@media screen and (max-width: 580px) {  
+    .works-item {
+        width: calc(50% - 1em);
+    }
+}
+@media screen and (max-width: 400px) {  
+    .works-item {
+        width: calc(100% - 1em);
+    }
+}
+

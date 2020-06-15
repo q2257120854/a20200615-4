@@ -1,0 +1,10 @@
+<view class="fk-ccontainer">
+  <view class="fk-header-container">
+    <text class="fk-font-20 fk-margin-b20">玩法介绍</text>
+    <text class="fk-font-16">点击下方“开始匹配”后，您将会随机匹配到 1 、2 或 4 名队友；每次答题的时候，队伍中每个成员都需要作答，最终每个成员答题成绩的总和为该队伍的总成绩；答对题目数量多的或用时最短的队伍获胜！</text>
+  </view>
+  <view class="fk-footer">
+    <text class="fk-footer-times">剩余挑战次数：{{availableTimes}}次</text>
+    <view class="fk-footer-button" bindtap="startGame">开始匹配</view>
+  </view>
+</view>

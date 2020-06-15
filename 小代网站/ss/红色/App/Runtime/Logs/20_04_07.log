@@ -1,0 +1,1195 @@
+[ 2020-04-07T23:53:53+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.003506s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000139s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010987s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000596s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000412s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001819s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000411s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2020-04-07T23:53:54+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004141s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008333s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000289s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000244s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001322s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2020-04-07T23:54:14+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004948s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000198s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009953s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000590s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001712s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001248s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2020-04-07T23:54:42+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004449s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000183s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.112740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112773s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000472s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000340s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001563s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2020-04-07T23:54:46+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005009s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010282s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000413s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000292s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000268s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000424s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2020-04-07T23:54:50+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004946s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000165s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008625s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000400s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000366s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000353s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Repay/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000476s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Index/login.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.108090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108174s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000472s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001584s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Index/verify.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Repay/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Index/login.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000363s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006887s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000327s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000291s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001281s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2020-04-07T23:54:51+08:00 ] 127.0.0.1 /index.php/Index/verify.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000427s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2020-04-07T23:54:52+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005406s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000146s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009890s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000461s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000200s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000318s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2020-04-07T23:54:53+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000423s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.010356s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009078s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000459s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000366s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000252s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001802s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2020-04-07T23:54:54+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000429s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004277s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000143s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008571s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000440s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000338s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001488s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000443s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2020-04-07T23:55:27+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005201s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000253s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000391s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000297s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2020-04-07T23:55:39+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005363s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000146s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010020s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000541s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000272s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000314s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-04-07T23:55:40+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000427s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.006471s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000241s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011739s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000488s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000309s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-04-07T23:56:42+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000372s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004845s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000182s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000671s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000537s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002330s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000672s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2020-04-07T23:57:49+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.003543s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000144s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009801s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000483s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001590s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2020-04-07T23:57:50+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005494s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011880s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000475s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000291s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001501s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2020-04-07T23:58:05+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.005016s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000249s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014493s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000590s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000327s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001649s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000536s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2020-04-07T23:58:23+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000481s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.006416s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009608s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000391s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000298s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2020-04-07T23:58:25+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000383s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.006758s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012586s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000781s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000382s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001919s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2020-04-07T23:58:42+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.007053s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000159s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010084s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000406s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000640s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002793s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000411s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2020-04-07T23:58:49+08:00 ] 127.0.0.1 /index.php/Index/index.shtml
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000455s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `cv_info` [ RunTime:0.004975s ]
+SQL: SELECT * FROM `cv_info` WHERE ( `uid` = null ) LIMIT 1   [ RunTime:0.000254s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012233s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000658s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002391s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2020-04-07T23:59:13+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+
+[ 2020-04-07T23:59:14+08:00 ] 127.0.0.1 /index.php?m=Index&a=login
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007674s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000364s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000468s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001922s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000508s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2020-04-07T23:59:14+08:00 ] 127.0.0.1 /index.php?m=Index&a=captcha
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+
+[ 2020-04-07T23:59:29+08:00 ] 127.0.0.1 /index.php?m=Index&a=login
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `cv_admin` [ RunTime:0.098966s ]
+SQL: SELECT * FROM `cv_admin` WHERE ( `username` = 'admin' ) AND ( `password` = 'ddc3d9ac469ea4c10a4667d1412653cb10be0046' ) LIMIT 1   [ RunTime:0.045885s ]
+SQL: UPDATE `cv_admin` SET `last_ip`='127.0.0.1',`last_time`=1586275169 WHERE ( `id` = 1 ) [ RunTime:0.013294s ]
+
+[ 2020-04-07T23:59:29+08:00 ] 127.0.0.1 /index.php?m=Index&a=index
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\phpstudy_pro\WWW\xy.pro\App\Lib\TagLib\TagLibCvphp.class.php on line 26 and defined D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\phpstudy_pro\WWW\xy.pro\Base\Lib\Template\TagLib.class.php 第 92 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008092s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000351s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000281s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001377s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2020-04-07T23:59:29+08:00 ] 127.0.0.1 /index.php?m=Index&a=main
+NOTIC: [8] Undefined index: test D:\phpstudy_pro\WWW\xy.pro\App\Conf\site.php 第 1 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `cv_user` [ RunTime:0.017628s ]
+SQL: SHOW COLUMNS FROM `cv_loanorder` [ RunTime:0.030326s ]
+SQL: SHOW COLUMNS FROM `cv_loanbill` [ RunTime:0.032394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_user` WHERE ( `reg_time` >= 1586188800 ) LIMIT 1   [ RunTime:0.062162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cv_loanorder` WHERE ( `add_time` >= 1586188800 ) LIMIT 1   [ RunTime:0.009189s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `add_time` >= 1586188800 ) GROUP BY oid  [ RunTime:0.025686s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `add_time` >= 1586188800 ) LIMIT 1   [ RunTime:0.006744s ]
+SQL: SELECT * FROM `cv_loanbill` GROUP BY oid  [ RunTime:0.006505s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) GROUP BY oid  [ RunTime:0.008454s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` IN ('0','1') ) LIMIT 1   [ RunTime:0.001198s ]
+SQL: SELECT * FROM `cv_loanbill` WHERE ( `status` = 1 ) GROUP BY oid  [ RunTime:0.007766s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `cv_loanbill` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.005137s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011106s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000891s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000716s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001050s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003487s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000506s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000530s ]
+

@@ -1,0 +1,7 @@
+<!--components/ui-toast/index.wxml-->
+<view class='wx-toast-box' animation="{{animationData}}" hidden='{{hidden}}'>
+    <view class='wx-toast-content'>
+        <image style='width:36px;height:36px' mode='aspectFit' src="{{imageUrl}}" hidden='{{!imageUrl}}'></image>
+        <text class='wx-toast-toast'>{{ content }}</text>
+    </view>
+</view>

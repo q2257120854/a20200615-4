@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "每日答题",
+    "usingComponents": {
+        "ui-mask": "/components/ui-mask/index"
+    }
+}

@@ -1,0 +1,7 @@
+1.修改域名配置文件：“/App/Conf/domain.php”
+
+2.修改数据库配置文件：“/App/Conf/database.php”
+
+后台admin  密码123456
+
+更多资源关注三岁半资源网-sansuib.com

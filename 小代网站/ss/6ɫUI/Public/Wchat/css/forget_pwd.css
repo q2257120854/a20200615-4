@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.res_con{
+	width: 94%;
+	min-height:2rem;
+	float:left;
+	margin-left: 3%;
+}
+.res_con ul{
+	background:#fff;
+	border-radius: 11px;
+	width:100%;
+	min-height:2rem;
+	float:left;
+}
+.res_con li{
+	width:100%;
+	height: 3rem;
+	line-height: 3rem;
+	border-bottom:1px solid #ebebeb;
+	position:relative;
+}
+.res_con .user{
+	background: url(../images/iphone_text.png) no-repeat center left 3%;
+	width:100%;
+	height:2.5rem;
+	outline:none;
+	background-size: 8%;
+	font-size: 0.9rem;
+	text-indent: 12%;
+	border: 0;
+}
+.res_con .yzm{
+	background: url(../images/yzm.png) no-repeat center left 4%;
+	width:100%;
+	height:2.5rem;
+	outline:none;
+	background-size: 5%;
+	font-size: 0.9rem;
+	text-indent: 12%;
+	border: 0;
+}
+.res_con .pwd{
+	background: url(../images/pwd.png) no-repeat center left 3%;
+	width:100%;
+	height: 3rem;
+	outline:none;
+	background-size: 8%;
+	font-size: 0.9rem;
+	text-indent: 12%;
+	border: 0;
+}
+.res_con .yz button{
+	position:absolute;
+	width: 30%;
+	line-height: 2rem;
+	height:2rem;
+	display:block;
+	color:#fff;
+	right:3%;
+	background:#1776d4;
+	font-size: 0.9rem;
+	top: 0.5rem;
+	text-align: center;
+	border-radius: 7px;
+	border: 0;
+}
+.res_con .abut1{
+	 width: 94%;
+	 margin-left: 3%;
+	 height: 3rem;
+	 display: block;
+	 margin-bottom: 2.5rem;
+	 line-height: 3rem;
+	 text-decoration: none;
+	 border-radius: 50px;
+	 font-size: 1rem;
+     background: -webkit-linear-gradient(left,#b0bdc7,#6285ad) no-repeat;
+     box-shadow: 0rem 12px 51px #8c9dab;
+	 color: #fff;
+	 margin-top: 2rem;
+	 text-align: center;
+	 float: left;
+	 border: 0;
+}
+.res_con .abut {
+	width: 94%;
+	margin-left: 3%;
+	height: 3rem;
+	display: block;
+	margin-bottom: 2.5rem;
+	line-height: 3rem;
+	text-decoration: none;
+	border-radius: 50px;
+	font-size: 1rem;
+	background: -webkit-linear-gradient(left,#3ea3f5,#1461b9) no-repeat;
+	box-shadow: 0rem 12px 51px #3da1f4;
+	color: #fff;
+	margin-top: 2rem;
+	text-align: center;
+	float: left;
+	border: 0;
+}
+.verify{
+	z-index: 999;
+    position: absolute;
+    top: 3rem;
+    width: 94%;
+    background-color: #fafafa;
+    border-radius: 12px;
+    display: none;
+}
+.verify .btn{
+    width: 45%;
+    display: inline-block;
+    height: 3rem;
+    line-height: 2rem;
+    background: #e4e0e0;
+    text-align: center;
+    border-radius: 56px;
+    font-size: 1.2rem;
+    color: #31ab6d;
+    font-weight: 700;
+    font-family: '微软雅黑';
+    border: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.verify .btnred{
+    width: 45%;
+    display: inline-block;
+    height: 3rem;
+    line-height: 2rem;
+    background: #e4e0e0;
+    text-align: center;
+    border-radius: 56px;
+    font-size: 1.2rem;
+    color: #e04b67;
+    font-weight: 700;
+    font-family: '微软雅黑';
+    border: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.verify p img{
+	width: 8rem;
+	margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.verify input{
+    color: #666;
+    font-size: 25px;
+    width: 8rem;
+    text-align: center;
+}
+.verify p{
+	margin-top: none;
+	margin-bottom: 0;
+    text-align: center;
+}
+.zhezhao{
+    background-color: rgb(137, 146, 142, 0.55);
+    filter: alpha(opacity=20);
+    background-color: rgba(137, 146, 142, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}

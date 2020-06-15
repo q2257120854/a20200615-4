@@ -1,0 +1,52 @@
+<view style="padding:10px">
+    <view class="fk-season animated fadeInDownBig">
+        <image class="fk-season-info" src="/static/images/question.png" bindtap="showIntro" />
+        <text class="fk-season-header">{{seasonTitle}}</text>
+        <text class="fk-season-header-2">{{seasonSubtitle}}</text>
+        <view class='fk-flex fk-flex-content-betwwen fk-flex-items-center' style='width:100%;'>
+            <view class="fk-integral">
+                <image src="/static/images/money.png" />
+                <text class="fk-font-16">{{userIntegral}}</text>
+            </view>
+            <text class="fk-season-time">{{seasonStartDate}}-{{seasonEndDate}}</text>
+        </view>
+    </view>联系wx：suncentwl
+
+    <view class='animated fadeInUpBig' wx:for="{{gameLevelList}}" wx:key="{{index}}" style="position:relative;">
+        <view class="fk-level {{item.value == userLevel + 1 ? 'disabled' : ''}}" data-level="{{item.value}}" wx:if="{{item.value <= userLevel + 1}}" bindtap="startGame">
+            <image class="fk-level-icon" src="{{item.image}}" />
+            <view class="fk-level-text">
+                <text>{{item.name}}</text>
+            </view>
+            <view class="fk-level-star" wx:if="{{item.star > 0}}">
+                <block wx:for="{{item.star}}" wx:key="{{oindex}}" wx:for-item="oitem" wx:for-index="oindex">
+                    <image src="/static/images/starminifill.png" wx:if="{{item.value < userLevel}}"/><!--低段位-->
+                    <image src="/static/images/starmini.png" wx:elif="{{item.value == userLevel + 1}}" /><!--高段位-->
+                    <image src="/static/images/starmini.png" wx:elif="{{item.value == userLevel && oindex < item.star - starCount}}"/><!--当前段位-->
+                    <image src="/static/images/starminifill.png" wx:else/>
+                </block>
+            </view>
+        </view>
+        <image class="fk-level-locked" src="/static/images/lock.png" wx:if="{{item.value == userLevel + 1}}" />
+    </view>
+
+    <!--倔强青铜-->
+    <!-- <view class="fk-level" bindtap="startGame">
+        <image class="fk-level-icon" src="/static/images/bronze.png" />
+        <view class="fk-level-text">
+            <text>倔强青铜联系wx：suncentwl</text>
+        </view>
+    </view> -->
+
+    <!--不屈白银-->
+  
+
+    <!--荣耀黄金-->
+  
+
+    <!--华贵白金-->
+ 
+
+    <!--更多-->
+    <image class="fk-more animated fadeInUpBig" src="/static/images/more.png" wx:if="{{userLevel < 5}}" />
+</view>

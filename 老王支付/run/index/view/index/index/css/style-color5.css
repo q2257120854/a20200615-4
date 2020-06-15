@@ -1,0 +1,69 @@
+.page .content .subhead {
+	color: #fff;
+}
+.page{
+	background: #1d1d1d;
+}
+.pane-when::after {
+	display: none;
+}
+.p-footer .arrow-d {
+	background: #fff;
+}
+.p-footer .arrow-d .circle{
+	color: #1d1d1d;
+}
+.p-footer .arrow-d:hover .circle{
+	color: #fff;
+	opacity: 0;
+}
+.quick-link {
+	background: #fff;
+}
+.quick-link a {
+	color: #1d1d1d;
+}
+.quick-link ul li.active::after {
+    background: #CFCFCE;
+}
+.quick-link ul li.active a {
+/*	color: #fff;*/
+}
+.quick-link ul li.active a:hover {
+	color: #fff;
+}
+.quick-link li::before {
+    border-bottom: 1px solid rgba(29, 29, 29, 0.14);
+}
+
+.quick-link a:hover:after{
+	background: #1d1d1d;
+}
+.quick-link a:hover{
+	color: #fff;
+}
+.page .content .subhead a {
+    color: #1d1d1d;
+    background: #fff;
+    display: inline-block;
+    padding: 0 8px;
+	padding-bottom: 1px;
+/*    line-height: ;*/
+}
+.page-cent .p-title h3 {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.page .form button {
+    background: #fff;
+	color: #1d1d1d;
+}
+.page .form button:hover {
+    background: #1d1d1d;
+	color: #ffffff;
+}
+.page .form button:after{
+	background: #1d1d1d;
+}
+.page .form .fields{
+    border-bottom-color: #ffffff;
+}

@@ -1,0 +1,58 @@
+
+
+
+计划任务：  shell脚本 一分钟刷新一次
+
+
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+step=3
+for (( i = 0; i < 60; i=(i+step) )); do
+curl -sS --connect-timeout 10 -m 60 'http://这里写域名/server/alipaygm/chazt'
+echo "----------------------------------------------------------------------------"
+endDate=`date +"%Y-%m-%d %H:%M:%S"`
+echo "★[$endDate] Successful"
+echo "----------------------------------------------------------------------------"
+sleep $step
+done
+exit 0
+echo "----------------------------------------------------------------------------"
+endDate=`date +"%Y-%m-%d %H:%M:%S"`
+echo "★[$endDate] Successful"
+echo "----------------------------------------------------------------------------"
+                     
+                     
+                     
+
+                     
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+step=3
+for (( i = 0; i < 60; i=(i+step) )); do
+curl -sS --connect-timeout 10 -m 60 'http://这里写域名/server/alipaygm/takehb'
+echo "----------------------------------------------------------------------------"
+endDate=`date +"%Y-%m-%d %H:%M:%S"`
+echo "★[$endDate] Successful"
+echo "----------------------------------------------------------------------------"
+sleep $step
+done
+exit 0
+echo "----------------------------------------------------------------------------"
+endDate=`date +"%Y-%m-%d %H:%M:%S"`
+echo "★[$endDate] Successful"
+echo "----------------------------------------------------------------------------"
+
+
+注意。上面的两个是shell脚本。下面的三个是 URL访问
+
+http://这里写域名/server/index/update	  这个是一分钟刷新一次
+http://这里写域名/server/index/maxamount	  这个是一分钟刷新一次
+http://这里写域名/server/index/clearamount	  这个选择  每天0点0分 执行

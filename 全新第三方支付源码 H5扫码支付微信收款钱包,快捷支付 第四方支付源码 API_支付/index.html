@@ -1,0 +1,561 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<meta name="keywords" content="信达支付,信达支付官网,支付/付款/收款/o2o/钱包,快捷支付,认证支付," />
+<meta name="description" content="信达支付，移动支付专家，带给您安全快捷的网上付款体验。" />
+<title>信达支付 - 扫码支付/H5支付/微信收款/o2o/钱包,快捷支付</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/shanghu.css">
+<style type="text/css">
+
+.clear{clear:both;font-size:0px;line-height:0;height:0;}
+
+@font-face {
+	font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?qradjf');
+    src:url('fonts/icomoon.eot?qradjf#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?qradjf') format('truetype'),
+        url('fonts/icomoon.woff?qradjf') format('woff'),
+        url('fonts/icomoon.svg?qradjf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.demo-icon{
+  font-family:"icomoon";
+  font-style:normal;
+  font-weight:normal;
+  speak:none;
+  display:inline-block;
+  text-decoration:inherit;
+  text-align:center;
+  font-variant:normal;
+  text-transform:none;
+  font-size:24px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:24px;
+  color:#999; 
+}
+
+/*new right*/
+.cndns-right{position:fixed;right:1px;top:50%;margin-top:-100px;z-index:100}
+.cndns-right-meau{position:relative;}
+.cndns-right-btn{width:48px;height:48px;border:1px solid #ddd;text-align:center;display:block;margin-bottom:6px;position:relative;background-color:#fff}
+.cndns-right-btn span{color:#848484;font-size:26px;line-height:48px;}
+.cndns-right-btn sup{display:block;min-width:24px;height:24px;text-align:center;line-height:24px;color:#fff;border-radius: 50%;background-color:#ff6800;position:absolute;left:-12px;top:-12px;}
+.cndns-right-btn p{color:#ff6800;font-size:14px;line-height:18px;padding-top:5px;display:none;}
+.cndns-right-meau:hover .cndns-right-btn span{display:none}
+.cndns-right-meau:hover .cndns-right-btn p{display:block;}
+.meau-car .cndns-right-btn {border-color:#ff6800;margin-bottom:20px;}
+.meau-car.cndns-right-meau:hover .cndns-right-btn{background-color:#ff6800}
+.meau-car.cndns-right-meau:hover .cndns-right-btn span{color:#fff;display:block;}
+.meau-car .cndns-right-btn span{color:#ff6800;}
+.meau-sev .cndns-right-btn{border-color:#ff6800;background:url(images/02index-banner-8.gif) no-repeat #ff6800 center;} 
+.meau-sev .cndns-right-btn p{color:#fff}
+.meau-sev .cndns-right-btn span{color:#fff}
+.meau-top .cndns-right-btn span{font-size:12px;line-height:12px;padding-top:10px;display:block}
+.meau-top .cndns-right-btn i{display:block;color:#999}
+.meau-top.cndns-right-meau:hover .cndns-right-btn{background-color:#ff6800}
+.meau-top.cndns-right-meau:hover .cndns-right-btn span{display:block;color:#fff} 
+.meau-top.cndns-right-meau:hover .cndns-right-btn i{color:#fff;}
+.cndns-right-box{position:absolute;top:-15px;right:48px;padding-right:25px;display:none;}
+.cndns-right-box .box-border{border:1px solid #ccc;border-top:4px solid #ff6800;padding:20px;background-color:#fff;-webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);-moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);box-shadow: 0 3px 8px rgba(0,0,0,.15);position:relative}
+.cndns-right-box .box-border .arrow-right{display:block;width:13px;height:16px;background:url(images/arrow.png) no-repeat;position:absolute;right:-13px;top:26px;}
+.cndns-right-box .box-border .sev-t span{font-size:42px;float:left;display:block;line-height:56px;margin-right:20px;color:#d3d3d3}
+.cndns-right-box .box-border .sev-t p{float:left;color:#ff6800;font-size:24px;line-height:28px;}
+.cndns-right-box .box-border .sev-t p i{display:block;font-size:14px;color:#aaa;}
+.cndns-right-box .box-border .sev-b{padding-top:15px;margin-top:15px;border-top:1px solid #e4e4e4}
+.cndns-right-box .box-border .sev-b h4{color:#666;font-size:14px;font-weight:normal;padding-bottom:15px;}
+.cndns-right-box .box-border .sev-b li{float:left;width:33.33333%}
+.cndns-right-box .box-border .sev-b li a{display:inline-block;color:#999;font-size:13px;padding-left:43px;background:url(images/q1.gif) no-repeat left 3px;line-height:36px;}
+.cndns-right-box .box-border .sev-b li a:hover{color:#ff6800}
+.meau-sev .cndns-right-box .box-border{width:430px;}
+.meau-contact .cndns-right-box .box-border{width:230px;}
+.cndns-right-meau:hover .cndns-right-box{display:block}
+.meau-code .cndns-right-box{top:inherit;bottom:-35px;}
+.meau-code .cndns-right-box .box-border{width:156px;text-align:center;border-top:1px solid #ccc;}
+.meau-code .cndns-right-box .box-border i{display:block;color:#f66e06;font-size:16px;line-height:16px;}
+.meau-code .cndns-right-box .box-border .arrow-right{top:inherit;bottom:50px;}
+.meau-sev .cndns-right-btn .demo-icon{display:none;}
+.meau-sev:hover .cndns-right-btn{background:#ff6800}
+.meau-zs .cndns-right-btn{background-color:#ff6800;color:#fff;margin-top:80px;border-color:#ff6800}
+.meau-zs .cndns-right-btn span{color:#fff}
+.meau-zs .cndns-right-btn p{color:#fff}
+</style>
+<script type="text/javascript">
+
+        if (!window.jQuery) {
+            document.write('<script type="text/javascript" src="/script/jquery.js"><' + '/script>');
+        }
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "/login";
+        }
+
+ </script>
+</head>
+
+<body>
+
+<div class="top">
+	<div class="wrap">
+    	<div class="top-nav fl">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=691703458&site=qq&menu=yes" class="cur">客服热线：13819962789</a>      
+        </div>
+        <div class="language">
+		<a href="register">商户注册</a>
+      
+        	
+        </div>    <div class="language"><a href="login" target="_blank">商户登陆</a></div> 
+    </div>
+</div>
+<!-- header -->
+<div class="sh-header">
+	<div class="wrap clearfix">
+    	<div class="sh-logo fl">
+        	<a href="/" title="信达支付官网"><img src="picture/logo.png" alt="信达支付"/></a>
+        </div>
+        <ul class="sh-nav fl">
+            <li><a href="/" class="cur">首页</a></li>
+            <li><a href="upload/demo.rar">开发文档</a></li>
+            <li><a href="i/index.html" target="_blank">关于我们</a></li>
+        </ul>
+        <div class="header-link fr">
+        	<a href="demo"  target="_blank">DEMO体验</a>
+            <a href="i/merchant_agreement.html"  target="_blank">合作协议</a>
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=691703458&site=qq&menu=yes">在线客服</a>
+        </div>
+        
+    </div>
+</div>
+
+<div class="b-banner">
+	<div class="inner">
+
+		
+<div class="i-main">
+    <div class="i-slogan">因为有你</div>
+    <div class="i-btn-box">
+        <a href="login" class="business">我是商家</a>
+        <a href="register" class="user">我要注册</a>
+    </div>
+</div>
+
+
+    	<div class="theme-products">
+        	<div class="columns c1">
+            	<a href="javascript:;">
+                    <i class="pro-icon ic-pro1"></i>
+                    <h2>收款</h2>
+                    <p>多渠道、全平台，在任何场景向任何人收款</p>
+                </a>
+            </div>
+            <div class="columns c2">
+            	<a href="javascript:;">
+            	<i class="pro-icon ic-pro2"></i>
+                <h2>付款</h2>
+                <p>向公司及个人转账、批量打款</p>
+               	</a>
+            </div>
+            <div class="columns c3">
+            	<a href="javascript:;">
+                    <i class="pro-icon ic-pro3"></i>
+                    <h2>账户体系</h2>
+                    <p>快速实现充值、提现及聚合支付功能</p>
+                </a>
+            </div>
+        </div>	
+    </div>	
+</div>
+
+
+<!--收款-->
+<div class="payment" id="id1">
+    <div class="wrap">
+         <h4>支持全部收款场景</h4>
+        <!-- swiper start -->
+        <div class="swiper-container" style="height:620px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="kuaijie">
+                    	<div class="kuaijie-txt">
+                            <h2>快捷支付</h2>
+                            <h3>快速付款、操作简单、<br>支付安全、全平台支持</h3>
+                            <p>支持手机端、电脑端收款的个人支付产品</p>
+                            <a href="login" class="btn1">了解详情</a>
+                        </div>
+                        <div class="kuaijie-img">
+                        	<img src="picture/pic03.png" alt="快捷支付"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="renzheng">
+                    	<div class="rz-txt">
+                        	<h2>认证支付</h2>
+                        	<h3>只需在支付页面输入目标银行<br>所需的支付信息，即可完成支付</h3>
+                            <a href="login" class="btn1">了解详情</a>
+                        </div>
+                        <div class="rz-img">
+                        	<img src="picture/pic04.png" alt="认证支付"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mobile-pay">
+                    	<div class="mobile-pay-txt">
+                            <h2>手机Pay</h2>
+                            <h3>移动应用支付革命</h3>
+                            <p><span>简单</span> <span>安全</span> <span>隐私</span></p>
+                            <a imgshow="1" href="javascript:void(0);" class="btn1" title="了解详情">Apple Pay</a>
+                            <a href="login" class="btn1" title="了解详情">Samsung Pay</a>
+                        </div>
+                        <div class="mobile-pay-img">
+                        	<img src="picture/pic01.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="o2o">
+                    	<div class="o2o-txt">
+                        	<h2>O2O支付</h2>
+                            <h3>打通线上+线下全渠道收款服务</h3>
+                            <p>连连O2O支付提供商户业务系统对接、智能POS应用、<br>支付方式聚合的解决方案</p>
+                            <a href="login" class="btn1">了解详情</a>
+                        </div>
+                        <div class="o2o-img">
+                        	<img src="picture/pic05.png" alt="o2o支付">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="saoma">
+                    	<div class="sm-txt">
+                        	<h2>扫码支付</h2>
+                        	<h3>扫码支付，无缝对接<br>微信支付&支付宝所有支付方式</h3>
+                            <a href="login" class="btn1">了解详情</a>
+                        </div>
+                        <div class="sm-img">
+                        	<img src="picture/pic06.png" alt="扫码支付"/>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="swiper-button-prev" title="上一张"></div>
+            <div class="swiper-button-next" title="下一张"></div>
+        </div>
+        <!-- swiper end -->
+        <div class="pay-method">
+            <a href="javascript:;" class="cur">快捷支付</a>
+            <a href="javascript:;">认证支付</a>
+            <a href="javascript:;">手机Pay</a>
+            <a href="javascript:;">O2O支付</a>
+            <a href="javascript:;">扫码支付</a>
+            <!-- <a href="javascript:;">连连跨境收款</a> -->
+        </div>
+    </div>
+</div>
+
+
+<!--support-scenes end-->
+	
+	<div class="support-payment-bg">
+		<div class="support-payment">
+			<div class="sub-title">
+				<h2><span>_________________</span>支持支付渠道<span>_________________</span></h2>
+				<p>Support Payment Channels</p>
+			</div>
+			<ul>
+				<li><p>VISA支付</p></li>
+				<li><p>银联支付</p></li>
+				<li><p>京东钱包</p></li>
+				<li><p>百度钱包</p></li>
+				<li><p>支付宝</p></li>
+				<li><p>PayPal支付</p></li>
+				<li><p>翼支付</p></li>
+				<li><p>QQ钱包</p></li>
+				<li><p>通联支付</p></li>
+				<li><p>苹果支付</p></li>
+				<li><p>微信支付</p></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--support-payment end-->
+
+	
+<!--付款-->
+<div class="receipt" id="id2">
+	<div class="wrap">
+        <div class="receipt-intro">
+            <div class="intro-txt">
+                <h4>付款</h4>
+                <h3>提现？放款？还款？分账？<br>轻松实现各种付款场景</h3>
+                <p>帮助商户打款到个人借记卡、信用卡或企业帐户，提交付款两小时内到账，7*24小时服务，支持商户平台提交方式</p>
+            </div>
+            <div class="intro-img"><img src="picture/pic02.png"/></div>
+        </div>
+        <div class="receipt-feature">
+            <div class="item">
+                <i class="ic icon1"></i>
+                <h5>保证交易安全</h5>
+                <p>多重风控策略，有效拦截风险交易；<br>交易数据加密处理，避免数据泄露。</p>
+            </div>
+            <div class="item">
+                <i class="ic icon2"></i>
+                <h5>提交方式多样化</h5>
+                <p>商户平台提交代付申请<br>支持单笔／批量代付等多种方式。</p>
+            </div>
+            <div class="item">
+                <i class="ic icon3"></i>
+                <h5>疑似重复订单校验</h5>
+                <p>疑似重复订单确认机制，<br>预防商户重复打款。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--账户体系-->
+<div class="account">
+	<div class="wrap">
+    	<div class="account-txt">
+        	<h4>账户体系</h4>
+            <h3>商户专属钱包账户托管</h3>
+            <p><span>安全</span><span>灵活</span><span>放心</span></p>
+            <a href="javascript:void(0)">了解详情</a>
+        </div>
+        <div class="account-img"><img src="picture/pic07.png"/></div>
+    </div>
+</div>
+
+
+	<div class="partner">
+		<div class="sub-title">
+			<h2><span>_________________</span>合作伙伴<span>_________________</span></h2>
+			<p>Cooperative Partner</p>
+		</div>
+		<ul class="partner-list clear">
+			<li><img src="images/bank00.png"/></li>
+			<li><img src="images/bank01.png"/></li>
+			<li><img src="images/bank02.png"/></li>
+			<li><img src="images/bank03.png"/></li>
+			<li><img src="images/bank04.png"/></li>
+			<li><img src="images/bank05.png"/></li>
+			<li><img src="images/bank06.png"/></li>
+			<li><img src="images/bank07.png"/></li>
+		</ul>
+	</div>
+	<!--partner end-->
+
+	
+
+<!-- footer -->
+<div class="footer"><br>
+	<div class="footer-slogan">可信赖的支付伙伴</div>
+	<div class="footer-nav">
+    	<a href="javascript:void(0)">京东钱包</a>
+        <span>|</span>
+       <a href="javascript:void(0)">支付宝</a>
+        <span>|</span>
+        <a href="javascript:void(0)">网易钱包</a>
+        <span>|</span>
+        <a href="javascript:void(0)">微信支付</a>
+        <span>|</span>
+        <a href="javascript:void(0)">QQ钱包</a>
+        <span>|</span>
+       <a href="javascript:void(0)">百度钱包</a>
+        <span>|</span>
+        <a href="javascript:void(0)">银联在线</a>
+        <span>|</span>
+        <a href="i/contact.html" target="_blank">联系我们</a>
+    </div>
+    <div class="icp">版权归 北京信达支付信息技术有限公司 所有</div>	
+    
+ <div style="text-align:center; padding:10px 0 0 0;">
+		 　工信部备案号：<a target="_blank" href="http://www.miitbeian.gov.cn/" style="color:#999">京ICP备18007495号</a> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=3301080200" style="color:#999"><img src="picture/beian.png"/> 京公网安备3301080200号</a>
+	</div>
+    
+	<div class="authenticate">
+    	<a target="_blank" class="auth01" href="#">支付业务许可证</a>
+        <a class="auth02" target="_blank" title="VeriSign加密服务" href="#">VeriSign加密服务</a>
+        <a class="auth03" target="_blank" title="可信网站验证服务证书" href="#">权威认证</a>
+        <a class="auth04" target="_blank" title="PCI DSS" href="#"> PCI DSS</a>
+        <a class="auth05" target="_blank" title="网络工商" href="#">网络工商</a>
+        <a class="auth06" target="_blank" title="ISO9001认证" href="#">ISO9001认证</a>
+	</div>
+	<div style="text-align:center; padding:10px 0 0 0;">
+	  <a id="jsl_speed_stat0" href="http://www.jsidc.hk/" target="_blank">九俊数据</a><script src="//static.yunaq.com/static/js/stat/picture_stat.js" charset="utf-8" type="text/javascript"></script> <a href="http://webscan.360.cn/index/checkwebsite/url/www.xindazhifu.com"  target="_blank"><img border="0" src="images/2aa70f97ce21384941388dc7112fdeb8.png"/></a></div>
+</div>
+
+<div id="float"></div>
+
+
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<script>
+var swiper = new Swiper('.swiper-container',{
+	onFirstInit: function(swiper){
+		$('.swiper-button-prev').addClass('disabled');
+  	}
+	
+});
+$('.swiper-button-prev').on('click', function(e){
+	
+	$('.swiper-button-next').removeClass('disabled');
+	e.preventDefault();
+	swiper.swipePrev();
+	if(swiper.activeIndex == 0)
+	{
+		$('.swiper-button-prev').addClass('disabled');	
+	}
+	if(swiper.activeIndex >= 0)
+	{
+		$('.pay-method a').removeClass('cur');
+		$('.pay-method a').eq(swiper.activeIndex).addClass('cur');	
+	}
+	
+})
+$('.swiper-button-next').on('click', function(e){
+	$('.swiper-button-prev').removeClass('disabled');
+	e.preventDefault();
+	swiper.swipeNext();
+	if(swiper.activeIndex == 4)
+	{
+		$('.swiper-button-next').addClass('disabled');	
+	}
+	if(swiper.activeIndex<=4)
+	{
+		$('.pay-method a').removeClass('cur');
+		$('.pay-method a').eq(swiper.activeIndex).addClass('cur');	
+	}
+})
+
+$('.pay-method a').mouseover(function(e){
+	var _index = $(this).index();
+	if(_index == 0){
+		$('.swiper-button-prev').addClass('disabled');	
+	}
+	else
+	{
+		$('.swiper-button-prev').removeClass('disabled');	
+	}
+	if(_index == 4){
+		$('.swiper-button-next').addClass('disabled');	
+	}
+	else
+	{
+		$('.swiper-button-next').removeClass('disabled');	
+	}
+	$('.pay-method a').removeClass('cur');
+	$(this).addClass('cur');
+	swiper.swipeTo( $(this).index() )
+	e.preventDefault();	
+})
+</script>
+<!-- <div class="cndns-right"> -->
+
+    <!-- <div class="cndns-right-meau meau-sev"> -->
+        <!-- <a href="javascript:" class="cndns-right-btn"> -->
+            <!-- <span class="demo-icon">&#xe901;</span> -->
+            <!-- <p> -->
+                <!-- 在线<br /> -->
+                <!-- 客服 -->
+            <!-- </p> -->
+        <!-- </a> -->
+        <!-- <div class="cndns-right-box"> -->
+            <!-- <div class="box-border"> -->
+                <!-- <div class="sev-t"> -->
+                    <!-- <span class="demo-icon">&#xe901;</span> -->
+                    <!-- <p>信达支付 在线客服<i>服务时间：9:00-24:00</i></p> -->
+                    <!-- <div class="clear"></div> -->
+                <!-- </div> -->
+                <!-- <div class="sev-b"> -->
+                    <!-- <h4>选择下列业务范围 马上在线沟通：</h4> -->
+                    <!-- <ul id="zixunUl"> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin965732488&site=qq&menu=yes">开户咨询</a></li>                   -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin3225923791&site=qq&menu=yes">开户咨询</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin965732488&site=qq&menu=yes">开户咨询</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin3225923791&site=qq&menu=yes">开户咨询</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin965732488&site=qq&menu=yes">开户咨询</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin3225923791&site=qq&menu=yes">开户咨询</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin965732488&site=qq&menu=yes">商务合作</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin3225923791&site=qq&menu=yes">代理合作</a></li> -->
+                        <!-- <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin11210980&site=qq&menu=yes">技术支持</a></li> -->
+                        <!-- <div class="clear"></div> -->
+                    <!-- </ul> -->
+                <!-- </div> -->
+                <!-- <span class="arrow-right"></span> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="cndns-right-meau meau-contact"> -->
+        <!-- <a href="javascript:" class="cndns-right-btn"> -->
+            <!-- <span class="demo-icon">&#xe902;</span> -->
+            <!-- <p> -->
+                <!-- 客服<br /> -->
+                <!-- 热线 -->
+            <!-- </p> -->
+        <!-- </a> -->
+        <!-- <div class="cndns-right-box"> -->
+            <!-- <div class="box-border"> -->
+                <!-- <div class="sev-t"> -->
+                    <!-- <span class="demo-icon">&#xe902;</span> -->
+                    <!-- <p>029-83643553<br /><i>7*24小时客服服务热线</i></p> -->
+                    <!-- <div class="clear"></div> -->
+                <!-- </div> -->
+                <!-- <span class="arrow-right"></span> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="cndns-right-meau meau-code"> -->
+        <!-- <a href="javascript:" class="cndns-right-btn"> -->
+            <!-- <span class="demo-icon">&#xe903;</span> -->
+            <!-- <p> -->
+                <!-- 关注<br /> -->
+                <!-- 微信 -->
+            <!-- </p> -->
+        <!-- </a> -->
+        <!-- <div class="cndns-right-box"> -->
+            <!-- <div class="box-border"> -->
+                <!-- <div class="sev-t"> -->
+                    <!-- <img src="images/02index-2.jpg" /> -->
+                    <!-- <i>关注官方微信</i> -->
+                <!-- </div> -->
+                <!-- <span class="arrow-right"></span> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="cndns-right-meau meau-top" id="top-back"> -->
+        <!-- <a href="javascript:" class="cndns-right-btn" onclick="topBack()"> -->
+            <!-- <span class="demo-icon">&#xe904;</span> -->
+            <!-- <i>顶部</i> -->
+        <!-- </a> -->
+    <!-- </div> -->
+
+<!-- </div> -->
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+//置顶图标显示
+$('#top-back').hide()
+$(window).scroll(function(){
+	 if($(this).scrollTop() > 350){
+		$("#top-back").fadeIn();
+	 }
+	 else{
+		$("#top-back").fadeOut();
+	 }
+  })	
+//置顶事件
+function topBack(){
+  $('body,html').animate({scrollTop:0},300);
+}
+</script>
+</body>
+</html>

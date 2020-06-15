@@ -1,0 +1,118 @@
+.fk-flex {
+    display: flex;
+}
+
+.fk-flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.fk-flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.fk-flex-content-center {
+    justify-content: center;
+}
+
+.fk-flex-content-betwwen {
+    justify-content: space-between;
+}
+
+.fk-flex-items-center {
+    align-items: center;
+}
+
+.fk-hidden {
+    display: none;
+}
+
+.fk-font-10 {
+    font-size: 10px;
+}
+
+.fk-font-12 {
+    font-size: 12px;
+}
+
+.fk-font-14 {
+    font-size: 14px;
+}
+
+.fk-font-16 {
+    font-size: 16px;
+}
+
+.fk-font-20 {
+    font-size: 20px;
+}
+
+.fk-font-24 {
+    font-size: 24px;
+}
+
+.fk-font-26 {
+    font-size: 26px;
+}
+
+.fk-font-bold {
+    font-weight: bold;
+}
+
+.fk-margin-b5 {
+    margin-bottom: 5px;
+}
+
+.fk-margin-b10 {
+    margin-bottom: 10px;
+}
+
+.fk-margin-b15 {
+    margin-bottom: 15px;
+}
+
+.fk-margin-b20 {
+    margin-bottom: 20px;
+}
+
+.fk-margin-b50 {
+    margin-bottom: 50px;
+}
+
+.fk-margin-r10 {
+    margin-right: 10px;
+}
+
+.fk-margin-t10 {
+    margin-top: 10px;
+}
+
+.fk-margin-t15 {
+    margin-top: 15px;
+}
+
+.fk-padding-t10 {
+    padding-top: 10px;
+}
+
+.fk-color-white {
+    color: #fff;
+}
+
+.fk-ellipsis {
+    overflow: hidden; /*超出一行文字自动隐藏*/
+    white-space: nowrap; /*强制不换行*/
+    text-overflow: ellipsis; /*文字隐藏后添加省略号*/
+}
+
+.fk-mask-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #4f83e8;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

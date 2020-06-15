@@ -1,0 +1,464 @@
+body {
+    background-color: #FFFFFF;
+}
+section.page {
+    background: linear-gradient(to right, #662995 , #60298d);
+}
+section.main-wrap {
+    position: relative;
+    width: 100%;
+}
+
+div.banner-wrap {
+    width: 100%;
+    margin-bottom: -3rem;
+}
+
+div.banner-wrap img.banner {
+    width: 100%;
+    height: auto;
+}
+
+div.content-wrap div.content-box {
+    margin-bottom: 0.6rem;
+}
+div.content-wrap div.content-box img.title{
+    width: 12rem;
+    margin: 0 0 0.6rem 0;
+}
+div.top-wrap{
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+div.top-wrap div.guide-wrap {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+div.guide-wrap div.guide{
+    width: 100%;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    /*background-image: url('../image/common/frame_mid.png?v=1.0');*/
+    /*background-repeat: repeat-y;*/
+    /*background-size: 100% 100%;*/
+    /*padding: 0 0.3rem;*/
+}
+img.frame{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.guide-wrap img.frame-top {
+    margin-bottom: -2px;
+}
+
+div.guide-wrap img.frame-bot {
+    margin-top: -2px;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.guide-wrap {
+        font-size: 14px;
+    }
+}
+div.top-wrap div.guide-wrap p.guide-text {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+div.top-wrap div.guide-wrap p.guide-text em {
+    color: #f36431;
+}
+
+
+div.top-wrap div.card-group{
+    width: 100%;
+    position: relative;
+}
+div.top-wrap div.card-group img.card-wall{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card{
+    position: absolute;
+    margin-left: -1rem;
+}
+div.top-wrap div.card-group div.tarot-card img{
+    display: block;
+    width: 2rem;
+    height: auto;
+}
+div.top-wrap div.card-group div.tarot-card p.card-name{
+    font-size: 14px;
+    color: #783bb0;
+}
+div.top-wrap div.card-group div.tarot-card span{
+    font-size: 10px;
+}
+@media screen and (max-width: 340px) {
+    div.top-wrap div.card-group div.tarot-card p.card-name{
+        font-size: 12px;
+    }
+    div.top-wrap div.card-group div.tarot-card span{
+        font-size: 10px;
+    }
+}
+div.tarot-card-1{
+    top: 12%;
+    left: 50%;
+}
+div.tarot-card-2{
+    top: 50%;
+    left: 15%;
+}
+div.tarot-card-3{
+    top: 50%;
+    right: 5.3%;
+}
+
+
+img.desc-subtitle{
+    display: block;
+    width: auto;
+    height: 2rem;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+}
+div.tarot-box{
+    width: 100%;
+
+}
+div.tarot-box img.card-image{
+    display: block;
+    width: 3rem;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+div.tarot-box div.card-intro{
+    width: 100%;
+
+}
+div.tarot-box div.card-intro img{
+    display: block;
+    width: 0.8rem;
+    height: auto;
+    margin-right: 0.2rem;
+}
+div.tarot-box div.card-intro span{
+    font-size: 16px;
+    color: #af50d0;
+}
+div.tarot-box div.card-intro span em{
+    font-size: 14px;
+    color: #af50d0;
+}
+div.tarot-box div.explan-box{
+    width: 100%;
+    margin-top: 0.4rem;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+div.tarot-box div.explan-box p.explan-title{
+    font-size: 18px;
+    color: #d75016;
+    line-height: 1.5;
+}
+div.tarot-box div.explan-box p.explan-text {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.explan-text1{
+	font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 340px) {
+    div.tarot-box div.explan-box p.explan-title{
+        font-size: 16px;
+    }
+    div.tarot-box div.explan-box p.explan-text .explan-text1{
+        font-size: 14px;
+    }
+}
+
+img.end-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+/*品论区*/
+img.comment-title {
+    display: block;
+    width: 5rem;
+    height: auto;
+    margin-top: -0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+p.tips-text {
+    font-size: 14px;
+    color: #d7473d;
+}
+
+div.nickname-wrap {
+    width: 100%;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin-top: 0.4rem;
+}
+
+div.input-group {
+    margin-right: 1rem;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+div.input-group input.nickname {
+    height: 1rem;
+    width: 3.6rem;
+    border: 1px solid #F0F0F0;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #a3a3a3;
+    text-indent: 3px;
+    margin-left: 0.2rem;
+    -webkit-appearance:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+div.un-name-wrap {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+div.un-name-wrap input.un-name {
+    margin-right: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+div.expres-wrap {
+    width: 100%;
+    margin-top: 0.4rem;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+div.expres-wrap div.stars {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    margin-right: 0.5rem;
+    width: 4rem !important;
+}
+
+div.expres-wrap div.stars img {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+div.expres-wrap span.pinfen {
+    margin-right: 0.2rem;
+}
+
+div.expres-wrap span.emoji-wrap {
+    padding: 0.2rem 0.2rem;
+    background: #ff9900;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+div.expres-wrap img.emoji {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+div.edit-wrap {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+
+div.edit-wrap textarea.comment-text {
+    width: 100%;
+    background: #fbf7eb;
+    border: solid 1px #d9d9d9;
+    border-radius: 5px;
+    padding: 0.2rem;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #a3a3a3;
+    -webkit-appearance:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+div.edit-wrap textarea.comment-text:focus {
+    outline: none;
+}
+
+img.submit-img {
+    display: block;
+    width: 10rem;
+    height: auto;
+    margin-top: 0.6rem;
+}
+
+div.toast-wrap {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 6rem;
+}
+div.toast-wrap div.toast-box{
+    width: 100%;
+    max-width: 640px;
+}
+.toast {
+    white-space: nowrap;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+div.save_wrap {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0.6rem;
+}
+
+div.save_wrap span.savebtn{
+    width: 100%;
+    height: 1.8rem;
+    background-color: #bb3228;;
+    border-radius: 4px;
+    position: relative;
+    z-index: 88;
+}
+div.save_wrap span.savebtn::after{
+    content: '永久保存你的测算结果  ';
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 1.8rem;
+    background-color: #d7473d;
+    border-radius: 4px;
+    z-index: 11;
+}
+div.save_wrap img.hands{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    z-index: 98;
+    right: 1.2rem;
+    top: 0.2rem;
+}
+
+
+div.float_save{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 99999;
+}
+div.float_save_box{
+    width: 100%;
+    max-width: 640px;
+}
+div.float_save span.savebtn{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    background-color: #d7473d;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+}
+div.float_save span.savebtn em{
+    font-style: normal;
+    margin-right: 20px;
+}
+div.float_save span.savebtn img.hands{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+div.code_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999999;
+}
+
+div.code_box div.code_wrap {
+    position: relative;
+    box-sizing: border-box;
+}
+
+div.code_box div.code_wrap img.code {
+    width: 10rem;
+    height: auto;
+}
+
+div.code_box div.code_wrap img.close {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+}
+
+

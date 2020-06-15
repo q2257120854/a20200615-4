@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.foot{
+	width:100%;
+	height:3.2rem;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#fff;
+	border-top:1px solid #cfcfcf;
+}
+.foot .index{
+	background:url(../images/sy1.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .index_sel{
+	background: url(../images/ssy.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .index_sel_on{
+	background: url(../images/ssy_on.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .index_sel a{
+	color:#a1a9ac;
+}
+.foot .withdraw{
+	background: url(../images/ss2.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .withdraw_on{
+	background: url(../images/ss2_on.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .withdraw_sel{
+	background: url(../images/ssy.png) no-repeat center top 0.2rem;
+	background-size: 22%;
+}
+.foot .withdraw_sel a{
+	color:#fd0000;
+}
+.foot .more{
+	background: url(../images/ss3.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .more_on{
+	background: url(../images/ss3_on.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .more_sel{
+	background: url(../images/ssy.png) no-repeat center top 0.3rem;
+	background-size: 19%;
+}
+.foot .more_sel a{
+	color:#fd0000;
+}
+.foot a{
+	text-align:center;
+	display:inline-block;
+	width:100%;
+	margin-top: 1.9rem;
+	font-size: 0.8rem;
+	color:#a1a9ac;
+}

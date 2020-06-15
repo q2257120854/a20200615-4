@@ -1,0 +1,35 @@
+body { background-color: #f6f6f6; }
+.header_top_title{text-align: center;color: #4f4f4f;font-size: 22px;display: block;font-weight: normal;}
+.item { overflow: hidden; }
+.item .title { height: 40px;line-height: 40px; margin-top: 10px;border-bottom: 1px solid #e4e4e4;  text-align: center; font-size: 18px; background-color: #ececec; color: #d23037; font-weight: 700; }
+.item_pic { height: auto; margin: 15px 10px;}
+.item_pic dt { float: left; width: 80px; height: auto;  margin-right: 10px}
+.item_pic dt a, .item_pic dt img { display: block; width: inherit; height: auto; }
+.item_pic dt p {font-size: 14px; line-height: 18px; margin-top: 3px;color: #292929; text-align: center; }
+.item_pic dt p font { color: #d23037; display: block; }
+.item_pic dd { margin-left: 90px; }
+.item_pic dd .item_pic_t { height: 30px; line-height: 30px; font-weight: 700;  color: #282828; font-size: 18px;  display: block; }
+.item_pic dd p { color: #474747; height: auto; font-size: 16px;}
+.item_pic dd span { color: #282828; }
+.btn_rightnow {margin: 5px 10px 15px; height: 35px; line-height: 35px; text-align: center;  display: block;background-color: #d23037; font-size: 18px; color: #fff; 
+ border-radius: 5px;
+ -border-radius: 5px;
+ -ms-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;}
+.btn_rightnow:hover { background-color: #d23037; }
+
+
+.about_content{ padding:10px 10px 20px;line-height: 25px; background: #fff;}
+.ac_title{ font-size: 20px; color: #000;text-align: center;}
+.ac_service{padding:10px 0 5px;font-size: 14px;}
+.ac_service a:last-child{margin:0;}
+.ac_weixin,.ac_qq{display: block;border-radius: 5px;border-width:1px;border-style: solid;margin:0 0 10px;padding: 10px 0 10px 24%; box-sizing:border-box;overflow: hidden;color: #3e272c;position: relative;min-height:48px;}
+.ac_weixin img,.ac_qq img{height: 40px;position: absolute;left:12%;top:50%;transform: translate(-50%,-50%);}
+.ac_service .infor{line-height: 24px;}
+.ac_service .infor strong{font-size: 18px;}
+.ac_weixin{background-color: #eef8d6;border-color: #e6acac}.ac_weixin strong{color: #73AC0B}
+.ac_qq{background-color: #e4fcff;border-color: #81d7e2}.ac_qq strong{color:#FF3C65;}
+.ac_us{background: #f00;color:#fff; display: block;padding: 10px 0px; text-align: center;border-radius: 5px;}
+
+

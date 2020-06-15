@@ -1,0 +1,35 @@
+建议使用Nginx环境，伪静态在目录中有
+php5.6  数据库5.6
+
+php5.6开启扩展
+ZendGuardLoader
+ionCube
+fileinfo
+opcache
+redis
+
+上传程序到根目录，修改根目录下的配置文件config.php
+数据库导入
+
+开启定时任务，开启后点击执行一次，如果成功出现执行日志代表成功
+
+搭建后如果demo不出现支付二维码
+请手动修改run/gateway/controller/pay.php下的155行 .DOMAINS_URL.变量直接修改目录路径地址
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+站码之家zhanmazj.com

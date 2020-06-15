@@ -1,0 +1,106 @@
+.lucky_finish, .lucky_money {
+    margin: 0 auto;
+    width: 300px;
+    height: 408px;
+    border-radius: 15px;
+    top: 50%;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+}
+
+.lucky_money {
+    background: url("red.jpg-1.jpg"/*tpa=http://www.94sq.cn/assets/common/lucky-money/red.jpg?1*/);
+    background-size: 100%;
+    box-shadow: 1px 1px 20px #666;
+}
+
+.lucky_finish {
+    background: url("red-y.png"/*tpa=http://www.94sq.cn/assets/common/lucky-money/red-y.png*//*tpa=http://www.94sq.cn/assets/common/lucky-money/red-y.png*/);
+}
+
+.lucky_finish img, .lucky_money img {
+    width: 100%;
+    height: auto;
+}
+
+.lucky_money.shake {
+    animation: shake .2s infinite linear;
+    -webkit-animation: shake .2s infinite linear;
+}
+
+.lucky_name {
+    height: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 170px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lucky_title {
+    color: #fb0000;
+    text-align: center;
+    margin-top: 130px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lucky_time {
+    color: #fb0000;
+    text-align: center;
+    margin-top: 135px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lucky_finish_title {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.lucky_rmb {
+    text-align: center;
+    margin-top: 125px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.lucky_info {
+    text-align: center;
+    margin-top: 50px;
+    color: #d0c2c2;
+    font-size: 5px;
+}
+
+.lucky_close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: #c7c7c7;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.lucky_close:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.lucky_close img {
+    padding-top: 5px;
+}

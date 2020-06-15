@@ -1,0 +1,63 @@
+<!--pages/team/create.wxml-->
+<view class="fk-flex-v" style='height:100%;'>
+  <!--用户信息-->
+  <view style="height:50%;padding-top:10px;overflow:auto;flex:1">
+    <view style="text-align:center;font-size:16px;color:#fff;margin-bottom:10px">我的团队成员({{teamMembers.length}})</view>
+    <view class='member-container'>
+      <!-- <view class="member-right">
+        <image></image>
+        <view class="info">
+          <text></text>
+          <text>来自：</text>
+          <view class='fk-owner'></view>
+        </view>
+      </view> -->
+      <view class="{{index % 2 == 0 ? 'member-left' : 'member-right'}}" wx:for="{{teamMembers}}" wx:key="{{index}}">
+        <image src='{{item.avatarUrl}}'></image>
+        <view class="info">
+          <text>{{item.nickname}}</text>
+          <text>来自：{{item.province || ''}}{{item.city || ''}}</text>
+          <view class='fk-owner' hidden='{{!item.iscaptain}}'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="fk-flex-v" style='justify-content:space-around;align-items:center;'>
+    <view class="buttons-container">
+      <view class='button-wrapper' bindtap='dismiss' hidden='{{dismissButtonHidden}}'>
+        <view class='button'>
+          <image src='/static/images/return.svg'></image>
+          <text>解散</text>
+        </view>
+      </view>
+      <view class='button-wrapper' bindtap='giveUp' hidden='{{quitButtonHidden}}'>
+        <view class='button'>
+          <image src='/static/images/quit.svg'></image>
+          <text>放弃</text>
+        </view>
+      </view>
+      <view class='button-wrapper' hidden='{{shareButtonHidden}}'>
+        <button class='share-button' open-type='share'></button>
+        <view class="circle1"></view>
+        <view class="circle2"></view>
+        <view class='button'>
+          <image src='/static/images/share.svg'></image>
+          <text>邀请</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='footer-buttons'>
+      <view hidden='{{footerButtonHidden}}'>
+        <!-- <button type="primary" bindtap="startNewGame" hidden='{{createRoomHidden}}'>新开一场</button> -->
+        <button type="primary" bindtap="startMatch" hidden='{{startPKHidden}}'>开始匹配</button>
+      </view>
+    </view>
+
+    <view class="fk-footer">
+      <text class="fk-footer-times">剩余挑战次数：{{availableTimes}}次</text>
+      <text class="fk-footer-times">共 {{questionCount}} 回合，每题 {{answerTime}} 秒回答时间</text>
+    </view>
+  </view>
+</view>

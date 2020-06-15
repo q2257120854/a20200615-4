@@ -1,0 +1,89 @@
+<view>
+  <view class="fk-container">
+    <!-- 用户信息 -->
+    <view class="fk-userinfo-container">
+      <view class="fk-flex-v fk-flex-center fk-margin-b10">
+        <image class="fk-avatar" src="{{avatarUrl}}"></image>
+        <!-- <text class="fk-name">{{nickName}}</text> -->
+      </view>
+      <view class="fk-flex fk-flex-content-betwwen">
+        <view class="fk-flex fk-flex-items-center">
+          <!-- <image class="fk-grade-image" src="{{levelImage}}" /> -->
+          <text class="fk-grade-text">{{nickName}}</text>
+        </view>
+        <view class="fk-flex fk-flex-items-center">
+          <image src="/static/images/money.png" class="fk-integral-icon" />
+          <text class="fk-integral">{{integral}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 雷达图 -->
+    <view>
+      <canvas canvas-id="radarCanvas" bindtouchstart="touchHandler" style="width:100%;height:160px;margin-left:-25px"></canvas>
+    </view>
+
+    <!-- 用户信息 -->
+    <view class="fk-flex-v fk-margin-t15">
+      <view class="fk-userinfo-item">
+        <view style="width:45%">
+          <text class="item-label">每日答题：</text>
+          <text class="item-value">{{score1004}}</text>
+        </view>
+        <text class="split">|</text>
+        <view style="width:45%">
+          <text class="item-label">排位赛：</text>
+          <text class="item-value">{{score1005}}</text>
+        </view>
+      </view>
+      <view class="fk-userinfo-item">
+        <view style="width:45%">
+          <text class="item-label">好友对战：</text>
+          <text class="item-value">{{score1006}}</text>
+        </view>
+        <text class="split">|</text>
+        <view style="width:45%">
+          <text class="item-label">团队赛：</text>
+          <text class="item-value">{{score1007}}</text>
+        </view>
+      </view>
+      <view class="fk-userinfo-item">
+        <view style="width:100%">
+          <text class="item-label">ID：</text>
+          <text class="item-value">{{openid}}</text>
+        </view>
+      </view>
+      <view class="fk-userinfo-item">
+        <view style="width:45%">
+          <text class="item-label">工号：</text>
+          <text class="item-value">{{userId}}</text>
+        </view>
+        <text class="split">|</text>
+        <view style="width:45%">
+          <text class="item-label">部门：</text>
+          <text class="item-value">{{department}}</text>
+        </view>
+      </view>
+      <view class="fk-userinfo-item">
+        <view style="width:45%">
+          <text class="item-label">胜场 / 总场次：</text>
+          <text class="item-value">{{winTimes}} / {{total}}</text>
+        </view>
+        <text class="split">|</text>
+        <view style="width:45%">
+          <text class="item-label">胜率：</text>
+          <text class="item-value">{{winningRate}}%</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 分享 -->
+  <!-- <button open-type="share" class="share-button-hidden" wx:if="{{shareTimes > 0}}"></button>
+    <button class="share-button-hidden" bindtap='shareLimit' wx:else></button> -->
+  <button open-type="share" class="share-button-hidden"></button>
+  <view class="fk-bg fk-share-bg fk-share-container" style='background-size:cover;background-position:center;'>
+    <image src="/static/images/share.png" />
+    <text>分享给同事和朋友，可获得 20 积分</text>
+  </view>
+</view>

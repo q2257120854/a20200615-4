@@ -1,0 +1,20 @@
+<view class="ui-ruler" style="{{rulerStyle}}">
+    <view class="ui-ruler-pointer" style="z-index:999;{{rulerPointerStyle}}"></view>
+
+    <view class="value-wrap">
+        <view class="value" style="position:absolute;{{selfValueStyle}}">{{(selfValue
+            < 0 ? 0 : selfValue) + selfMin}}</view>
+        </view>
+
+        <scroll-view scroll-left="{{leftForSure}}" bindtouchstart="touchStartHandler" bindtouchend="touchEndHandler" bindscroll="scrollHandler" class="ui-ruler-scroll-view" style="{{scrollViewStyle}}" scroll-x>
+
+            <!-- <canvas class="ui-ruler-wrap" style="{{rulerWrapStyle}}" canvas-id="firstCanvas"></canvas> -->
+            <view class="ui-ruler-wrap" style="{{rulerWrapStyle}}">
+                <view class="ui-ruler-scale-line" wx:for="{{(selfMax - selfMin) / step  + 1}}" style="left:{{index * (selfStepWidth + selfLineWidth) + padding}}px;height:{{lineHeight}}px; top: {{mode === 'bottom' ? height - lineHeight : 0}}px;background-color:{{color}}"></view>
+                <view class="ui-ruler-key-scale-line" wx:for="{{(selfMax - selfMin) / step / (keyStep / step) + 1}}" style="left:{{index * (selfStepWidth + selfLineWidth) * (keyStep / step) + padding}}px;height:{{keyLineHeight}}px;top: {{mode === 'bottom' ? height - keyLineHeight : 0}}px;background-color:{{color}}"></view>
+                <view class="ui-ruler-key-scale-line-number" wx:if="{{showNumber}}" wx:for="{{(selfMax - selfMin) / step / (keyStep / step) + 1}}" style="left:{{index * (selfStepWidth + selfLineWidth) * (keyStep / step) - 50 + padding}}px;{{numberPaddingStyle}};font-size:{{numberSize}}px;color:{{numberColor}}">{{selfMin + index * keyStep}}</view>
+                <view class="ui-ruler-padding" style="{{rulerPaddingStyle}}"></view>
+            </view>
+
+        </scroll-view>
+    </view>

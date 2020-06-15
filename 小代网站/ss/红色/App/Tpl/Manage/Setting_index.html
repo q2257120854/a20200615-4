@@ -1,0 +1,233 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<script type="text/javascript" src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+		<title>基本设置</title>
+		<style type="text/css">
+			.layer-anim{
+				top:180px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>基本设置</h5>
+			</div>
+			<div class="public-selectArea public-selectArea1 margin_10">
+				<form action="{:U('Setting/index')}" method="post">
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>网站名称：</dt>
+								<dd>
+									<input type="text" name="siteName" value="{$Think.config.siteName|default=''}" />
+								</dd>
+								<em class="tishi">&#110;&#56;&#28304;&#30721;&#45;&#119;&#119;&#119;&#46;&#99;&#111;&#100;&#101;&#110;&#56;&#46;&#99;&#111;&#109; </em>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>网站标题：</dt>
+								<dd>
+									<input type="text" name="siteTitle" value="{$Think.config.siteTitle|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>站点关键字：</dt>
+								<dd>
+									<input type="text" name="siteKeywords" value="{$Think.config.siteKeywords|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>站点描述：</dt>
+								<dd>
+									<textarea rows="3" style="height: 100px;" name="siteDescription">{$Think.config.siteDescription|default=''}</textarea>
+								</dd>
+							</dl>
+						</div>
+					</div>
+	
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>公司名称：</dt>
+								<dd>
+									<input type="text" name="siteCorporate" value="{$Think.config.siteCorporate|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>开启网站访问：</dt>
+								<dd>
+									<label><input type="radio" name="siteClose" value="0" <if condition="$Think.config.siteClose eq 0">checked</if> >是</label>
+									<label><input type="radio" name="siteClose" value="1" <if condition="$Think.config.siteClose eq 1">checked</if> >否</label>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>提现密码方式：</dt>
+								<dd>
+									<label><input type="radio" name="passtype" value="0" <if condition="$Think.config.passtype eq 0">checked</if> >后台预设</label>
+									<label><input type="radio" name="passtype" value="1" <if condition="$Think.config.passtype eq 1">checked</if> >客户输入</label>
+									<label><input type="radio" name="passtype" value="2" <if condition="$Think.config.passtype eq 2">checked</if> >免密码</label>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>底部版权标题</dt>
+								<dd>
+									<input type="text" name="siteServicenum" value="{$Think.config.siteServicenum|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clearfix clearfix1">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>客服QQ：</dt>
+								<dd>
+									<input type="text" name="sitekfqq" value="{$Think.config.sitekfqq|default=''}" />
+								</dd>
+							</dl>
+						</div>
+					</div>
+										
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>允许上传文件类型：</dt>
+								<dd>
+									<php>$arr = C('fileSuffix');if($arr) $str = implode(',',$arr);</php>
+									<input type="text" name="fileSuffix" value="{$str|default=''}" />
+								</dd>
+								<em class="tishi">多种文件类型以逗号隔开 如 （jpg,png,gif,jpeg,zip,doc<a href="{:U('Admin/index')}"><span style="color:#E53333;">@</span></a>）</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1" style="display:none;">
+						<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>允许上传文件大小：</dt>
+								<dd>
+									<input type="text" name="fileSize" value="{$Think.config.fileSize|default=''}" />
+								</dd>
+								<em class="tishi">单位 （MB）</em>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="clearfix clearfix1">
+					<!--	<div class="wp_box  col-xs-8">
+							<dl>
+								<dt>关于我们：</dt>
+								<php>$siteAbout = empty(C('siteAbout'))?'':htmlspecialchars_decode(htmlspecialchars_decode(C('siteAbout')));</php>
+								<dd>
+									<input type="hidden" name="siteAbout" value="{$siteAbout|default=''}" />
+									<div class="editor" id="editor">{$siteAbout|default=''}</div>
+								</dd>
+							</dl>
+						</div>
+					</div>-->
+					<input type="hidden" name="siteLogo" value="{$Think.config.siteLogo|default=''}" />
+				</form>
+				<div class="clearfix clearfix1">
+					<div class="wp_box  col-xs-8">
+						<dl>
+							<dt>网站LOGO：</dt>
+							<dd>
+								<div class="upimg">
+									<form action="{:U('Setting/uploadImg')}" method="post" enctype="multipart/form-data">
+										<input type="file" name="logo" />
+										<input type="hidden" name="fileName" value="logo" />
+									</form>
+								</div>
+							</dd>
+							<em class="tishi">建议上传<a href="{:U('Admin/index')}"><span style="color:#E53333;">PNG</span></a>背景透明图片</em>
+						</dl>
+					</div>
+				</div>
+
+				<div class="btnArea margin_20">
+					<a href="javascript:;" class="btn btn-grayBg">
+						<span class="public-label">提交</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var E = window.wangEditor;
+			var editor = new E('#editor');
+			editor.create();
+			$(".img-view").remove();
+			var logoImg = $("input[name='siteLogo']").val();
+			if(logoImg.length > 0){
+				$(".upimg").after("<div class='upimg img-view'><img src='" + logoImg + "' /></div>");
+			}
+			
+			$(".btnArea a").on('click',function(){
+				$("input[name='siteAbout']").val(editor.txt.html());
+				cvphp.submit($("form"),function(data){
+					if(data.status!=1){
+						layer.msg(data.info);
+					}else{
+						layer.alert('保存成功');
+					}
+				});
+			});
+			
+			$("input[type='file']").on('change',function(){
+				var value = $(this).val();
+				if(value.length == 0){
+					layer.msg("请选择上传文件");
+					return false;
+				}
+				//上传图片
+				var obj = $(this).parent();
+				var fileinputObj = this;
+				cvphp.submit($(obj),function(data){
+					if(data.status != 1){
+						layer.msg(data.info);
+						return false;
+					}else{
+						var imgUrl = "__PUBLIC__/Upload/" + data.info;
+						$("input[name='siteLogo']").val(imgUrl);
+						$(".img-view").remove();
+						$(".upimg").after("<div class='upimg img-view'><img src='" + imgUrl + "' /></div>");
+					}
+				});
+			});
+		});
+	</script>
+</html>

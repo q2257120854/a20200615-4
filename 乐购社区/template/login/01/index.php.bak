@@ -1,0 +1,149 @@
+ 
+<?
+ 	if ($_SESSION['member_name']!='')
+	{
+	header('location: /index/home/order/id/'.$_GET['id'].'.html');
+}
+$ll='true';
+  
+
+?> 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="csrf-token" content="Nj6C3egmK6czV2MjvgyLxQF6nCzlpNkHKUzEvoSw">
+    <title>会员登录 - 乐购社区</title>
+    <meta name="keywords" content="亿乐社区系统V3.0"/>
+    <meta name="description" content="亿乐社区系统V3.0"/>
+    <link href="http://assets.yilep.com/ylsq/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://assets.yilep.com/ylsq/assets/common/css/style.css?v=1.1">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+</head>
+<body>
+<a href="/" class="show-xs limit web_name">乐购社区</a>
+<div id="vue" class="login_page">
+    <div class="login_content">
+        <div class="hidden-xs">
+            <a class="web_name limit" href="/">乐购社区</a>
+            <div class="login_img"></div>
+        </div>
+        <div style="flex: auto" v-if="act==='login'">
+            <form action="#" id="form-login">
+                <input type="hidden" name="type" v-model="loginType">
+                                                            <div class="login_name" v-if="loginType==='card'">
+                            卡密登录 / <a style="font-size: 15px;font-weight: 400;" @click="loginType='user'">用户登录</a>
+                        </div>
+                        <div class="login_name" v-else>
+                            用户登录 / <a style="font-size: 15px;font-weight: 400;" @click="loginType='card'">卡密登录</a>
+                        </div>
+                        <input type="hidden" name="gid" value="471242">
+                                                    <div v-if="loginType==='card'" v-cloak>
+                    <input type="text" name="card" placeholder="输入商品卡密" class="input username">
+                    <input type="password" name="pass" placeholder="输入卡密密码,没有则不填写" class="input password mt30">
+                </div>
+                <div v-else>
+                                        <input type="text" name="user" placeholder="输入用户名" class="input username">
+                    <input type="password" name="password" placeholder="输入用户密码" class="input password mt30">
+                    <div class="mt30" style="font-size: 12px;color:rgba(153,153,153,1);">
+                        <input type="checkbox">
+                        <span>记住密码</span>
+                        <span style="float: right">
+                        <a>忘记密码？</a>
+                    </span>
+                    </div>
+                </div>
+            </form>
+                            <div class="login_btn mt30" @click="login">登 录</div>
+                <div v-if="loginType==='user'">
+                    <div class="mt30" style="font-size:14px;color:rgba(153,153,153,1);text-align: center">
+                        没有账号？<a style="color: #9C32F6" @click="act='reg'">立即注册</a>
+                    </div>
+                    <div class="mt30" style="position: relative">
+                        <hr>
+                        <div class="hr">第三方登录</div>
+                        <a href="/qqLogin" class="third_btn mt30" style="margin: 0 auto"></a>
+                    </div>
+                </div>
+                    </div>
+        <div style="flex: auto" v-else>
+            <form action="#" id="form-reg">
+                                <div class="login_name">新用户注册</div>
+                <input type="text" name="user" placeholder="输入用户名" class="input username">
+                <input type="password" name="password" placeholder="输入用户密码" class="input password mt30">
+                <input type="password" name="qq" oninput="value=value.replace(/[^\d]/g,'')" placeholder="输入联系QQ"
+                       class="input password mt30">
+                <div class="mt30" >
+                    <input type="text" name="code" placeholder="输入验证码" class="input code">
+                    <img title="点击刷新" src="/captcha" onclick="this.src='/captcha?_='+Math.random();" id="code" style="margin-top: 10px;float: right;height: 40px;width: 100px">
+                </div>
+            </form>
+            <div class="login_btn mt30" @click="reg">免费注册</div>
+            <div v-if="loginType==='user'">
+                <div class="mt30" style="font-size:14px;color:rgba(153,153,153,1);text-align: center">
+                    已有账号？<a style="color: #9C32F6" @click="act='login'">马上登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    版权所有 © 2017-2019 社区
+</div>
+<script src="http://assets.yilep.com/ylsq/assets/admin/js-plugins/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="http://assets.yilep.com/ylsq/assets/layer/layer.js"></script>
+<script src="http://assets.yilep.com/ylsq/js/index/main.js?v=3.0.9"></script>
+<script>
+    new Vue({
+        el: '#vue',
+        data: {
+            act: 'login',
+            loginType: 'user'
+        },
+        methods: {
+            login: function () {
+                var vm = this;
+                this.$post('/login', new FormData(document.getElementById("form-login")))
+                    .then(function (data) {
+                        if (data.status === 0) {
+                                                            location.href = data.go ? data.go : "/home/order/471242";
+                                                    } else {
+                            if (typeof (data.errors) === "object") {
+                                layer.alert(data.errors[Object.keys(data.errors)[0]][0]);
+                            } else {
+                                layer.alert(data.message);
+                            }
+                        }
+                    });
+            },
+            reg: function () {
+                var vm = this;
+                this.$post('/reg', $("#form-reg").serialize())
+                    .then(function (data) {
+                        $("#code").click();
+                        if (data.status === 0) {
+                                                            vm.act = 'login';
+                            layer.alert('恭喜你，注册成功。马上登录！');
+                                                    } else {
+                            if (typeof (data.errors) === "object") {
+                                layer.alert(data.errors[Object.keys(data.errors)[0]][0]);
+                            } else {
+                                layer.alert(data.message);
+                            }
+                        }
+                    });
+            }
+        },
+        mounted: function () {
+            var vm = this;
+            document.onkeyup = function (e) {
+                var code = parseInt(e.charCode || e.keyCode);
+                if (code === 13) {
+                    vm.act === 'login' ? vm.login() : vm.reg();
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>

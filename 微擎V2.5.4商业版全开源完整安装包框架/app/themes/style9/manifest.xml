@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<manifest versionCode="0.5,0.51">
+
+    <identifie><![CDATA[style9]]></identifie>
+    <title><![CDATA[微擎style9]]></title>
+    <description><![CDATA[微擎框架微站模板套系]]></description>
+    <author><![CDATA[微擎框架]]></author>
+    <url><![CDATA[https://www.yunziyuan.com.cn]]></url>
+	<type><![CDATA[car]]></type>	
+</manifest>

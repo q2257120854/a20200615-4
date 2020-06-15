@@ -1,0 +1,409 @@
+﻿@charset "utf-8";
+
+/***** 统一化 *****/
+html {
+	background-color: #E0E2E6;
+}
+
+body {
+	background-color: #F0F2F5;
+	font-size: 14px;
+	color: #3A414B;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.layout {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.fa {
+	font-family: Arial, Helvetica;
+}
+
+ .servicePhone, .orderInfo h2, .greenBtn, .greenBtn .leftBorder, .supportBankWrap .sign, .supportBankWrap .more, .success, .error, .limitText .arrow, .result, .popup .close, .statement, .keepTime, .keepTime i, .control, .payFail, .bindMore span, .callError, .controlTrigger, .nonsupport, .notice .closeNotice, .payLimitWrap .popTxt .arrow {
+	background: url(../images/icons.png) no-repeat; scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.payLimitWrap {
+    color: #999999;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.payLimitWrap:hover .popTxt {
+	display: block;
+}
+.payLimitWrap .popTxt {
+	position: absolute;
+	display: none;
+	left: 0px;
+	bottom: 24px;
+	width: 260px;
+	padding: 14px 8px;
+	background-color: #ECF4F7;
+	border: #BBC7D3 solid 1px;
+	line-height: 22px;
+	color: #666;
+	cursor: default;
+}
+.payLimitWrap .popTxt .arrow {
+	position: absolute;
+	bottom: -9px;
+	left: 18px;
+	display: block;
+	width: 14px;
+	height: 9px;
+	background-position: 0px -656px;
+}
+
+
+.notice {
+    background-color: #FFF9E5;
+    border: 1px solid #EFC5A3;
+    color: #F5802E;
+    font-size: 12px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.notice .closeNotice {
+    background-position: 0 -611px;
+    cursor: pointer;
+    display: block;
+    height: 11px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 11px;
+}
+
+.noticeList {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.noticeList li {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.success, .error {
+	margin-top: 5px;
+	padding-left: 20px;
+	background-position: -207px -1437px;
+	font-size: 12px;
+	color: #73BF20;
+}
+.error {
+	background-position: -208px -610px;
+	color: #DF3234;
+}
+
+li {
+    list-style: none outside none;
+}
+
+.abnor {
+    color: #999999;
+    font-weight: normal;
+    margin-top: 7px;
+}
+
+#mask {
+	z-index: 500;
+	background-color: #000;
+	opacity: 0.78;
+	filter: alpha(opacity = 78);
+}
+/***** iframe遮罩层样式 *****/
+#iframeMask {
+	z-index: 499;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+/***** 统一化结束 *****/ /***** 头部 *****/
+
+
+.logo a {
+	width: 290px;
+	height: 45px;
+	background:url(../images/logo.png) no-repeat left center;
+	text-indent: -9999px;
+}
+
+.viceLogo {
+	width: 81px;
+	height: 35px;
+	margin-left: 15px;
+	margin-top: 5px;
+	padding-left: 15px;
+	border-left: #D9DADD solid 1px;
+	background-position: 15px -350px;
+	text-indent: -9999px;
+}
+
+.servicePhone {
+	width: 215px;
+	height: 14px;
+	margin-top: 45px;
+}
+
+/***** 头部结束 *****/ /***** 左侧订单信息 *****/
+.mainWrap {
+	margin-top: 15px;
+	background-color: #F8F8F8;
+	border: #E6E7E8 solid 1px;
+	box-shadow: #E6E7E8 1px 1px 8px, #E6E7E8 -1px -1px 8px;
+}
+
+.orderInfo {
+	width: 214px;
+	padding: 0px 8px;
+}
+
+.orderInfo h2 {
+	padding: 13px 0px 13px 33px;
+	background-position: -197px -493px;
+	border-bottom: #CCCED0 dotted 1px;
+	font-weight: bold;
+}
+
+.orderInfo .firstInfoList {
+	padding-bottom: 7px;
+	border-bottom: #CCCED0 dotted 1px;
+}
+
+.orderInfo .infoList dt,.orderInfo .infoList dd {
+	float: left;
+	margin-bottom: 8px;
+	line-height: 22px;
+}
+
+.orderInfo .infoList dt {
+	padding-left: 5px;
+	color: #9BA0A7;
+}
+
+.orderInfo .infoList dd {
+	width: 145px;
+}
+
+.orderInfo .infoList dd .sum {
+	margin-right: 5px;
+	color: #ff6633;
+	font-size: 26px;
+	font-weight: 600;
+}
+
+/***** 左侧订单信息结束 *****/ /***** 右侧内容 *****/
+.rightContainer {
+	width: 714px;
+	min-height: 360px;
+	padding: 0px 8px;
+	background: url(../images/r_bg.gif) repeat-y #FFF;
+}
+
+/*右侧标签*/
+.rightContainer .tagWraps {
+	border-bottom: #E6E7E8 solid 1px;
+}
+
+.rightContainer .tagWraps li {
+	position: relative;
+	bottom: -1px;
+	float: left;
+	display: inline;
+	margin-left: 20px;
+	height: 42px;
+	line-height: 42px;
+	border-bottom: #65C476 solid 1px;
+	color: #65C476;
+	font-weight: bold;
+	cursor: default;
+}
+
+
+
+.rightContainer .tagWrap li {
+	position: relative;
+	bottom: -1px;
+	float: left;
+	display: inline;
+	margin-left: 20px;
+	height: 42px;
+	line-height: 42px;
+	
+	color: #65C476;
+	font-weight: bold;
+	cursor: default;
+}
+
+
+
+
+
+
+
+/*版权*/
+.copyright {
+	margin-top: 10px;
+	padding-top: 15px;
+	border-top: #E3E5E9 solid 1px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	height:40px;
+	line-height:40px
+}
+
+
+
+/*选择其他付款方式*/
+.tagWrap,.kcWrap { margin-top: 5px; border: #DADADA solid 1px; }
+.tagNav { height: 38px; padding-left: 16px; background: url(../images/tag_bg.gif) repeat-x; }
+.tagNav li { float: left; display: inline; height: 33px; margin: 5px 2px 0px; line-height: 33px; }
+.tagNav li a { display: block; height: 100%; padding-right: 22px; font-size: 14px; font-family: "\5FAE\8F6F\96C5\9ED1"; color: #FFF; font-weight: bold; }
+.tagNav li a.current, .tagNav li a.current em { background: url(../images/tag_nav_bg.gif) no-repeat right -33px #FFF; color: #359335; }
+.tagNav li a em { background-position: 0px -999px; display: inline-block; vertical-align: top; *vertical-align:middle;
+width: 7px; height: 100%; margin-right: 16px; }
+.tagNav li a.current em { background-position: 0px 0px; }
+.bankWrap li { float: left; display: inline; margin-left: 45px; *margin-left:35px;
+margin-bottom: 15px; }
+.bankWrap .iw{ display: inline-block; vertical-align: middle; width: 114px; height: 25px; padding-top: 5px; padding-left: 10px; background: url(../images/bank_logo.png) no-repeat; border: #DDD solid 1px; text-indent: -9999px; }
+.infoWrap .bankLogo{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width: 136px; height:30px; margin-left: 15px;}
+.infoWrap .bankLogo span{ display:inline-block; width:100%; height:100%; background: url(../images/bank_logo.png) no-repeat;}
+.pointCard .iw { background: url(../images/point_card_logo.gif) no-repeat; }
+.preCard .iw { background: url(../images/pre_card_logo.gif) no-repeat; }
+.member .iw { background: url(../images/logo.gif) no-repeat 5px top; }
+.bankWrap .enterprise li { margin-left: 30px; }
+.bankWrap .enterprise li .iw { width: 126px; }
+/******点卡logo******/
+.QQCARD { background-position: 0px 0px !important; }
+.TELECOM { background-position: 0px -49px !important; }
+.JIUYOU { background-position: 0px -99px !important; }
+.JUNNET { background-position: 0px -150px !important; }
+.UNICOM { background-position: 0px -196px !important; }
+.SZX { background-position: 0px -247px !important; }
+.SNDACARD { background-position: 0px -297px !important; }
+.SOHU { background-position: 0px -346px !important; }
+.TIANHONG { background-position: 0px -396px !important; }
+.TIANXIA { background-position: 0px -446px !important; }
+.WANMEI { background-position: 0px -496px !important; }
+.NETEASE { background-position: 0px -542px !important; }
+.ZHENGTU { background-position: 0px -592px !important; }
+.ZONGYOU { background-position: 0px -643px !important; }
+/******点卡logo结束******/
+/******预付费卡logo******/
+.Yitong { background-position: 0px 5px !important; }
+.Aixin { background-position: 0px -36px !important; }
+.AllScore { background-position: 5px -82px !important; }
+.Zhongfutong { background-position: 5px -129px !important; }
+.Dazhong { background-position: 5px -170px !important; }
+.HUILIAN { background-position: 5px -210px !important; }
+.GXJFT { background-position: 5px -257px !important; }
+.JINCHENGTONG { background-position: 5px -303px !important; }
+.JXJiaofeitong { background-position: 5px -352px !important; }
+.RUITONG { background-position: 5px -398px !important; }
+.JIANGSRX { background-position: 5px -447px !important; }
+.Slsy { background-position: 5px -490px !important; }
+.Shangmeng { background-position: 5px -532px !important; }
+.WSTONGLIAN { background-position: 5px -578px !important; }
+.Edenred { background-position: 5px -625px !important; }
+.Yikahui { background-position: 5px -668px !important; }
+.Bohaiyisheng { background-position: 5px -710px !important; }
+.Ybt { background-position: 5px -753px !important; }
+.XIANFENG { background-position: -2px -788px !important; }
+/******预付费卡logo结束******/
+/******借记卡信用卡logo******/
+.ABC { background-position: 0px 0px !important;/*农业银行*/ }
+.CCB { background-position: 0px -93px !important;/*建设银行*/ }
+.ICBC { background-position: 0px -186px !important;/*工商银行*/ }
+.BOC { background-position: -12px -279px !important;/*中国银行*/ }
+.BOCO { background-position: 0px -372px !important;/*交通银行*/ }
+.CMBCHINA { background-position: -8px -465px !important;/*招商银行*/ }
+.CMBC { background-position: 0px -558px !important;/*民生银行*/ }
+.CIB { background-position: 0px -651px !important;/*兴业银行*/ }
+.CEB { background-position: 0px -744px !important;/*光大银行*/ }
+.ECITIC { background-position: -5px -837px !important;/*中信银行*/ }
+.POST { background-position: 0px -930px !important;/*邮政储蓄银行*/ }
+.BCCB { background-position: -7px -1023px !important;/*北京银行*/ }
+.GDB { background-position: 0px -1116px !important;/*广发银行*/ }
+.SDB { background-position: 0px -1209px !important;/*深圳发展银行*/ }
+.SPDB { background-position: -5px -1302px !important;/*浦发银行*/ }
+.HXB { background-position: -5px -1395px !important;/*华夏银行*/ }
+.BJRCB { background-position: 0px -1488px !important;/*北京农商银行*/ }
+.SHB { background-position: -150px 0px !important;/*上海银行*/ }
+.CZ { background-position: -148px -93px !important;/*浙商银行*/ }
+.SDE { background-position: -137px -186px !important;/*顺德信用社*/ }
+.SCCB { background-position: -140px -372px !important;/*河北银行*/ }
+.EGB { background-position: -145px -465px !important;/*恒丰银行*/ }
+.ZJTLCB { background-position: -135px -558px !important;/*浙江泰隆商业银行*/ }
+.CBHB { background-position: -138px -651px !important;/*渤海银行*/ }
+.HKBEA { background-position: -138px -744px !important;/*东亚银行*/ }
+.NJCB { background-position: -145px -930px !important;/*南京银行*/ }
+.NBCB { background-position: -148px -1023px !important;/*宁波银行*/ }
+.GZCB { background-position: -137px -1116px !important;/*广州市商业银行*/ }
+.SRCB { background-position: -137px -1209px !important;/*上海农村商业银行*/ }
+.HZBANK { background-position: -145px -1302px !important;/*杭州银行*/ }
+.NCBBANK { background-position: -140px -1395px !important;/*南洋商业银行*/ }
+.PINGANBANK { background-position: -137px -1488px !important;/*平安银行*/ }
+/******借记卡信用卡logo结束******/
+/******企业logo******/
+.BOC-EP { background-position: 0px -310px !important;/*中国银行-企业*/ }
+.CMBCHINA-EP { background-position: 0px -496px !important;/*招商银行-企业*/ }
+.SDB-EP { background-position: 0px -1240px !important;/*深圳发展银行-企业*/ }
+.SPDB-EP { background-position: 0px -1333px !important;/*浦发银行-企业*/ }
+.ABC-EP { background-position: 0px -31px !important;/*农业银行-企业*/ }
+.BOCO-EP { background-position: 0px -403px !important;/*交通银行-企业*/ }
+.CCB-EP { background-position: 0px -124px !important;/*建设银行-企业*/ }
+.CEB-EP { background-position: 0px -775px !important;/*光大银行-企业*/ }
+.ICBC-EP { background-position: 0px -217px !important;/*工商银行-企业*/ }
+/******企业logo结束******/
+
+.JZ { background-position: -140px -279px !important;/*锦州银行*/ }/*未使用*/
+.RCU { background-position: -138px -837px !important;/*广东农村信用社*/ }/*未使用*/
+
+.CMBC-EP { background-position: 0px -589px !important;/*民生银行-企业*/ }
+.CIB-EP { background-position: 0px -682px !important;/*兴业银行-企业*/ }
+.ECITIC-EP { background-position: 0px -868px !important;/*中信银行-企业*/ }
+.POST-EP { background-position: 0px -961px !important;/*邮政储蓄银行-企业*/ }
+.BCCB-EP { background-position: 0px -1054px !important;/*北京银行-企业*/ }
+.GDB-EP { background-position: 0px -1147px !important;/*广发银行-企业*/ }
+.HXB-EP { background-position: 0px -1426px !important;/*华夏银行-企业*/ }
+.BJRCB-EP { background-position: 0px -1519px !important;/*北京农商银行-企业*/ }
+.SHB-EP { background-position: -137px -31px !important;/*上海银行-企业*/ }
+.CZ-EP { background-position: -137px -124px !important;/*浙商银行-企业*/ }
+.SDE-EP { background-position: -137px -217px !important;/*顺德信用社-企业*/ }
+.SCCB-EP { background-position: -137px -403px !important;/*河北银行-企业*/ }
+.EGB-EP { background-position: -137px -496px !important;/*恒丰银行-企业*/ }
+.ZJTLCB-EP { background-position: -137px -589px !important;/*浙江泰隆商业银行-企业*/ }
+.CBHB-EP { background-position: -137px -682px !important;/*渤海银行-企业*/ }
+.HKBEA-EP { background-position: -137px -775px !important;/*东亚银行-企业*/ }
+.NJCB-EP { background-position: -137px -961px !important;/*南京银行-企业*/ }
+.NBCB-EP { background-position: -137px -1054px !important;/*宁波银行-企业*/ }
+.GZCB-EP { background-position: -137px -1147px !important;/*广州市商业银行-企业*/ }
+.SRCB-EP { background-position: -137px -1240px !important;/*上海农村商业银行-企业*/ }
+.HZBANK-EP { background-position: -137px -1333px !important;/*杭州银行-企业*/ }
+.NCBBANK-EP { background-position: -137px -1426px !important;/*南洋商业银行-企业*/ }
+.PINGANBANK-EP { background-position: -137px -1519px !important;/*平安银行-企业*/ }
+.JZ-EP { background-position: -137px -310px !important;/*锦州银行-企业*/ }/*未使用*/
+.RCU-EP { background-position: -137px -868px !important;/*广东农村信用社-企业*/ }/*未使用*/
+/*选择其他付款方式结束*/

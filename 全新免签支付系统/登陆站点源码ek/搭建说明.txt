@@ -1,0 +1,25 @@
+注意：搭建涉及代码以及运维知识，如果不懂请找专业人士完成，全套源码仅配带文本教学！
+注意：搭建涉及代码以及运维知识，如果不懂请找专业人士完成，全套源码仅配带文本教学！
+注意：搭建涉及代码以及运维知识，如果不懂请找专业人士完成，全套源码仅配带文本教学！
+
+推荐使用数据库操作工具：Navicat Premium
+
+PHP 文件目录1：app\Http\Controllers
+PHP 文件目录2：app\Edlm “这里得打开去修改api地址”
+页面 文件目录：resources\views
+
+环境要求：支持Laravel，具体查看：http://www.yunziyuan.com.cn/forum/17757.html 服务器要求。
+以及mysql 5.6即可，PHP 推荐7.2！建议使用宝塔！
+
+上传好数据库文件后即可开始，所有站点的数据库是相同的，连接同一个库即可！！！
+
+0.打开根目录下的 .env 配置数据库信息。
+1.上传所有文件到网站目录，设置首页目录为public。
+2.打开 app\Http\Controllers\OpensController.php 替换“站长的APPID”以及“站长的APPPWD”
+3.打开 app\Http\Controllers\ResetController 配置邮件接口地址。
+4.打开 resources\views 逐个查看目录下的PHP文件，根据自己的需求修改配置即可。
+5.在API中的 邮件接口地址，就是 登陆站点地址+/mail。
+
+默认后台管理员登陆邮箱：admin@admin.com ,密码123456 可以通过数据库进行更改或者修好好真实邮箱后，配置好邮件发送，点击忘记密码操作更改密码即可。
+
+包括修改站点的APPID，都是直接通过数据库修改，users 表中的 lpapi 字段中的内容需要和 lpapi表中的appid对应，修好后，配置进去，即可！

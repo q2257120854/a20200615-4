@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background:#f7f7f7;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+p{
+	margin:0;
+	padding:0;
+}
+.hk_head{
+	background:#f7f7f7;
+	width:100%;
+	min-height:2rem;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.hk_head p{
+	width:94%;
+	/*margin-left:3%;*/
+	border-bottom:1px solid #e1e1e1;
+	color:#0abfff;
+	line-height: 2.5rem;
+	font-size: 0.95rem;
+	text-indent: 5%;
+	margin-top: 0.6rem;
+}
+.ON{
+	width:94%;
+	height:2rem;
+	line-height:2rem;
+	font-size: 0.95rem;
+	margin-left:3%;
+	margin-top: 1.1rem;
+}
+.ON span{
+	float:left;
+	margin-left:5%;
+}
+.ON a{
+	float:right;
+	color:#0abfff;
+	margin-right:5%;
+	font-weight: bold;
+}
+.hk_list{
+	width:100%;
+	min-height:2rem;
+	float:left;
+	margin-top: 3rem;
+}
+.hk_con{
+	width:94%;
+	margin-left:3%;
+	height: 5.8rem;
+	background:#fff;
+	margin-top:0.5rem;
+	border-radius:8px;
+}
+.con_left{
+	width: 40%;
+	height: 5.8rem;
+	background:#0abfff;
+	border-radius:8px;
+	color:#fff;
+	text-align:center;
+	float: left;
+}
+.con_left h2{
+	margin:0;
+	padding:0;
+	font-size:1.2rem;
+	margin-top: 1.1rem;
+	float: left;
+	width: 100%;
+	margin-bottom: 0.6rem;
+}
+.con_left span{
+	font-size:0.9rem;
+}
+.con_right{
+	width: 55%;
+	float:right;
+	height: 5.8rem;
+	position:relative;
+}
+.con_right h2{
+	margin:0;
+	padding:0;
+	font-size: 1rem;
+	margin-top: 1.1rem;
+	float: left;
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+.con_right span{
+	font-size:0.9rem;
+}
+.con_right a{
+	line-height:5.8rem;
+	font-size:0.95rem;
+	color:#0abfff;
+	position:absolute;
+	right: 9%;
+	top: 0;
+	background:url(../images/fh.png) center right no-repeat;
+	background-size: 17px;
+	padding-right: 10%;
+}
+
+.m_con_right{
+	width: 55%;
+	float:right;
+	height: 5.8rem;
+	position:relative;
+}
+.m_con_right h2{
+	margin:0;
+	padding:0;
+	font-size: 0.8rem;
+	margin-top: 1.1rem;
+	float: left;
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+.m_con_right span{
+	font-size:0.9rem;
+}
+.m_con_right a{
+	font-size: 0.8rem;
+	float: right;margin-right: 1rem;color: #0abfff;
+	text-decoration:none;	
+}
+.m_con_right a:hover{
+	text-decoration:none;
+}

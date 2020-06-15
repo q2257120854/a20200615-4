@@ -1,0 +1,11 @@
+/* pages/personal/introduction.wxss */
+.fk-container{display:flex;flex-direction:column;padding:10px;}
+.fk-header{display:flex;width:100%;color:#ffffff;font-size:14px;margin-bottom:5px;}
+.fk-header text{flex:1;text-align:center}
+
+.fk-level-container{display:flex;align-items:center;color:#ffffff;background-color:#ffffff;border-radius:10px;padding:10px 0;margin-top:10px;}
+.fk-level-name{flex:1;text-align:center;color:#4F83E8;font-size:16px;font-weight:bold;}
+.fk-level-image{flex:1;text-align:center;display:flex;justify-content:center;border-left:1px solid #efefef;border-right:1px solid #efefef;}
+.fk-level-image image{width:56px;height:56px;}
+.fk-level-integral{flex:1;text-align:center;display:flex;justify-content:center;align-items:center;color:#fe856a;font-size:16px;font-weight:bold;}
+.fk-level-integral image{width:20px;height:20px;margin-right:10px;}

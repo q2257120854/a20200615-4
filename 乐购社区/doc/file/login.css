@@ -1,0 +1,299 @@
+/**
+ * 氓藛聺氓搂鈥姑ヅ掆€撁β德徝喢モ劉篓茅禄藴猫庐陇忙聽路氓录聫
+ **/
+
+html,body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,input,button,textarea,p,span,table,th,td,form{margin:0;padding:0}
+body,input,button,select,textarea{font:12px/1.5 "Microsoft Yahei","Helvetica Neue";color:#34495e;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	-moz-font-feature-settings: "liga","kern";}
+table{border-collapse:collapse;border-spacing:0}
+img,a img{border:0}
+a{color:#369;outline:medium none;text-decoration:none;}
+a:hover{text-decoration:none}
+label{cursor:pointer}
+ul li,.ol li{list-style:none}
+em,cite,i{font-style:normal}
+p{word-wrap: break-word; word-break: break-all;} /*氓鈥β┢捖ㄢ€孤泵︹€撯€∶ヂ€斆γぢ糕€姑ㄢ€÷ヅ犅β嵚⒚∨�*/
+
+/* 氓沤禄茅鈩⒙hrome莽颅鈥懊β德徝喢モ劉篓忙鈥撯€∶ε撀β♀€犆┞凰溍っヂ忊€樏モ€︹€懊韭姑β♀€� */
+input:focus, textarea:focus {outline: none;}
+/* 氓沤禄茅鈩⒙E10+忙碌聫猫搂藛氓鈩⒙︹€撯€∶ε撀β♀€犆ヂ惻矫┞澛⒚♀€灻ヂ奥徝ヂ忊€懊ヂ忊€� */
+input::-ms-clear {display: none;}
+/* 莽娄聛忙颅垄氓陇拧猫隆艗忙鈥撯€∶ε撀β♀€爐extarea忙鈥光€撁︹€孤� */
+textarea {resize: none;}
+
+/* ==氓鈥βヂ扁偓茅鈧∶р€澛β犅访ヂ悸�== */
+
+/* 茅聛驴氓鈥β嵜モ€郝犆ヂ惷モ€ζ捗绰犆β德ヅ犅ㄢ偓艗氓炉录猫鈥÷疵♀€灻喡睹モ€ζ捗绰犆┞溍ヂ郝γ悸好ヂぢ泵ㄆ捖矫┾€斅┞⑺� */
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }
+
+/* 忙碌庐氓艩篓 */
+.z { float: left !important; }
+.y { float: right !important; }
+
+/* 茅录聽忙聽鈥∶β犅访ヂ悸徝寂捗ヂ徛ぢ宦ッβ犅姑β嵚┡撯偓猫娄聛忙艗鈥懊ヂ郝徝β仿幻ヅ犅� */
+.cur1 { cursor: pointer; }
+
+/* 忙藴戮莽陇潞/茅拧聬猫鈥斅� */
+.show { display: block !important; }
+.hide { display: none !important; }
+
+/* 莽鈥郝该ヂ姑ヂ∶ぢ铰� */
+.pos { position: relative; }
+
+/* 莽聛掳猫鈥奥� */
+.grays { 
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ 
+    -webkit-filter: grayscale(100%); /* chrome+ */ 
+    filter: grayscale(100%); /* 忙艙陋忙聺楼忙碌聫猫搂藛氓鈩⒙� */ 
+    filter: gray; /* ie6-8 */ 
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);/*ie6-9 */  
+}
+
+/* 茅鈧∶р€澛ヂ姑モ劉篓茂录艗氓庐拧盲鹿鈥懊┞÷得┞澛⒚ヂ矫ヂ郝� 氓鈥β访ε撯€� n, m, w 盲赂鈥懊ぢ嘎郝ニ喡� */
+.wpn { width: 1180px; margin: 0 auto; }  	/* 4 氓藛鈥� * 300 */
+.wpm { width: 1480px; margin: 0 auto; }  	/* 5 氓藛鈥� * 300 */
+.wpw { width: 1780px; margin: 0 auto; } 	/* 6 氓藛鈥� * 300 */
+
+.wpf { width: 100%; max-width: 1260px; margin: 0 auto; }  	/* 4 氓藛鈥� * 300 */  /*氓庐啪茅鈩⑩€γヂ矫ヂ郝�1180+氓路娄氓聫鲁猫戮鹿猫路聺氓聬鈥�40*/
+.wpf-row { width: 93.6507936%; margin: 0 3.1746031%;}   /*1180/1260,40/1260*/
+.row { width: 100% }
+
+/* 盲赂禄盲陆鈥溍モ€犫€γヂ� */
+.ct { display: block; min-height: 530px;}
+
+/* 盲赂禄盲陆鈥溍モ€犫€γヂ� - 氓赂娄猫戮鹿忙聽聫 */
+/*.ctn .mn { width: 880px; float: left; }
+.ctn .sd { width: 280px; float: right; }*/
+.ctn .mn {margin:0 300px 0 0; padding-top: 20px;}
+.ctn .sd {position: absolute; right: 280px; top: 0; bottom: 0; }
+
+/* 忙鈥撯€∶ε撀ヂ迸久︹偓搂茂录拧氓颅鈥斆ヂ徛访ｂ偓聛茅垄艙猫鈥奥裁ｂ偓聛莽虏鈥斆烩€犆ｂ偓聛忙颅拢忙鈥撆� */
+/* 氓颅鈥斆ヂ徛� */
+.f12 { font-size: 12px; }
+.f14 { font-size: 14px; }
+.f16 { font-size: 16px; }
+.f26 { font-size: 26px; }
+
+/* 茅垄艙猫鈥奥� */
+.b8c5ce { color: #b8c5ce; }
+.ff8326 { color: #ff8326; }
+
+/* 莽虏鈥斆烩€� */
+.b { font-weight: bold; }
+
+/* 忙颅拢忙鈥撆� */
+.i { font-style: italic; }
+
+/* 氓陇鈥撁韭姑仿澝β犅访ヂ悸徝寂捗ぢ脚撁р€澛ぢ号矫モ€ζ捗绰犆♀€灻ぢ概犆ぢ糕€姑ヂも€撁韭姑仿澝寂捗ぢ概犆ぢ糕€姑ヂ愨€灻モ€β访ε撯€� n, m, w 盲赂鈥懊ぢ嘎郝ニ喡� */
+.mtn { margin-top: 5px !important; }
+.mtm { margin-top: 10px !important; }
+.mtw { margin-top: 20px !important; }
+
+.mbn { margin-bottom: 5px !important; }
+.mbm { margin-bottom: 10px !important; }
+.mbw { margin-bottom: 20px !important; }
+
+.mrn { margin-right: 5px !important; }
+.mrm { margin-right: 10px !important; }
+.mrw { margin-right: 20px !important; }/*20/1180=1.6949152%*/
+
+.mln { margin-left: 5px !important; }
+.mlm { margin-left: 10px !important; }
+.mlw { margin-left: 20px !important; }
+
+.mtbn { margin: 5px 0 !important; }
+.mtbm { margin: 10px 0 !important; }
+.mtbw { margin: 20px 0 !important; }
+
+.mlrn { margin: 0 5px !important; }
+.mlrm { margin: 0 10px !important; }
+.mlrw { margin: 0 20px !important; }
+
+
+/* 氓鈥犫€γ韭姑仿澝β犅访ヂ悸徝寂捗ぢ脚撁р€澛ぢ号矫モ€ζ捗绰犆♀€灻ぢ概犆ぢ糕€姑モ€犫€γ韭姑仿澝寂捗ぢ概犆ぢ糕€姑ヂ愨€灻モ€β访ε撯€� n, m, w 盲赂鈥懊ぢ嘎郝ニ喡� */
+.ptn { padding-top: 5px !important; }
+.ptm { padding-top: 10px !important; }
+.ptw { padding-top: 20px !important; }
+
+.pbn { padding-bottom: 5px !important; }
+.pbm { padding-bottom: 10px !important; }
+.pbw { padding-bottom: 20px !important; }
+
+.ptbn { padding: 5px 0 !important; }
+.ptbm { padding: 10px 0 !important; }
+.ptbw { padding: 20px 0 !important; }
+
+.plrn { padding: 0 5px !important; }
+.plrm { padding: 0 10px !important; }
+.plrw { padding: 0 20px !important; }
+
+
+/* ==== 忙艗鈥懊┾€櫬� Buttons  2015-1-12==== */
+.lang-btn {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	background-color: #3499DA;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFF;
+	border: none;
+	letter-spacing: 1px;
+	overflow: hidden;
+	text-align: center;
+	border-radius:2px;
+}
+/* 忙鈥斅犆ㄆ捙捗︹劉炉忙艗鈥懊┾€櫬� */
+.lang-cancel{background:0;color:#2d3e50}
+/* 氓聫鈥撁β端喢ε掆€懊┾€櫬� */
+.lang-btn-none{background:#e4e9ed;color:#2d3e50;}
+.lang-btn-none:hover{background:#e4e9ed;color:#2d3e50;}
+
+.lang-btn-c{display:inline-block;position:relative;vertical-align:middle;cursor:pointer;white-space:nowrap;background:#e4e9ed;height:40px;line-height:40px;
+			font-size:16px;color:#2d3e50;border:0;letter-spacing:1px;overflow:hidden;text-align:center;border-radius:2px}
+/* 盲驴庐忙鈥澛姑ε掆€懊┾€櫬♀€灻┞凰溍っ犅睹︹偓聛 */
+.lang-btn:active{outline:0;box-shadow:none}
+.lang-btn:focus{border:0;outline:0;box-shadow:none}
+.lang-btn:hover{text-decoration:none}
+
+/* 莽聛芦莽鈥孤惷モ€β济ヂ� */
+.lang-btn::-moz-focus-inner {border: 0;padding: 0;}
+/* 忙藛聬氓艩鸥 */
+.lang-btn-success { background-color: #4a993e; }
+/* 茅鈥濃劉猫炉炉 */
+.lang-btn-eroor { background-color: #b33630; }
+/* 盲赂聧氓聫炉忙聫聬盲潞陇莽艩露忙鈧� */
+.lang-btn-disabled { background-color: #ddd; color: #777; cursor: default; }
+/* 氓卤鈥⒚ぢ� */
+.lang-btn-show { background-color: #e4e9ed; color: #2d3e50; cursor: default; }
+/* 氓鈥β趁佲€� */
+.lang-btn-relating { background-color: #b8c5ce; color: #2d3e50; }
+
+
+/* 忙艗鈥懊┾€櫬︹€撯€∶ヂ€� */
+.lang-btn .lang-btn-content {  padding: 0 30px; display: block; }
+/* 氓陇搂莽拧鈥� */
+.lang-btn-big .lang-btn-content { padding: 0 45px; }
+/* 氓路篓氓陇搂莽拧鈥� */
+.lang-btn-huge { height: 50px; line-height: 50px; }
+.lang-btn-huge .lang-btn-content { padding: 0 45px; }
+/* 忙艗鈥懊┾€櫬♀€灻┞⑴撁ㄢ€奥� */
+.lang-btn-col-blue{background:#3499DA;color:#fff;}
+.lang-btn-col-blue:hover{background:#3da2e3;color:#fff;}
+/* 氓鈥郝好ヂ∶ヂ矫ヂ郝γ♀€� */
+.lang-btn-fixed-small { width: 100px; }
+.lang-btn-fixed-small .lang-btn-content { padding: 0; }
+
+.lang-btn-fixed-big { width: 160px; }
+.lang-btn-fixed-big .lang-btn-content { padding: 0; }
+
+.lang-btn-fixed-Large { width: 100%; }
+.lang-btn-fixed-Large .lang-btn-content { padding: 0; }
+
+/* 氓掳聫氓颅鈥斆ヂ徛访ε掆€懊┾€櫬� 盲赂戮忙艩楼氓录鹿氓鈥÷好β♀€犆モ€犅嵜р€澛� */
+.submit-button{width:80px;height:40px;background:#3499da;color:#fff;font-size:14px;cursor:pointer;line-height:40px;border:0;border-radius:2px}
+.submit-button:hover{background:#3da2e3;transition:all .4s ease-in-out 0s}
+.submit-button:active{background:#2e93d4}
+.mini-button-disabble{width:80px;height:40px;background:#b8c5ce;color:#fff;font-size:14px;cursor:pointer;line-height:40px;border:0;border-radius:2px}
+.mini-button-disabble:hover{background:#c8d4db;transition:all .4s ease-in-out 0s}
+.mini-button-disabble:active{background:#a9b9c3}
+
+/* 忙艗鈥懊┾€櫬� Buttons END */
+
+ /* ==== 猫隆篓氓聧鈥� Input 忙隆鈥� 2015-2-28==== 盲禄楼氓鈥奥嵜♀€灻┞⑴撁ㄢ€奥瞓8c4ce*/
+.lang-input{padding:14px 15px;height:20px;border:#e4e9ed 1px solid;border-radius:2px;background:#fff;color:#5d6d7e;font-size:16px;line-height:20px;box-sizing: content-box;}
+
+.lang-input:focus {
+    border: 1px solid #3498db;
+    box-shadow: 0 0 4px rgba(41, 128, 185, 0.4);
+}
+/* 莽鈥灺γр€毬�/忙藛聬氓艩鸥 */
+.lang-input-on, .lang-input-success {
+	border: #3498db 1px solid;
+	box-shadow: 0 0 4px rgba(41, 128, 185, 0.4);
+	color: #34495e;
+}
+/* 茅鈥濃劉猫炉炉 */
+.lang-input-error {
+	border: #fcab2b 1px solid;
+	box-shadow: 0 0 4px rgba(252, 171, 43, 0.4);
+}
+
+/* form 猫隆篓氓聧鈥⒚モ€郝好ヂ∶ヂ矫ヂ郝� */
+.w520 { width: 488px; } /* 氓庐啪茅鈩⑩€γヂ矫ヂ郝�520-氓鈥犫€γ韭姑仿澝ヂ仿γヂ徛趁ヂ愨€�15px-猫戮鹿忙隆鈥�2 */
+.w880 { width: 848px; } /* 氓庐啪茅鈩⑩€γヂ矫ヂ郝�520-氓鈥犫€γ韭姑仿澝ヂ仿γヂ徛趁ヂ愨€�15px-猫戮鹿忙隆鈥�2 */
+.w580 { width: 548px; } /* 氓庐啪茅鈩⑩€γヂ矫ヂ郝�520-氓鈥犫€γ韭姑仿澝ヂ仿γヂ徛趁ヂ愨€�15px-猫戮鹿忙隆鈥�2 */
+
+/* textarea盲陆驴莽鈥澛� */
+.h164 { height: 130px; }
+.lh20 { line-height: 24px; }
+
+.lang-must{ position: absolute; right: 11px; color: #FD8335!important; line-height: 50px!important;}
+/* 猫隆篓氓聧鈥� Input 忙隆鈥� END */
+
+ /* ====忙鲁篓氓鈥犈捗锯€溍モ€βッβ♀€� 2015-1-12==== */
+.login-icon { display: block; height: 40px; width: 100%;  border-bottom: #e9ecee 1px solid; margin-top: 30px; }
+
+/* 猫戮鈥溍モ€βッβ♀€犆β绰幻ヅ犅犅睹︹偓聛/忙藛聬氓艩鸥 */
+.login-on, .login-success { border-bottom: #3498db 1px solid; }
+.login-on .log-input, .login-error .log-input, .login-success .log-input { color: #5d6d7e; }
+.login-on .iconfont, .login-success .iconfont{color: #3A99D8;}
+
+/* 茅鈥濃劉猫炉炉 */
+.login-error { border-bottom: #fcab2b 1px solid; }
+.login-error .iconfont{ color: #fcab2b;}
+
+/* 莽鈩⒙幻ヂ解€⒚锯€溍モ€βッβ♀€� */
+.log-input { border: none; height: 20px; font-size: 16px; padding: 10px 2.5%; line-height: 20px; color:  #b8c4ce; background: #fff; width: 90%;}
+			/*30/400=7.5%,360/400=90%,10/400=2.5%*/
+.log-input-half { border: none; height: 20px; font-size: 16px; padding: 10px 5%; line-height: 20px; color:  #b8c4ce; background: #fff; width: 80%;}
+			/*30/200=15%,160/200=80%,10/200=5%*/
+.log-input::-moz-placeholder { color: #b8c4ce;}
+.log-input::-ms-input-placeholder { color: #b8c4ce;}
+.log-input::-webkit-input-placeholder { color: #b8c4ce;}
+.log-input:placeholder { color: #b8c4ce;}
+
+textarea::-moz-placeholder { color: #b8c4ce;}
+textarea::-ms-input-placeholder { color: #b8c4ce;}
+textarea::-webkit-input-placeholder { color: #b8c4ce;}
+textarea:placeholder { color: #b8c4ce;}
+/* 忙鲁篓氓鈥犈捗锯€溍モ€βッβ♀€� end */
+
+/*message 忙聫聬茅鈥犫€櫭β端喢β伮�*/
+#ajax-hook{ position:fixed; top:0; z-index:99999; width:100%;}
+.globalInfoTip {z-index: 20; height: 60px;width: 100%;position: relative;cursor: pointer;}
+.globalInfoTip p {text-align: center;font-size: 16px;height: 30px;line-height: 30px;padding: 15px 0;color: #FFF;position: relative;}
+.globalInfoTip .infoTipBack {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: #3498db;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);opacity: 0.8;filter:alpha(opacity=80);-moz-opacity: 0.8;-khtml-opacity: 0.8;}
+.msg-bor{border-bottom-color:#e74c3c}
+
+
+/*氓颅鈥斆ぢ解€溍モ€郝久β犫€�*/
+.iconfont, [class^="icon-"], [class*=" icon-"] {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  color: #b8c4ce;
+  font-style:normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+[id^="xunlei_com"],[id*="xunlei_com"]{
+	display:none !important;
+}
+
+/*莽陆鈥樏劉忙鈥⒙疵ぢ解€溍伮懊ㄢ€奥裁ㄆ捙捗︹劉炉*/
+body,
+.body-gray { background-color: #eff3f5; }
+/*茅茠篓氓藛鈥犆р劉陆猫鈥奥裁ㄆ捙捗︹劉炉*/
+.bg-white { background-color: #fff;}
+/*猫庐陇猫炉聛*/
+.icon-certified2{color: #e74c3c;font-size: 14px;}

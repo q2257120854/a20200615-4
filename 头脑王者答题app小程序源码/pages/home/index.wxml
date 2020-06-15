@@ -1,0 +1,114 @@
+<view class="fk-flex-v fk-container">
+    <!-- 用户信息 -->
+    <view class="fk-bg fk-userinfo-container fk-flex-v fk-userinfo-bg animated slideInDown">
+        <view class="fk-flex-v fk-flex-center fk-margin-b10" bindtap="clickLogin">
+            <image class="fk-avatar" src="{{avatarUrl}}" />
+            <text class="fk-username">{{nickName}}</text>
+            <image src="/static/images/user.png" class="fk-userdetail-icon" bindtap="showUserinfo" />
+        </view>
+        <view class="fk-flex fk-flex-content-betwwen">
+            <view class="fk-flex fk-flex-items-center">
+                <image class="fk-grade-image" src="{{userLevelImage}}" />
+                <text class="fk-grade-text">{{userLevelName}}</text>
+                <!-- <text class="fk-grade-text">等级1</text>
+                <view class="fk-grade-container">
+                    <view class="fk-grade"></view>
+                </view> -->
+            </view>
+            <view class="fk-flex fk-flex-center">
+                <image src="/static/images/money.png" class="fk-integral-icon" />
+                <text class="fk-integral">{{integral}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 赛季活动 -->
+    <view class="fk-activity-container fk-shadow animated fadeInDownBig" hidden='{{seasonTitle == ""}}'>
+        <view class="fk-activity-title">{{seasonTitle}}</view>
+        <view class="fk-activity">
+            <text class="fk-activity-subtitle">{{seasonSubtitle}}</text>
+            <ui-count-down time="{{seasonEndDate}}" done-text="活动已结束" format="剩余:{%d}天{%h}时{%m}分{%s}秒"></ui-count-down>
+        </view>
+    </view>
+
+    <!-- 功能模块 -->
+    <view class="fk-flex" hidden='{{!showGrid}}'>
+        <!-- 左侧功能（每日签到、个人排位、排行榜、公告、背包） -->
+        <view class="fk-grid fk-margin-r10">
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInLeftBig fk-signin-bg" bindtap="showSignin">
+                <text class="fk-grid-item-title">签到</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInLeftBig fk-personal-bg" bindtap="showPersonal">
+                <text class="fk-grid-item-title">个人排位赛</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInLeftBig fk-rank-bg" bindtap="showRankingList">
+                <text class="fk-grid-item-title">排行榜</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInLeftBig fk-notice-bg" bindtap="showNotice">
+                <text class="fk-grid-item-title">公告</text>
+            </view>
+            <!-- <view class="fk-bg fk-grid-item fk-shadow animated fadeInLeftBig fk-package-bg" bindtap="showPackage">
+                <text class="fk-grid-item-title">道具背包</text>
+            </view> -->
+        </view>
+
+        <!-- 右侧功能（今日答题、好友PK、团队PK、设置） -->
+        <view class="fk-grid">
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInRightBig fk-daily-bg" bindtap="showDaily">
+                <text class="fk-grid-item-title">每日学习</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInRightBig fk-friends-bg" bindtap='showFriendsPK'>
+                <text class="fk-grid-item-title">好友对战</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInRightBig fk-team-bg" bindtap='showTeamPK'>
+                <text class="fk-grid-item-title">团队赛</text>
+            </view>
+            <view class="fk-bg fk-grid-item fk-shadow animated fadeInRightBig fk-setting-bg" data-show="{{ true }}" bindtap="showSettingDialog">
+                <text class="fk-grid-item-title">设置</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 设置 -->
+    <ui-mask show="{{showSettingDialog}}">
+        <view style="padding:30px 0 20px;background-color:#fff;border-radius:10px">
+            <view class="fk-mask-title">设置</view>
+            <view style="padding:0 30px">
+                <view style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+                    <text style="font-size:16px;font-weight:bold;color:#4f83e8">接收消息</text>
+                    <switch color="#04be02" checked="{{recvMessageEnabled}}" data-index="1" bindchange="saveSetting" />
+                </view>
+                <view style="display:flex;align-items:center;justify-content:space-between">
+                    <text style="font-size:16px;font-weight:bold;color:#4f83e8">游戏音效</text>
+                    <switch color="#04be02" checked="{{gameVoiceEnabled}}" data-index="2" bindchange="saveSetting" />
+                </view>
+            </view>
+        </view>
+    </ui-mask>
+
+    <!-- 登录授权 -->
+    <ui-mask show="{{showAuthDialog}}" showClose="{{false}}">
+        <view style="padding:30px 0 20px;background-color:#fff;border-radius:10px">
+            <view class="fk-mask-title">提示</view>
+            <view style="padding:0 30px">
+                <view class="fk-font-16" style='margin-bottom:10px;'>本小程序需要登录授权后（获得你的公开信息，如：昵称、头像等）才能进行使用！</view>
+                <view style="display:flex;justify-content:space-between;">
+                  <button class="get-userinfo-button plain" bindtap="hideAuthDialog">暂不登录</button>
+                  <button type="warn" class="get-userinfo-button" open-type="getUserInfo" bindgetuserinfo="doGetUserInfo" style='background-color:#00e2bd;'>授权登录</button>
+                </view>
+            </view>
+        </view>
+    </ui-mask>
+
+    <!-- 绑定企业微信 -->
+    <ui-mask show="{{showQyBoundDialog}}" showClose="{{false}}">
+        <view style="padding:30px 0 20px;background-color:#fff;border-radius:10px">
+            <view class="fk-mask-title">资料完善</view>
+            <view style="padding:0 30px">
+                <input placeholder="输入您的员工号(企业微信)" type="text" bindinput="bindUserIdInput" style='height:40px;border-bottom:1px solid #00e2bd;margin-bottom:20px;' />
+                <button type="warn" class="get-userinfo-button" bindtap="bindQyWechat" style='background-color:#00e2bd;'>确定</button>
+            </view>
+        </view>
+    </ui-mask>
+
+</view>

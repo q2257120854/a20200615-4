@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>常见问题</title>
+		<style>
+			.redText{
+				color: red;font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>常见问题</h5>
+			</div>
+			<div class="public-btnArea">
+	        	<a href="javascript:$('.alert').show();" class="btn btn-grayBg">
+	            	<i class="glyphicon glyphicon-plus public-ico"></i>
+	                <span class="public-label">添加常见问题</span>
+	            </a>
+        	</div>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th width="8%">序号</th>
+							<th>标题</th>
+							<th width="8%">排序</th>
+							<th width="20%">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td align="center">{$vo.id}</td>
+							<td>{$vo.title}</td>
+							<td>{$vo.sort}</td>
+							<td class="text-left">
+								<a href="javascript:edit('{$vo.id}');" target="_blank">编辑</a>
+								<a href="javascript:del('{$vo.id}','{$vo.title}');">删除</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+	    <div class="alert" style="display: none;">
+	    	<div class="win">
+				<form action="{:U('Help/add')}" method="post">
+		        	<ul>
+		            	<li><label>标题：</label><input type="text" name="title"></li>
+		            	<li><label>排序：</label><input type="text" name="sort"></li>
+		                <li>
+		                	<label>内容：</label>
+		                    <textarea class="alert_con" name="content" id="content"></textarea>
+		                </li>
+		                <li class="anniu">
+		                	<a href="javascript:$('.alert').hide();" class="but">取消</a>
+		                    <a href="javascript:formSubmit();" class="but" style="background-color: #007EE5;color: #fff;">提交</a>
+		                </li>
+		            </ul>
+				</form>
+	        </div>
+	    </div>
+	</body>
+	<script>
+		function formSubmit(){
+			cvphp.submit($("form"),function(data){
+				if(data.status!=1){
+					layer.msg(data.info);
+				}else{
+					$(".alert").hide();
+					layer.alert('操作成功');
+					location.reload();
+				}
+			});
+		}
+		function edit(id){
+			//获取问题详情
+			cvphp.get(
+				"{:U('Help/view')}",
+				{
+					id:id
+				},
+				function(data){
+					if(data.status!=1){
+						layer.msg(data.info);
+					}else{
+						var data = data.info;
+						$(".alert input[name='title']").val(data.title);
+						$(".alert input[name='sort']").val(data.sort);
+						$("#content").val(data.content);
+						$(".alert form").attr('action',data.editurl);
+						$(".alert").show();
+					}
+				}
+			);
+		}
+		function del(id,title){
+			layer.confirm(
+				'数据删除后不可恢复,请确认？',
+				{
+					btn: ['确认删除','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Help/del')}",
+						{
+							id:id
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								$("#list-"+id).remove();
+								layer.msg("操作成功");
+							}
+						}
+					);
+				}
+			);
+		}
+	</script>
+</html>

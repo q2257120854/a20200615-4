@@ -1,0 +1,21 @@
+/* pages/personal/index.wxss */
+.fk-season{display:flex;flex-direction:column;align-items:center;padding:15px 10px;color:#fff;background:linear-gradient(#0be9fe, #4caefd);border-radius:10px;position:relative;}
+.fk-season-info{position:absolute;right:15px;top:15px;width:24px;height:24px;}
+.fk-season-header{font-size:30px;font-weight:bold;}
+.fk-season-header-2{font-size:18px;margin:10px 0}
+.fk-season-time{font-size:12px;flex:1;text-align:right;}
+
+.fk-integral{display:flex;align-items:center;}
+.fk-integral image{width:16px;height:16px;margin-right:2px;}
+
+.fk-level{background-color:#1ed4ea;border-radius:10px;padding:10px;display:flex;align-items:center;position:relative;margin-top:10px;}
+.fk-level-icon{width:60px;height:60px;padding:5px;background-color:#88e8f4;border-radius:100%;}
+.fk-level-text{color:#ffffff;font-size:18px;font-weight:bold;height:2px;background-color:#ffffff;width:50%;position:relative;margin-bottom:10px;}
+.fk-level-text text{position:absolute;bottom:5px;left:15px;}
+.fk-level.disabled{opacity:.2}
+
+.fk-level-star{position:absolute;right:10px;bottom:5px;height:40px;padding-left:80px;display:flex;flex-direction:row;justify-content:flex-end;align-items:center;flex-wrap:wrap-reverse;}
+.fk-level-star image{width:20px;height:18px;display:inline-block;margin-left:3px;}
+.fk-level-locked{width:64px;height:64px;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%);opacity:.8}
+
+.fk-more{width:48px;height:48px;margin:0 auto;margin-top:10px;opacity:.8}

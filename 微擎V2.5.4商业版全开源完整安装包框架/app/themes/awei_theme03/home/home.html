@@ -1,0 +1,98 @@
+{template 'header'}
+<script src="themes/awei_theme03/js/TouchSlide.1.1.js"></script>
+<style>
+	body{
+	font:{$_W['styles']['fontsize']} {$_W['styles']['fontfamily']};
+	color:{$_W['styles']['fontcolor']};
+	padding:0;
+	margin:0;
+	background-image:url('{if !empty($_W['styles']['indexbgimg'])}{$_W['styles']['indexbgimg']}{/if}');
+	background-size:cover;
+	background-color:{if empty($_W['styles']['indexbgcolor'])}#370f05{else}{$_W['styles']['indexbgcolor']}{/if};
+	{$_W['styles']['indexbgextra']}
+	}
+	.main{width:100%;margin-bottom:50px;height: 100%;}
+	.focus{ width:100%; position:relative;/* overflow:hidden; */}
+	.focus .hd{ width:100%; /*! height:11px; */  position:absolute; z-index:1; bottom:11px; text-align:right;}
+	.focus .hd ul{ display:inline-block; height:5px; padding:3px 5px; font-size:0; vertical-align:top;
+	}
+	.focus .hd ul li{ display:inline-block; width:15px; height:15px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:8px; background:#ababab; margin:0 5px;  vertical-align:top; overflow:hidden;   }
+	.focus .hd ul .on{ background:#fff;  }
+	
+	.focus .bd{ position:relative; z-index:0; }
+	.focus .bd li img{ width:100%;}
+	
+	.focus .hd2{ width:100%; height:30px;  /*! position:absolute; */ z-index:1; bottom:5px; text-align:right;display: none;}
+	.focus .hd2 ul{ display:inline-block; height:8px; padding:13px 5px; font-size:0; vertical-align:top;}
+	.focus .hd2 ul li{ display:inline-block; width:8px; height:8px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#ababab; margin:0 5px;  vertical-align:top; overflow:hidden;   }
+	.focus .hd2 ul .on{ background:#c61b4f;  }
+	a{color:{$_W['styles']['linkcolor']}; text-decoration:none;}
+	{$_W['styles']['css']}
+	.box{padding:0 2% 0 0; overflow:hidden;margin-top:10px;}
+	.box .box-item{float:left;text-align:center;display:block;text-decoration:none;outline:none;margin:0 0 2% 2%;width:48%;height:100px; background:#d47314; margin-bottom:8px;position:relative; color:#FFF;}
+	.box .box-item i{display:inline-block; position:absolute; font-size:35px; color:#FFF; overflow:hidden;}
+	.box .box-item img{display:inline-block; height:40px; margin:0 auto;}
+	.box .box-item span{color:{$_W['styles']['fontnavcolor']}; font-size:16px; display:block; position:absolute; text-align:left; overflow:hidden;}
+	.box .box-item.icon i{right:39%; bottom:5px; width:40px; height:40px;}
+	.box .box-item.icon span{top:10px; width:100%; text-align:center;}
+	.box .box-item.pic{width:98%;}
+	.box .box-item.pic i{width:65%; height:100px; line-height:100px; left:0;}
+	.box .box-item.pic img{display:block; height:100px; margin:0 auto;}
+	.box .box-item.pic span{width:31%; right:2%; top:30%;}
+	.box ul li{background-color:#d47314;padding:0 10px;margin:1%;display: inline-block;height:45px;width:100%;}
+	.box ul li a{text-decoration: none;}
+	.box .title{color:#fff;}
+	.box .createtime{color:#999;font-size:12px}
+	.footer{color:#dddddd;}
+</style>
+<div class="main">
+<div id="focus" class="focus">
+  <div class="bd">
+    <ul>
+      {data func="site_slide_search" item="row"}
+      <li><a href="{$row['url']}"><img _src="{$row['thumb']}"/></a></li>
+      {/data}
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+</div>
+<div class="box clearfix">
+	{php $num = 0;}
+	{loop $navs $nav}
+	{php if($num == 0) $bg = '#807ab6';}
+	{php if($num == 1) $bg = '#8bbc64';}
+	{php if($num == 2) $bg = '#f6b544';}
+	{php if($num == 3) $bg = '#ce78a3';}
+	{php if($num == 4) $bg = '#6bb4d4';}
+	<a href="{$nav['url']}" class="box-item icon" style="background:{$bg};">
+		{if !empty($nav['icon'])}
+		<i><img src="{$_W['attachurl']}{$nav['icon']}"></i>
+		{else}
+		<i class="fa {$nav['css']['icon']['icon']}" style="{$nav['css']['icon']['style']}"></i>
+		{/if}
+		<span style="{$nav['css']['name']}" title="{$nav['name']}">{$nav['name']}</span>
+	</a>
+	{php $num++; if($num > 4) $num = 0;}
+	{/loop}
+</div>
+</div>
+<script type="text/javascript">
+    TouchSlide({ 
+        slideCell:"#focus",
+        titCell:".hd ul",
+        mainCell:".bd ul", 
+        effect:"left", 
+        autoPlay:true,
+        autoPage:true, 
+        switchLoad:"_src" 
+    });
+</script>
+		{if (($_GPC['a'] != 'card' || $_GPC['c'] != 'mc') && ($_GPC['a'] != 'token' || $_GPC['c'] != 'activity') && ($_GPC['a'] != 'goods' || $_GPC['c'] != 'activity') && ($_GPC['a'] != 'coupon' || $_GPC['c'] != 'activity') && $_GPC['m'] != 'paycenter')}
+			{data func="site_quickmenu"}{/data}
+		{/if}
+		<script>require(['bootstrap']);</script>
+</body>
+</html>

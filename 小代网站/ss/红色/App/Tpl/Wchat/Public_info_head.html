@@ -1,0 +1,24 @@
+		<section class="ioc_list">
+			<ul>
+				<li class="col-xs-7 identityAuth"></li>
+				<li class="col-xs-7 contactsAuth"></li>
+				<li class="col-xs-7 bankAuth"></li>
+				<li class="col-xs-7 addessAuth"></li>
+			
+			</ul>
+		</section>
+		<php>$actionName = ACTION_NAME;</php>
+		<script>
+			<volist name="auth" id="vo">
+				<notempty name="vo">
+					var obj = $(".ioc_list li."+"{$key}"+"Auth");
+					obj.removeClass("{$key}"+"Auth");
+					obj.addClass("{$key}"+"AuthNow");
+					obj.html("<span></span>");
+				</notempty>
+			</volist>
+			var actionName = "{$actionName}";
+			var obj = $(".ioc_list li."+actionName);
+			obj.removeClass(actionName);
+			obj.addClass(actionName+"Now");
+		</script>

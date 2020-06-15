@@ -1,0 +1,413 @@
+/*-----------------------------------------------------------------
+[Legal Notice]
+
+Copyright (c) HighHay/Mivfx
+Before using this template, you should agree with themeforest licenses terms.
+http://themeforest.net/licenses
+-------------------------------------------------------------------*/
+
+
+/** CSS-AddOn for Large screen First responsiveness approch */
+
+
+
+/* Screen small than 1024px */
+@media (max-width : 1024px){
+	.pane-when{
+	}
+	.pane-when .content{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+	}
+	.pane-when::after {
+/*		display: none;*/
+	}
+	.pane-when .clock{
+		width: 270px;
+		margin-top: 20px;
+	}
+	.pane-when .clock .elem-center .digit{
+    	font-size: 140px;
+	}
+	.pane-when .clock .elem-center .txt {
+		top: 1em;
+		font-size: 20px;
+	}
+	.pane-when .clock .elem-bottom .deco:after,
+	.pane-when .clock .elem-bottom .deco:before{
+		width: 10px;
+		height: 70px;
+		bottom: 17px;
+	}
+	.pane-when .clock .elem-bottom:before{
+		right: 0;
+		left: 85%;
+	}
+	.pane-when .clock .elem-bottom:after{
+		left: 0;
+		right: 85%;
+	}
+	.pane-when .clock .elem-bottom {
+		font-size: 20px;
+	}
+	.pane-when .clock .elem-bottom>span{
+		margin-top: -6px;
+		vertical-align: top;
+		display: inline-block;
+	}
+	
+	.page-cent .content ,
+    .page-about .content {
+		padding-left: 32px;
+		padding-right: 56px;
+	}
+	
+}
+/* Screen Small than 768px */
+@media (max-width : 768px){
+	.pane-when .clock{
+		width: 210px;
+		margin-top: 20px;
+	}
+	.pane-when .clock .elem-center .digit{
+    	font-size: 96px;
+	}
+	.pane-when .clock .elem-center .txt {
+		top: 1em;
+		font-size: 20px;
+	}
+	.pane-when .clock .elem-bottom .deco:after,
+	.pane-when .clock .elem-bottom .deco:before{
+		width: 10px;
+		height: 70px;
+		bottom: 17px;
+	}
+	.pane-when .clock .elem-bottom:before{
+		right: 0;
+		left: 85%;
+	}
+	.pane-when .clock .elem-bottom:after{
+		left: 0;
+		right: 85%;
+	}
+	.pane-when .clock .elem-bottom {
+		font-size: 20px;
+	}
+	.pane-when .clock .elem-bottom>span{
+		margin-top: -6px;
+		vertical-align: top;
+		display: inline-block;
+	}
+	
+	
+	
+	.pane-when .clock .elem-center .txt {
+		top: 1.2em;
+		font-size: 16px;
+	}
+}
+/* Screen Small than 720px */
+@media (max-width : 720px){
+	
+	#fp-nav.right{
+		right: 5px;
+	}
+    .page .content .clock {
+		-webkit-transform: scale(0.6);
+		transform: scale(0.6);
+	}
+	.page-cent .content{
+    	width: 100%;
+	}
+	
+	.page-cent .content ,
+	.page-about .content {
+		padding-left: 16px;
+		padding-right: 56px;
+	}
+	.page .form label ,
+	.page .form input ,
+	.page .form button ,
+	.page .form textarea ,
+	.page h4 ,
+	.page-footer ,
+	.header-top .menu a ,
+	.page p{
+		font-size: 14px;
+	}
+	.page .form.send_email_form .fields{
+		height: 35px;
+	}
+	.page .form.send_email_form .buttons,
+	.page .form.send_email_form .buttons button{
+		height: 34px;
+	}
+	.page-cent .p-title h3{
+		font-size: 24px;
+		border-bottom-width: 5px;
+	}
+	.page-cent .p-title h2{
+		font-size: 30px;
+	}
+	.header-top .menu a {
+		padding-top: 17px;
+	}
+	.header-top .logo img {
+		padding: 12px 10px;
+	}
+	.page-home .content h2 {
+		font-size: 40px;
+	}
+	.page-home .content h3 {
+		font-size: 16px;
+	}
+    
+}
+/* Screen small than 600 */
+
+/* Screen small than 600 Nexus 7, iPhone 6 plus : 412px*/
+@media (max-width : 600px){
+	.pane-when{
+		top: 48px;
+		left: 0;
+		right: 20px;
+		bottom: auto;
+/*		transform: scale(0.5)*/
+	}
+	.pane-when::after {
+		display: none;
+	}
+	.pane-when .clock{
+		width: 180px;
+		margin-top: 64px;
+		float: right;
+	}
+	.pane-when .clock .elem-center .digit{
+    	font-size: 96px;
+	}
+	.pane-when .clock .elem-center .txt {
+		top: -4px;
+		right: 0;
+		font-size: 12px;
+	}
+	.pane-when .clock .elem-bottom .deco:after,
+	.pane-when .clock .elem-bottom .deco:before{
+		width: 10px;
+		height: 48px;
+		bottom: 17px;
+	}
+	.pane-when .clock .elem-bottom:before{
+		right: 0;
+		left: 85%;
+	}
+	.pane-when .clock .elem-bottom:after{
+		left: 0;
+		right: 85%;
+	}
+	.pane-when .clock .elem-bottom {
+		font-size: 14px;
+	}
+	.pane-when .clock .elem-bottom>span{
+		margin-top: -6px;
+		vertical-align: top;
+		display: inline-block;
+	}
+	.pane-when .content{
+/*		transform: scale(0.5);*/
+		float: right;
+	}
+	.pane-when footer{
+		padding: 0;
+		margin: 0;
+		float: right;
+	}
+	.pane-when footer p{
+		font-size: 14px;
+	}
+	/* Main page */
+	.page-main{
+		margin-left: auto;
+		width: 100%;
+	}
+	.page-cent .content, .page-about .content {
+		padding-left: 64px;
+		padding-right: 20px;
+		padding-bottom: 96px;
+	}
+	.section .fp-tableCell{
+		vertical-align: bottom;
+	}
+	.p-footer .arrow-d {
+		bottom: 72px;
+		display: none;
+	}
+	#fp-nav.right {
+		right: 0;
+		margin-right: 2px;
+		bottom: 16px;
+		top: auto;
+	}
+}
+
+/* Screen small than 360px */
+@media (max-width : 360px){
+	
+	.page-contact .fields:first-child ,
+	.page-contact .contact .columns li:first-child {
+		margin-top: 0;
+	}
+	.page-contact .form .fields,
+	.page-contact .contact .columns li{
+		margin-top: 10px;
+	}
+	.page .form textarea {
+		min-height: 64px;
+	}
+	
+	
+	.contact .social-links{
+		display: none;
+	}
+	
+}
+/* Screen small than 320px */
+@media (max-width : 320px){
+	.pane-when{
+		top: 36px;
+		left: 0;
+		right: 20px;
+		bottom: auto;
+	}
+	.pane-when::after {
+		display: none;
+	}
+	.pane-when .clock{
+		width: 180px;
+		margin-top: 28px;
+		float: right;
+	}
+	.pane-when .clock .elem-center .digit{
+    	font-size: 72px;
+	}
+	.page-cent.page-contact .content{
+		padding-bottom: 40px;
+	}
+	
+	.page-cent .p-title h2 {
+		font-size: 24px;
+	}
+	.p-footer {
+		display: none;
+	}
+	.header-top {
+		height: 32px;
+	}
+	.header-top .logo img {
+		height: 32px;
+		padding: 0px 10px;
+	}
+	.header-top .menu a {
+		height: 32px;
+		padding-top: 5px;
+	}
+	
+	.page-home .logo-container{
+		top: 40px;
+	}
+	.page-home .logo-container img.h-logo{
+		height: 80px;
+	}
+	.page .form label ,
+	.page .form input ,
+	.page .form button ,
+	.page .form textarea ,
+	.page h4 ,
+	.page-footer ,
+	.header-top .menu a ,
+	.page p{
+		font-size: 12px;
+	}
+	.page-cent .p-title h3{
+		font-size: 20px;
+		border-bottom-width: 5px;
+	}
+	.page-cent .p-title h2{
+		font-size: 20px;
+	}
+	.header-top .menu a {
+		padding-top: 6px;
+	}
+}
+
+
+ 
+/* Responsive height */
+@media (max-height : 600px){
+	.social-links{
+		display: none;
+	}
+	.p-footer {
+		display: none;
+	}
+}
+/* Responsive height */
+@media (max-height : 420px){
+	
+	.page .content .clock {
+		-webkit-transform: scale(0.4) translateX(-125%) translateY(-125%);
+		transform: scale(0.4) translateX(-125%) translateY(-125%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	} 
+	.quick-link {
+		top: auto;
+		bottom: 0;
+	}
+	.header-top {
+		height: 32px;
+	}
+	.header-top .logo img {
+		height: 32px;
+		padding: 0px 10px;
+	}
+	.header-top .menu a {
+		height: 32px;
+		padding-top: 5px;
+	}
+	.columns.left{
+		width: 50%;
+	}
+	.columns.right{
+		width: 50%;
+	}
+	.page-home .logo-container{
+		top: 40px;
+	}
+	.page-home .logo-container img.h-logo{
+		height: 80px;
+	}
+	.page-contact .fields:first-child ,
+	.page-contact .contact .columns li:first-child {
+		margin-top: 0;
+	}
+	.page-contact .form .fields,
+	.page-contact .contact .columns li{
+		margin-top: 5px;
+	}
+	.page .form textarea {
+		min-height: 64px;
+	}
+	
+	.p-footer .arrow-d {
+		bottom: 10px;
+		display: none;
+	}
+	.page-footer{
+		display: none;
+	}
+}
+
+    

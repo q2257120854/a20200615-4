@@ -1,0 +1,31 @@
+/*\u706b\u5c71\u652f\u4ed8\u0037\u002e\u0030\u0020\u0061\u0075\u0074\u0068\u006f\u0072\u003a\u0068\u0075\u006f\u0073\u0068\u0061\u006e\u0020\u0071\u0071\uff1a\u0033\u0038\u0032\u0033\u0039\u0030\u0033\u0020\u0068\u0075\u007a\u0068\u0061\u006e\u0020\u0073\u0074\u0072\u006f\u0072\u0065\u003a\u0068\u0074\u0074\u0070\u0073\u003a\u002f\u002f\u0077\u0077\u0077\u002e\u0068\u0075\u007a\u0068\u0061\u006e\u002e\u0063\u006f\u006d\u002f\u0069\u0073\u0068\u006f\u0070\u0038\u0035\u0030\u0032\u002f */
+#main, footer {
+  padding-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar-collapse {
+    top: -52px;
+  }
+}
+
+header .brand-logo {
+  margin: 1px 0px;
+  padding: 14px 60px;
+}
+
+header .brand-logo img {
+  width: 172px;
+}
+
+.menu-sidebar-collapse {
+  margin: 0 10px 0 18px;
+}
+
+.header-search-wrapper {
+  margin-left: 250px;
+}
+
+.doughnut-chart-status {
+  top: -85px;
+}

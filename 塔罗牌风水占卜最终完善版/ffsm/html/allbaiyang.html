@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"/>
+    <title>2019运势分析</title>
+    <link rel="stylesheet" href="http://const.cdn.xingzuozhuanjia.com/Horoscope/css/common.css?v=1.7">
+    <link rel="stylesheet" href="http://const.cdn.xingzuozhuanjia.com/Horoscope/css/result_2.css?v=2.6">
+    <link rel="stylesheet" href="http://const.cdn.xingzuozhuanjia.com/Horoscope/css/alert.css?v=1.0">
+    <link rel="stylesheet" href="http://const.cdn.xingzuozhuanjia.com/Horoscope/css/loading.css?v=1.7">
+    <link rel="stylesheet" href="http://const.cdn.xingzuozhuanjia.com/Horoscope/css/success.css?v=1.0">
+    <script type="text/javascript" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/script/rem.js?v=1.7"></script>
+</head>
+
+<body>
+<section class="alert" style="display: none">
+    <div class="alert-wrap flex-column">
+        <div class="alert-box flex-column">
+            <div class="alert-banner-box flex-center">
+                <img class="close-btn" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/close_btn.png?v=1.0">
+                <img class="alert-banner" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/banner.png?v=1.0">
+                <div class="banner-desc flex-column">
+                    <p class="banner-title">选择星座</p>
+                    <p class="banner-tips">查看对应星座的2019运势</p>
+                </div>
+            </div>
+            <div class="alert-item flex-row">
+                <div class="star-item flex-column" data-star="1">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s1.png?v=1.0">
+                    <span class="star-name">白羊座</span>
+                    <span class="star-time">3.21-4.19</span>
+                </div>
+                <div class="star-item flex-column" data-star="2">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s2.png?v=1.0">
+                    <span class="star-name">金牛座</span>
+                    <span class="star-time">4.20-5.20</span>
+                </div>
+                <div class="star-item flex-column" data-star="3">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s3.png?v=1.0">
+                    <span class="star-name">双子座</span>
+                    <span class="star-time">5.21-6.21</span>
+                </div>
+                <div class="star-item flex-column" data-star="4">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s4.png?v=1.0">
+                    <span class="star-name">巨蟹座</span>
+                    <span class="star-time">6.22-7.22</span>
+                </div>
+            </div>
+            <div class="alert-item flex-row">
+                <div class="star-item flex-column" data-star="5">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s5.png?v=1.0">
+                    <span class="star-name">狮子座</span>
+                    <span class="star-time">7.23-8.22</span>
+                </div>
+                <div class="star-item flex-column" data-star="6">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s6.png?v=1.0">
+                    <span class="star-name">处女座</span>
+                    <span class="star-time">8.23-9.22</span>
+                </div>
+                <div class="star-item flex-column" data-star="7">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s7.png?v=1.0">
+                    <span class="star-name">天秤座</span>
+                    <span class="star-time">9.23-10.23</span>
+                </div>
+                <div class="star-item flex-column" data-star="8">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s8.png?v=1.0">
+                    <span class="star-name">天蝎座</span>
+                    <span class="star-time">10.24-11.22</span>
+                </div>
+            </div>
+            <div class="alert-item flex-row">
+                <div class="star-item flex-column" data-star="9">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s9.png?v=1.0">
+                    <span class="star-name">射手座</span>
+                    <span class="star-time">11.23-12.21</span>
+                </div>
+                <div class="star-item flex-column" data-star="10">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s10.png?v=1.0">
+                    <span class="star-name">摩羯座</span>
+                    <span class="star-time">12.22-1.19</span>
+                </div>
+                <div class="star-item flex-column" data-star="11">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s11.png?v=1.0">
+                    <span class="star-name">水瓶座</span>
+                    <span class="star-time">1.20-2.18</span>
+                </div>
+                <div class="star-item flex-column" data-star="12">
+                    <img class="star-img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/stars/s12.png?v=1.0">
+                    <span class="star-name">双鱼座</span>
+                    <span class="star-time">2.19-3.20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page" style="padding-bottom: 1.6rem;">
+
+    <section class="main-wrap flex-column">
+        <div class="banner-wrap flex-column">
+            <div class="xinzuo-wrap flex-center">
+                <img class="xinzuo-name" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview_2/白羊座.png?v=1.0">
+            </div>
+            <img class="banner" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/banner.png?v=1.7">
+        </div>
+
+        <div class="title-wrap flex-center">
+            <img class="first-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/main_01.png?v=1.0">
+        </div>
+
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="base-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/base_01.png?v=1.0">
+                <div class="row flex-row">
+                    <span class="col-l flex-row-2">个人特点：<em>热情活力</em></span>
+                    <span class="col-r flex-row-2">四象属性：<em>火</em></span>
+                </div>
+                <div class="row flex-row">
+                    <span class="col-l flex-row-2">掌管宫位：<em>第一宫</em></span>
+                    <span class="col-r flex-row-2">阴阳属性：<em>阳性</em></span>
+                </div>
+                <div class="row flex-row">
+                    <span class="col-l flex-row-2">最强特征：<em>控制</em></span>
+                    <span class="col-r flex-row-2">守&ensp;护&ensp;星：<em>火星</em></span>
+                </div>
+                <div class="row flex-row">
+                    <span class="col-l flex-row-2">吉祥饰物：<em>红宝石</em></span>
+                    <span class="col-r flex-row-2">开运金属：<em>铁</em></span>
+                </div>
+                <div class="row flex-row">
+                    <span class="col-l flex-row-2">幸运数字：<em>5</em></span>
+                    <span class="col-r flex-row-2">幸运颜色：<em>红色</em></span>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="base-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/base_02.png?v=1.0">
+                <div class="overview flex-column-1">
+                    <span>性格关键字：</span>
+                    <p>充满希望，行动力，热情四射</p>
+                </div>
+                <div class="overview flex-column-1">
+                    <span>基础性格：</span>
+                    <p>热情、阳光、活泼、坚强是你的代名词，你对朋友阔绰大方，性格比较直偶尔也会有小脾气。</p>
+                </div>
+                <div class="overview flex-column-1">
+                    <span>优点缺点：</span>
+                    <p>正义感是你最大的特色，你是天生的勇者，不畏惧任何困难，即使碰到阻碍，也会运用智慧来克服。<br>具有积极向上的人格，自然迷人的举止和良好的心智能力，喜欢被别人尊敬的感觉，擅长外交，有一点小小的记仇倾向，行事作风上有强烈的侵略性。</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="base-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/base_03.png?v=1.0">
+                <div class="char-item flex-column-1">
+                    <p>土星冥王星相遇，形成土冥星象</p><p>木星进入迁移宫1次持续66天</p><p>天王星进入金钱宫1次持续65天，逆行2次共116天</p><p>金星进入白羊座星图1次持续24天</p>                </div>
+            </div>
+        </div>
+
+
+        <div class="title-wrap flex-center">
+            <img class="guide-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/main_02.png?v=1.0">
+        </div>
+
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="love-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/love_01.png?v=1.0">
+                <div class="view-love flex-column-1">
+                    <div class="line flex-row-2">
+                        <span>综合评分：</span>
+                        <div class="star-line flex-row-2" id="love_star"></div>
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>星座匹配：</span>
+                        <p><em>白羊座</em>配<em>狮子座</em></p>
+                        <!---->
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>主动被动：</span>
+                        <p>你占据88%的主动权</p>
+                    </div>
+                    <div class="line flex-row-1">
+                        <span>简短总评：</span>
+                        <p>你们就像是火焰遇到火焰，瞬间进入强烈灼人的亲密关系。</p>
+                    </div>
+                </div>
+                <img src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/line/s1_1.png" class="star_line">
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <div class="content-love flex-column">
+                    <img class="love-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/love_02.png?v=1.0">
+                    <div class="content flex-column-1">
+                        <p>进入2019年，你在感情态度方面有很大变化，整体看来这一年桃花运不错，对于感情要明确自己的实际需求，遵从内心认真对待。<br>
+
+上半年由于金星进入本位宫会给你带来不少暧昧信息，在第二季度的4至6月期间桃花运最为旺盛，身边也会涌现出许多向你表达好感的异性，建议你沉着应对，不要自乱阵脚，要记住对你大献殷勤的人不一定是为了真爱。<br>
+
+你有伴的话，2019年与伴侣之间会出现一些小争执和分歧，需要注意以下几个时间点：5月，8月，11月，这几个时间点你与TA之间比较容易爆发争吵，产生分歧的最核心因素是因为你总是习惯用自以为对TA好的方式去爱TA，却忽略对方的感受和想法，建议双方保持有效的沟通和交流，让TA看到你的认真与付出，要牢记爱情保鲜的秘诀就是磨合与沟通，做到这两点的爱情才会长久。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <div class="content-love flex-column">
+                    <img class="love-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/love_03.png?v=1.0">
+                    <div class="content flex-column-1">
+                        <p>2019年你从单身到恋爱，其实会跟“需求”有关，比如可能为了不再那么孤单，比如希望得到一个在事业上能够给予自己帮助的人，甚至是你只需要一个跟你能够有共同话题，共同目标和理想的人，在2019年，单身的你能够遇到形形色色的人，这些人不乏对你别有所图，相信你可以甄别出哪些是真情实意，哪些是烂桃花。<br>
+
+3月到4月你会认识一些不错的人，但你并没有想那么快的进入一段感情，因此选择观望，直到第二季度的6月前后，一些特殊事件的发生，比如对方用心做的某件事情，给你带来一些不同寻常的奇妙感觉，你们会迅速擦出火花，坠入爱河。如果正好遇到符合自己特质的人，你们有很大概率从恋爱过渡到婚姻。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="love-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/love_04.png?v=1.0">
+                <div class="content-love flex-column">
+                    <div class="content flex-column-1">
+                        <p>你和TA之间的核心词语是“稳定”和“平衡”，今年第三季度有一波分手潮，你需要稳定两人之间的感情，你需要做出适当的改变，如果你有这种感觉：我那么好，凭什么是我改变呢?当你有这种想法的时候，就代表你的心里自己占据大多数，爱情是互相让步的，在2019年其实有许多时刻你希望有人默默陪伴着，这种陪伴是家人、朋友都满足不了的。而你和TA之间所有的危机都是不平衡引起的，这种不平衡心态就是前面所说的，你觉得自己很好，觉得自己付出了很多，与此同时你看不到对方的优点或者是看不到对方为你做了些什么，因此相互之间容易衍生出许多问题。<br>
+
+如果想要避免这些事情发生，那么是时候做出一些改变了。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="title-wrap flex-center">
+            <img class="guide-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/main_03.png?v=1.0">
+        </div>
+
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="cash-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/cash_01.png?v=1.0">
+                <div class="view-cash flex-column-1">
+                    <div class="line flex-row-2">
+                        <span>综合评分：</span>
+                        <div class="star-line flex-row-2" id="cash_star"></div>
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>财运高点：</span>
+                        <p>6月至11月财运进入为期5个月的高原期</p>
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>低谷时期：</span>
+                        <p>3月到4月财运平平</p>
+                    </div>
+                    <div class="line flex-row-1">
+                        <span>简短总评：</span>
+                        <p>整年财运呈现低开高走的趋势</p>
+                    </div>
+                </div>
+                <img src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/line/s1_2.png" class="star_line">
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="cash-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/cash_02.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>进入2019年，你在财富运势方面总体不错，在正财运和偏财运方面都有不少的获利，3月至4月的偏财运，6月到11月的正财运会达到巅峰，但是要注意在谋取财富的过程中会遇到不少风险，在行动前不可盲目冲动，谨慎小心地评估好可能面临的意外风险，妥善考虑项目的可能性之后再采取行动，加以实践，会更加靠谱一些。<br>
+
+如果你处于创业阶段，需要做好风险管控，避免出现财政危机。同时，建议2019年加大客户维护力度，不要小看这一块的贡献，良好的客户资源是你谋财求利的一大必要因素。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="cash-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/cash_03.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>从今年三月份开始，天王星将正式进入到你的金钱宫位，并且在未来7年内都停留在你的金钱宫位。<br>
+
+天王星是一颗转变、变革、颠覆的星体，当天王星来到你的金钱宫位，就是要改变你对金钱的概念，你在2019年的财运会大爆发，爆发的契机集中在一件事情上，这件事情有两大来源，一是被动来源，你会获得一笔理赔，比如房屋面临拆迁，二是主动来源，你自己的工作收入节节高升、甚至是创业走上正轨。<br>
+
+但要明确一点的是大多数人只是普罗大众，并不会有拆迁或创业开公司的机会，因此天王星教育我们大部分普通人的是如何保值自己的金钱或者改善自己的收入。也许你过去花钱大手大脚，甚至还需要家人的资助，但今年这种方式就不会那么奏效了，今年你必须要做好各种收支计划，哪些东西该买，哪些东西不该买，你都需要列一个清单。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="cash-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/cash_04.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>由于土冥星象抵达你星图顶端，导致你在2019年最大开支是一个不可抗力，大概率可能与银行或自身健康有关。<br>
+
+银行相关的是货款利率有所调整，这个利率会帮助你下定买房或买车的决心，从而产生巨额支出，也有可能是你的健身意识觉醒，开始为自己的健康大笔投入从而产生大额支出。<br>
+
+这是鲤鱼跃龙门的一年，土冥星象与星图顶端重合的情况十分罕见，土冥星象对应你田宅方面的破财之势，而星图顶端位置则预示着众星捧月，代表会有很多双眼睛看着你或很多个人与你竞争，这个罕见星象揭示出你在田宅方面的巨大优势，加上天王星对你想法产生的影响，今年你十分适宜在田宅装修方面发展个人财富，如果你有雄厚资金和老宅，那么租房，承包装修，坐等拆迁，投资公寓等都会有不错的结果，如果你是一个普通刚需一族，那么多多关注楼盘信息，今年是出手的好时机。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-wrap flex-center">
+            <img class="guide-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/main_04.png?v=1.0">
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="job-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/job_01.png?v=1.0">
+                <div class="view-job flex-column-1">
+                    <div class="line flex-row-2">
+                        <span>综合评分：</span>
+                        <div class="star-line flex-row-2" id="job_star"></div>
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>遇到贵人：</span>
+                        <p>6月和9月是今年运势的2个高点</p>
+                    </div>
+                    <div class="line flex-row-1 lines">
+                        <span>低谷时期：</span>
+                        <p>3月与10月运势稍稍下降</p>
+                    </div>
+                    <div class="line flex-row-1">
+                        <span>简短总评：</span>
+                        <p>木星的特质注定这是一个努力就一定会收获的年份</p>
+                    </div>
+                </div>
+                <img src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/line/s1_3.png" class="star_line">
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="job-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/job_02.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>进入2019年，3月和10月这两个时间点你受到土冥星象的影响，事业运势会受到影响，略微下降，而6月至9月是你今年事业运势的高点，持续3个月之久。你的事业运势整体呈现出一个低高低高的波折走向，今年你会得到更多的认可，也逐渐获得更多成就感和自我满足感。<br>
+
+尤其是在上半年的5月之前，你工作的动力和冲劲非常足，在项目实施中容易求得突破，事业平台得以拓展，获得更多自我发挥的空间。<br>
+
+从下半年6月左右开始，你的工作运势日趋稳定，可做一些稳固业绩和经验总结的事务，有利于你事业运势上的正面情绪，获得更多的成效。同时，在这一年中，你要更好地利用人脉积累，充分发挥2019年贵人运不错的优势。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="job-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/job_03.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>木星在2018年末的时候来到了你星图的迁移宫，并且持续停在第九宫迁移宫直到今年的年末,在占星学中,木星是颗吉星,但凡事都有一体两面，木星的正反面对应着大吉征兆和膨胀寓意，就像是舒适环境里待久了,你会丧失一些至关重要的技能,因为你觉得待在习惯里是一件安全的事情,所以当木星来到你星图内,一方面给你带来了良好的机遇,另一方面也是要提醒你，不要放弃努力,你需要督促甚至是逼迫自己。<br>
+
+木星如此长时间的停留在迁移宫产生很多影响，首当其冲的就是你2019年很可能会有被外派的机会,去其他地区停留半年到2年左右,如果有这样的机会,建议你慎重考虑,是否要把握时机，走出目前环境带来的局限性。<br>
+
+如果你是学生党,木星在这个位置,能够帮助你考研、留学或者获得更好的学历,甚至你在职的情况下也可以攻读学历,或者是考取某个职称或者执照，但是需要格外注意的是不要想着“不劳而获”，良好的运势配合你的努力才会达成想要的结果。<br>
+
+木星拥有一体两面性，不仅仅是占星中的吉星，同时还带有膨胀的特质,如果你動劳,它就会让你更忙,更充实如果你懒散,那你可能在木星的膨胀作用之下,变得更懒散，从而在2019年一事无成。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap flex-center">
+            <div class="content-box flex-column">
+                <img class="job-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/job_04.png?v=1.0">
+                <div class="content-cash flex-column">
+                    <div class="content flex-column-1">
+                        <p>2019年一个非常重要的星象,恰好发生在你星图顶端,那就是土星跟冥王星的相遇，土冥星象抵达星图顶端对于你事业运势的影响,用简单的词汇来形容,那就是“颠覆”。<br>
+
+它停留在事业宫,那说明你在2019年,事业格局会发生很大的变化,注意两个时间点,一个是3月到6月期间,另一个是下半年11月到12月，这段时间是一个事业洗牌的时期,一是关于自己公司内部的洗牌,高层的变动,行业所做业务的调整,另外一个就是要处理的危机,这个危机可能不是你导致的,但你需要处理这个问题。<br>
+
+而另一个大概率事件是你自己过去所做的事情积累导致发生了问题,这个问题在今年6月左右就会开始崭露头角,你需要警醒自己，这段时间内，如果有人找你谈话，你需要体会话语里隐藏的另一层含义。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-box flex-column"   >
+            <div class="content-panel flex-column">
+                <img class="comment-title" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/title_comment.png?v=1.7">
+                <div class="nickname-wrap flex-row">
+                    <div class="input-group flex-row">
+                        <label for="nickname">昵称:</label>
+                        <input class="nickname" id="nickname" type="text" value="匿名" maxlength="8" onblur="scrollToBottom()">
+                    </div>
+                    <span class="un-name-wrap flex-row">
+                        <input type="checkbox" id="un_name" class="un-name"><span>匿名评价</span>
+                    </span>
+                </div>
+                <div class="expres-wrap flex-row">
+                    <span class="pinfen">评分:</span>
+                    <div id="star" class="stars flex-row"></div>
+                    <span class="emoji-wrap flex-center">
+                        <img class="emoji" id="emoji" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_05.png?v=1.7">
+                        <span class="emoji-desc" id="emoji_desc">非常满意</span>
+                    </span>
+                </div>
+                <div class="edit-wrap flex-center">
+                    <textarea class="comment-text" id="comment_content" placeholder="请在下方留下您真实的评价和建议，我们将在您的督促下不断提升服务品质。" maxlength="50" rows="5" onblur="scrollToBottom()"></textarea>
+                </div>
+                <img class="submit-img" id="submit_img" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/submit_btn.png?v=1.7" alt="提交">
+            </div>
+        </div>
+    </section>
+
+    <div class="toast-wrap flex-center">
+        <div class="toast-box flex-center">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="float-wrap flex-center">
+        <div class="float-btn flex-center">
+            <img class="stars-btn" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result_2/stars_btn.png?v=1.0">
+        </div>
+    </div>
+    <div class="success-wrap flex-center" style="display:none;">
+        <div class="success-box flex-column">
+            <div class="success-banner flex-column">
+                <img class="banners" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/image/interim/banner.png?v=1.7">
+            </div>
+            <div class="owner-wrap flex-column">
+                <span class="owner flex-center"><em>白羊座</em>的</span>
+                <span class="owner-2 flex-center">2019运势分析已购买</span>
+            </div>
+            <span class="over-text flex-center">正在进入...</span>
+        </div>
+    </div>
+
+</section>
+
+</body>
+
+<script type="text/javascript" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/script/jquery.min.js"></script>
+<script type="text/javascript" src="http://const.cdn.xingzuozhuanjia.com/Horoscope/script/jquery.raty.min.js"></script>
+<script src="http://divine.cdn.h55u.com/platform/js/zwSdk.js?v=19032809"></script>
+<script>
+    $(function () {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        if (isAndroid) {
+
+        }
+        if (isIOS) {
+            $('.page span').css({'font-size': '18px'});
+            $('.page p').css({'font-size': '16px'});
+            $('.page em').css({'font-size': '16px'});
+            $('.row span em').css({'font-size': '16px'});
+        }
+        setTimeout(function () {
+            $('.spinner-wrap').fadeOut();
+        },300)
+    });
+    $('.toast-wrap').hide();
+    //初始化星级
+    var love_on = '4';
+    love_on = Number(love_on);
+    var cash_on = '4.5';
+    cash_on = Number(cash_on);
+    var job_on = '4';
+    job_on = Number(job_on);
+    var love_on_m = parseInt(love_on);
+    var love_bool = love_on_m<love_on?true:false;
+    var cash_on_m = parseInt(cash_on);
+    var cash_bool = cash_on_m<cash_on?true:false;
+    var job_on_m = parseInt(job_on);
+    var job_bool = job_on_m<job_on?true:false;
+    initStar();
+    function initStar() {
+        for (var i = 0; i < 5; i++) {
+            if(i<love_on_m){
+                $('#love_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_d.png?v=1.7'>");
+            }else{
+                if(love_bool){
+                    $('#love_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_d_0.png?v=1.7'>");
+                    love_bool = false;
+                }else{
+                    $('#love_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_a.png?v=1.7'>");
+                }
+            }
+            if(i<cash_on_m){
+                $('#cash_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_c.png?v=1.7'>");
+            }else{
+                if(cash_bool){
+                    $('#cash_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_c_0.png?v=1.7'>");
+                    cash_bool = false;
+                }else{
+                    $('#cash_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_a.png?v=1.7'>");
+                }
+            }
+            if(i<job_on_m){
+                $('#job_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_b.png?v=1.7'>");
+            }else{
+                if(job_bool){
+                    $('#job_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_b_0.png?v=1.7'>");
+                    job_bool = false;
+                }else{
+                    $('#job_star').append("<img class='star' src='http://const.cdn.xingzuozhuanjia.com/Horoscope/image/preview/star_a.png?v=1.7'>");
+                }
+            }
+        }
+    }
+
+    //字符替换
+    var lines = document.getElementsByClassName('lines');
+    for (var i = 0; i < lines.length; i++) {
+        var str = lines[i].getElementsByTagName('p')[0].innerText;
+        var flag_1 = false;
+        var flag_2 = false;
+        var flag_3 = false;
+        str = str.replace(/\d+至\d+月/g, function () {
+            if(arguments.length){
+                flag_1 = true;
+                flag_3 = true;
+            }
+            return '<em>' + arguments[0]+'</em>';
+        });
+        if(!flag_3){
+            str = str.replace(/\d+月/g, function () {
+                if(arguments.length){
+                    flag_1 = true;
+                }
+                return '<em>' + arguments[0]+'</em>';
+            });
+        }
+        str = str.replace(/\d+%/g, function () {
+            if(arguments.length){
+                flag_2 = true;
+            }
+            return '<em>' + arguments[0]+'</em>';
+        });
+        if(flag_1){
+            lines[i].getElementsByTagName('p')[0].innerHTML = str;
+        }
+        if(flag_2){
+            lines[i].getElementsByTagName('p')[0].innerHTML = str;
+        }
+
+    }
+
+    //--初始化评论区--//
+    var scores = 5;
+    $(function () {
+        $.fn.raty.defaults.path = 'http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result';
+        $('#star').raty({
+            score: 5,
+            click: function (score, e) {
+                scores = parseInt(score);
+                if (scores == 1) {
+                    $("#emoji").attr('src', "http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_01.png?v=1.7");
+                    $("#emoji_desc").text("失望");
+                } else if (scores == 2) {
+                    $("#emoji").attr('src', "http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_02.png?v=1.7");
+                    $("#emoji_desc").text("不满");
+                } else if (scores == 3) {
+                    $("#emoji").attr('src', "http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_03.png?v=1.7");
+                    $("#emoji_desc").text("一般");
+                } else if (scores == 4) {
+                    $("#emoji").attr('src', "http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_04.png?v=1.7");
+                    $("#emoji_desc").text("满意");
+                } else if (scores == 5) {
+                    $("#emoji").attr('src', "http://const.cdn.xingzuozhuanjia.com/Horoscope/image/result/expres_05.png?v=1.7");
+                    $("#emoji_desc").text("非常满意");
+                }
+            }
+        });
+        var temp_name = "";
+        $('#un_name').click(function (e) {
+            var comment_nickname = "匿名";
+            var cn_name = $('#un_name').prop("checked");
+            if (cn_name) {
+                temp_name = $("#nickname").val();
+                $("#nickname").val("匿名");
+                $("#nickname").attr("readonly", "readonly");
+            } else {
+                if (comment_nickname == "") {
+                    $("#nickname").val(temp_name);
+                    $("#nickname").removeAttr("readonly");
+                } else {
+                    $("#nickname").val(temp_name);
+                    $("#nickname").removeAttr("readonly");
+                }
+            }
+        })
+        $('#comment_content').keyup(function () {
+            /* Act on the event */
+            var maxLength = 50;
+            var len = $('#comment_content').val().length;
+            if (len > maxLength - 1) {
+                var res = $(this).val().substring(0, 50);
+                $(this).val(res);
+                showToast("评论字数不超过50字");
+            }
+        });
+    });
+
+    $('.stars-btn').click(function () {
+        $('.alert').fadeIn();
+    });
+    $('.close-btn').click(function () {
+        $('.alert').fadeOut();
+    });
+    var stars = ["白羊座","金牛座","双子座","巨蟹座","狮子座","处女座","天秤座","天蝎座","射手座","摩羯座","水瓶座","双鱼座"];
+    var starid = 1;
+    $('.star-item').click(function (event) {
+        starid = parseInt(event.currentTarget.dataset.star);
+        var star_name_old = "白羊座";
+        var star_name_new = stars[starid-1];
+        $('.owner em').text(stars[starid-1]);
+        if(star_name_old ==star_name_new){
+            $('.alert').fadeOut();
+            return null;
+        }
+
+        $.ajax({
+            url: "/index.php/home/constell/add2019fortuneorder",
+            method: 'POST',
+            data: {
+                src: '1171',
+                starid: starid
+            },
+            success: function (res) {
+                res = JSON.parse(res);
+                var orderId = res.orderId;
+                var src = '1171';
+                var paystatus = parseInt(res.paystatus);
+                if(paystatus===1){
+                    $('.success-wrap').fadeIn();
+                    setTimeout(function () {
+                        window.location.href = "/index.php/home/constell/fortune2019result?orderId=" + orderId + '&src=' + src;
+                        setTimeout(function () {
+                            $('.success-wrap').hide();
+                        },1000)
+                    }, 1500);
+                }else{
+                    window.location.href = "/index.php/home/constell/fortune2019interim?orderId="+ orderId + "&src=" + src;
+                }
+                $('.alert').fadeOut();
+
+            },
+            fail: function (err) {
+                console.log(err);
+                $('.alert').fadeOut();
+            }
+        });
+    });
+
+    function forbidWord(e) {
+        var t = ["QQ", "腾迅", "号码", "system", "admin", "淫賤", "去死", "吃屎", "妈的", "娘的", "日你", "尻", "操你", "干死你", "王八", "傻逼", "傻B", "贱人", "狗娘", "婊子", "表子", "靠你", "叉你", "叉死", "插你", "插死", "干你", "干死", "日死", "鸡巴", "睾丸", "包皮", "龟头", "屄", "赑", "妣", "肏", "奶子", "屌", "成人文学", "成人图片", "成人电影", "性爱电影", "情色电影", "学生妹", "情色图片", "情色贴图", "无码电影", "特肖", "禁肖", "杀尾公式", "杀肖公式", "曾道人", "特码生肖", "法轮大法", "修炼之歌", "弘法会", "大法弘传", "法轮功", "大法之声", "灵修团体", "宇宙最高法理", "真善忍大法", "正法洪流", "五套功法", "师傅法身", "师父法身", "李洪志", "大法弟子", "真修弟子", "弟子正法", "天安门受难", "六四惨案", "六四真相", "八九民运", "民运人士", "红色恐怖", "民主运动", "邓二世", "天安门血", "自由网", "明慧网", "正见网", "圆明网", "打印机版", "fawanghuihui", "minghui", "freenet-china", "yuanmingeurope", "secretchina", "江政府", "江泽民当局", "江核心", "江路线", "江泽民政权", "江贼", "江贼民", "江昏君", "江二世", "中共当局", "大陆当局", "大陆官员", "中共媒体", "共匪", "共产专制", "古拉格", "当权者", "恶警", "宗教迫害", "大法第子", "天安门受难人", "开悟弟子正法", "媽的", "幹死你", "賤人", "幹你", "幹死", "雞巴", "龜頭", "贔", "成人文學", "成人圖片", "成人電影", "性愛電影", "情色電影", "學生妹", "情色圖片", "情色貼圖", "無碼電影", "殺尾公式", "殺肖公式", "特碼生肖", "法輪大法", "修煉之歌", "弘法會", "大法弘傳", "法輪功", "大法之聲", "靈修團體", "師傅法身", "師父法身", "天安門受難", "六四慘案", "天安門受難人", "開悟弟子正法", "惡警", "當權者", "古拉格", "共産專制", "中共媒體", "大陸官員", "大陸當局", "中共當局", "江澤民政權", "江路線", "江澤民當局", "印表機版", "圓明網", "正見網", "明慧網", "自由網", "天安門血", "鄧二世", "紅色恐怖", "毛泽东", "江泽民", "胡錦濤", "溫家寶", "賤B", "毛澤東", "周恩來", "共產黨", "操你媽", "鄧小平", "前列腺", "裸照", "AV女優", "強姦", "胡政府", "胡錦濤當局", "胡核心", "胡路線", "胡錦濤政權", "胡昏君", "中國", "中華人民共和國", "主席", "總統", "省長", "吳邦國", "賈慶林", "李長春", "習近平", "李克強", "賀國強", "周永康", "胡锦涛", "温家宝", "贱B", "毛泽东", "周恩来", "共产党", "操你妈", "邓小平", "前列腺", "裸照", "AV女优", "强奸", "胡政府", "胡锦涛当局", "胡核心", "胡路线", "胡锦涛政权", "胡昏君", "中国", "中华人民共和国", "总统", "省长", "吴邦国", "贾庆林", "李长春", "习近平", "李克强", "贺国强", "周永康", "混蛋", "無恥", "下流", "fuck", "mmd", "卑鄙", "流氓", "淫賤", "淫賤", "sb", "SB", "去死", "吃屎", "媽的", "娘的", "日你", "尻", "操你", "干死你", "王八", "傻逼", "傻B", "賤人", "我靠", "狗娘", "婊子", "表子", "靠你", "叉你", "叉死", "插你", "插死", "干你", "干死", "日死", "雞巴", "痞子", "睪丸", "包皮", "龜頭", "屄", "贔", "妣", "肏", "奶子", "尻", "屌", "成人文學", "成人圖片", "成人電影", "性愛電影", "落霞缀", "死一边去", "盖塔奥", "母猪", "强淫", "挨了一炮", "麻古", "滚蛋", "黑喂狗", "猪公", "中共主席", "搅基", "卖淫", "麻果配", "骚人", "闹太套", "大脑短路", "藏独", "黄段子", "藏独", "麻果丸", "骚", "本宫", "烂泥", "疆独", "笨拉灯", "操了嫂", "麻将透", "新建户", "攻受", "废渣", "马英九", "战五渣", "操嫂子", "麻醉狗", "新疆叛", "小妾", "作呕", "水扁", "矮仔", "插屁屁", "麻醉枪", "新疆限", "可攻可受", "进天堂", "衰人", "傻仔", "察象蚂", "麻醉枪", "新金瓶", "不是人", "裹胸", "处男", "奸夫", "成人电", "麻醉药", "新唐人", "何弃疗", "裹脚布", "马克思", "黑鬼", "成人卡通", "毛一鲜", "姓忽悠", "土憋", "耗子", "列宁", "洗了滚", "成人聊", "美艳少妇", "性爱日", "绿茶婊", "你吖", "中华人民", "娼妓", "成人片", "妹按摩", "性福情", "婊", "绑大款", "共和国", "猪仔", "成人视", "妹上门", "性感少", "婊了", "养小蜜", "社会", "啥表", "成人图", "蒙汗药", "性推广歌", "吊炸天", "吃里扒外", "民主党", "锉毙", "成人文", "迷幻型", "胸主席", "菊花", "溅B", "64", "粪便", "成人小", "迷幻药", "徐玉元", "爆菊", "跑堂狗", "民主", "膣屄", "充气娃", "迷幻药", "爆菊花", "特妈", "破鞋", "尿泡", "催眠水", "迷昏口", "丫的", "无节操", "嬷痹", "扯巴子", "吹箫", "催情粉", "迷昏药", "性器", "菜鸟", "娘个B德", "溜洽子", "干你娘", "催情药", "迷昏药", "烟感器", "波霸", "B叫", "瓜哇子", "屌你老母", "催情药", "迷魂香", "严晓玲", "泡M", "滚", "龟儿子", "肏你妈", "挫仑", "迷魂药", "颜射", "泡妞", "滚回去", "臭婊子", "打飞机", "鸡巴", "迷魂药", "劳教", "毛片", "滚床单", "二流子", "泥马", "鸡巴", "迷奸药", "劳改犯", "好个毛", "滚床单", "鸡鸡", "骚货", "奶子", "迷情水", "颜射", "你妹", "犊子", "粪胀", "雏妓", "肉棒", "迷情药", "姚明进去", "毛线", "滚犊子", "杂种", "狗噏", "代孕", "迷药", "要射精了", "傻帽", "草死你妈", "十三点", "烂臭鞋", "法车仑", "谜奸药", "要射了", "傻X", "废了你", "该猪吃", "恶狗", "法正干", "蜜穴", "要泄了", "熊样", "残废", "狗造化", "恶棍", "法轮", "内射", "夜激情", "唾弃", "大比岔", "你算老几", "无赖", "法轮佛", "嫩穴", "液体炸", "腐植质", "卖骚", "秀逗", "蠢人", "法维权", "嫩阴", "一小撮别", "装B", "卖弄", "没脑子", "贱货", "法一轮", "操你妈", "遗情书", "装b", "扮纯", "脑子进水", "没屁眼", "法院给废", "拟涛哥", "蚁力神", "呆逼", "装纯", "骚包", "狗娘养的", "仿真枪", "娘两腿之间", "阴间来电", "傻逼", "败类", "贱皮子", "贱猪", "夫妻交换", "妞上门", "阴唇", "二逼", "fuck", "解放军", "蠢猪", "感扑克", "浓精", "阴道", "死逼", "damn", "妓女", "婊子养的", "冈本真", "女被人家搞", "阴户", "笨蛋", "丑角", "政府", "疯狗", "肛交", "女激情", "淫魔舞", "白痴", "ET", "缩头乌龟", "肛门是邻", "女优", "淫情女", "二痴", "变态", "团体", "卖比", "冈本真", "炮的小蜜", "淫肉", "蛋白质", "凤姐", "游行", "傻吊", "钢针狗", "喷尿", "淫骚妹", "王八", "屁股", "小日本", "人模狗样", "钢珠枪", "嫖俄罗", "淫兽", "三八", "MMD", "坯子", "港澳博球", "嫖鸡", "淫兽学", "东方标志", "NND", "大麻", "歪逼", "港马会", "仆不怕饮", "淫水", "东方婊子", "禽兽", "起义", "操逼", "港鑫华", "普通嘌", "淫穴", "比样迪", "兽", "抵制", "装葱", "高莺莺", "叫床", "咏妓", "逼样的", "下贱", "拉萨", "癞蛤蟆", "搞媛交", "色黄", "幽谷三", "DBF", "欠踹", "开打", "狼心狗肺", "共狗", "色黄图", "游精佑", "大泼妇", "欠拍", "李登辉", "挨刀的货", "共王储", "奇淫散", "有奶不一", "兔崽子", "欠拧", "陈水扁", "死不要脸", "狗粮", "贱淫", "右转是政", "不想活啦", "死皮赖脸", "卧槽", "屎坨坨", "滚圆大乳", "淫荡", "幼齿类", "他奶奶的", "剑人", "我擦", "卖骚", "国家妓", "贱B", "愚民同", "去死吧你", "醉银剑", "屌爆了", "卖逼", "和狗交", "柔胸粉", "愚民政", "祖宗", "人剑合一", "我嘞个去", "阳痿", "和狗性", "肉洞", "与狗性", "祖宗十八代", "化粪池", "二货", "寄生虫", "和狗做", "肉棍", "玉蒲团", "蠢材", "流氓", "脑弱", "傻子", "红色恐", "如厕死", "鸳鸯洗", "蠢货", "山寨", "次奥", "窝囊", "胡江内斗", "乳交", "砍杀", "呕像", "恶心", "蛋碎", "窝囊废", "胡紧套", "软弱的国", "杀人犯", "小妞", "该死", "粉木耳", "歪瓜劣枣", "胡锦涛", "赛后骚", "凶杀", "老娘", "BT", "黑木耳", "胡扯", "胡适眼", "三挫", "血案", "青蛙头", "呆瓜", "搞基", "狗屁", "胡耀邦", "三级片", "韵徐娘", "阴阳失调", "呆子", "撸管", "仆街", "湖淫娘", "三秒倒", "炸死", "河马", "dork", "谢特", "南朝鲜人", "虎头猎", "三网友", "植物冰", "火山喷发", "下流", "装逼", "后庭", "华国锋", "三唑", "殖器护", "垃圾人", "泼妇", "矮穷挫", "总理", "华门开", "骚妇", "惨案", "垃圾", "淫猥", "活春宫", "我日", "吹萧", "骚浪", "凶案", "恐龙", "公驴", "银枪小霸王", "屁眼", "还看锦涛", "骚穴", "贪官", "青蛙", "傻瓜", "拔吊无情", "老二", "换妻", "骚嘴", "狗官", "废材", "蠢驴", "拔屌无情", "鞭鞭", "浑圆豪乳", "扫了爷爷", "昼将近", "孙了", "神经病", "屁话", "汉奸", "激情电", "色电影", "主席忏", "装孙", "青楼", "滚粗", "强暴", "激情短", "色妹妹", "着涛哥", "装孙子", "便便", "废柴", "钉子户", "激情炮", "色小说", "自由圣", "瞎搞", "马屁精", "打炮", "揩油", "激情妹", "色视频", "自慰用", "扯蛋", "大便", "聊骚", "恶爆", "急需嫖", "尸博", "自由亚", "一陀粪", "痴呆", "潮吹", "恶霸", "腐败", "失身水", "有毛病", "一陀屎", "牛逼烘烘", "煞笔", "耐操", "打砸抢", "失意药", "我靠", "草包", "无节操", "波推", "顶你个肺", "奸成瘾", "狮子旗", "靠", "自杀", "强奸", "阴经", "共和国", "江胡内斗", "十八等", "迷药", "妈蛋", "色诱", "八婆", "小鬼子", "江太上", "十大谎", "作死", "无性生殖", "手淫", "鸡婆", "李克强", "江系人", "十大禁", "做爱", "生殖", "你大姨妈的", "拉皮条", "李长春", "疆独", "熟妇", "做爱小", "智障", "坑爹", "嘿咻", "张德江", "自慰", "贱民", "套套", "丑陋", "坑妈", "约炮", "俞正声", "叫自慰", "太王四神", "泄", "自爆", "坑爷", "娘炮", "刘云山", "姐包夜", "六四", "妈蛋", "灭了", "坑奶奶", "屁民", "王歧山", "姐服务", "东突", "死边去", "基因突变", "你有病", "援交", "张高丽", "姐兼职", "探测狗", "屌丝", "你tmd", "渣滓", "土肥圆", "李援朝", "姐上门", "涛共产", "鸟", "吹牛b", "碎渣", "基佬", "李源朝", "猪头", "涛一样胡", "鸟人", "群殴", "杂碎", "孬种", "博熙来", "狗蛋", "特码", "屌人", "撒子", "没用的家伙", "备胎", "傻蛋", "天朝特", "草泥马", "自恋", "混蛋", "民奸", "蛋疼", "偷偷贪", "法克由", "吹牛", "废物", "傻冒", "操蛋", "推油按", "法克", "狗眼", "畜牲", "歇菜", "MLGB", "脱衣艳", "吊儿郎当的", "狗嘴", "八嘎", "歇火", "去年买了个表", "瓦斯手", "他妈的", "矫情", "笨脑子", "菊花紧", "mlgb", "袜按摩", "他妈", "屁颠", "阿呆", "牛X", "qnmgb", "温家堡", "XXOO", "骗钱", "疯子", "我顶你个肺", "精子射", "温切斯特", "丫滴", "你大爷", "卑贱", "牛叉", "就爱插", "温影帝", "怂样", "脑残片", "卑鄙", "麻痹", "就要色", "温家宝", "丑角", "脑残", "小偷", "奶奶个熊", "巨乳", "瘟加饱", "死翘翘", "被驴踢", "麻子脸", "咸猪手", "拉登说", "瘟假饱", "屎样", "被驴踢", "老家伙", "天朝", "浪穴", "纹了毛", "狗屎", "你妈妈的", "该死的", "鬼畜", "黎阳平", "台独", "邓小平", "二百五", "色狼", "抽风", "李洪志", "乌蝇水", "猪", "250", "肥猪", "打手枪", "李咏曰", "无耻", "马B", "奇葩", "神棍", "尼玛", "骗中央", "无码专", "周恩来", "臭鸡蛋", "畜生", "丽媛离", "西藏限", "刘少奇", "脱裤子", "豆腐渣", "节操掉了", "利他林", "希脏", "朱德", "放屁", "吹潮", "蹭炮", "六合彩", "习进平", "宋庆龄", "拽", "龟头", "法克鱿", "乱奸", "习晋平", "习近平", "shit", "射入", "达菲鸡", "乱伦类", "席复活", "李克强", "SHIT", "A片", "马勒戈壁", "乱伦小", "席临终前", "人渣", "欠抽", "中南海", "互撸娃", "乱伦", "席指着护", "渣男", "找抽", "处女", "吃翔", "伦理大", "洗澡死", "渣", "欠扁", "吃精", "爆出翔", "伦理毛", "喜贪赃", "切克闹", "挂了", "你全家", "打蝴蝶", "伦理片", "陷害案", "来死狗", "猥琐", "黄片", "贱骨头", "裸聊网", "陷害罪", "药药药", "龌龊", "斯大林", "屁轻", "裸舞视", "小穴", "盖塔奥", "愚昧", "阿扁", "老三老四", "成人圖片", "落霞綴", "死一邊去", "蓋塔奧", "母豬", "強淫", "挨了一炮", "麻古", "滾蛋", "黑餵狗", "豬公", "中共主席", "攪基", "賣淫", "麻果配", "騷人", "鬧太套", "大腦短路", "藏獨", "黃段子", "藏獨", "麻果丸", "騷", "本宮", "爛泥", "疆獨", "笨拉燈", "操了嫂", "麻將透", "新建戶", "攻受", "廢渣", "馬英九", "戰五渣", "操嫂子", "麻醉狗", "新疆叛", "小妾", "作嘔", "水扁", "矮仔", "插屁屁", "麻醉槍", "新疆限", "可攻可受", "進天堂", "衰人", "傻仔", "察象螞", "麻醉槍", "新金瓶", "不是人", "裹胸", "處男", "姦夫", "成人電", "麻醉藥", "新唐人", "何棄療", "裹腳布", "馬克思", "黑鬼", "成人卡通", "毛一鮮", "姓忽悠", "土憋", "耗子", "列寧", "洗了滾", "成人聊", "美艷少婦", "性愛日", "綠茶婊", "你丫", "中華人民", "娼妓", "成人片", "妹按摩", "性福情", "婊", "綁大款", "共和國", "豬仔", "成人視", "妹上門", "性感少", "婊了", "養小蜜", "社會", "啥表", "成人圖", "蒙汗藥", "性推廣歌", "吊炸天", "吃裡扒外", "民主黨", "銼斃", "成人文", "迷幻型", "胸主席", "菊花", "濺B", "64", "糞便", "成人小", "迷幻藥", "徐玉元", "爆菊", "跑堂狗", "民主", "膣屄", "充氣娃", "迷幻藥", "爆菊花", "特媽", "破鞋", "尿泡", "催眠水", "迷昏口", "丫的", "無節操", "嬤痺", "扯巴子", "吹簫", "催情粉", "迷昏藥", "性器", "菜鳥", "娘個B德", "溜洽子", "干你娘", "催情藥", "迷昏藥", "煙感器", "波霸", "B叫", "瓜哇子", "屌你老母", "催情藥", "迷魂香", "嚴曉玲", "泡M", "滾", "龜兒子", "肏你媽", "挫侖", "迷魂藥", "顏射", "泡妞", "滾回去", "臭婊子", "打飛機", "雞巴", "迷魂藥", "勞教", "毛片", "滾床單", "二流子", "泥馬", "雞巴", "迷姦藥", "勞改犯", "好個毛", "滾床單", "雞雞", "騷貨", "奶子", "迷情水", "顏射", "你妹", "犢子", "糞脹", "雛妓", "肉棒", "迷情藥", "姚明進去", "毛線", "滾犢子", "雜種", "狗吸", "代孕", "迷藥", "要射精了", "傻帽", "草死你媽", "十三點", "爛臭鞋", "法車侖", "謎奸藥", "要射了", "傻X", "廢了你", "該豬吃", "惡狗", "法正乾", "蜜穴", "要洩了", "熊樣", "殘廢", "狗造化", "惡棍", "法輪", "內射", "夜激情", "唾棄", "大比岔", "你算老幾", "無賴", "法輪佛", "嫩穴", "液體炸", "腐植質", "賣騷", "秀逗", "蠢人", "法維權", "嫩陰", "一小撮別", "裝B", "賣弄", "沒腦子", "賤貨", "法一輪", "操你媽", "遺情書", "裝b", "扮純", "腦子進水", "沒屁眼", "法院給廢", "擬濤哥", "蟻力神", "夫妻交換", "妞上門", "陰唇", "二逼", "fuck", "解放軍", "蠢豬", "感撲克", "濃精", "陰道", "死逼", "damn", "妓女", "婊子養的", "岡本真", "女被人家搞", "陰戶", "笨蛋", "丑角", "政府", "瘋狗", "肛交", "女激情", "淫魔舞", "白癡", "ET", "國軍", "縮頭烏龜", "肛門是鄰", "女優", "淫情女", "二癡", "變態", "團體", "賣比", "岡本真", "炮的小蜜", "淫肉", "蛋白質", "鳳姐", "遊行", "傻吊", "鋼針狗", "噴尿", "淫騷妹", "王八", "屁股", "小日本", "人模狗樣", "鋼珠槍", "嫖俄羅", "淫獸", "三八", "MMD", "黨", "坯子", "港澳博球", "嫖雞", "淫獸學", "東方標誌", "NND", "大麻", "歪逼", "港馬會", "僕不怕飲", "淫水", "東方婊子", "禽獸", "起義", "操逼", "港鑫華", "普通嘌", "淫穴", "比樣迪", "獸", "抵制", "裝蔥", "高鶯鶯", "叫床", "詠妓", "逼樣的", "下賤", "拉薩", "癩蛤蟆", "搞媛交", "色黃", "幽谷三", "DBF", "欠踹", "開打", "狼心狗肺", "共狗", "色黃圖", "游精佑", "大潑婦", "欠拍", "李登輝", "挨刀的貨", "共王儲", "奇淫散", "有奶不一", "兔崽子", "欠擰", "陳水扁", "死不要臉", "狗糧", "賤淫", "右轉是政", "不想活啦", "死皮賴臉", "臥槽", "屎坨坨", "滾圓大乳", "淫蕩", "幼齒類", "他奶奶的", "劍人", "我擦", "賣騷", "國家妓", "賤B", "愚民同", "去死吧你", "醉銀劍", "屌爆了", "賣逼", "和狗交", "柔胸粉", "愚民政", "祖宗", "人劍合一", "我勒個去", "陽痿", "和狗性", "肉洞", "與狗性", "祖宗十八代", "化糞池", "二貨", "寄生蟲", "和狗做", "肉棍", "玉蒲團", "蠢材", "流氓", "腦弱", "傻子", "紅色恐", "如廁死", "鴛鴦洗", "蠢貨", "山寨", "次奧", "窩囊", "胡江內鬥", "乳交", "砍殺", "嘔像", "噁心", "蛋碎", "窩囊廢", "胡緊套", "軟弱的國", "殺人犯", "小妞", "該死", "粉木耳", "歪瓜劣棗", "胡錦濤", "賽後騷", "兇殺", "老娘", "BT", "黑木耳", "胡扯", "胡適眼", "三挫", "血案", "青蛙頭", "呆瓜", "搞基", "狗屁", "胡耀邦", "三級片", "韻徐娘", "陰陽失調", "呆子", "擼管", "仆街", "湖淫娘", "三秒倒", "炸死", "河馬", "dork", "謝特", "南朝鮮人", "虎頭獵", "三網友", "植物冰", "火山噴發", "下流", "裝逼", "後庭", "華國鋒", "三唑", "殖器護", "垃圾人", "潑婦", "矮窮挫", "總理", "華門開", "騷婦", "慘案", "垃圾", "淫猥", "活春宮", "我日", "吹蕭", "騷浪", "兇案", "恐龍", "公驢", "銀槍小霸王", "屁眼", "還看錦濤", "騷穴", "貪官", "青蛙", "傻瓜", "拔吊無情", "老二", "換妻", "騷嘴", "狗官", "廢材", "蠢驢", "拔屌無情", "鞭鞭", "渾圓豪乳", "掃了爺爺", "晝將近", "孫了", "神經病", "屁話", "漢奸", "激情電", "色電影", "主席懺", "裝孫", "青樓", "滾粗", "強暴", "激情短", "色妹妹", "著濤哥", "裝孫子", "便便", "廢柴", "釘子戶", "激情炮", "色小說", "自由聖", "瞎搞", "馬屁精", "打炮", "揩油", "激情妹", "色視頻", "自慰用", "扯蛋", "大便", "聊騷", "惡爆", "急需嫖", "屍博", "自由亞", "一陀糞", "癡呆", "潮吹", "惡霸", "腐敗", "失身水", "有毛病", "一陀屎", "牛逼烘烘", "煞筆", "耐操", "打砸搶", "失意藥", "我靠", "草包", "無節操", "波推", "頂你個肺", "奸成癮", "獅子旗", "靠", "自殺", "強姦", "陰經", "共和國", "江胡內鬥", "十八等", "迷藥", "媽蛋", "色誘", "八婆", "小鬼子", "江太上", "十大謊", "作死", "無性生殖", "手淫", "雞婆", "李克強", "江系人", "十大禁", "做愛", "生殖", "你大姨媽的", "拉皮條", "李長春", "疆獨", "熟婦", "做愛小", "智障", "坑爹", "嘿咻", "張德江", "自慰", "賤民", "套套", "醜陋", "坑媽", "約炮", "俞正聲", "叫自慰", "太王四神", "洩", "自爆", "坑爺", "娘炮", "劉雲山", "姐包夜", "六四", "媽蛋", "滅了", "坑奶奶", "屁民", "王歧山", "姐服務", "東突", "死邊去", "基因突變", "你有病", "援交", "張高麗", "姐兼職", "探測狗", "屌絲", "你tmd", "渣滓", "土肥圓", "李援朝", "姐上門", "濤共產", "鳥", "吹牛b", "碎渣", "基佬", "李源朝", "豬頭", "濤一樣胡", "鳥人", "群毆", "雜碎", "孬種", "博熙來", "狗蛋", "特碼", "屌人", "撒子", "沒用的傢伙", "備胎", "傻蛋", "天朝特", "草泥馬", "自戀", "混蛋", "民奸", "蛋疼", "偷偷貪", "法克由", "吹牛", "廢物", "傻冒", "操蛋", "推油按", "法克", "狗眼", "畜牲", "歇菜", "MLGB", "脫衣艷", "吊兒郎當的", "狗嘴", "八嘎", "歇火", "去年買了個表", "瓦斯手", "他媽的", "矯情", "笨腦子", "菊花緊", "mlgb", "襪按摩", "他媽", "屁顛", "阿呆", "牛X", "qnmgb", "溫家堡", "XXOO", "騙錢", "瘋子", "我頂你個肺", "精子射", "溫切斯特", "丫滴", "你大爺", "卑賤", "牛叉", "就愛插", "溫影帝", "慫樣", "腦殘片", "卑鄙", "麻痺", "就要色", "溫家寶", "丑角", "腦殘", "小偷", "奶奶個熊", "巨乳", "瘟加飽", "死翹翹", "被驢踢", "麻子臉", "鹹豬手", "拉登說", "瘟假飽", "屎樣", "被驢踢", "老傢伙", "天朝", "浪穴", "紋了毛", "狗屎", "你媽媽的", "該死的", "鬼畜", "黎陽平", "台獨", "鄧小平", "二百五", "色狼", "抽風", "李洪志", "烏蠅水", "豬", "250", "肥豬", "打手槍", "李詠曰", "無恥", "馬B", "奇葩", "神棍", "尼瑪", "騙中央", "無碼專", "周恩來", "臭雞蛋", "畜生", "銀槍小霸王", "麗媛離", "西藏限", "劉少奇", "脫褲子", "豆腐渣", "節操掉了", "利他林", "希髒", "朱德", "放屁", "吹潮", "蹭炮", "六合彩", "習進平", "宋慶齡", "拽", "龜頭", "法克魷", "亂奸", "習晉平", "習近平", "shit", "射入", "達菲雞", "亂倫類", "席復活", "李克強", "SHIT", "A片", "馬勒戈壁", "亂倫小", "席臨終前", "人渣", "欠抽", "中南海", "互擼娃", "亂倫", "席指著護", "渣男", "找抽", "處女", "吃翔", "倫理大", "洗澡死", "渣", "欠扁", "吃精", "爆出翔", "倫理毛", "喜貪贓", "切克鬧", "掛了", "你全家", "打蝴蝶", "倫理片", "陷害案", "來死狗", "猥瑣", "黃片", "賤骨頭", "裸聊網", "陷害罪", "藥藥藥", "齷齪", "斯大林", "屁輕", "裸舞視", "小穴", "蓋塔奧", "愚昧", "阿扁", "老三老四", "共産黨", "共产党"],
+            a = 0, n = e.replace(/(^\s*)|(\s*$)|(\s)/g, "");
+        for (i = 0; i < t.length; i++) -1 != n.indexOf(t[i]) && a++;
+        return 0 != a
+    }
+
+    function checkNameData() {
+        var n = $("#nickname").val();
+        if (!n) {
+
+            showToast("您还没有填写昵称！");
+            return false;
+        }
+
+        if (forbidWord(n)) {
+            showToast("您填写的昵称属于敏感词汇");
+            return false;
+        }
+        if (n.length > 8) {
+            showToast("您的昵称超出字数限制");
+            return false;
+        }
+        return true;
+    }
+
+    function checkCommentData() {
+        var n = $("#comment_content").val();
+        if (!n) {
+            showToast("您还没有填写评论！");
+            return false;
+        }
+        if (forbidWord(n)) {
+            showToast("您填写的内容含有敏感词汇");
+            return false;
+        }
+        return true;
+    }
+
+    function showToast(msg) {
+        $('.toast-wrap').fadeIn();
+        $('.toast-wrap span').addClass('toast');
+        $('.toast-wrap span').text(msg);
+        setTimeout(function () {
+            $('.toast-wrap').fadeOut();
+        }, 1200);
+    }
+
+    $('#submit_img').click(function() {
+        var un_name = $('#un_name').prop("checked");
+        var is_nickname = $('#un_name').prop("checked") ? true : checkNameData();
+        var is_comment_content = checkCommentData();
+        var nicknames = un_name ? '匿名' : $("#nickname").val();
+        if (is_nickname && is_comment_content) {
+            $.ajax({
+                url: "http://divine.h55u.com/divine.php/Platform/Index/commentApi",
+                method: 'POST',
+                data: {
+                    comment: $("#comment_content").val(),
+                    order_id: '19032809431207d35b62751',
+                    nickname: nicknames,
+                    score: scores
+                },
+                success: function (res) {
+                    $('.comment-box').fadeOut(1000);
+                    showToast("感谢您的评价！");
+                },
+                fail: function (err) {
+                    console.log(err);
+                }
+            });
+        }
+    });
+
+    function scrollToBottom() {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+</script>
+
+</html>

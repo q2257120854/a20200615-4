@@ -1,0 +1,30 @@
+﻿<?php
+	@header("Content-type:text/html;charset=utf-8");//设置页面编码
+	require_once('edlm.php');//载入运行所需文件
+	$appid = '';//设置你的APPID
+	$apppwd = '';//设置你的APPPWD
+	$dh = $_GET['dh'];//dh和ltype由订单接口自动返回
+	$ltype = $_GET['ltype'];//dh和ltype由订单接口自动返回
+	$lppwd = $_GET['lppwd'];//apppwd由订单接口自动返回
+	//判断是否为查询订单,符合以条件则连接服务器获取订单数据
+	if(strlen($dh)<=18){
+		if($ltype){
+			if($ltype=='alipay'){
+				$row = acs($appid,$dh);//使用单号查询 acs是查询支付宝单号,wcs微信,qcs QQ
+				exit($row);//返回结果
+			}else if($ltype=='wxpay'){
+				$row = wcs($appid,$dh);//使用单号查询 acs是查询支付宝单号,wcs微信,qcs QQ
+				exit($row);//返回结果
+			}else if($ltype=='qqpay'){
+				$row = qcs($appid,$dh);//使用单号查询 acs是查询支付宝单号,wcs微信,qcs QQ
+				exit($row);//返回结果
+			}else{
+				exit('支付类型有误');//返回结果
+			}
+		}else{
+			exit('L Pays:支付类型为空');//返回结果
+		}
+	}else{
+		exit('L Pays:单号错误');//返回结果
+	}
+?>

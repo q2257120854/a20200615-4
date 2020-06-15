@@ -1,0 +1,33 @@
+﻿@font-face {
+    font-family: 'iconfont';  /* project id 714880 */
+    src: url('../fonts/font_714880_s338sy3q5x8.eot');
+    src: url('../fonts/font_714880_s338sy3q5x8.eot') format('embedded-opentype'),
+    url('../fonts/font_714880_s338sy3q5x8.woff2') format('woff2'),
+    url('../fonts/font_714880_s338sy3q5x8.woff') format('woff'),
+    url('../fonts/font_714880_s338sy3q5x8.ttf') format('truetype'),
+    url('../fonts/font_714880_s338sy3q5x8.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+}
+
+.icon-green {
+    color: green;
+}
+
+.icon-red {
+    color: red;
+}
+
+.icon-grey {
+    color: grey;
+}

@@ -1,0 +1,85 @@
+﻿.footer{ width:100%; height:48px; position:fixed; left:0; bottom:0; z-index:99; background:#fff; border-top:1px solid #cccccc; overflow:hidden}
+.footer a{ width:25%; padding-top:4px; text-align:center; color:#999999; font-size:12px; float:left; display:block; overflow:hidden}
+.footer a:hover{ color:#f65857}
+.footer a.select{ color:#f65857}
+.footer a span{ width:100%; height:26px; background:url(../images/v_img3.png) no-repeat; background-size:40px; overflow:hidden; display:block}
+
+.footer a span.fimg1{ background-position:center 2px;}
+.footer a:hover span.fimg1{ background-position:center -35px;}
+.footer a.select span.fimg1{ background-position:center -35px;}
+
+.footer a span.fimg2{ background-position:center -81px;}
+.footer a:hover span.fimg2{ background-position:center -120px;}
+.footer a.select span.fimg2{ background-position:center -120px;}
+
+.footer a span.fimg3{ background-position:center -162px;}
+.footer a:hover span.fimg3{ background-position:center -200px;}
+.footer a.select span.fimg3{ background-position:center -200px;}
+
+.footer a span.fimg4{ background-position:center -244px;}
+.footer a:hover span.fimg4{ background-position:center -282px;}
+.footer a.select span.fimg4{ background-position:center -282px;}
+
+.footer a span.fimg5{ background-position:center -328px;}
+.footer a:hover span.fimg5{ background-position:center -370px}
+.footer a.select span.fimg5{ background-position:center -370px}
+
+.bottom{ width:100%; height:55px; position:fixed; left:0; bottom:0; z-index:99; background:rgba(0,0,0,0.9); }
+.fright{ margin-left:80px; overflow:hidden}
+.fright a{ width:33%; height:50px; float:left; text-align:center; font-size:22px; margin-top:5px;padding-top: 5px; color:#fff; display:block; overflow:hidden}
+.fright a label {
+    overflow: hidden;
+    margin: 0 0 0 0;
+    font-size: 12px;
+    display: block !important;
+    line-height: 18px;
+    text-align: center;
+    font-weight: inherit;
+}
+.fright a img {
+    padding: 3px 0 0 0;
+    height: 24px;
+    width: 24px;
+    color: #fff;
+    line-height: 48px;
+    vertical-align: middle;
+}
+.fright a em{ width:100%; height:30px; background:url(../images/v_img33.png) no-repeat; background-size:36px; margin-bottom:4px; display:block; overflow:hidden}
+.fright a:hover em{ width:100%; height:30px; background:url(../images/v_img34.png) no-repeat; background-size:36px; display:block; overflow:hidden}
+.fright a:hover{ color:#ff7f7f}
+.fright a.bimg1 em{ background-position:center 4px;}
+.fright a.bimg2 em{ background-position:center -50px;}
+.fright a.bimg3 em{ background-position:center -117px;}
+
+.fright a.gwly{ color:#ffe400}
+.fright a.gwly:hover{ color:#ffe400}
+
+.fleft{ width:50px; position:fixed; bottom:0px; left:10px; color:#fff; display:block; overflow:hidden;z-index: 11;}
+.fleft>a{ color:#fff; display:block;}
+.fleft p{ width:46px; height:46px; border:2px solid #fff; border-radius:50%; margin-right:5px; overflow:hidden}
+.fleft p span{ width:46px; height:46px; border-radius:50%; display:block; overflow:hidden;margin-left: -1px;margin-top: -1px;}
+.fleft p span img{ width:46px;}
+.fleft a>span{ height:20px; line-height:20px; font-size:12px; text-align:center; padding-top:2px; display:block; overflow:hidden}
+
+.look{ width:50px; height:43px; padding-top:7px; line-height:18px; text-align:center; color:#fff; background:rgba(246,88,87,0.9); box-shadow:0 3px 0 #c14044; border-radius:50%; position:fixed; bottom:72px; right:3px; z-index:99; display:block; overflow:hidden}
+.look img{ width:58%; margin:7px auto 3px; display:block; }
+.menulink{ width:300px; height:240px; background:rgba(246,88,87,0.8); border-radius:10px; z-index:99; position:fixed; top:50%; left:50%; margin:-120px 0 0 -150px; display:none; overflow:hidden}
+.menulink a{ width:70px; height:75px; position:absolute; color:#fff; text-align:center; display:block}
+
+.menulink1 a:nth-child(1){ top:10px; left:115px;}
+.menulink1 a:nth-child(2){ top:35px; right:20px;}
+.menulink1 a:nth-child(3){ bottom:35px; right:20px;}
+.menulink1 a:nth-child(4){ bottom:10px; left:115px;}
+.menulink1 a:nth-child(5){ top:35px; left:20px;}
+.menulink1 a:nth-child(6){ bottom:35px; left:20px;}
+
+.menulink1 a span{ width:50px; height:51px; margin:0 auto 5px; background:#fff; background:url(../images/v_img17.png) no-repeat; background-size:315px; overflow:hidden; display:block}
+.menulink1 a:hover span{ background:url(../images/v_img18.png) no-repeat; background-size:315px;}
+.menulink1 a:nth-child(1) span{ background-position:-263px -1px; }
+.menulink1 a:nth-child(2) span{ background-position:-54px -1px; }
+.menulink1 a:nth-child(3) span{ background-position:-2px -1px; }
+.menulink1 a:nth-child(4) span{ background-position:-107px -1px; }
+.menulink1 a:nth-child(5) span{ background-position:-159px -1px; }
+.menulink1 a:nth-child(6) span{ background-position:-211px -1px; }
+
+.touming{ width:100%; height:100%; position:fixed; left:0; top:0; z-index:98; display:none; overflow:hidden }

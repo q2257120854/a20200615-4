@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{php if(isset($title)) $_W['page']['title'] = $title}{if !empty($_W['page']['title'])} {/if}{if !empty($_W['account']['name'])}{$_W['account']['name']}{/if}{if !empty($_W['page']['sitename'])} - {$_W['page']['sitename']}{/if}</title>
+<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/themes/chengzi_fctemplate/css/style.css">
+<script src="{$_W['siteroot']}app/themes/chengzi_fctemplate/js/zepto.min.js"></script> 
+<script src="{$_W['siteroot']}app/themes/chengzi_fctemplate/js/main.js"></script>
+<script src="{$_W['siteroot']}app/themes/chengzi_fctemplate/js/tool.js"></script> 
+<script src="{$_W['siteroot']}app/themes/chengzi_fctemplate/js/swipe.js"></script> 
+</head>
+
+<body>
+<header class="ui-header">
+	<h1> </h1>
+    <div class="ui-header-left"><a class="ui-header-ico-home" href="#"></a></div>
+    <div class="ui-header-right">
+    	<a id="openMenu" class="ui-header-ico-menu" href="javascript:;#mp.weixin.qq.com"></a>    	
+    </div>
+</header>
+
+<ul id="menu">
+    {data func="site_navs" item="row"}
+    <li class="icon"><a href="{$row['url']}">{$row['name']}</a></li>
+    {/data}
+</ul>
+
+<div class="ui-banner">
+<div id="slider" class="swipe">
+<ul class="swipe-wrap">
+    {data func="site_slide_search" item="row"}
+    <li><a href="{$row['url']}"><img src="{$row['thumb']}" /></a></li>
+    {/data}
+<!--    <li><a href="#"><img src="{$_W['siteroot']}app/themes/chengzi_fctemplate/images/banner2.jpg" /></a></li>
+    <li><a href="#"><img src="{$_W['siteroot']}app/themes/chengzi_fctemplate/images/banner3.jpg" /></a></li>-->
+</ul>
+    	<div id="slider_on">
+      		<ul>
+                <li class="on"></li>
+                <li class=""></li>
+                <li class=""></li>
+      		</ul>
+    	</div>
+</div>
+</div>
+
+<ul class="index_img">
+    {data func="site_navs" item="row"}
+    <li>
+        <a href="{$row['url']}">
+            {if !empty($row['icon'])}
+                    <img src="{$_W['attachurl']}{$row['icon']}" alt="" title="" />	
+                    {else}
+                    <img src="{$_W['siteroot']}app/themes/chengzi_musictemplate/images/index_img1.jpg" alt="" title="" />  
+            {/if} 
+        </a>
+    </li>
+    {/data}
+</ul>
+
+<footer>
+<!--<div class="copy tc">开发有限公司</div>
+    <div class="tecl tc">畅远科技提供技术支持</div>-->
+</footer>
+<script>
+$(function(){
+$('#slider').mBanner('slider');
+});
+</script>
+<div style="display:none"></div><script>
+       var allA = document.getElementsByTagName('a');
+			for(var i=0;i<allA.length;i++){
+				if(allA[i].href.indexOf('tel')){
+				  allA[i].href = allA[i].href + '#mp.weixin.qq.com';
+				}
+			}
+       </script>
+	  </body>
+</html>

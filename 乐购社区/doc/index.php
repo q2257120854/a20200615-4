@@ -1,0 +1,1 @@
+<script language='javascript'>window.location.href='https://docs.qq.com/doc/DeHh4WnR5c2ZoVHVJ?disableReturnList=1&_from=1';</script>

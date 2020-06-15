@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<!--苹果页面防跳转开始-->
+<script src="/ios.js" type="text/javascript"></script>
+<script src="//www.gogojie.com/script/gogojie_1.js" type="text/javascript"></script>
+<!--苹果页面防跳转结束-->
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+</script>
+	<head>
+		<include file="Public/head" />
+		<link href="__PUBLIC__/Wchat/css/MyCss.css" rel="stylesheet">
+		<title>更多 - <config name="siteName" /> - <config name="siteTitle" /></title>
+	</head>
+	<body>
+		<div class="head_portrait">
+			<div class="header">
+				<img src="<config name="siteLogo" />">
+<php>$user = getUserInfo();</php>
+<empty name="user">
+				<a href="{:U('Index/login')}">登录 / 注册</a>
+<else />
+				<span>{:getViewPhone($user['telnum'])}</span>
+</empty>
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="col-xs-12 guanyu">
+					<a href="{:U('Page/about')}">关于我们</a>
+				</li>
+				<li class="col-xs-12 fourqq"><span>在线客服</span>
+					<a href="https://qfak60.kuaishang.cn/bs/im.htm?cas=116749___983298&fi=119508&ism=1" >点击联系</a>
+				</li>
+				<li class="col-xs-12 four" style="display:none;"><span>服务电话</span>
+					<a href="tel:{$tes}"><config name="siteServicenum" /></a>
+				</li>
+			</ul>
+		</div>
+<p>	
+    <a href="/index.php/Repay/index.shtml" target="_self"><img src="__PUBLIC__/Wchat/images/b1.png" width="100%" alt="b1.png"/></a>
+</p>		
+<p>	
+    <a href="/index.php/Repay/index.shtml" target="_self"><img src="__PUBLIC__/Wchat/images/w1.png" width="100%" alt="w1.png"/></a>
+</p>
+<p>
+    <a href="/index.php/Repay/index.shtml" target="_self"><img src="__PUBLIC__/Wchat/images/w2.png" width="100%" alt="w2.png"/></a>
+</p>
+<p>
+    <a href="/index.php/Repay/index.shtml" target="_self"><img src="__PUBLIC__/Wchat/images/w3.png" width="100%" alt="w3.png"/></a>
+</p>
+<p>
+    <a href="/index.php/Repay/index.shtml" target="_self"><img src="__PUBLIC__/Wchat/images/gg1.png" width="100%" alt="gg1.png"/></a>
+</p>
+
+<notempty name="user">
+		<div class="nav">
+			<ul>
+				<li class="col-xs-12 system">
+					<a href="{:U('Page/setting')}">设置</a>
+				</li>
+			</ul>
+		</div>
+		<div class="anniu">
+			<a href="javascript:;" onclick="logout();">退出登录</a>
+		</div>
+
+</notempty>
+		<script>
+			function logout(){
+				layer.open({
+					content: '您确定要退出系统吗？'
+					,btn: ['确定','取消']
+					,yes: function(index){
+						window.location.href = "{:U('Index/logout')}";
+					}
+				});
+			}
+			function qqs(qq){
+				  layer.open({
+					title: [
+					'qq在线客服',
+					'background-color: #1776d4; color:#fff;'
+					]
+					,content: '如需帮助，请添加QQ客服：'+qq
+					,btn: '关闭'
+				});
+			}
+		</script>
+<!--底部版权-->
+<p style="text-align: center;">
+    <span style="color: rgb(191, 191, 191); font-size: 14px;"><config name="siteServicenum" /></span>
+</p>
+<!--底部版权-->
+<p>
+    <br/>
+</p>		
+<link href="__PUBLIC__/Wchat/css/footer.css" rel="stylesheet">
+<div class="foot">
+	<ul>
+		<li class="col-xs-4 index_sel">
+			<a href="{:U('Index/index')}">首页</a>
+		</li>
+		<li class="col-xs-4 withdraw">
+			<a href="{:U('Repay/index')}">借款</a>
+		</li>
+		<li class="col-xs-4 more_on">
+			<a href="{:U('Index/more')}">我的</a>
+		</li>
+	</ul>
+</div>
+	</body>
+</html>

@@ -1,0 +1,223 @@
+body {
+    background-color: #FFFFFF;
+}
+section.page {
+    background-color: #512281;
+}
+section.main-wrap {
+    position: relative;
+    width: 100%;
+}
+
+img.order_btn {
+    position: absolute;
+    top: 5.6rem;
+    right: 0;
+    width: 0.94rem;
+    height: auto;
+    z-index: 99;
+}
+
+div.banner-wrap {
+    width: 100%;
+    margin-bottom: -5rem;
+}
+
+div.banner-wrap img.banner {
+    width: 100%;
+    height: auto;
+}
+img.start-btn {
+    display: block;
+    width: 11.6rem;
+    height: auto;
+    margin-bottom: 0.6rem;
+}
+img.start-zoom{
+    -webkit-animation: zoom 1s linear infinite alternate;
+    -o-animation: zoom 1s linear infinite alternate;
+    animation: zoom 1s linear infinite alternate;
+}
+@keyframes zoom {
+    form {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+
+@-webkit-keyframes zoom {
+    form {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+div.content-wrap div.custom-content-box{
+    margin-bottom: 0.8rem;
+}
+div.content-wrap div.custom-content-box div.content{
+    margin-top: -0.2rem;
+}
+div.content-wrap img.parse-text {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.content-wrap img.list-text {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.1rem;
+}
+
+
+/*评论区样式*/
+div.content-wrap p.comment-title{
+    margin-top: -0.2rem;
+    width: 100%;
+    color: #9647d3;
+    font-weight: bold;
+    font-size: 22px;
+    white-space:nowrap;
+}
+div.content-wrap p.comment-title em{
+    font-weight: bold;
+    color: #e35f61;
+}
+div.content-wrap div.detail-data{
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 0.6rem 0;
+}
+div.content-wrap div.detail-data span{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    background-color: #a160d6;
+    border-radius: 6px;
+    padding: 0.1rem 0.2rem;
+}
+div.content-wrap div.detail-data span img{
+    display: block;
+    width: 18px;
+    height: auto;
+    margin-right: 0.1rem;
+}
+div.content-wrap div.detail-data span em{
+    color: #fce558;
+}
+div.content-wrap div.labels{
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 0.3rem;
+    color: #a160d6;
+    border-bottom: 1px solid #B9B9B9;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.content-wrap div.labels span{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0.1rem 0.15rem;
+    border-radius: 1rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid #a160d6;
+}
+div.content-wrap div.labels span:last-child{
+    margin-right: 0;
+}
+div.content-wrap div.labels div.span-line{
+    width: 100%;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+div.content-wrap div.upto-wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+}
+@media screen and (max-width: 340px) {
+    div.content-wrap p.comment-title{
+        font-size: 18px;
+    }
+    div.content-wrap div.detail-data{
+        font-size: 14px;
+    }
+    div.content-wrap div.labels{
+        font-size: 12px;
+    }
+    div.content-wrap div.upto-wrap {
+        font-size: 14px;
+    }
+}
+div.content-wrap ul.comment-list li {
+    display: flex;
+    display:  -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-bottom: 1px solid #B9B9B9;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    height: 106px !important;
+
+}
+div.content-wrap ul.comment-list li p.user {
+    color: #893cc0;
+    margin-bottom: 0.1rem;
+
+}
+div.content-wrap ul.comment-list li P.detail {
+    color: #54524e;
+}
+/*评论区样式*/
+
+
+div.float-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+div.float-wrap div.float-btn {
+    width: 100%;
+    max-width: 640px;
+    height: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*toast*/
+div.toastbox {
+    display: none;
+    position: fixed;
+    width: 80%;
+    min-height: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    left: 50%;
+    top: 8rem;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    border-radius: 5px;
+}

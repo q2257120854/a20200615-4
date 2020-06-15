@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>账单列表</title>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>账单列表</h5>
+			</div>
+			<form method="get" id="seachForm">
+				<input type="hidden" name="m" value="Loan" />
+				<input type="hidden" name="a" value="bill" />
+				<div class="public-selectArea">
+					<div class="clearfix">
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>借款订单号：</dt>
+								<dd>
+									<input type="text" name="s-oid" value="{$Think.get.s-oid}">
+								</dd>
+							</dl>
+						</div>
+						<div class="wp_box col-xs-6">
+		                	<dl>
+		                    	<dt>账单状态：</dt>
+		                        <dd>
+		                          	<select class="select" name="status">
+		                                <option value="" selected="selected">全部</option>
+		                                <option value="0">待还款</option>
+		                                <option value="1">逾期未还</option>
+		                                <option value="2">已还款</option>
+		                                <option value="3">逾期还款</option>
+		                            </select>
+		                        </dd>
+		                    </dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href='javascript:$("#seachForm").submit();' class="btn btn-sereachBg">
+							<i class="glyphicon glyphicon-search public-ico"></i>
+							<span class="public-label">查询</span>
+						</a>
+					</div>
+				</div>
+			</form>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>订单号</th>
+							<th>期数</th>
+							<th>用户名</th>
+							<th>原始借款金额</th>
+							<th>借款期限</th>
+							<th>账单金额</th>
+							<th>逾期费用</th>
+							<th>最晚还款日</th>
+							<th>出账日</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td>{$vo.oid}</td>
+							<td>{$vo.billnum}</td>
+							<td>{$vo.user.telnum}</td>
+							<td>{$vo.Loanorder.money}元</td>
+							<td>
+								{$vo.Loanorder.time}<if condition="$vo['timetype'] eq 1">个月<else/>天</if>
+							</td>
+							<td>{$vo['money']+$vo['interest']}元</td>
+							<td>{$vo.overdue}元</td>
+							<td>{$vo.repayment_time|date="Y/m/d H:i:s",###}</td>
+							<td>{$vo.add_time|date="Y/m/d H:i:s",###}</td>
+							<td>
+								<if condition="$vo['status'] eq 0">未还款</if>
+								<if condition="$vo['status'] eq 1">已逾期,未还款</if>
+								<if condition="$vo['status'] eq 2">于{$vo.repay_time|date="Y/m/d H:i:s",###}还款</if>
+								<if condition="$vo['status'] eq 3">逾期于{$vo.repay_time|date="Y/m/d H:i:s",###}还款</if>
+								<if condition="$vo['status'] eq 4">账单失效</if>
+							</td>
+							<td class="text-left">
+								
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	</script>
+</html>

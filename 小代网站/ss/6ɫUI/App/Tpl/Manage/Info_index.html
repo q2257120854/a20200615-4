@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+		<title>资料审核</title>
+		<style>
+			.redText{
+				color: red;
+			}
+			.resetInfo-item{
+			    min-width: 165px;
+			    font-size: 14px;
+			}
+			.resetInfo-item h3{
+				font-size: 20px;
+				margin-left: 20px;
+			}
+			.resetInfo-item select{
+				margin-left: 20px;
+				margin-top: 8px;
+			}
+			.resetInfo-item button{
+				margin: 20px 0 10px 20px;
+				width: 120px;
+			    color: #fff;
+			    background-color: #51a0f1;
+			    border: 0;
+			    border-radius: 4px;
+			}
+			.yss{
+	float:left;
+	width: 18%;
+    padding: 8px 25px;
+	margin:15px 5px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #f2f2f2;
+}
+.yss a{
+ line-height: 14px;
+  text-decoration:none;
+}
+.yss a:hover{
+  text-decoration:none;
+}
+.left{float: left;}
+.lss{
+	float:left;
+	width: 18%;
+    padding: 8px 25px;
+	margin:10px 5px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #f2f2f2;
+}
+.lss a{
+ line-height: 14px;
+  text-decoration:none;
+}
+.lss a:hover{
+  text-decoration:none;
+}
+.yssm{
+	float:left;
+	width: 23%;
+    padding: 8px 25px;
+	margin:15px 0;
+	margin-right:12px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	background-color: #f2f2f2;
+}
+.yssm a{
+ line-height: 14px;
+  text-decoration:none;
+}
+.yssm a:hover{
+  text-decoration:none;
+}
+		</style>
+	</head>
+	<body>
+		<div class="nestable">
+			<div class="console-title console-title-border drds-detail-title clearfix">
+				<h5>资料审核</h5>
+			</div>
+			<form method="get" id="seachForm">
+				<input type="hidden" name="m" value="Info" />
+				<input type="hidden" name="a" value="index" />
+				<div class="public-selectArea">
+					<div class="clearfix">
+						<div class="wp_box col-xs-6">
+							<dl>
+								<dt>手机号：</dt>
+								<dd>
+									<input type="text" name="s-username" value="{$Think.get.s-username}">
+								</dd>
+							</dl>
+						</div>
+						<div class="wp_box col-xs-6">
+		                	<dl>
+		                    	<dt>资料状态：</dt>
+		                        <dd>
+		                          	<select class="select" name="status">
+		                                <option value="" selected="selected">全部</option>
+		                                <option value="0">不完善</option>
+		                                <option value="1">待审核</option>
+		                                <option value="2">审核通过</option>
+		                                <option value="-1">不通过</option>
+		                            </select>
+		                        </dd>
+		                    </dl>
+						</div>
+					</div>
+					<div class="btnArea">
+						<a href='javascript:$("#seachForm").submit();' class="btn btn-sereachBg">
+							<i class="glyphicon glyphicon-search public-ico"></i>
+							<span class="public-label">查询</span>
+						</a>
+					</div>
+				</div>
+			</form>
+			<div class="scroll-bar-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>用户名/手机号</th>
+							<th>名称</th>
+							<th>审核结果</th>
+							<th>预期金额</th>
+							<th>审批金额</th>
+							<th>提现状态</th>
+							<th>资料</th>
+							<th>备注信息</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					<volist name="list" id="vo">
+						<tr id="list-{$vo.id}">
+							<td align="center">{$vo.id}</td>
+							<td>{$vo.user.telnum}</td>
+							<td>{$vo.ide.name}</td>
+							<td>
+								<if condition="$vo['status'] eq 0">资料未完善</if>
+								<if condition="$vo['status'] eq 1"><span class="redText">等待审核</span></if>
+								<if condition="$vo['status'] eq -1">未通过审核</if>
+								<if condition="$vo['status'] eq 2">审核通过</if>
+							</td>
+							<td>{$vo.indu.industry}</td>
+							<td>{$vo.quotama}</td>
+							<td><if condition="$vo['qbtx'] eq 1">已经提现</if></td>
+							<td class="td-status">
+								<a href="{:U('Info/view',array('uid'=>$vo['uid']))}" target="_blank">点击查看</a>
+							</td>
+							<td>{$vo.mark}</td>
+							<td class="text-left">
+								<if condition="$vo['status'] eq 0">
+									
+								</if>
+								<if condition="$vo['status'] eq 1">
+									<a href="javascript:Adopt('{$vo.uid}','{$vo.user.telnum}');">通过并授额</a>｜ 
+									<a href="javascript:Refuse('{$vo.uid}','{$vo.user.telnum}');">不符合条件</a>｜
+								</if>
+								<if condition="$vo['status'] eq -1">
+									<a href="javascript:resetInfo('{$vo.id}');">重置资料</a>｜ 
+									<a href="javascript:Adopt('{$vo.uid}','{$vo.user.telnum}');">二审通过并授额</a>｜
+								</if>
+								<if condition="$vo['status'] eq 2">
+									<a href="javascript:resetInfo('{$vo.id}');">重置资料</a>｜
+								</if>
+								<a href="javascript:mark('{$vo.uid}','{$vo.mark}','{$vo.markmm}');">备注</a>｜
+							<a href="javascript:smssend('{$vo.user.telnum}','{$vo.uid}','{$vo.ide.name}');">短信</a>
+							</td>
+						</tr>
+</volist>
+					</tbody>
+				</table>
+			</div>
+			<div class="table-pagin-container">
+				<div class="pull-right page-box">
+					{$page}
+				</div>
+			</div>
+			<div class="resetInfo" style="display: none;">
+				<form action="{:U('Info/resetInfo')}" method="post">
+					<input type="hidden" name="id" value="" id="resetInfoId" />
+					<div class="resetInfo-item">
+						<h3>选择重置项</h3>
+						<select name="action">
+							<option value="all">全部</option>
+							<option value="identity">身份信息</option>
+							<option value="contacts">联系人信息</option>
+							<option value="bank">收款银行信息</option>
+							<option value="addess">联系地址及其他</option>
+			
+						</select>
+					</div>
+					<div class="resetInfo-item">
+						<button type="button">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+<div style="display: none;" id="mark_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+         <tr>
+            <td width="80" align="right"></td>
+            <td>
+              
+                <input type="text" id="mark" value="" style="border:#CCCCCC 1px solid;height:30px;width:300px;margin:20px 0px;padding:0 5px;"/>
+            </td>
+        </tr>
+		  		<tr>
+            <td width="80" align="right">常用备注：</td>
+            <td>
+            <a href="javascript:;" onclick="markbz('1');" ><p class="yssm">清空</p></a>
+			<a href="javascript:;" onclick="markbz('2');" ><p class="yssm">清空</p></a>
+			<a href="javascript:;" onclick="markbz('3');" ><p class="yssm">清空</p></a>
+			</td>
+        </tr>
+		         <tr style="display:none;">
+            <td width="80" align="right">工本费开关：</td>
+            <td>
+              <input name="markmm" id="markmm" type="checkbox" value="1" /><span style="line-height:30px;padding:5px 5px;">（打勾开，去掉关，默认为关）<span style="color:#E53333;">收完工本费后记得把√去除，不然提现不了。</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+				<input type="hidden"  id="mid" value=""/>
+                <input type="submit" onclick="savemark();" class="btn" value="修改提交" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="display: none;" id="smssend_div">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+
+		<tr>
+			<td width="80" align="right"></td>
+			<td><span style="padding: 10px 0;line-height: 20px;margin-right:10px;"></span></td>
+		</tr>
+		<tr>
+            <td width="80" align="right">自定义内容</td>
+            <td>
+               <textarea rows="5" cols="50" id="iconten" value="" style="border:#CCCCCC 1px solid;"></textarea>
+
+            </td>
+        </tr>       
+	<tr style="display: none;" >
+	<td width="50" align="right" >phone</td>
+	<td>
+		<input type="text" id="iphone" value=""/></td>
+	</tr>
+        <tr>
+            <td></td>
+            <td>
+				<input type="hidden"  id="smsname" value=""/>
+				<input type="hidden"  id="smsuid" value=""/>
+                <input type="submit" onclick="savesmssend();" class="btn" value="发送" style="margin:8px 5px;background-color:#06c;color:#fff;"/>
+            </td>
+        </tr>
+				<tr>
+            <td width="80" align="right">常用短信</td>
+            <td>
+            <a href="javascript:;" onclick="smstz('1');"><p class="yss">提现密码</p></a>
+			<a href="javascript:;" onclick="smstz('2');"><p class="yss">预设2</p></a>
+			<a href="javascript:;" onclick="smstz('3');"><p class="yss">预设3</p></a>
+			</td>
+        </tr>
+    </table>
+	【1】点击上面常用按钮信息会自动加到发送框，再点发送；</br>
+	【2】@username@会自动识别客户名字，@ypass@会自动识别提现密码，请勿改；</br>
+	【3】如有需要增加和更改短信内容，请联系我QQ:417624675；</br>
+</div>
+	</body>
+	<script>
+	function markbz(tz){
+		if(tz  == '1'){
+			$('.layui-layer-content #mark').prop('value','');			
+		}else if(tz  == '2'){
+			$('.layui-layer-content #mark').prop('value','');				
+		}else if(tz  == '3'){
+			$('.layui-layer-content #mark').prop('value','');		
+		}	
+	}
+		//资料审核通过并设置用户额度
+		function Adopt(uid,name){
+			layer.prompt(
+				{
+					title: '为用户  ['+name+'] 设定额度',
+					formType: 0
+				},
+				function(quota,index){
+					cvphp.post(
+						"{:U('Info/adopt')}",
+						{
+							uid:uid,
+							quota:quota
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								layer.close(index);
+								layer.msg("审核完成");
+								setTimeout(function(){location.reload();},1000);
+							}
+						}
+					);
+				}
+			);
+		}
+		//资料不通过
+		function Refuse(uid,name){
+			layer.confirm(
+				'确认将用户[ '+name+' ]资料设置为不通过吗？',
+				{
+					btn: ['确认','取消']
+				},function(){
+					cvphp.post(
+						"{:U('Info/refuse')}",
+						{
+							uid:uid
+						},
+						function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{
+								layer.alert("用户资料处理完成");
+								setTimeout(function(){location.reload();},1000);
+							}
+						}
+					);
+				}
+			);
+		}
+		//重置资料
+		function resetInfo(id){
+			$("#resetInfoId").val(id);
+			layer.open({
+				type: 1,
+				shade: false,
+				title: false, //不显示标题
+				content: $('.resetInfo'),
+			});
+		}
+
+		$(function(){
+			$(".resetInfo-item button").on('click',function(){
+				cvphp.submit($(".resetInfo form"),function(data){
+					if(data.status!=1){
+						layer.msg(data.info);
+					}else{
+						layer.alert("用户资料处理完成");
+						setTimeout(function(){location.reload();},1000);
+					}
+				});
+			});
+		});
+		//备注
+function mark(mid,strs,mm){
+    	$("#mid").attr('value',mid);
+		$("#mark").attr('value',strs);
+		if(mm == '1'){
+		  $("#markmm").attr("checked",true);
+		}
+		layer.open({
+		  	type: 1,
+			title: '备注',
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['600px', '325px'], //宽高
+		  	content: $("#mark_div").html()
+		});
+}
+	function savemark(){
+		var mid = $(".layui-layer-content #mid").val();
+		var sconten = $(".layui-layer-content #mark").val();
+		var mkmm = $(".layui-layer-content #markmm:checked").val();
+		if (mkmm == 'undefined' || mkmm == '' || mkmm== null)
+		{
+			mkmm = '0';
+		}
+		
+		if (mid == 'undefined' || mid == '' || mid == null)
+		{
+		layer.msg("参数错误1");
+		return false;
+		}
+			$.post(
+    			"{:U('Info/savemark')}",
+    			{id:mid,strs:sconten,markmm:mkmm},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("保存成功");
+							setTimeout(function(){
+    						window.location.href = window.location.href;
+    					},2000);
+
+							}
+    			}
+    		);
+	
+	}		
+	//sms
+	function smssend(mphone,uid,name){
+		$("#iphone").attr('value',mphone);
+		$("#smsname").attr('value',name);
+		$("#smsuid").attr('value',uid);
+		layer.open({
+		  	type: 1,
+			title: ' 号码：'+mphone,
+		  	skin: 'layui-layer-rim', //加上边框
+		  	area: ['666px', '333px'], //宽高
+		  	content: $("#smssend_div").html()
+		});
+    }
+	function savesmssend(){
+		var sconten = $(".layui-layer-content #iconten").val();
+		var sphone = $(".layui-layer-content #iphone").val();
+		var smsuid = $(".layui-layer-content #smsuid").val();
+		var smsname = $(".layui-layer-content #smsname").val();
+		if (sconten == 'undefined' || sconten == '' || sconten == null)
+		{
+		layer.msg("发送内容不能为空!");
+		return false;
+		}
+		if (sphone == 'undefined' || sphone == '' || sphone == null)
+		{
+		layer.msg("手机号不能为空!");
+		return false;
+		}
+			$.post(
+    			"{:U('Info/smszdy')}",
+    			{pconten:sconten,pphone:sphone,uid:smsuid,name:smsname},
+    			function(data){
+							if(data.status!=1){
+								layer.msg(data.info);
+							}else{								
+								layer.msg("发送成功");
+							}
+    			}
+    		);
+	
+	}
+	function smstz(tz){
+		if(tz  == '1'){
+			$('.layui-layer-content #iconten').prop('value','尊敬的先生/女士，您的取现码：@，请勿泄露。');			
+		}else if(tz  == '2'){
+			$('.layui-layer-content #iconten').prop('value','预设2');				
+		}else if(tz  == '3'){
+			$('.layui-layer-content #iconten').prop('value','预设3');		
+		}
+	
+	}		
+	</script>
+</html>

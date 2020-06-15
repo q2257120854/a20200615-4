@@ -1,0 +1,114 @@
+{template 'common/header'}
+<style type="text/css">
+	html, body {
+	color:#222;
+	font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;
+	margin:0;
+	padding: 0;
+	text-decoration: none;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin:0;padding:0;}
+img {border:0;}
+ol, ul {list-style: none outside none;margin:0;padding: 0;}
+a {color:#000000;text-decoration: none;}
+.clr {display:block;clear:both;height:0;overflow:hidden;}
+.copyright{padding:8px;text-align:center;font-size:14px;color:#666;}
+.copyright a{color:#666;}
+body { background-color:#eee; font-size:16px; }
+
+body  .mainmenu {margin:6px;border-radius:5px; overflow:hidden; border:1px solid #d8e0cb;}
+body  .mainmenu li {position:relative; border-bottom:1px solid #CCC; padding:8px 10px 8px 15px; background:-webkit-gradient(linear, 55% 100%, 55% 0%, from(#f1f1f1), to(#ffffff)); overflow:hidden }
+body  .mainmenu li a { display:block;text-decoration:none; position:relative;}
+
+body  .mainmenu li em { display:block; width:8px; height:100%; position:absolute; left:0px;top: 0;}
+body  .mainmenu li a .time {position: absolute; right: 10px; top: 8px; font-size: 12px; color: #555;}
+body  .mainmenu li a .art_list{  color:#858585;float:left;width:75%;margin-right:5%;}
+body  .mainmenu li a .category_list{  color:#858585;}
+body  .mainmenu li a span {color:#000;display:block; line-height:18px; font-size:14px;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap; font-style: normal; }
+body  .mainmenu li a img {width:20%; float:left;}
+body  .mainmenu li a i{ display:block; line-height:18px; font-size:12px;  text-overflow:ellipsis; overflow:hidden; white-space:nowrap; color:#4b4b4b; font-style: normal;}
+body  .mainmenu li a b{ display:block;  width:15px; height:19px; position:absolute; top:50%; margin-top:-10px; right:10px;  background:url(../images/jt.png) no-repeat; background-size:15px 19px;}
+body  .mainmenu li:last-child{ border-bottom:none}
+body .mainmenu li:nth-child(8n+1) em{background-color:#36A1DB}
+body .mainmenu li:nth-child(8n+2) em{background-color:#678ce1}
+body .mainmenu li:nth-child(8n+3) em{background-color:#8c67df}
+body .mainmenu li:nth-child(8n+4) em{background-color:#84d018}
+body .mainmenu li:nth-child(8n+5) em{background-color:#14c760}
+body .mainmenu li:nth-child(8n+6) em{background-color:#f3b613}
+body .mainmenu li:nth-child(8n+7) em{background-color:#ff8a4a}
+body .mainmenu li:nth-child(8n+8) em{background-color:#fc5366}
+body  .mainmenu {border:0; overflow: hidden;}
+body  .mainmenu li { border:1px solid #CCC; margin-bottom:6px; border-radius:5px;}
+body  .mainmenu li:last-child{ border-bottom:1px solid #CCC;}
+.head{height:40px; line-height:40px; background:#22292C; padding:0 5px; color:#FFF;}
+.head .bn{display:inline-block; height:30px; line-height:30px; padding:0 10px; margin-top:4px; font-size:20px; background:transparent; color:#FFF; text-decoration:none;}
+.head .bn.pull-left{border-right:1px solid #000;}
+.head .bn.pull-right{position:absolute; right:5px; top:0; border-left:1px solid #000;}
+.head .title{font-size:14pt;display:block;padding-left:10px;font-weight:bolder;margin-right:49px;text-align:center;height:40px;line-height:40px;text-overflow:ellipsis;white-space:nowrap;overflow: hidden;}
+.head .order{background:#F9F9F9; position:absolute; z-index:9999; right:0;}
+.head .order li > a{display:block; padding:0 10px; min-width:100px; height:35px; line-height:35px; font-size:16px; color:#333; text-decoration:none; border-top:1px #EEE solid; position:relative;}
+.head .order li > a em{display:block; width:4px; height:80%; position:absolute; left:0px; top: 10%; }
+.head .order li:nth-child(8n+1) > a em{background-color:#36A1DB}
+.head .order li:nth-child(8n+2) > a em{background-color:#678ce1}
+.head .order li:nth-child(8n+3) > a em{background-color:#8c67df}
+.head .order li:nth-child(8n+4) > a em{background-color:#84d018}
+.head .order li:nth-child(8n+5) > a em{background-color:#14c760}
+.head .order li:nth-child(8n+6) > a em{background-color:#f3b613}
+.head .order li:nth-child(8n+7) > a em{background-color:#ff8a4a}
+.head .order li:nth-child(8n+8) > a em{background-color:#fc5366}
+.head .order li.fa-caret-up{font-size:20px;color:#F9F9F9;position:absolute;top:-11px;right:16px;}
+.pager-position{width:100%;margin:0 auto;text-align:center;}
+{$_W['styles']['css']}
+</style>
+
+
+
+<ul class="mainmenu">
+{data module="site" func="site_category" parentid="$cid" assign="category_sign"}
+{if $category_sign}
+	<li>
+		<em></em>
+		<a href="{$row['linkurl']}" >
+			<p class="category_list">
+				<span>{$row['name']}</span>
+			</p>
+		</a>
+	</li>
+{/if}
+{/data}
+</ul>
+
+{if !$category_sign}
+<ul class="mainmenu">
+	{data module="site" func="site_article" cid="$cid" assign="result" return="true"}
+	{loop $result['list'] $row}
+	<li>
+		<em></em>
+		<a href="{$row['linkurl']}" >
+			<p class="art_list">
+				<span>{php echo cutstr($row['title'],50,1);}</span>
+				<i>{php echo cutstr($row['description'],50,1);}</i>
+				<i>{php echo date('Y-m-d', $row['createtime'])}</i>
+			</p>
+			<img src="{$row['thumb']}"/>
+		</a>
+	</li>
+
+<!--
+	<li>
+	<a href="{$row['linkurl']}" >
+		<span class="time">{php echo date('Y-m-d', $row['createtime'])}</span>
+		<em></em>
+		<p>
+			<span>{php echo cutstr($row['title'],25,1);}</span>
+			<i>{php echo cutstr($row['description'],50,1);}</i>
+		</p>
+		<b></b>
+	</a>
+	</li>
+-->
+
+	{/loop}
+</ul>
+{/if}
+
+{template 'common/footer'}

@@ -1,0 +1,7 @@
+
+
+1.将application文件夹放到苹果cms v10 根目录，【放心，不会替换任何文件】
+2.到苹果cms 后台 ，点击左侧菜单的 自定义菜单配置，在结尾处添加   站群管理,/admin.php/admin/domain/index.html
+3.保存后刷新后台ok
+
+

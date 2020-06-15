@@ -1,0 +1,9 @@
+/*禁止第三方53客服滑动*/
+#mobile_icon_div{
+    bottom:280px !important;
+    right: 0;
+}
+#mobile_icon_div>div{
+	position: inherit !important;
+	float: left;
+}

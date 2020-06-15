@@ -1,0 +1,28 @@
+/*
+ * =========================================================================
+ * 自定义类  首页
+ * =========================================================================
+ */
+ /*初始化类*/
+@charset "UTF-8";
+
+.baise{background-color: #fff;color:#000;min-height: 6.30rem;padding-top:15px;padding-left:1.00rem;font-size:14px;margin-top:0;}
+
+.baiset{background-color: #39383d;color:#fff;border-bottom: 1px solid #EAEAEA;}
+
+.baisec{background-color: #EAEAEA;font-size:12px;color:#000;}
+
+
+
+.c-b{color:#000}
+
+
+
+.yinhang{background-color: #fbfbfb;padding:1.00rem 0rem 1.00rem 1.00rem;font-size:14px;margin-bottom:0}
+.y{padding-left:20px;color:#576b9e;font-size:12px}
+.sxf{padding-left:3px;padding-top:0.40rem;}
+.d{padding-left:95px;color:#959595;font-size:12px}
+
+.huobi{font-size:18px;padding:1.00rem 0rem 1.00rem 0.00rem;}
+
+.shangbian{border-top:0px}

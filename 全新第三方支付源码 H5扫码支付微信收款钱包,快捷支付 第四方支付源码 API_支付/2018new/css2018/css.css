@@ -1,0 +1,278 @@
+﻿.header{
+	height:78px;
+	width:100%;
+	background-color:#fff;
+	margin:0 auto;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7FFFFFFF,endcolorstr=#7FFFFFFF);
+	box-shadow:1px 1px 7px #777;
+	-moz-box-shadow:1px 1px 7px #777;
+	-webkit-box-shadow:1px 1px 7x #777;
+}
+.header-logo{
+	float:left;
+	position: absolute;
+	left: 5%;
+}
+.header-phone{
+	float:right;
+	position: absolute;
+	right: 5%;
+	margin-top:35px;
+}
+#Company_img{
+	width:1002px;
+	height:auto;
+	margin:0px auto;
+	margin-top:5px;
+	}
+		
+.ntitle{
+	width:782px;
+	height:40px;
+	line-height:40px;
+	font-size:13px;
+	margin:0px auto;
+	margin-top:5px;
+	color:#666;
+	}	
+.ntitle a{
+	color:#1e72b2;
+	text-decoration:none;
+	}	
+.ntitle a:hover{
+	text-decoration:underline;
+	}	
+	
+#collection_div{
+	width:780px;
+	height:auto;
+	border:1px solid #CCC;
+	margin:0px auto;
+	}	
+#collection_div div{
+	width:90%;
+	margin:0px auto;
+	}	
+.collection_xtitle{
+	width:90%;
+	height:69px;
+	margin-top:10px;
+	color:#1e72b2;
+	font-size:15px;
+	font-weight:bold;
+	line-height:110px;
+	background-image:url(../images/1.jpg);
+	}
+.collection_content{
+	height:auto;
+	font-size:13px;
+	color:#666;
+
+	}		
+.collection_content p{
+	margin-left:30px;
+	margin-top:20px;
+	font-weight:normal;
+	}	
+.collection_content p b{
+	color:#000;
+	}
+	
+.collectionleft{
+	width:208px;
+	height:auto;
+	border:1px solid #CCC;
+	margin-top:10px;
+	}	
+.collectionlefttitle{
+	width:208px;
+	height:39px;
+	color:#1f73b3;
+	font-weight:bold;
+	font-size:15px;
+	line-height:39px;
+	background-image:url(../images/2.jpg);
+	}	
+.collectionlef_title{
+	width:208px;
+	height:39px;
+	font-size:13px;
+	line-height:39px;
+	text-align:left;
+	color:#A8A8A8;
+	cursor:pointer;
+	}	
+.collectionleft_title_b{
+	background-color:#f1f1f1;
+	color:#1f73b3;
+	font-weight:bold;
+	height:37px;
+	border-top:1px solid #E1E1E1;
+	border-bottom:1px solid #E1E1E1;
+	}	
+	
+#dengludiv{
+	width:90%;
+	height:435px;
+	margin:0px auto;
+	margin-top:80px;
+	background:#fff;
+	border-radius:3px;
+	}	
+#dengludivtitle{
+width:90%;
+	height:35px;
+	line-height:35px;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;
+	}	
+#dengludivts{
+width:90%;
+	height:60px;
+	margin:0px auto;
+	border:1px solid #ffda7f;
+	margin-top:30px;
+	background-color:#ffffe1;
+	}	
+#dengludivcontent{
+width:90%;
+	height:260px;
+	margin-top:40px;
+
+	}	
+#dengludivcontentleft{
+	width:570px;
+	height:260px;
+	float:left
+	}	
+#dengludivcontentright{
+	width:191px;
+	height:260px;
+	text-align:center;	
+	float:left
+	}	
+#dengludivcontentright img{
+	margin-top:20px;
+	border:0px;
+	}	
+.dengluinputdiv{
+	width:90%;
+	height:50px;
+	line-height:50px;
+	font-size:14px;
+	color:#333;
+	margin:0px auto;
+	}	
+
+#zffxdiv{
+	width:100%;
+	height:398px;
+	margin:0px auto;
+	background-image:url(../images/zffxs.jpg);
+	text-align:center;
+	}	
+#zffxdiv_menu{
+	width:1002px;
+	height:61px;
+	margin:0px auto;
+	margin-top:50px;
+	background-image:url(../images/zffx_02.gif);
+	}	
+#zffxdiv_menu div{
+	width:125px;
+	height:61px;
+	float:left;
+	line-height:61px;
+	color:#333;
+	font-weight:bold;
+	font-size:15px;
+	text-align:center;
+	cursor:pointer;
+	}	
+#zffxdiv_content{
+	width:1002px;
+	height:auto;
+	margin:0px auto;
+	margin-top:50px;
+	}	
+.zffxdiv_title{
+	width:100%;
+	height:auto;
+	font-size:13px;
+	color:#666;
+	}	
+.zffxdiv_kuan{
+	width:1000px;
+	height:168px;
+	border:1px solid #e4e4e4;
+	margin:0px auto;
+	background-color:#f8f8f8;
+	margin-top:25px;
+	}	
+.zffxdiv_kuan_left{
+	width:197px;
+	height:168px;
+	float:left;
+	text-align:center;
+	margin-top:16px;
+	}	
+.zffxdiv_kuan_right{
+	width:773px;
+	height:168px;
+	float:left;
+	margin-left:20px;
+	}	
+.zffxdiv_kuan_right_title{
+	width:100%;
+	height:70px;
+	line-height:70px;
+	font-size:18px;
+	font-weight:bold;
+	color:#000;
+	}	
+.zffxdiv_kuan_right_content{
+	font-size:13px;
+	color:#999;
+	vertical-align:top;
+	}	
+.zffxdiv_kuan_right_content p{
+	height:20px;
+	line-height:20px;
+	}	
+
+#fwdtdiv{
+	width:100%;
+	height:440px;
+	margin:0px auto;
+	text-align:center;
+	background-image:url(../images/fwdtfwdt.jpg);
+	}	
+#fwdt_fwdt{
+	width:998px;
+	height:440px;
+	margin:0px auto;
+	background-image:url(../images/fwdt.jpg);
+	}	
+.fwdtfont{
+	width:80%;
+	margin-left:30px;
+	text-align:left;
+	height:30px;
+	line-height:30px;
+	font-size:13px;
+	color:#FFF;
+	}	
+#fwdtdivcontent{
+	width:900px;
+	height:auto;
+	margin:0px auto;
+	margin-top:30px;
+	font-size:14px;
+	color:#333;
+	}	
+#fwdtdivcontent div{
+	height:auto;
+	line-height:30px;
+	margin-top:30px;
+	}	

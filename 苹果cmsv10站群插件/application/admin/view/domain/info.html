@@ -1,0 +1,196 @@
+{include file="../../../application/admin/view/public/head" /}
+<div class="page-container p10">
+
+	<div class="showpic" style="display:none;width: 180px;height: 80px;"><img class="showpic_img" width="180" height="80"></div>
+
+	
+	
+	
+    <form class="layui-form layui-form-pane" method="post" action="">
+
+				<input id="collect_id" name="site[site_url]" type="hidden" value="{$info.site_url}">
+			 
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站名称：</label>
+                    <div class="layui-input-block">
+                       
+						<input type="text" name="site[site_name]" placeholder="xxx在线视频网站" value="{$info.site_name}" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站域名：</label>
+                    <div class="layui-input-block">
+                        
+						<input lay-verify="required" lay-reqtext="域名是必填项，岂能为空？" name="site[site_url]" placeholder="如：www.maccms.com,不要加http://" value="{$info.site_url}" class="layui-input" {if condition="isset($info.site_url)"}disabled{/if}>
+                    </div>
+                </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">手机站域名：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="site[site_wapurl]" placeholder="如：www.maccms.com,不要加http://" value="{$info.site_wapurl}" class="layui-input">
+                        </div>
+                    </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">关键字：</label>
+                    <div class="layui-input-block">
+                       <input type="text" name="site[site_keywords]" placeholder="一般不超过100个字符" value="{$info.site_keywords}" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">描述信息：</label>
+                    <div class="layui-input-block">
+                       <input type="text" name="site[site_description]" placeholder="一般不超过200个字符" value="{$info.site_description}" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">备案号：</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="site[site_icp]" placeholder="一般不超过200个字符" value="{$info.site_icp}" class="layui-input">
+                    </div>
+                </div>
+                 
+				 <div class="layui-form-item">
+					<label class="layui-form-label">默认LOGO：</label>
+					<div class="layui-input-inline w500">
+						<input type="text" name="site[site_logo]" placeholder="图片地址或路径" value="{$info.site_logo}" class="layui-input upload-input">
+					</div>
+					<div class="layui-input-inline ">
+						<button type="button" class="layui-btn layui-upload" lay-data="{data:{thumb:0,thumb_class:'site[site_logo]'}}" id="upload1">上传图片</button>
+					</div>
+				</div>
+		
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站模板：</label>
+                    <div class="layui-input-inline" >
+                            <select class="w150" name="site[template_dir]">
+                                {volist name="templates" id="vo"}
+                                <option value="{$vo}" {if condition="$info.template_dir eq $vo"}selected {/if}>{$vo}</option>
+                                {/volist}
+                            </select>
+                    </div>
+                    <label class="layui-form-label">模板目录：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="site[html_dir]" placeholder="" value="{$info.html_dir}" class="layui-input w150" >
+                    </div>
+                </div>
+ 
+                <div class="layui-form-item">
+                    <label class="layui-form-label">自适应手机：</label>  
+                    <div class="layui-input-inline w300">
+                        <input type="radio" name="site[mob_status]" value="0" title="关闭" {if condition="$info.mob_status neq 1"}checked {/if}>
+                        <input type="radio" name="site[mob_status]" value="1" title="多域" {if condition="$info.mob_status eq 1"}checked {/if}>
+                        <input type="radio" name="site[mob_status]" value="2" title="单域" {if condition="$info.mob_status eq 2"}checked {/if}>
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">多域名：访问wap域名会自动使用手机模板；单域名：手机访问会自动使用手机模板；</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">手机模板：</label>
+                    <div class="layui-input-inline">
+                            <select class="w150" name="site[mob_template_dir]">
+                                {volist name="templates" id="vo"}
+                                <option value="{$vo}" {if condition="$info.mob_template_dir eq $vo"}selected {/if}>{$vo}</option>
+                                {/volist} 
+                            </select>
+                    </div>
+                    <label class="layui-form-label">模板目录：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="site[mob_html_dir]" placeholder="" value="{$info.mob_html_dir}" class="layui-input w150" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">统计代码：</label>
+                    <div class="layui-input-block">
+                        <textarea name="site[site_tj]" class="layui-textarea"  placeholder="请输入第三方网站统计代码">{$info.site_tj}</textarea>
+                    </div>
+                </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">站点状态：</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="site[site_status]" value="0" title="关闭" {if condition="$info.site_status eq 0"}checked {/if}>
+                            <input type="radio" name="site[site_status]" value="1" title="开启" {if condition="$info.site_status eq 1"}checked {/if}>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">关闭提示：</label>
+                        <div class="layui-input-block">
+                            <textarea name="site[site_close_tip]" class="layui-textarea"  placeholder="请输入站点关闭后的提示信息">{$info.site_close_tip}</textarea>
+                        </div>
+                    </div>
+            
+                     
+
+                <div class="layui-form-item center">
+                    <div class="layui-input-block">
+                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="formSubmit" data-child="true">保 存</button>
+
+                        <button class="layui-btn layui-btn-warm" type="reset">还 原</button>
+                    </div>
+                </div>
+
+    </form>
+
+</div>
+{include file="../../../application/admin/view/public/foot" /}
+<script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
+
+<script type="text/javascript">
+    layui.use(['upload','form', 'layer'], function () {
+        // 操作对象
+        var form = layui.form
+    			, element = layui.element
+                , layer = layui.layer
+                , $ = layui.jquery
+                , upload = layui.upload;
+
+				upload.render({
+					elem: '.layui-upload'
+					,url: "/admin.php/admin/upload/upload.html?flag=site"
+					,method: 'post'
+					,before: function(input) {
+						layer.msg('文件上传中...', {time:3000000});
+					},done: function(res, index, upload) {
+						var obj = this.item;
+						if (res.code == 0) {
+							layer.msg(res.msg);
+							return false;
+						}
+						layer.closeAll();
+						var input = $(obj).parent().parent().find('.upload-input');
+						if ($(obj).attr('lay-type') == 'image') {
+							input.siblings('img').attr('src', res.data.file).show();
+						}
+						input.val(res.data.file);
+					}
+				});
+
+
+        $('.upload-input').hover(function (e){
+            var e = window.event || e;
+            var imgsrc = $(this).val();
+            if(imgsrc.trim()==""){ return; }
+            var left = e.clientX+document.body.scrollLeft+20;
+            var top = e.clientY+document.body.scrollTop+20;
+            $(".showpic").css({left:left,top:top,display:""});
+            if(imgsrc.indexOf('://')<0){ imgsrc = ROOT_PATH + '/' + imgsrc;	} else{ imgsrc = imgsrc.replace('mac:','http:'); }
+            $(".showpic_img").attr("src", imgsrc);
+        },function (e){
+            $(".showpic").css("display","none");
+        });
+
+
+
+
+
+
+
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>

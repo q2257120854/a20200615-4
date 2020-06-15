@@ -1,0 +1,117 @@
+<view class="fk-flex-v fk-padding-t10">
+  <ui-toast id='toast'></ui-toast>
+  <!--用户信息-->
+  <view class='useravatar'>
+    <view class='source-user'>
+      <view class='source-user-avatar'>
+        <view class="fk-flex-v fk-flex-content-center source-user-avatar-container">
+          <view wx:for="{{yourTeamMembers}}" wx:key="{{index}}" style='position:relative'>
+            <image src="{{item.avatarUrl}}" style="width:35px;height:35px;"></image>
+            <view class='fk-flex-v user-answer-info'>
+              <text>{{item.right}}</text>
+              <text>{{item.costtime}}</text>
+            </view>
+          </view>
+        </view>
+        <view class='answer-info fk-flex-v fk-flex-content-center'>
+          <view class='answer-result'>{{yourRightAnswer}}</view>
+          <view class='answer-result'>
+            <text class="answer-time">{{yourAnswerTimeText}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='target-user'>
+      <view class='target-user-avatar' style='justify-content:flex-end;'>
+        <view class="fk-flex-v fk-flex-content-center" style="position:absolute;align-items:flex-end;right:0;height:70px;flex-wrap:wrap-reverse;">
+          <view wx:for="{{opponentTeamMembers}}" wx:key="{{index}}" style='position:relative;height:35px'>
+            <image src="{{item.avatarUrl}}" style="width:35px;height:35px;"></image>
+            <view class='fk-flex-v user-answer-info'>
+              <text>{{item.right}}</text>
+              <text>{{item.costtime}}</text>
+            </view>
+          </view>
+        </view>
+        <view class='answer-info fk-flex-v fk-flex-content-center'>
+          <view class='answer-result'>{{opponentRightAnswer}}</view>
+          <view class='answer-result'>
+            <text class="answer-time">{{opponentAnswerTimeText}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='countdown-container'>
+    <view class='fk-flex fk-flex-center'>
+      <view class='fk-countdown animation'>
+        <canvas class="fk-countdown-bg" canvas-id="countdownBgCanvas"></canvas>
+        <canvas class="fk-countdown-canvas" canvas-id="countdownCircleCanvas"></canvas>
+      </view>
+    </view>
+  </view>
+
+  <view class="fk-subject">
+    <view animation="{{questionNoAnimData}}" class="fk-flex-v fk-flex-center fk-font-16" style="{{questionNoStyle}}" hidden="{{questionNoHidden}}">
+      <view class="fk-font-20">{{questionNo}}</view>
+      <!-- <view class="fk-font-20">{{questionType}}题</view> -->
+    </view>
+    <text class="title animation" style='animation-delay:.5s'>{{subject}}</text>
+    <image src="{{questionImageUrl}}" style="height:50px" mode="aspectFit" wx:if="{{questionImageUrl != ''}}" />
+  </view>
+  <view hidden="{{yourAnswer != -1}}">
+    <view class="fk-answer-wrapper">
+      <view class="fk-answer animation" style="animation-delay:.{{index * 2}}s" wx:for="{{answerList}}" wx:key="{{index}}" bindtap="submitAnswer" data-id="{{index}}">
+        <text>{{item.answer}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--答题结果-->
+  <view hidden="{{yourAnswer == -1}}">
+    <view class="fk-answer-wrapper">
+      <view class="fk-answer-result {{yourAnswer == index ? userAnswerResultClass : (rightAnswer == index ? 'right' : 'hidden')}}" wx:for="{{answerList}}" wx:key="{{index}}">
+        <text>{{item.answer}}</text>
+        <image src="/static/images/{{(yourAnswer == rightAnswer || rightAnswer == index) ? 'circle' : 'wrong'}}.png" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 挑战成功 -->
+  <ui-mask show="{{successful}}" showClose="{{false}}">
+    <view class='fk-result-wrapper'>
+      <view class="fk-result">
+        <text class="fk-result-title fk-font-26">挑战成功</text>
+        <view class="fk-flex-v fk-flex-items-center">
+          <text class="fk-result-title fk-font-14">本次挑战获得</text>
+          <image src="/static/images/money.png" />
+          <view class="fk-result-num-wrapper">
+            <view style="font-size:14px;color:#f5a623;margin-right:5px">x</view>
+            <view style="font-size:20px;color:#f5a623;font-weight:bold;">{{gainedIntegral}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="fk-result-button" bindtap="anotherGame">继续挑战</view>
+      <button open-type="share" class="fk-result-button" style="background-color:#FF5722;padding:0">炫耀成绩</button>
+    </view>
+  </ui-mask>
+
+  <!-- 挑战失败 -->
+  <ui-mask show="{{defeated}}" showClose="{{false}}">
+    <view class='fk-result-wrapper'>
+      <view class="fk-result">
+        <text class="fk-result-title fk-font-26" style="color:#FF5722">挑战失败！</text>
+        <view class="fk-flex-v fk-flex-items-center">
+          <text class="fk-result-title fk-font-14">本次挑战获得</text>
+          <image src="/static/images/money.png" />
+          <view class="fk-result-num-wrapper">
+            <view style="font-size:14px;color:#f5a623;margin-right:5px">x</view>
+            <view style="font-size:20px;color:#f5a623;font-weight:bold;">{{gainedIntegral}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="fk-result-button" bindtap="anotherGame">继续挑战</view>
+    </view>
+  </ui-mask>
+
+</view>

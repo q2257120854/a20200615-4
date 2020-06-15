@@ -1,0 +1,33 @@
+body {background-color:#f6f0f0;}
+.header_top_title {text-align:center;color:#4f4f4f;font-size:22px;display:block;font-weight:400}
+.item {overflow:hidden;margin: 15px 10px;}
+.item_pic {/* height:auto;*//* margin:15px 10px;*/background-color:#fff;padding-top:0.3rem;border-radius:5px;overflow:hidden;box-shadow:0 0 0.2rem 0.1rem rgba(206,179,179,0.14);margin-bottom:0.2rem;}
+.item_pic dt {float:left;width:80px;height: 130px;margin-right:10px;}
+.item_pic dt a,.item_pic dt img {display:block;width: 80px;height:auto;}
+.item_pic dt p {font-size:14px;line-height:18px;margin-top: 8px;color:#292929;text-align:center;}
+.item_pic dt p font {color: #ff0d00;font-weight: bold;}
+.item_pic dd {margin-left:90px;height: 130px;}
+.item_pic dd .item_pic_t {height:30px;line-height:30px;font-weight:700;color: #f44627;font-size: 18px;display:block;}
+.item_pic dd p {color: #333;font-size:14px;line-height: 23px;}
+.item_pic dd span {color:#282828}
+.btn_rightnow {display:block;background-color:#e49d6d;font-size:16px;color:#fff;line-height:35px;text-align:center;margin-top: 5px;}
+.btn_rightnow:hover {background-color:#a83b00}
+.about_content {padding:10px 10px 20px;line-height:25px;background:#fff}
+.ac_title {font-size:20px;color:#000;text-align:center}
+.ac_service {padding:10px 0 5px;font-size:14px}
+.ac_service a:last-child {margin:0}
+.ac_weixin,.ac_qq {display:block;border-radius:5px;border-width:1px;border-style:solid;margin:0 0 10px;padding:10px 0 10px 24%;box-sizing:border-box;overflow:hidden;color:#3e272c;position:relative;min-height:48px}
+.ac_weixin img,.ac_qq img {height:40px;position:absolute;left:12%;top:50%;transform:translate(-50%,-50%)}
+.ac_service .infor {line-height:24px}
+.ac_service .infor strong {font-size:18px}
+.ac_weixin {background-color:#eef8d6;border-color:#e6acac}
+.ac_weixin strong {color:#73ac0b}
+.ac_qq {background-color:#e4fcff;border-color:#81d7e2}
+.ac_qq strong {color:#ff3c65}
+.ac_us {background:red;color:#fff;display:block;padding:10px 0;text-align:center;border-radius:5px}
+.title {
+    margin-bottom: 10px;
+    padding: 5px 4px;
+    color: #e28d54;
+    border-bottom: 1px solid #ccc;
+}

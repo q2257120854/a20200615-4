@@ -1,0 +1,33 @@
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid footer text-center" role="footer">	
+	<div class="friend-link">
+		{if empty($_W['setting']['copyright']['footerright'])}
+			<a href="https://www.yunziyuan.com.cn">微信开发</a>
+			<a href="https://www.yunziyuan.com.cn">微信应用</a>
+			<a href="https://www.yunziyuan.com.cn">小程序开发</a>
+		{else}
+			{$_W['setting']['copyright']['footerright']}
+		{/if}
+	</div>
+	<div class="copyright">{if empty($_W['setting']['copyright']['footerleft'])}Powered by <a href="http://www.yunziyuan.com.cn"><b>5G云资源网</b></a> v{IMS_VERSION} &copy; 2014-2020 <a href="http://www.yunziyuan.com.cn">www.yunziyuan.com.cn</a>{else}{$_W['setting']['copyright']['footerleft']}{/if}</div>
+	
+	<div>
+		{if !empty($_W['setting']['copyright']['icp'])}
+		备案号：<a href="http://beian.miit.gov.cn/" target="_blank">{$_W['setting']['copyright']['icp']}</a>
+		{/if}
+		{if !empty($_W['setting']['copyright']['policeicp']['policeicp_location']) && !empty($_W['setting']['copyright']['policeicp']['policeicp_code'])}
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={php echo $_W['setting']['copyright']['policeicp']['policeicp_code']}">
+                &nbsp;&nbsp;<img src="./resource/images/icon-police.png" >
+				{php echo $_W['setting']['copyright']['policeicp']['policeicp_location']} {php echo $_W['setting']['copyright']['policeicp']['policeicp_code']}号
+			</a>
+		{/if}
+	</div>
+</div>
+</div>
+
+</div>
+</div>
+{template 'common/footer-base'}
+</body>
+</html>

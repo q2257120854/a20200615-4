@@ -1,0 +1,17 @@
+/*
+ * =========================================================================
+ * 自定义类  首页
+ * =========================================================================
+ */
+ /*初始化类*/
+@charset "UTF-8";
+
+.baise{background-color: #fff;color:#000;min-height: 3.30rem;padding-top:15px;}
+
+.baiset{background-color: #fff;color:#000;border-bottom: 1px solid #EAEAEA;}
+
+.baisec{background-color: #EAEAEA;font-size:12px;color:#000;}
+
+
+
+.c-b{color:#000}

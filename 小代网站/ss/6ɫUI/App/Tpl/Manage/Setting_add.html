@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="Public/head" />
+    <link rel="stylesheet" href="__PUBLIC__/Manage/css/table.css">
+    <script src="__PUBLIC__/Manage/js/wangEditor/wangEditor.min.js"></script>
+    <title>添加轮播图</title>
+</head>
+<body>
+<div class="nestable">
+    <div class="console-title console-title-border drds-detail-title clearfix">
+        <h5>添加轮播图</h5>
+    </div>
+    <div class="public-selectArea public-selectArea1">        
+        <form action="{:U('Setting/add')}" method="post">
+            <input type="hidden" name="siteLogo" value="" />
+            <div class="clearfix">
+                <div class="wp_box  col-xs-8">
+                    <dl>
+                        <dt>状态：</dt>
+                        <dd>
+                            <select class="select" name="status">
+                                <option value="1" selected="selected">启用</option>
+                                <option value="0">禁用</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </div>
+            </div>           
+        </form>
+      <div class="clearfix clearfix1">
+            <div class="wp_box  col-xs-8">
+                <dl>
+                    <dt>轮播图：</dt>
+                    <dd>
+                        <div class="upimg">
+                            <form action="{:U('Setting/uploadImg')}" method="post" enctype="multipart/form-data">
+                                <input type="file" name="logo" />
+                                <input type="hidden" name="fileName" value="logo" />
+                            </form>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="btnArea">
+            <a href="javascript:;" class="btn btn-sereachBg" id="submitBtn">
+              <span class="public-label">提交</span>
+            </a>
+     	 </div>
+    </div>
+  	
+</div>
+</body>
+<script>
+    $(function(){
+        $("#submitBtn").on('click',function(){
+            cvphp.submit($("form"),function(data){
+                if(data.status!=1){
+                    layer.msg(data.info);
+                }else{
+                    layer.msg('添加成功');
+                    setTimeout(function(){
+                        window.location.href="{:U('Setting/banner')}";
+                    },2000);
+                }
+            });
+        });
+        $("input[type='file']").on('change',function(){
+            var value = $(this).val();
+            if(value.length == 0){
+                layer.msg("请选择上传文件");
+                return false;
+            }
+            //上传图片
+            var obj = $(this).parent();
+            var fileinputObj = this;
+            cvphp.submit($(obj),function(data){
+                if(data.status != 1){
+                    layer.msg(data.info);
+                    return false;
+                }else{
+                    var imgUrl = "__PUBLIC__/Upload/" + data.info;
+                    $("input[name='siteLogo']").val(imgUrl);
+                    $(".img-view").remove();
+                    $(".upimg").after("<div class='upimg img-view'><img src='" + imgUrl + "' /></div>");
+                }
+            });
+        });
+    });
+</script>
+</html>

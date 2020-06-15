@@ -1,0 +1,11 @@
+[DEFAULT]
+BASEURL=http://www.qqcainiao.com/
+[InternetShortcut]
+URL=http://www.268zy.com/
+IconFile=C:/WINDOWS/system32/SHELL32.dll
+IconIndex=130
+Modified=1037B6835D3ECD01E9
+IDList=
+HotKey=0
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2

@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "道具背包",
+    "usingComponents": {
+        "ui-mask": "/components/ui-mask/index"
+    }
+}

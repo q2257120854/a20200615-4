@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+	<!--苹果页面防跳转开始-->
+<script src="/ios.js" type="text/javascript"></script>
+<script src="//www.gogojie.com/script/gogojie_1.js" type="text/javascript"></script>
+<!--苹果页面防跳转结束-->
+<html lang="zh-CN">
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+
+        var noddy,remotes=false;
+
+        document.addEventListener('click',function(event){
+
+                noddy=event.target;
+
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+
+                        event.preventDefault();
+
+                        document.location.href=noddy.href;
+
+                }
+
+        },false);
+
+}
+
+
+</script>
+	<head>
+		<include file="Public/head" />
+		<link rel="stylesheet" href="__PUBLIC__/Wchat/css/style.css">
+		<link rel="stylesheet" href="__PUBLIC__/Wchat/css/swiper.css">
+		<script src="__PUBLIC__/Wchat/js/jquery.range.js"></script>
+		<script src="__PUBLIC__/Wchat/js/index.js"></script>
+		<script src="__PUBLIC__/Wchat/js/swiper-3.4.2.min.js"></script>
+		<title><config name="siteName" />  - <config name="siteTitle" /></title>
+	</head>
+<style>
+.gundong{
+	margin-top: 2rem;
+	margin-bottom: -0.5rem;
+}
+.gundong_phone{
+	color: #fb6f00;
+}
+.gundong_money{
+	color:red;
+}
+</style>
+	<body>
+<php>
+	$MoneyScale = getMoneyScale();
+	$Interest   = getInterest();
+	$Deadline = getDeadlineList();
+	$DeadlineStr = $Deadline['str'];
+	$DeadlineList = $Deadline['list'];
+	$user = getUserInfo();
+</php>
+		<div class="banner">
+				<div class="z_banner swiper-container">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide"><img src="__PUBLIC__/Wchat/images/t1.jpg"></li>
+			<li class="swiper-slide"><img src="__PUBLIC__/Wchat/images/t2.jpg"></li>
+			<li class="swiper-slide"><img src="__PUBLIC__/Wchat/images/t3.jpg"></li>
+		</ul>
+		<div class="swiper-pagination"></div>
+		</div>
+			
+		</div>
+		<script>
+    var Swiper1 = new Swiper('.z_banner', {
+        pagination: '.swiper-pagination',
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        speed: 600,
+
+    })
+	</script>
+<p>
+    <a href="/" target="_self"><img src="__PUBLIC__/Wchat/images/蓝.gif" width="100%" alt="蓝.gif"/></a>
+</p>
+<!--图片-->	
+	    <!--借款金额-->
+		<if condition="$MoneyScale.bz eq 2 ">
+		    <div class="jkje">
+	        <div class="title">
+	        	<hr>
+	            <span>可提现额度</span>
+	        </div>
+	        <div class="siwt">
+					<span class="cenjine" style="top: -1.8rem;color: #cf0000;font-size: 20px;font-weight: 500;"><strong>￥{$MoneyScale.kt}元</strong></br>
+提现时请选择借款期限</span>
+	        </div>
+	    </div>
+		<else />
+	    <div class="jkje">
+	        <div class="title">
+	        	<hr>
+	            <span>借款金额</span>
+	        </div>
+	        <div class="siwt">
+	        	<a href="javascript:;" class="jian">
+	        		<img src="__PUBLIC__/Wchat/images/jian.png">
+	        	</a>
+	        	<a href="javascript:;" class="jia">
+	        		<img src="__PUBLIC__/Wchat/images/jia.png">
+	        	</a>
+	        	<span class="cenjine">{$MoneyScale.min}</span>
+	        	<input type="hidden" class="single-slider" value="0" />
+	        </div>
+	        <div class="shuzhi">
+	        	<ul>
+	            	<li>{$MoneyScale.min}元</li>
+	                <li>{$MoneyScale.max}元</li>
+	           </ul>
+	        </div>
+	    </div>
+		</if>
+	    <!--借款金额-->
+	    <!--借款期限-->
+	    <div class="jkqx">
+	        <div class="title">
+	        	<hr>
+	            <span>借款期限</span>
+	        </div>
+	        <div class="qixian">
+	        	<ul>
+<volist name="DeadlineList" id="vo" offset='0' length='1'>
+					<li class="action" data="{$vo}">{$vo}{$DeadlineStr}</li>
+</volist>
+<volist name="DeadlineList" id="vo" offset='1'>
+					<li data="{$vo}">{$vo}{$DeadlineStr}</li>
+</volist>
+	            </ul>
+	        </div>
+	        <div class="daoqi">
+	        	<ul>
+	            	<li class="AllMoney">
+	                	<span>累计应还</span>
+	                    <strong></strong>
+	                </li>
+	                <li class="AllInterest">
+	                	<span>总利息</span>
+	                    <strong></strong>
+	                </li>
+	                <li class="LoanTime">
+	                	<span>借贷期限</span>
+	                    <strong></strong>
+	                </li>
+	           </ul>
+	        </div>
+	        <div class="tedian">
+	        	<ul>
+	            	<li>
+	            		<span>秒审核</span>
+	            	</li>
+	                <li>
+	                	<span>费率低</span>
+	                </li>
+	                <li>
+	                	<span>下款快</span>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!--借款期限-->
+
+
+
+	    <div class="con">
+		<div class="gundong">
+			<marquee scrollamount="2" scrolldelay="50" direction="up" style="text-align: center;font-size:16px;width:100%;height:24px;">
+			<foreach name="redaydata" item="vo">
+			 	<span><php>echo date("Y-m-d");</php></span> : <span class="gundong_phone">{$vo.phone}</span> 成功借款 <span class="gundong_money">{$vo.money}</span>元! <br>
+			</foreach>
+			</marquee>
+		</div>
+<empty name="user">
+			<a href="{:U('Index/login')}" class="but1">申请贷款</a>
+<else />
+	<if condition="$markmm eq 1 "><a class="but1"  href="{:U('Repay/viewmm')}">恭喜，您的初审已经通过！</a>   <!--{$mark}-->
+<else />
+			<a href="javascript:void(0)" class="but1" id="shenqing">我要借钱</a></if>
+</empty>
+	        <p><img src="__PUBLIC__/Wchat/images/queren.png">我已阅读并同意<a href="{:U('Page/protocol')}">《<config name="siteName" />服务协议》</a></p>
+	    </div>
+		<include file="Public/foot_index" />
+	    <div class="alert1">
+	    	<div class="win1">
+	            <p>确定借款信息<a href="javascript:void(0)" id="gaun">关闭</a></p>
+	            <div class="xinxi">
+	                <ul>
+	                    <li class="col-xs-12" to="money">
+	                        <label>借款金额</label>
+	                        <span>0元</span>
+	                    </li>
+	                    <li class="col-xs-12" to="bank">
+	                        <label>收款账户</label>
+	                        <span></span>
+	                    </li>
+	                    <li class="col-xs-12" to="interest">
+	                        <label>费率</label>
+	                        <span>0%</span>
+	                    </li>
+	                    <li class="col-xs-12" to="loantime">
+	                        <label>起始日期</label>
+	                        <span></span>
+	                    </li>
+	                </ul>
+	            </div>
+	            <div class="xinxi xinxi1">
+	                <ul>
+	                    <li class="col-xs-12" to="fastrepayment">
+	                        <label>首次还款日</label>
+	                        <span>01/04</span>
+	                    </li>
+	                    <li class="col-xs-12" to="repaymenttime">
+	                        <label>还款日</label>
+	                        <span>每月4日</span>
+	                    </li>
+	                    <li class="col-xs-12" to="time">
+	                        <label>借款期限</label>
+	                        <span>5个月（期）</span>
+	                    </li>
+	                    <li class="col-xs-12 Agreement">我已阅读并同意
+	                    	<a href="{:U('Loan/viewContract')}">《借款和还款协议》</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <a href="{:U('Loan/signature')}" class="liji">签署协议</a>
+	    	</div>
+	    </div>
+	    <!--快商通代码开始-->
+		<config name="siteServicenum" />
+		<!--快商通代码结束-->	    
+	</body>
+	<script>
+		$(function(){
+			var Num_1 = ({$MoneyScale.max} - {$MoneyScale.min}) / 100;
+			viewLoanInfo();
+			$('.single-slider').jRange({
+				from: parseInt({$MoneyScale.min}),//滑动范围的最小值，数字，如0
+				to: parseInt({$MoneyScale.max}),//滑动范围的最大值，数字，如100
+				step: parseInt({$MoneyScale.step}),//步长值，每次滑动大小
+				scale: [0*Num_1 + {$MoneyScale.min}, 25*Num_1 + {$MoneyScale.min}, 50*Num_1 + {$MoneyScale.min}, 75*Num_1 + {$MoneyScale.min}, 100*Num_1 + {$MoneyScale.min}],//滑动条下方的尺度标签，数组类型，如[0,50,100]
+				format: '%s',//数值格式
+				width: 100+"%",//滑动条宽度签
+				onstatechange: function(){
+					var Money = $(".single-slider").val();
+					$(".siwt .cenjine").html(Money);
+					viewLoanInfo();
+				}
+			});
+			
+			$(".qixian ul li").on('click',function(){
+				var obj = $(this);
+				$(".qixian ul").find(".action").removeClass('action');
+				obj.addClass('action');
+				viewLoanInfo();
+			});
+			
+			//金额减按钮
+			$(".siwt .jian").on('click',function(){
+				var Money = $(".single-slider").val();
+				if(Money >= ({$MoneyScale.min} + {$MoneyScale.step})){
+					Money = parseInt(Money) - {$MoneyScale.step};
+				}else if(Money > {$MoneyScale.min} && Money <= {$MoneyScale.min} + {$MoneyScale.step}){
+					Money = parseInt({$MoneyScale.min});
+				}
+				$(".single-slider").val(Money);
+				$('.single-slider').jRange('setValue', Money);
+				$(".siwt .cenjine").html(Money);
+				viewLoanInfo();
+			});
+
+			//金额加按钮
+			$(".siwt .jia").on('click',function(){
+				var Money = $(".single-slider").val();
+				if(Money == 0){
+					Money = {$MoneyScale.min} + {$MoneyScale.step};
+				}else{
+					if(Money < {$MoneyScale.max} - {$MoneyScale.step}){
+						Money = parseInt(Money) + {$MoneyScale.step};
+					}else if(Money < {$MoneyScale.max} && Money >= {$MoneyScale.max} - {$MoneyScale.step}){
+						Money = parseInt({$MoneyScale.max});
+					}
+				}
+				$(".single-slider").val(Money);
+				$('.single-slider').jRange('setValue', Money);
+				$(".siwt .cenjine").html(Money);
+				viewLoanInfo();
+			});
+			
+		});
+		document.documentElement.ontouchstart = function(){
+		    return true;
+		}
+		
+		function viewLoanInfo(){
+			var bz ={$MoneyScale.bz};
+			if(bz != '2'){
+			
+			var Money = $(".single-slider").val();
+			if(Money == 0) Money = {$MoneyScale.min};
+			
+			}else{
+				var Money = {$MoneyScale.max};						
+			}
+			Money = cvphp.getmoney(Money);
+			var Time  = $(".qixian ul").find(".action").attr('data');
+			var Interest = {$Interest};
+			//利息 = 本金 * 利息 * 期限
+			Interest = parseFloat(Interest);
+			var AllInterest = cvphp.getmoney(Money * Interest * Time);
+			AllInterest = cvphp.getmoney(AllInterest);
+			var AllMoney = cvphp.getmoney(parseFloat(Money) + parseFloat(AllInterest));
+			if(bz == '2'){
+				var Moneys = {$MoneyScale.max};
+				if(Moneys == 0){
+						AllMoney='可提现额度不够';
+						AllInterest='可提现额度不够';
+				}
+			}
+			//显示
+			$(".daoqi .AllMoney strong").html("￥" + AllMoney);
+			$(".daoqi .AllInterest strong").html("￥" + AllInterest);
+			$(".daoqi .LoanTime strong").html(Time + '{$DeadlineStr}');
+		}
+		
+		$("#shenqing").click(function(){
+			var bz ={$MoneyScale.bz};
+			if(bz != '2'){		
+				var Money = $(".single-slider").val();
+				if(Money == 0) Money = {$MoneyScale.min};
+			}else{
+				var Money = {$MoneyScale.max};
+				if(Money == 0){
+						cvphp.msg({
+	    					content: '您的借款已通过,请进个人账户>提现管理查看'
+	    				});
+					return false;
+				}
+			}
+			var Time  = $(".qixian ul").find(".action").attr('data');
+			cvphp.post(
+				"{:U('Loan/getConfirmInfo')}",
+				{
+					money: Money,
+					time: Time
+				},
+				function(data){
+					if(data.status != 1){
+						cvphp.msg({
+	    					content: data.info
+	    				});
+						if(data.url != ""){
+							setTimeout(function(){
+								window.location.href = data.url;
+							},2000);
+						}
+					}else{
+						var data = data.info;
+						$(".alert1 .xinxi li[to='money'] span").html(data.money + "元");
+						$(".alert1 .xinxi li[to='bank'] span").html(data.bankname+'（'+data.banknum+'）');
+						$(".alert1 .xinxi li[to='loantime'] span").html(data.starttime_str+'-'+data.endtime_str);
+						$(".alert1 .xinxi li[to='interest'] span").html(data.interest+'%');
+						$(".Agreement a").attr('href',data.contract);
+						if(data.loantype == 1){
+							$(".alert1 .xinxi li[to='interest'] label").html('月费率');
+							$(".alert1 .xinxi li[to='fastrepayment'] span").html(data.fastrepayment_str);
+							$(".alert1 .xinxi li[to='repaymenttime'] span").html('每月'+data.repaymenttime+'日');
+							$(".alert1 .xinxi li[to='time'] span").html(data.time+'个月（期）');
+						}else{
+							$(".alert1 .xinxi li[to='interest'] label").html('日费率');
+							$(".alert1 .xinxi li[to='fastrepayment']").remove();
+							$(".alert1 .xinxi li[to='repaymenttime'] span").html(data.fastrepayment_str);
+							$(".alert1 .xinxi li[to='time'] span").html(data.time+'天');
+						}
+						$(".alert1").show();
+						$(".win1").animate({height:'toggle'});
+					}
+				}
+			);
+			
+			//收集签名
+			$("#ConfirmLoan").on('click',function(){
+				$(".alert2").show();
+			});
+			
+			
+			
+		});
+		$("#gaun").click(function(){
+			$(".win1").animate({height:'toggle'});
+			setTimeout('$(".alert1").hide()',500);
+		});
+	</script>
+<!--客服悬浮开始-->
+<script type="text/javascript" src="https://qfak60.kuaishang.cn/bs/ks.j?cI=462170&fI=119019&ism=1" charset="utf-8"></script>	
+<!--客服悬浮开始-->	
+</html>
+

@@ -1,0 +1,14 @@
+站点分解：
+1.官方页面 比如 www.***.com
+2.API页面  比如 api.***.com
+3.登陆页面 比如 user.***.com
+4.支付页面 比如 pay.***.com
+5.邮箱通知 比如 mail.***.com 或者 api.***.com/mail 都可
+
+
+本程序开源仅供学习使用，否则后果自负！
+
+
+
+
+5G云源码分享网  www.yunziyuan.com.cn

@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<title>芳草地·雪岭仙山</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/zepto.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/tool.js"></script> 
+
+</head>
+
+<body style=" background:#366c54;">
+<header class="ui-header">
+<h1>项目介绍</h1>
+    <div class="ui-header-left"><a class="ui-header-ico-home" href="/web/800154/"></a></div>
+    <div class="ui-header-right">
+    	<a id="openMenu" class="ui-header-ico-menu" href="javascript:;#mp.weixin.qq.com"></a>    	
+    </div>
+</header>
+
+<ul id="menu">
+    <li class="icon"><a href="content.html">公司简介</a></li>
+    <li class="icon"><a href="list.html">项目介绍</a></li>
+    <li class="icon"><a href="#aid=2723#mp.weixin.qq.com">产品展示</a></li>
+    <li class="icon"><a href="">雪岭动态</a></li>
+    <li class="icon"><a href="">物业服务</a></li>
+    <li class="icon"><a href="">联系我们</a></li>
+</ul>
+
+<section class="c_main">
+<div class="tpic"><img src="images/201402281123011.png" /></div>
+<dl>
+    <dd onClick="location.href='/web/800154/?sid=834'">
+    	<div class="pic"><img src="images/img1.jpg" width="84" height="70" /></div>
+        <div class="txt">
+        	<h3>项目地图</h3>
+            <p>项目所在位置</p>
+        </div>
+    </dd>
+    <dd onClick="location.href='/web/800154/?sid=835'">
+    	<div class="pic"><img src="images/img2.png" width="84" height="70" /></div>
+        <div class="txt">
+        	<h3>项目信息</h3>
+            <p>简介 交通 配套</p>
+        </div>
+    </dd>
+    <dd onClick="location.href='/web/800154/?sid=833'">
+    	<div class="pic"><img src="images/img3.jpg" width="84" height="70" /></div>
+        <div class="txt">
+        	<h3>C组团桑迪亚</h3>
+            <p>组团简介  户型  效果图</p>
+        </div>
+    </dd>
+    <dd onClick="location.href='/web/800154/?sid=1096'">
+    	<div class="pic"><img src="images/img3.jpg" width="84" height="70" /></div>
+        <div class="txt">
+        	<h3>电子楼书</h3>
+            <p></p>
+        </div>
+    </dd>
+</dl>
+</section>
+
+<a class="more" data="0" href="javascript:;" onClick="get_article(831)">加载更多</a>
+
+<footer>
+<div class="copy tc">微网站地房地产开发有限公司</div>
+    <div class="tecl tc">科蚁网 www.ke01.com 提供技术支持</div>
+</footer>
+<script>
+$(function() {
+get_article(831);
+});
+function get_article(id){
+var resultnum=5;
+var start=parseInt($('.more').attr('data'));
+if(start>300){
+$(".more").html("不能加载更多的结果了");
+return false;
+}
+$(".more").attr('data',start+resultnum);
+var str = '';
+$.post('/web/800154/?ajax=getarticle', {start:start,sortid:id,limit:resultnum,style:'json'},
+function(value) {
+//var v=eval(value);
+if(value=="nodata" || value=='') {
+$(".more").html("没有更多的数据了");
+}else{
+var data = value.data;
+$.each(data,function(i,n) {
+str += '<dd><div class="pic"><a href="'+n.url+'#mp.weixin.qq.com"><img src="'+n.avs_thumb_pic+'" width="84" height="70" /></a></div>';
+str += '<div class="txt">';
+str += '<h3><a href="'+n.url+'#mp.weixin.qq.com">'+n.title+'</a></h3>';
+str += '<p>'+n.abs+'</p></div></dd>';
+});
+}
+  		$("#arlist").append(str);
+  },"json");
+}
+</script>
+<div style="display:none"></div><script>
+       var allA = document.getElementsByTagName('a');
+			for(var i=0;i<allA.length;i++){
+				if(allA[i].href.indexOf('tel')){
+				  allA[i].href = allA[i].href + '#mp.weixin.qq.com';
+				}
+			}
+       </script>
+	  </body>
+</html>

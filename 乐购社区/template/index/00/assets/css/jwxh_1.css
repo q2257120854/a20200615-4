@@ -1,0 +1,351 @@
+
+/*全局初始化*/
+body, div, h1, h2, p, ol, ul, li {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+}
+input {
+    line-height: normal;
+}
+
+body{background: transparent scroll 0% 0%;}
+body {
+    font-size: 12px;
+    font-family: "微软雅黑","宋体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-bottom: 55px !important;
+}
+
+/*各个页面都有使用*/
+header .menu {height: 65px;}
+
+/*全局可用类*/
+.color_red{
+	color:red;
+}
+
+/*首页*/
+header .menu h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #FFF;
+	white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;
+}
+
+/* 超小移动设备 */
+@media (min-device-width : 0px) and (max-device-width : 700px) {
+    /*将表格的排序重置*/
+	.dt-grid-toolbar-container .dt-grid-pager {
+		width: 100%;
+	}
+	.dt-grid-toolbar-container .dt-grid-pager ul{
+		float: right;
+		display:block;
+	}
+	.dt-grid-toolbar-container .dt-grid-pager .dt-grid-pager-status {
+		float: right;
+		margin: 6px 0px 0 0;
+	}
+	/*将tab标签的内边距缩小*/
+	.jwxh_main_div .nav > li > a {
+		display: block;
+		padding: 0px 1px;
+	}
+}
+
+/* 移动设备 */
+@media (min-device-width : 375px) and (max-device-width : 736px) {
+    header .menu h2 {font-size: 20px;} /*缩小顶部导航的字体*/
+}
+
+
+/* 电脑设备 */
+@media (min-device-width : 740px) and (max-device-width : 10000px) {
+    /*将表格的排序重置*/
+	.dt-grid-toolbar-container .dt-grid-pager {
+		float: left;
+		width: 100%;
+	}
+	.dt-grid-toolbar-container .dt-grid-pager ul{
+		float: right;
+	}
+	.dt-grid-toolbar-container .dt-grid-pager .dt-grid-pager-status {
+		float: left;
+	}
+	
+}
+
+
+/*每个页面都使用*/
+.container {margin-top: 5px;}
+
+
+/*各个页面都有使用的底部页脚样式*/
+footer {
+    margin-top: 20px;
+    bottom: 0px;
+    float: left;
+    width: 100%;
+    background: #27303F none repeat scroll 0% 0%;
+    min-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #FFF;
+	white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;
+}
+
+
+/*---------------------------*/
+
+/*首页的URL块样式*/
+.div_url{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.thumbnail {
+	margin: 0px 0px 20px 0px;
+	background-color: transparent;
+}
+.thumbnail a {display:block; width:100%; height: 220px; text-decoration:none;}
+.thumbnail a:hover {
+    cursor: pointer;
+}
+.thumbnail a img {width: 100%; height: 100%;}
+
+
+/*---------------------------------------*/
+
+/*登录页导航的连接*/
+header .menu h2 a,header .menu .nav_top_right a{
+	text-decoration:none;
+	color: #FFF;
+}
+header .menu h2 a{
+	font-size: 24px;
+	margin-top: 15px;
+}
+header .menu a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+/*登录页导航的右边样式*/
+.nav_top_right {
+    float: right;
+    color: #FFF;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*登录块宽度和水平居中*/
+.vertical-center{
+	padding:2%;
+	max-width: 400px;
+	margin: auto auto;
+}
+
+/*登录块卡密框字体大小*/
+.vertical-center .login_input_cardno{
+	font-size:12px;
+}
+
+/*登录块panel倒圆角*/
+.vertical-center .panel {
+	border-radius: 8px;
+	border: 0 transparent;
+}
+/*登录块panel body倒圆角+轮廓*/
+.vertical-center .panel .panel-body {
+	border-radius: 0 0 8px 8px;
+	border-width: 0px 1px 1px;
+	border-style: none solid solid;
+	border-color: #B4B4B4;
+}
+/*登录块panel title*/
+.vertical-center .panel-title {
+    background-color: #F99;
+    color: #FFF;
+    font-size: 22px;
+    padding: 20px 24px;
+    border: 0px solid #FFF;
+	border-radius: 8px 8px 0 0 ;
+}
+.vertical-center .panel-heading {
+    padding: 0px;border-radius: 8px 8px 0 0 ;
+}
+
+/*登录块的按钮*/
+.vertical-center .btn{
+	width:100%;
+    background: #6AD196 none repeat scroll 0% 0%;
+    color: #FFF;
+    height: 35px;
+	margin-bottom:5px;
+}
+
+.vertical-center .left{
+	padding-left:0;
+	float:left;
+}
+.vertical-center .right{
+	padding-right:0;
+	float:right;
+}
+.empty-height{
+	margin-top:10%;
+}
+
+/*------------------------*/
+/*内容页*/
+
+.top_nav {
+    float: right;
+    color: #FFF;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.top_nav a {
+    color: #FFF;
+}
+
+.jwxh_main_div_nav_tabs{
+	margin-top:10px;
+	background-color: #fff;
+	border-radius: 5px !important;
+	box-shadow: 1px 1px 3px #888;
+}
+
+.jwxh_main_div_nav_tabs .tab-content{
+	padding: 10px;
+}
+
+.jwxh_main_div .btn {
+    background: #6AD196 none repeat scroll 0% 0%;
+    color: #FFF;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+/* 移动设备 */
+@media (min-device-width : 375px) and (max-device-width : 736px) {
+    .jwxh_main_div_nav_tabs .nav > li > a {
+		padding: 2px 2px;
+	}
+}
+
+
+/*TAB内的搜索样式*/
+.jwxh_main_div_nav_tabs .div_search {
+    margin-top: 5px;
+}
+.jwxh_main_div_nav_tabs .div_search .form-group {
+    margin-bottom: 0px;
+}
+.jwxh_main_div_nav_tabs .div_search .form-group input {
+    height: 80%;
+	padding: 4px 8px;
+}
+.jwxh_main_div_nav_tabs .div_search .form-group label {
+    font-weight: 400;
+}
+.jwxh_main_div_nav_tabs .div_search .btn {
+    margin-bottom: 0px;
+}
+
+
+/* 固定长度80px */
+.fixed-width-right-80{
+	display:block;
+	min-width:60px;
+	max-width:80px;
+	text-align:right;
+	float:left;
+	clear:both;
+}
+
+/*panel上下边距*/
+.jwxh_main_div .panel {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.jwxh_main_div ul {
+	list-style: outside none none;
+}
+
+.jwxh_main_div .btn {
+	height: 26px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+}
+.jwxh_main_div .panel li {
+	padding: 3px 2px 5px 10px;
+	height: 38px;
+	border-bottom: 1px dotted #D3CBCB;
+	line-height: 35px;
+}
+.jwxh_main_div .panel .panel-body,.jwxh_main_div .panel .panel-heading {
+	padding: 0;
+}
+.jwxh_main_div .panel .panel-title {
+	background: rgba(208, 234, 200, 0.21) none repeat scroll 0% 0%;
+	height: 40px;
+	
+	margin-left: 10px;
+	line-height: 40px;
+	color: rgba(34, 34, 34, 0.8);
+	font-size: 18px;
+	font-family: "微软雅黑","宋体","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+}
+
+.pagefloatdiv .pfbody button {
+	margin-top: -7px;
+	margin-left: 0;
+}
+.jwxh_row_row {
+	margin-right: 0px;
+	margin-left: 0px;
+	max-width:100%;
+}
+.orders_textarea {
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 95%;
+	height: auto;
+	min-height: 100px;
+	resize: none;
+	overflow: auto;
+}
+
+.table > thead > tr > td:hover, .table > tbody > tr > td:hover, .table > tfoot > tr > td:hover, .dt-grid-extra-columns > td > p:hover {
+	background: none;
+}
+.table > thead > tr:hover, .table > tbody > tr:hover, .table > tfoot > tr:hover, .dt-grid-extra-columns > td > p:hover {
+	background: #ff9999;
+}
+.jwxh_main_div .table .btn {
+	height: 18px;
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 12px;
+	margin-bottom: 0px;
+	text-shadow: 0;
+}
+
+.jwxh_main_div .change-page-size {
+	width: auto;
+	min-height: 16px;
+	max-height: 40px;
+}
+
+.jwxh_main_div .panel .panel-body input[type="text"],.jwxh_main_div .panel .panel-body input[type="number"],.jwxh_main_div .panel .panel-body input[type="password"],.jwxh_main_div .panel .panel-body select {
+    margin-top: 1px;
+    width: 60%;
+	max-width: 160px;
+    height: 26px !important;
+}
+
+.font_weight_400{
+font-weight: 400;
+}

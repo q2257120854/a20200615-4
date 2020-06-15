@@ -1,0 +1,47 @@
+/* CSS Document */
+@charset "utf-8"; 
+/*css reset*/
+html,body {margin: 0;padding: 0;font-size:12px; }
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,textarea,p,blockquote,th,td,a,input { padding: 0;margin: 0; text-decoration:none; font-family:"寰蒋闆呴粦";}
+table { border-collapse: collapse;brder-spacing: 0;font-size:12px; }
+address,caption,cite,code,dfn,em,i,th,var { font-weight: normal;font-style: normal;}
+caption { text-align: left;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%; padding:0; }
+q:before,q:after { content:'';}
+abbr,acronym {border: 0;}
+p { margin:0; padding:0;}
+ol,ul,li {list-style-type: none; list-style-image: none;}
+a {text-decoration: none;outline:0; color:#000;}
+ul,li{list-style:none; zoom:1;}
+button{cursor:pointer; margin:0; padding:0;}
+fieldset,img { border:none; margin:0; padding:0;}
+
+.box{ width:1000px; margin:0 auto;}
+.banner{color:#fff;height:auto; overflow:hidden;  background:url(/images/APP_bg.jpg) no-repeat center center; background-size:cover;}
+.banner .box{ height:auto; overflow:hidden;}
+.banner .return_home{ display:block; line-height:62px; text-align:right; padding-right:20px; color:#fff;}
+.banner .return_home:hover{ color:#eee;}
+.banner .text{ padding-left:160px; font-size:18px; line-height:36px;}
+.banner .text h3{ margin-bottom:36px; font-size:48px; line-height:36px; font-weight:bold;}
+.banner .download{ float:right; padding-bottom:6px;  margin-right:20px; text-align:center; line-height:36px; }
+.banner .download span{ float:left; margin-left:26px; width:150px;}
+.banner .download span img{width: 150px; height: 150px;}
+.main{ background:#f8f8f8;}
+.main .box{ background:#fff; padding:59px 40px 0 40px; height: overflow:hidden;}
+.main .panel{ margin-bottom:60px; font-size:14px;}
+.main .panel img{ display:block; margin:60px auto;}
+.main .pan_title{height:35px; margin-bottom:30px; font-size:18px;color:#fff;}
+.main .pan_title em{ display:inline-block; margin-right:6px; width:37px; height:35px; line-height:35px; text-align:center;background:#0f65e3;}
+.main .pan_title span{display:inline-block; padding:0 50px 0 20px;height:35px; line-height:35px;background:#0f65e3;}
+.main .pan_title:after{ content:''; display:inline-block;width:25px; height:35px; vertical-align:bottom; background:url(../images/APP_titlebg.png) no-repeat;}
+.main .panel .pan-con p{ margin-bottom:8px; line-height:36px;color:#4d4e4e;}
+.main .panel .func{ display:block; color:#004ec0; }
+.main .pan2 p i{ color:#f73a00;}
+.main .pan3{ margin-bottom:0;}
+.footer .postscrip{ padding-bottom:70px; height:auto; overflow:hidden; background:#f1f1f1;}
+.footer .postscrip .word{ float:left; padding-top:46px; color:#545454;}
+.footer .postscrip .word b{ display:block;font-size:14px; margin-bottom:42px; font-weight:normal;}
+.footer .postscrip .wechat{ float:right; margin-right:96px; text-align:right; color:#4d4e4e; padding-top:44px;}
+.footer .postscrip .wechat strong{ line-height:50px; color:#4d4e4e;font-weight:normal;}
+.footer .copyright{ padding:24px 0; text-align:center; line-height:34px; color:#a0a0a0; background:#e1e1e1;}
+.footer .copyright img{ margin-right:14px; vertical-align:middle;}
